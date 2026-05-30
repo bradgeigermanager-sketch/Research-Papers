@@ -6,7 +6,7 @@
 
 GENERAL FORMULAS (Gamma Function & Double Factorial Forms):
 -------------------------------------------------------------------------------
-Let n be the dimension, r be the radius, and pi (3.1415926535).
+Let n be the dimension, r be the radius, and pi be (3.1415926535).
 
 
 Volume of an n-dimension sphere (n-ball):
