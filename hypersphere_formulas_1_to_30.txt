@@ -1,0 +1,327 @@
+﻿===============================================================================
+       EXPLICIT FORMULAS FOR THE VOLUME AND SURFACE AREA OF HYPERSPHERES       
+                            DIMENSIONS 1 TO 30                                 
+===============================================================================
+
+
+GENERAL FORMULAS (Gamma Function & Double Factorial Forms):
+-------------------------------------------------------------------------------
+Let n be the dimension, r be the radius, and pi (~3.1415926535).
+
+
+Volume of an n-dimension sphere (n-ball):
+  V_n(r) = [ pi^(n/2) / Gamma(n/2 + 1) ] * r^n
+  For Even n=2k:  V_2k(r) = [ pi^k / k! ] * r^(2k)
+  For Odd n=2k+1: V_(2k+1)(r) = [ 2^(k+1) * pi^k / (2k+1)!! ] * r^(2k+1)
+
+
+Surface Area (Boundary Volume) of an n-dimension sphere ((n-1)-sphere):
+  S_n(r) = [ 2 * pi^(n/2) / Gamma(n/2) ] * r^(n-1) = (n / r) * V_n(r)
+  For Even n=2k:  S_2k(r) = [ 2 * pi^k / (k-1)! ] * r^(2k-1)
+  For Odd n=2k+1: S_(2k+1)(r) = [ 2 * (2*pi)^k / (2k-1)!! ] * r^(2k)
+
+
+Note on notation:
+  k!   = k * (k-1) * ... * 1  (Standard Factorial)
+  n!!  = n * (n-2) * ... * 1  (Double Factorial)
+===============================================================================
+
+
+DIMENSION n = 1
+------------------------------
+  Volume Formula:
+    V_1(r) = 2 * r^1
+    V_1(r) ≈ 2.0000000000 * r^1  (Length of a line segment)
+  Surface Area Formula:
+    S_1(r) = 2 * r^0
+    S_1(r) ≈ 2.0000000000 * r^0  (Number of boundary endpoints)
+
+
+DIMENSION n = 2
+------------------------------
+  Volume Formula:
+    V_2(r) = pi * r^2
+    V_2(r) ≈ 3.1415926536 * r^2  (Area of a disk)
+  Surface Area Formula:
+    S_2(r) = 2 * pi * r^1
+    S_2(r) ≈ 6.2831853072 * r^1  (Circumference of a circle)
+
+
+DIMENSION n = 3
+------------------------------
+  Volume Formula:
+    V_3(r) = (4/3) * pi * r^3
+    V_3(r) ≈ 4.1887902048 * r^3  (Volume of a classical sphere)
+  Surface Area Formula:
+    S_3(r) = 4 * pi * r^2
+    S_3(r) ≈ 12.5663706144 * r^2  (Surface area of a classical sphere)
+
+
+DIMENSION n = 4
+------------------------------
+  Volume Formula:
+    V_4(r) = (pi^2 / 2) * r^4
+    V_4(r) ≈ 4.9348022005 * r^4  
+  Surface Area Formula:
+    S_4(r) = 2 * pi^2 * r^3
+    S_4(r) ≈ 19.7392088022 * r^3  
+
+
+DIMENSION n = 5
+------------------------------
+  Volume Formula:
+    V_5(r) = (8 * pi^2 / 15) * r^5
+    V_5(r) ≈ 5.2637890139 * r^5  
+  Surface Area Formula:
+    S_5(r) = (8 * pi^2 / 3) * r^4
+    S_5(r) ≈ 26.3189450696 * r^4  
+
+
+DIMENSION n = 6
+------------------------------
+  Volume Formula:
+    V_6(r) = (pi^3 / 6) * r^6
+    V_6(r) ≈ 5.1677127800 * r^6  
+  Surface Area Formula:
+    S_6(r) = (2 * pi^3 / 2) * r^5
+    S_6(r) ≈ 31.0062766803 * r^5  
+
+
+DIMENSION n = 7
+------------------------------
+  Volume Formula:
+    V_7(r) = (16 * pi^3 / 105) * r^7
+    V_7(r) ≈ 4.7247659703 * r^7  
+  Surface Area Formula:
+    S_7(r) = (16 * pi^3 / 15) * r^6
+    S_7(r) ≈ 33.0733617923 * r^6  
+
+
+DIMENSION n = 8
+------------------------------
+  Volume Formula:
+    V_8(r) = (pi^4 / 24) * r^8
+    V_8(r) ≈ 4.0587121264 * r^8  
+  Surface Area Formula:
+    S_8(r) = (2 * pi^4 / 6) * r^7
+    S_8(r) ≈ 32.4696970113 * r^7  
+
+
+DIMENSION n = 9
+------------------------------
+  Volume Formula:
+    V_9(r) = (32 * pi^4 / 945) * r^9
+    V_9(r) ≈ 3.2985089027 * r^9  
+  Surface Area Formula:
+    S_9(r) = (32 * pi^4 / 105) * r^8
+    S_9(r) ≈ 29.6865801246 * r^8  
+
+
+DIMENSION n = 10
+------------------------------
+  Volume Formula:
+    V_10(r) = (pi^5 / 120) * r^10
+    V_10(r) ≈ 2.5501640399 * r^10  
+  Surface Area Formula:
+    S_10(r) = (2 * pi^5 / 24) * r^9
+    S_10(r) ≈ 25.5016403988 * r^9  
+
+
+DIMENSION n = 11
+------------------------------
+  Volume Formula:
+    V_11(r) = (64 * pi^5 / 10395) * r^11
+    V_11(r) ≈ 1.8841038794 * r^11  
+  Surface Area Formula:
+    S_11(r) = (64 * pi^5 / 945) * r^10
+    S_11(r) ≈ 20.7251426733 * r^10  
+
+
+DIMENSION n = 12
+------------------------------
+  Volume Formula:
+    V_12(r) = (pi^6 / 720) * r^12
+    V_12(r) ≈ 1.3352627689 * r^12  
+  Surface Area Formula:
+    S_12(r) = (2 * pi^6 / 120) * r^11
+    S_12(r) ≈ 16.0231532263 * r^11  
+
+
+DIMENSION n = 13
+------------------------------
+  Volume Formula:
+    V_13(r) = (128 * pi^6 / 135135) * r^13
+    V_13(r) ≈ 0.9106287548 * r^13  
+  Surface Area Formula:
+    S_13(r) = (128 * pi^6 / 10395) * r^12
+    S_13(r) ≈ 11.8381738122 * r^12  
+
+
+DIMENSION n = 14
+------------------------------
+  Volume Formula:
+    V_14(r) = (pi^7 / 5040) * r^14
+    V_14(r) ≈ 0.5992645293 * r^14  
+  Surface Area Formula:
+    S_14(r) = (2 * pi^7 / 720) * r^13
+    S_14(r) ≈ 8.3897034105 * r^13  
+
+
+DIMENSION n = 15
+------------------------------
+  Volume Formula:
+    V_15(r) = (256 * pi^7 / 2027025) * r^15
+    V_15(r) ≈ 0.3814432808 * r^15  
+  Surface Area Formula:
+    S_15(r) = (256 * pi^7 / 135135) * r^14
+    S_15(r) ≈ 5.7216492123 * r^14  
+
+
+DIMENSION n = 16
+------------------------------
+  Volume Formula:
+    V_16(r) = (pi^8 / 40320) * r^16
+    V_16(r) ≈ 0.2353306304 * r^16  
+  Surface Area Formula:
+    S_16(r) = (2 * pi^8 / 5040) * r^15
+    S_16(r) ≈ 3.7652900857 * r^15  
+
+
+DIMENSION n = 17
+------------------------------
+  Volume Formula:
+    V_17(r) = (512 * pi^8 / 34459425) * r^17
+    V_17(r) ≈ 0.1409811069 * r^17  
+  Surface Area Formula:
+    S_17(r) = (512 * pi^8 / 2027025) * r^16
+    S_17(r) ≈ 2.3966788176 * r^16  
+
+
+DIMENSION n = 18
+------------------------------
+  Volume Formula:
+    V_18(r) = (pi^9 / 362880) * r^18
+    V_18(r) ≈ 0.0821458866 * r^18  
+  Surface Area Formula:
+    S_18(r) = (2 * pi^9 / 40320) * r^17
+    S_18(r) ≈ 1.4786259590 * r^17  
+
+
+DIMENSION n = 19
+------------------------------
+  Volume Formula:
+    V_19(r) = (1024 * pi^9 / 654729075) * r^19
+    V_19(r) ≈ 0.0466216010 * r^19  
+  Surface Area Formula:
+    S_19(r) = (1024 * pi^9 / 34459425) * r^18
+    S_19(r) ≈ 0.8858104196 * r^18  
+
+
+DIMENSION n = 20
+------------------------------
+  Volume Formula:
+    V_20(r) = (pi^10 / 3628800) * r^20
+    V_20(r) ≈ 0.0258068914 * r^20  
+  Surface Area Formula:
+    S_20(r) = (2 * pi^10 / 362880) * r^19
+    S_20(r) ≈ 0.5161378278 * r^19  
+
+
+DIMENSION n = 21
+------------------------------
+  Volume Formula:
+    V_21(r) = (2048 * pi^10 / 13749310575) * r^21
+    V_21(r) ≈ 0.0139491504 * r^21  
+  Surface Area Formula:
+    S_21(r) = (2048 * pi^10 / 654729075) * r^20
+    S_21(r) ≈ 0.2929321586 * r^20  
+
+
+DIMENSION n = 22
+------------------------------
+  Volume Formula:
+    V_22(r) = (pi^11 / 39916800) * r^22
+    V_22(r) ≈ 0.0073704309 * r^22  
+  Surface Area Formula:
+    S_22(r) = (2 * pi^11 / 3628800) * r^21
+    S_22(r) ≈ 0.1621494808 * r^21  
+
+
+DIMENSION n = 23
+------------------------------
+  Volume Formula:
+    V_23(r) = (4096 * pi^11 / 316234143225) * r^23
+    V_23(r) ≈ 0.0038106564 * r^23  
+  Surface Area Formula:
+    S_23(r) = (4096 * pi^11 / 13749310575) * r^22
+    S_23(r) ≈ 0.0876450969 * r^22  
+
+
+DIMENSION n = 24
+------------------------------
+  Volume Formula:
+    V_24(r) = (pi^12 / 479001600) * r^24
+    V_24(r) ≈ 0.0019295743 * r^24  
+  Surface Area Formula:
+    S_24(r) = (2 * pi^12 / 39916800) * r^23
+    S_24(r) ≈ 0.0463097834 * r^23  
+
+
+DIMENSION n = 25
+------------------------------
+  Volume Formula:
+    V_25(r) = (8192 * pi^12 / 7905853580625) * r^25
+    V_25(r) ≈ 0.0009577224 * r^25  
+  Surface Area Formula:
+    S_25(r) = (8192 * pi^12 / 316234143225) * r^24
+    S_25(r) ≈ 0.0239430602 * r^24  
+
+
+DIMENSION n = 26
+------------------------------
+  Volume Formula:
+    V_26(r) = (pi^13 / 6227020800) * r^26
+    V_26(r) ≈ 0.0004663028 * r^26  
+  Surface Area Formula:
+    S_26(r) = (2 * pi^13 / 479001600) * r^25
+    S_26(r) ≈ 0.0121238729 * r^25  
+
+
+DIMENSION n = 27
+------------------------------
+  Volume Formula:
+    V_27(r) = (16384 * pi^13 / 213458046676875) * r^27
+    V_27(r) ≈ 0.0002228721 * r^27  
+  Surface Area Formula:
+    S_27(r) = (16384 * pi^13 / 7905853580625) * r^26
+    S_27(r) ≈ 0.0060175474 * r^26  
+
+
+DIMENSION n = 28
+------------------------------
+  Volume Formula:
+    V_28(r) = (pi^14 / 87178291200) * r^28
+    V_28(r) ≈ 0.0001046381 * r^28  
+  Surface Area Formula:
+    S_28(r) = (2 * pi^14 / 6227020800) * r^27
+    S_28(r) ≈ 0.0029298669 * r^27  
+
+
+DIMENSION n = 29
+------------------------------
+  Volume Formula:
+    V_29(r) = (32768 * pi^14 / 6190283353629375) * r^29
+    V_29(r) ≈ 0.0000482878 * r^29  
+  Surface Area Formula:
+    S_29(r) = (32768 * pi^14 / 213458046676875) * r^28
+    S_29(r) ≈ 0.0014003469 * r^28  
+
+
+DIMENSION n = 30
+------------------------------
+  Volume Formula:
+    V_30(r) = (pi^15 / 1307674368000) * r^30
+    V_30(r) ≈ 0.0000219154 * r^30  
+  Surface Area Formula:
+    S_30(r) = (2 * pi^15 / 87178291200) * r^29
+    S_30(r) ≈ 0.0006574606 * r^29
