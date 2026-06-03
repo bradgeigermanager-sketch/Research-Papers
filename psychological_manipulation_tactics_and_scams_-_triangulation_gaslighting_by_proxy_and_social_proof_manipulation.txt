@@ -1,0 +1,31 @@
+Psychological Manipulation Tactics: -Triangulation- or -Gaslighting by Proxy-, combined with -Social Proof Manipulation-.
+
+These scams rely on a "manufactured consensus" to bypass the victim's critical thinking. By engineering a false impression in others, the scammer creates an artificial authority that they can then weaponize against you.
+
+### The Mechanism of the Scam
+
+The process typically follows a structured, multi-stage procedure:
+
+1. **Impression Management (Planting):** The scammer meticulously crafts a false narrative or identity. They share this "information" with a group or a specific person, ensuring that this initial audience adopts the desired, inaccurate perception.
+2. **The Feedback Loop (The "Corroboration"):** The scammer introduces you to the people they previously misled. Because these people genuinely believe the scammer’s false narrative, their outward behavior and statements serve as "independent" validation of the scammer's lies.
+3. **Validation Exploitation:** The scammer points to the group's reaction as proof of their own legitimacy. When you question the scammer, they respond: *"Everyone else agrees with me; why are you the only one who thinks this is wrong?"* ---
+
+### Terminology for this Tactic
+
+* **Manufacturing Consensus (or False Consensus Effect):** The scammer creates an environment where a group acts as a echo chamber, reinforcing the lie until it is accepted as social reality.
+* **Triangulation:** A classic tactic often seen in high-conflict relationships where a third party is used to validate, enable, or reinforce the manipulator's version of reality.
+* **Social Proof Manipulation:** Using the perceived wisdom or agreement of a crowd to influence an individual’s decision-making. If "everyone" believes the claim, the victim is pressured to conform to avoid social isolation.
+* **The "Straw Man" Authority:** The scammer presents the opinions of people who have been misled as if those opinions were evidence-based findings, effectively using an "ignorant" group as an expert witness.
+
+---
+
+### Generalized Procedure: Identifying and Deflecting Manufactured Consensus
+
+When you suspect you are being subjected to this form of manipulation, you can use the following procedure to maintain perspective and protect yourself:
+
+| Phase | Task | Actionable Steps |
+| --- | --- | --- |
+| **I. Analyze** | **Identify the Loop** | Observe if the "corroboration" provided by the group is based on *independent evidence* or if they are simply repeating the scammer’s narrative. |
+| **II. Verify** | **Isolate Sources** | Speak to members of the group individually. Ask them for the *source* of their belief. If they all point back to the scammer, you have identified a closed, manipulated loop. |
+| **III. Deflect** | **De-personalize** | When the scammer uses the group to pressure you, remove the group from the equation. Focus entirely on the *evidence* behind the claim, regardless of who believes it. |
+| **IV. Protect** | **Set Boundaries** | Stop using the manipulated group as a sounding board for the issue. Their input is compromised; seek information from neutral, third-party sources. |
