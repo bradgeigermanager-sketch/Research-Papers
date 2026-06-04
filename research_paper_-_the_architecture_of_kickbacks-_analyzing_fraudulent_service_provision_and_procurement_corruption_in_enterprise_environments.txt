@@ -52,41 +52,10 @@ The arrangement of unwarranted service calls in exchange for kickbacks is a prof
 
 ## Document Production & Instruction Library
 
-### I. Collected Formatting & Instruction Tips
-
-* **Document Structure:** Utilize a clear hierarchy consisting of `Title`, `Abstract`, `Numbered Sections` for academic flow, and a concluding summary.
-* **Visual Organization:** Employ bulleted lists for typologies and multi-step concepts to ensure scannability without sacrificing academic rigor.
-* **Tone & Voice:** Maintain an objective, analytical, and formal academic tone. Avoid first-person pronouns; favor passive voice or objective active voice where appropriate.
-* **Keyword Integration:** Seamlessly integrate prior conceptual discussions (e.g., UEBA, gradient anomalies, entropy, behavioral baselines) into the narrative flow to ensure contextual continuity.
-* **Accessibility Standards (Forms/Libraries):** All generated tables and template forms must utilize clear header rows. Blanks/slots must be clearly delineated with brackets `[ ]` and descriptive text to aid screen readers and visual parsing. `<label>` tags should be implemented when converting to digital interfaces. Ensure high-contrast visual indicators for all mandatory fields.
-
-### II. Task & Sub-Task Library Catalog
+### I. Task & Sub-Task Library Catalog
 
 | Task ID | Task Description | Purpose / Output Type |
 | --- | --- | --- |
 | **SEC-VEND-001** | Security Vendor Authorization & Verification | Procedural Checklist / Access Control Protocol |
 | **SRV-GOV-001** | Service Provision Governance & Scoping | Policy Documentation / Contractual Baseline |
-| **ACA-PAP-001** | Academic Research Paper Generation | Analytical Output / Conceptual Synthesis |
-| **ACA-PAP-002** | Fraud Typology & Insider Threat Analysis | Academic Output / Exploit & Mitigation Synthesis |
-
-### III. Generalized Procedure Templates (Generic Style)
-
-#### Procedure ID: ACA-PAP-002 - Fraud Typology & Insider Threat Analysis
-
-**Description:** Generalized procedure for drafting academic-style analyses focusing on insider threats, fraud mechanisms, and the exploitation of administrative authority.
-
-**Accessibility Notes:** When translating this form to a digital interface, ensure all `[ ]` input fields are paired with `<label>` tags. Provide high-contrast visual indicators for required fields.
-
-**Input Requirements (Search/Request Prompts):**
-
-* *Data to be searched:* Current auditing standards for `[Specific Fraud Vector]`, recent case studies regarding `[Type of Collusion/Insider Threat]`.
-* *Information to request from user:* Specific organizational hierarchy to model, preferred mitigation frameworks (e.g., Zero Trust, SoD), target length.
-
-**Execution Steps:**
-
-1. **Define the Vulnerability:** Establish the core administrative or security gap allowing `[Specific Fraud Vector]`.
-2. **Draft Abstract:** Summarize the internal threat, the mechanism of collusion with `[External Entity]`, and the proposed analytical solution.
-3. **Construct Introduction:** Contextualize the threat within the broader landscape of `[Enterprise Security / Fraud Prevention]`.
-4. **Detail Mechanisms of Exploitation:** Analyze step-by-step how the insider utilizes `[Specific Authority/Access]` to bypass standard controls.
-5. **Formulate Detection & Mitigation:** Apply cross-domain analytics (e.g., linking `[Financial Data]` with `[Behavioral/Access Data]`) to create a defensive strategy.
-6. **Finalize Review:** Ensure compliance with the Collected Formatting & Instruction Tips.
+| **ACA-PAP-002** | Fraud Typology & Insider Threat Analysis | Analysis / Exploits & Mitigation Synthesis |
