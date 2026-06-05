@@ -563,3 +563,145 @@ One sign alone may be nothing.
 **Multiple signs together indicate someone is actively researching you.**
 
 ---
+
+If someone is using **public data** to learn about you — not hacking, not breaching, just pulling what’s already out there — the signs are subtle but recognizable. Public‑data OSINT tends to leave a different “signature” than social‑media monitoring because it relies on **records, archives, and third‑party sources** you may not even remember exist.
+
+Below is a clear, structured breakdown of the most reliable indicators.
+
+---
+
+# 🔍 The Most Telling Signs Someone Is Using Public Data About You
+
+## 🧩 1. **They know official details you never shared**  
+Public records often include things people don’t casually know.
+
+Signs:  
+- They know your **middle name**  
+- They know your **previous addresses**  
+- They know your **property ownership history**  
+- They know your **registered business information**  
+- They know your **voter registration party** (in some states)  
+
+These details usually come from government or commercial databases, not social media.
+
+---
+
+## 🧩 2. **They reference your past residences or moves**  
+If someone mentions:  
+- “Didn’t you used to live near ___?”  
+- “You moved here around 2018, right?”  
+- “Your old place was on ___ Street, wasn’t it?”  
+
+…that’s a strong sign they’ve looked at property or address‑history databases.
+
+---
+
+## 🧩 3. **They know about your family members without being told**  
+Public data often links people through:  
+- Property co‑ownership  
+- Marriage records  
+- Obituaries  
+- Public family trees  
+- Court filings  
+
+Signs:  
+- They know your parents’ or siblings’ names  
+- They know who you live with  
+- They know your emergency contacts or relatives’ addresses  
+
+This is classic public‑record OSINT.
+
+---
+
+## 🧩 4. **They know your age or birthdate exactly**  
+Birthdates appear in:  
+- Voter rolls  
+- Data broker listings  
+- Public background‑check sites  
+- Old school or sports records  
+
+If someone knows your exact age or birthday without you telling them, they likely pulled it from a public source.
+
+---
+
+## 🧩 5. **They know about old jobs, licenses, or certifications**  
+Public data often includes:  
+- Professional licenses  
+- Business registrations  
+- Old résumés cached online  
+- Public LinkedIn data  
+- State licensing boards  
+
+Signs:  
+- They know about a job you had years ago  
+- They reference a certification you forgot you had  
+- They know your employer history in order  
+
+This usually comes from public databases or cached pages.
+
+---
+
+## 🧩 6. **They reference legal or court information**  
+Court records are public in most states.
+
+Signs:  
+- They know about a past lawsuit, ticket, or filing  
+- They reference a divorce, name change, or small‑claims case  
+- They know about a restraining order or civil judgment  
+
+If you never told them, they likely searched public court portals.
+
+---
+
+## 🧩 7. **They know property or financial details**  
+Property records are public almost everywhere.
+
+Signs:  
+- They know when you bought your home  
+- They know the price you paid  
+- They know the square footage or parcel number  
+- They know if you co‑own property with someone  
+
+This information is easily accessible through county assessor sites.
+
+---
+
+## 🧩 8. **They know your phone number or email variations**  
+Data brokers often list:  
+- Old phone numbers  
+- Alternate emails  
+- Previous usernames  
+- Associated accounts  
+
+Signs:  
+- They contact you on an email you rarely use  
+- They know an old phone number you forgot  
+- They reference usernames from unrelated platforms  
+
+This suggests they’re pulling from commercial public‑data aggregators.
+
+---
+
+## 🧩 9. **They know things you only shared with institutions, not people**  
+Examples:  
+- Your college major or graduation year  
+- Your sports team roster from high school  
+- Your professional license renewal date  
+- Your business filings or EIN  
+
+These come from institutional public records, not social media.
+
+---
+
+# 🧠 The deeper insight  
+When someone uses **public data**, the pattern looks different from social‑media monitoring:
+
+- They know **official**, not casual, details  
+- They know **historical** information you forgot existed  
+- They know **family connections** you didn’t share  
+- They know **addresses, dates, and records** that only appear in public databases  
+- They know **structured facts**, not personal stories  
+
+It feels less like someone is “watching” you and more like someone has **researched** you.
+
+---
