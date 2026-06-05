@@ -1,0 +1,246 @@
+Dataset linkage attacks happen when an attacker takes **two or more datasets that look harmless on their own** and combines them to reveal identities or sensitive facts. It’s one of the most common ways “anonymized” data gets broken.
+
+Below is a clear, structured explanation with examples, visuals, and Guided Links so you can explore any part more deeply.
+
+---
+
+## 🔍 What a dataset linkage attack is  
+A dataset linkage attack occurs when someone links **quasi‑identifiers** (indirect clues) across datasets to re‑identify individuals.
+
+Examples of quasi‑identifiers:  
+- ZIP code  
+- Birthdate  
+- Gender  
+- Location + time  
+- Movie ratings  
+- Search queries  
+
+These aren’t private by themselves — but together, they become a fingerprint.
+
+---
+
+## 🧩 How linkage attacks work  
+Here’s the basic process:
+
+1. **Find overlapping attributes**  
+   The attacker looks for fields that appear in both datasets (e.g., ZIP code + age).
+
+2. **Cross‑match records**  
+   They match rows from one dataset to rows in another using those shared attributes.
+
+3. **Narrow down uniqueness**  
+   If only one person fits the combination, the identity is revealed.
+
+4. **Extract sensitive info**  
+   Once the identity is known, all associated data becomes exposed.
+
+---
+
+## 📌 Real‑world examples of linkage attacks  
+These are some of the most famous cases where linkage broke “anonymous” data.
+
+### 1. **Netflix Prize + IMDb**  
+Netflix released anonymized movie ratings. IMDb has public ratings.  
+By linking rating patterns, researchers identified specific Netflix users.
+
+Why it worked:  
+Movie rating patterns are unique — like a fingerprint.
+
+---
+
+### 2. **Massachusetts Hospital Data + Voter Rolls**  
+The state released anonymized hospital records.  
+Voter rolls contain ZIP code, birthdate, and gender.
+
+Linking the two datasets revealed the governor’s medical records.
+
+Why it worked:  
+87% of Americans are uniquely identifiable by ZIP + birthdate + gender.
+
+---
+
+### 3. **NYC Taxi Logs + Public Photos**  
+NYC released taxi trip data.  
+Paparazzi photos show celebrities entering taxis at specific times.
+
+Linking timestamps exposed celebrities’ trips and tips.
+
+Why it worked:  
+Time + location is extremely identifying.
+
+---
+
+### 4. **Strava Heatmap + Satellite Imagery**  
+Strava published global fitness heatmaps.  
+Satellite imagery shows building layouts.
+
+Linking the two revealed secret military bases and patrol routes.
+
+Why it worked:  
+Sparse data in remote areas becomes highly identifying.
+
+---
+
+## 🧠 Why linkage attacks are so powerful  
+Even if each dataset is “safe,” combining them creates a **mosaic effect** — small pieces form a complete picture.
+
+
+
+
+
+Key reasons linkage works:  
+- Humans have unique behavior patterns  
+- Geography and time are extremely identifying  
+- Public datasets are everywhere (voter rolls, social media, business records)  
+- Attackers only need a few overlapping clues  
+
+---
+
+## 🔐 What makes a dataset vulnerable  
+A dataset is at high risk of linkage if it contains:
+
+- **Quasi‑identifiers** (ZIP, age, gender)  
+- **Location data** (GPS, neighborhoods, routes)  
+- **Temporal data** (timestamps, sequences)  
+- **Behavioral patterns** (ratings, purchases, searches)  
+- **Sparse categories** (rare diseases, small towns)  
+
+Even if names are removed, these patterns can identify someone.
+
+---
+
+## 🛡️ How to defend against linkage attacks  
+Organizations use techniques like:
+
+- **k‑anonymity**  
+- **l‑diversity**  
+- **Differential privacy**  
+- **Generalization**  
+- **Noise injection**  
+
+Each method reduces the uniqueness of records so they can’t be linked.
+
+-
+-
+
+A clean, concrete walk‑through of a linkage attack, using a hospital‑data + voter‑roll style example.
+
+---
+
+### Scenario setup
+
+- **Dataset A (released “anonymized”)**: Hospital records  
+  - Fields: ZIP code, birthdate, gender, diagnosis, visit dates  
+  - Names and direct identifiers removed  
+
+- **Dataset B (public)**: Voter registration records  
+  - Fields: Name, address, ZIP code, birthdate, gender  
+
+The goal of the attacker: connect “anonymous” hospital records to real people.
+
+---
+
+### Step 1: Collect candidate datasets
+
+**Action:**  
+The attacker finds two datasets that likely describe the same population or overlap heavily (e.g., residents of the same state or city).
+
+- Hospital discharge data (de‑identified but detailed)   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12844594/)  
+- Public voter rolls or other registries with names and demographics   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC3638181/)  
+
+**Why this matters:**  
+Linkage only works if there are shared attributes across datasets.
+
+---
+
+### Step 2: Identify quasi‑identifiers
+
+**Action:**  
+The attacker scans both datasets to find fields that appear in both:
+
+- ZIP code  
+- Birthdate  
+- Gender  
+
+These are **quasi‑identifiers**—not secret by themselves, but powerful in combination.   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12844594/)  
+
+**Why this matters:**  
+These shared fields become the “keys” for matching records.
+
+---
+
+### Step 3: Standardize and clean the data
+
+**Action:**  
+The attacker normalizes formats so they line up:
+
+- Convert dates to the same format (e.g., YYYY‑MM‑DD)  
+- Normalize ZIP codes (5‑digit vs 9‑digit)  
+- Ensure gender codes match (M/F vs 0/1)  
+
+**Why this matters:**  
+Small formatting differences can prevent matches; cleaning maximizes linkage success.
+
+---
+
+### Step 4: Generate candidate matches
+
+**Action:**  
+For each hospital record, the attacker searches the voter roll for people with the **same**:
+
+- ZIP code  
+- Birthdate  
+- Gender  
+
+This can be done with simple database joins or scripts—no fancy AI required.   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC3638181/)  
+
+**Why this matters:**  
+Now each “anonymous” hospital row has a small set of possible real‑world identities.
+
+---
+
+### Step 5: Exploit uniqueness
+
+**Action:**  
+The attacker looks for **unique combinations**:
+
+- If only **one** voter in that ZIP has that exact birthdate and gender, the match is effectively certain.  
+- If there are a few candidates, the attacker may still narrow it down using extra fields (e.g., race, party, or city).   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12844594/)  
+
+**Why this matters:**  
+Research has shown that a large fraction of people are uniquely identifiable by ZIP + birthdate + gender alone.
+
+---
+
+### Step 6: Attach sensitive attributes
+
+**Action:**  
+Once a hospital record is linked to a specific person from the voter roll:
+
+- The attacker now knows that **this named person** had **this diagnosis**, **this procedure**, or **this visit history**.  
+- Sensitive medical details—originally “anonymous”—are now tied to a real identity.   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC3638181/)  
+
+**Why this matters:**  
+The privacy of the entire “anonymized” dataset is undermined, not just one person.
+
+---
+
+### Step 7: Scale up and refine
+
+**Action:**  
+The attacker automates the process:
+
+- Runs linkage across all records  
+- Uses probabilistic matching for near‑matches (e.g., small date errors)  
+- Validates a subset manually to estimate accuracy  
+
+**Why this matters:**  
+Even if only a fraction of records are confidently re‑identified, that can be enough to cause serious privacy harm and demonstrate that the anonymization is broken.   [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC11717198/)  [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12844594/)  
+
+---
+
+### The core insight
+
+A linkage attack is basically this:
+
+> “Find overlapping clues across datasets, then let uniqueness do the work.”
