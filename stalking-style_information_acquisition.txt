@@ -1,0 +1,565 @@
+**“Stalking‑type” information‑acquisition techniques**, as **security‑analysis categories**.  
+The methods security professionals study so they can *defend* against them.
+
+---
+
+# 🧩 The Major Categories of Stalking‑Style Information Acquisition  
+
+
+---
+
+## 1. **Open‑Source Intelligence (OSINT)**  
+This is when someone gathers information from publicly available sources.
+
+Common sources:  
+- Social media posts  
+- Public records (property, voter, business filings)  
+- Online photos with metadata  
+- Public event check‑ins  
+- Comments, reviews, or forum posts  
+
+**Why it’s dangerous:**  
+People often reveal more than they realize — routines, locations, relationships, and habits.
+
+---
+
+## 2. **Digital Footprint Mining**  
+This involves collecting traces a person leaves online.
+
+Examples:  
+- Username reuse across platforms  
+- Old accounts that were never deleted  
+- Cached or archived pages  
+- Leaked databases from unrelated breaches  
+
+**Risk:**  
+Patterns across accounts can reveal identity, location, or personal details.
+
+---
+
+## 3. **Metadata Exploitation**  
+Metadata is the hidden information attached to files.
+
+Examples:  
+- Photo EXIF data showing GPS coordinates  
+- Document metadata revealing author names  
+- Video backgrounds revealing location clues  
+
+**Risk:**  
+Even when content seems harmless, metadata can expose sensitive details.
+
+---
+
+## 4. **Social Graph Reconstruction**  
+This is when someone maps out your relationships.
+
+Sources:  
+- Tagged photos  
+- Mutual friends  
+- Comments and likes  
+- Public group memberships  
+
+**Risk:**  
+It reveals who you live with, who you trust, and who you interact with most.
+
+---
+
+## 5. **Routine Pattern Analysis**  
+This involves inferring someone’s schedule.
+
+Clues:  
+- Posting times  
+- Gym check‑ins  
+- Work commute photos  
+- “Good morning” or “heading home” posts  
+
+**Risk:**  
+Predictable routines create vulnerability windows.
+
+---
+
+## 6. **Geospatial Inference**  
+This is when someone deduces your location from indirect clues.
+
+Examples:  
+- Landmarks in the background of photos  
+- Shadows indicating time of day  
+- Weather patterns matching a region  
+- Reflections in windows or glasses  
+
+**Risk:**  
+Even without GPS, location can be triangulated.
+
+---
+
+## 7. **Cross‑Platform Correlation**  
+This is when someone links accounts across different sites.
+
+Clues used:  
+- Writing style  
+- Profile pictures  
+- Favorite phrases  
+- Similar follower lists  
+
+**Risk:**  
+Once accounts are linked, privacy collapses across platforms.
+
+---
+
+## 8. **Data Breach Aggregation**  
+Attackers combine leaked data from multiple breaches.
+
+Examples:  
+- Email from one breach  
+- Phone number from another  
+- Address from a third  
+
+**Risk:**  
+Even if each breach seems minor, the combined dataset becomes powerful.
+
+---
+
+## 9. **Physical‑World Observation**  
+This is offline information gathering.
+
+Examples:  
+- Watching someone’s home  
+- Following them in public  
+- Noting their car, license plate, or routine stops  
+
+**Risk:**  
+Offline stalking often complements online data.
+
+---
+
+## 10. **Indirect Information Harvesting**  
+This is when someone gathers info about you through others.
+
+Examples:  
+- Friends posting photos of you  
+- Family tagging your location  
+- Coworkers sharing your schedule  
+- Group photos revealing your presence  
+
+**Risk:**  
+You can be exposed even if *you* are careful.
+
+---
+
+# 🧠 A deeper insight  
+Most stalking‑style information gathering is **not about hacking** — it’s about **connecting dots** that people unintentionally leave scattered across the digital and physical world.
+
+The most dangerous attacks combine:  
+- OSINT  
+- Metadata  
+- Social graph analysis  
+- Routine inference  
+- Cross‑platform correlation  
+
+This creates a **full profile** without ever breaching a system.
+
+---
+
+One of the most important personal‑security questions:  
+**How do you recognize when someone is quietly gathering information about you?**  
+Not in a dramatic movie sense — but in the subtle, pattern‑based ways that real‑world stalkers, harassers, or overly curious individuals operate.
+
+Below is a clear, structured breakdown of the **behavioral, digital, and social signs** that someone is collecting information about a person.
+
+---
+
+# 🔍 The Major Signs Someone Is Gathering Information About You
+
+## 🧩 1. **Unusual Interest in Your Routine**  
+People who are collecting information often try to map your schedule.
+
+Common signs:  
+- They “coincidentally” show up where you are too often  
+- They comment on your habits (“You always go to the gym around 6, right?”)  
+- They know when you’re home or away without being told  
+
+This is often the earliest red flag.
+
+---
+
+## 🧩 2. **Questions That Don’t Fit the Context**  
+Someone may ask for details that feel too specific or out of place.
+
+Examples:  
+- “What time do you usually get off work?”  
+- “Do you live alone?”  
+- “Where exactly is your apartment?”  
+- “What gym do you go to?”  
+
+These questions are subtle but targeted.
+
+---
+
+## 🧩 3. **Cross‑Platform Awareness**  
+If someone references things you posted on different platforms — especially old or obscure ones — they may be correlating your accounts.
+
+Signs:  
+- They mention posts you forgot existed  
+- They know usernames you used years ago  
+- They bring up accounts you never shared with them  
+
+This is a classic OSINT‑style behavior.
+
+---
+
+## 🧩 4. **Knowledge of Your Location Without Being Told**  
+This is one of the strongest indicators.
+
+Examples:  
+- “I saw you were downtown earlier.”  
+- “You must live near the west side, right?”  
+- They know when you’re traveling or out of town  
+
+Even if they don’t say it directly, they may hint at it.
+
+---
+
+## 🧩 5. **Interest in Your Social Circle**  
+People gathering info often map your relationships.
+
+Signs:  
+- Asking about your friends, coworkers, or family repeatedly  
+- Adding your friends on social media without knowing them  
+- Showing interest in who you spend time with  
+
+This is how they build a “social graph.”
+
+---
+
+## 🧩 6. **Monitoring Your Online Activity**  
+This can be subtle.
+
+Examples:  
+- They react instantly to your posts, no matter the time  
+- They bring up things you only posted briefly  
+- They reference deleted posts  
+
+This suggests they’re watching closely or using alerts.
+
+---
+
+## 🧩 7. **Collecting Small Details Over Time**  
+Instead of asking big questions, they gather tiny pieces.
+
+Examples:  
+- “What’s your dog’s name again?”  
+- “What street is that coffee shop near your place?”  
+- “What time do you usually walk your dog?”  
+
+Individually harmless — together, revealing.
+
+---
+
+## 🧩 8. **Showing Up in Your Physical Space**  
+Offline observation is still common.
+
+Signs:  
+- They appear in places you didn’t tell them you’d be  
+- They linger near your home, workplace, or usual spots  
+- You notice the same car or person repeatedly  
+
+Patterns matter more than single events.
+
+---
+
+## 🧩 9. **Using Information You Never Shared**  
+This is the biggest red flag.
+
+Examples:  
+- They know your birthday, address, or workplace without being told  
+- They reference private details you only shared with someone else  
+- They know things you only said in one‑on‑one conversations  
+
+This suggests they’re gathering info indirectly or through others.
+
+---
+
+# 🧠 The deeper insight  
+People who gather information rarely do it all at once.  
+They do it through **patterns**:
+
+- Small questions  
+- Frequent coincidences  
+- Cross‑platform awareness  
+- Knowledge of your schedule  
+- Interest in your relationships  
+- Awareness of your location  
+
+One sign alone may be nothing.  
+**Multiple signs together form a pattern worth paying attention to.**
+
+---
+
+If you’re trying to figure out whether someone is quietly **monitoring your social media**, the signs are rarely dramatic. They’re subtle, patterned, and often spread across multiple platforms. Below is a clear, structured breakdown of the most reliable indicators.
+
+---
+
+# 🔍 The Most Common Signs Someone Is Monitoring Your Social Media
+
+## 🧩 1. **Instant or Unusually Fast Engagement**  
+If someone consistently reacts to your posts within seconds or minutes — regardless of time of day — it may indicate they have:  
+- Notifications turned on for your activity  
+- Your profile open in a tab  
+- A habit of checking your page frequently  
+
+One or two fast likes is normal. A *pattern* is not.
+
+---
+
+## 🧩 2. **Engagement With Old Content**  
+This is one of the strongest signals.
+
+Examples:  
+- Liking posts from months or years ago  
+- Commenting on old photos  
+- Viewing old stories or highlights repeatedly  
+
+This suggests they’re scrolling deep into your history.
+
+---
+
+## 🧩 3. **Cross‑Platform Awareness**  
+If someone references things you posted on different platforms — especially ones you never told them about — they may be correlating your accounts.
+
+Signs:  
+- “I saw your post earlier” (but you didn’t post it on the platform they follow)  
+- They follow your new accounts immediately  
+- They know about accounts you never shared  
+
+This is a classic OSINT‑style monitoring pattern.
+
+---
+
+## 🧩 4. **Watching Every Story**  
+Story‑view behavior is revealing.
+
+Patterns to watch:  
+- They appear at the top of your viewer list every time  
+- They view stories instantly, even at odd hours  
+- They watch every single story, even low‑effort ones  
+
+This suggests active monitoring rather than casual browsing.
+
+---
+
+## 🧩 5. **Referencing Things You Posted Then Deleted**  
+If someone mentions:  
+- A story you deleted quickly  
+- A post you removed  
+- A caption you edited  
+
+…it means they’re watching closely or using alerts.
+
+---
+
+## 🧩 6. **Engaging Only When You Post Certain Things**  
+Monitoring isn’t always constant — sometimes it’s *targeted*.
+
+Examples:  
+- They only react to posts about your location  
+- They only comment when you appear with certain people  
+- They only message you after you post selfies or personal updates  
+
+This suggests they’re tracking specific categories of information.
+
+---
+
+## 🧩 7. **Sudden Knowledge of Your Offline Activity**  
+If someone knows where you were, who you were with, or what you were doing — based solely on your posts — it may indicate they’re watching closely.
+
+Examples:  
+- “I saw you were downtown earlier.”  
+- “Looks like you went hiking today.”  
+- “You must live near that coffee shop.”  
+
+This is especially concerning if you didn’t share much detail.
+
+---
+
+## 🧩 8. **They Show Up in Your Physical Space After You Post**  
+This is a major red flag.
+
+Examples:  
+- They appear at places you post from  
+- They show up shortly after you share a location  
+- They “coincidentally” run into you too often  
+
+This suggests they’re using your posts to track your movements.
+
+---
+
+## 🧩 9. **They Interact With Your Friends’ Posts About You**  
+Monitoring often extends to your social circle.
+
+Signs:  
+- They like or comment on posts where you’re tagged  
+- They follow your friends or family suddenly  
+- They reference things your friends posted about you  
+
+This is indirect monitoring — but still monitoring.
+
+---
+
+# 🧠 The deeper insight  
+Monitoring rarely looks like one big dramatic action.  
+It looks like **patterns**:
+
+- Fast reactions  
+- Deep scrolling  
+- Cross‑platform awareness  
+- Story‑view consistency  
+- Knowledge of deleted content  
+- Awareness of your offline life  
+- Sudden interest in your social circle  
+
+One sign alone may be harmless.  
+**Multiple signs together tell a story.**
+
+---
+
+If someone is using **OSINT techniques** on a person, the signs are subtle, patterned, and often spread across their online and offline life. OSINT isn’t hacking — it’s **collecting publicly available information** and connecting dots. The key is recognizing when someone is doing more than casual browsing.
+
+Below is a structured breakdown of the most reliable indicators.
+
+---
+
+# 🔍 The Most Telling Signs Someone Is Using OSINT on You
+
+## 🧩 1. **Cross‑Platform Awareness**  
+OSINT users often correlate your accounts across platforms.
+
+Signs:  
+- They reference posts from accounts you never shared with them  
+- They know usernames you used years ago  
+- They follow or view new accounts immediately after you create them  
+- They mention things you posted on obscure or old platforms  
+
+This is one of the strongest indicators.
+
+---
+
+## 🧩 2. **Knowledge of Old or Buried Content**  
+OSINT involves deep scrolling and archive searching.
+
+Signs:  
+- They bring up posts from years ago  
+- They reference old photos, comments, or bios  
+- They mention things you forgot you posted  
+- They know about deleted or edited content  
+
+This suggests deliberate research, not casual browsing.
+
+---
+
+## 🧩 3. **Awareness of Your Social Graph**  
+OSINT practitioners map your relationships.
+
+Signs:  
+- They know who your friends, coworkers, or family are  
+- They follow or interact with people close to you  
+- They reference connections you never mentioned  
+- They know who you spend time with offline  
+
+This is how they build a relational map.
+
+---
+
+## 🧩 4. **Pattern Recognition About Your Routine**  
+OSINT often includes schedule inference.
+
+Signs:  
+- They know when you’re usually home or away  
+- They comment on your habits (“You always post late at night”)  
+- They show up online exactly when you do  
+- They anticipate your movements or activities  
+
+Routine analysis is a classic OSINT behavior.
+
+---
+
+## 🧩 5. **Location Inference Without Direct Disclosure**  
+OSINT users extract location clues from photos, posts, and metadata.
+
+Signs:  
+- They know your neighborhood without being told  
+- They mention places you’ve been without you tagging them  
+- They comment on your travel or outings based on tiny clues  
+- They know when you’re out of town  
+
+This is especially concerning if you rarely share location data.
+
+---
+
+## 🧩 6. **Interest in Your Metadata or Background Details**  
+OSINT often involves analyzing what’s *around* the content.
+
+Signs:  
+- They comment on objects in the background of your photos  
+- They notice details like reflections, shadows, or landmarks  
+- They reference information that could only come from metadata  
+- They mention timestamps or patterns in your posting behavior  
+
+This is a sign of deeper analysis.
+
+---
+
+## 🧩 7. **Collecting Small Details Over Time**  
+OSINT is often slow and cumulative.
+
+Signs:  
+- They ask many small, seemingly harmless questions  
+- They remember tiny details you barely recall sharing  
+- They bring up things you said months ago  
+- They piece together fragments from different conversations  
+
+This is how a profile is built.
+
+---
+
+## 🧩 8. **Following Your Digital Footprint Across the Web**  
+OSINT users often track your presence beyond social media.
+
+Signs:  
+- They know about old blogs, forums, or gaming accounts  
+- They reference usernames you used in unrelated communities  
+- They bring up old reviews, comments, or public records  
+- They know about accounts you forgot existed  
+
+This indicates deliberate searching.
+
+---
+
+## 🧩 9. **They Know Things You Never Directly Shared**  
+This is the biggest red flag.
+
+Examples:  
+- Your workplace, address, or school  
+- Your relatives’ names  
+- Your past jobs or old photos  
+- Your hobbies or memberships  
+
+If you didn’t tell them, they got it from somewhere else.
+
+---
+
+# 🧠 The deeper insight  
+OSINT monitoring rarely looks like hacking.  
+It looks like **patterned curiosity**:
+
+- Cross‑platform knowledge  
+- Deep historical digging  
+- Social‑circle mapping  
+- Routine analysis  
+- Location inference  
+- Metadata awareness  
+- Accumulating small details  
+
+One sign alone may be nothing.  
+**Multiple signs together indicate someone is actively researching you.**
+
+---
