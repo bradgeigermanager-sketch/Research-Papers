@@ -1,0 +1,87 @@
+## Legal responsibility
+
+In law, the core idea is simple: **if you authorize a communication, you own its consequences**, even if you never read the final text.
+
+- **Agency framework:** A principal is liable for acts of an agent done with actual or apparent authority, and for torts within the scope of employment under respondeat superior.   [legalclarity.org](https://legalclarity.org/restatement-of-agency-authority-duties-and-liability-3/)  [arhfoundation.org](https://www.arhfoundation.org/principal-liable-damages-agent-guide)  
+- **Misaligned communication:** If the agent’s message deviates from your subjective intent but remains within the scope of authority as reasonably perceived by third parties, you are typically still bound.   [verdictwell.com](https://verdictwell.com/principals-liability-for-agent-actions/)  
+- **Ratification:** Even unauthorized communications can bind you if you later accept the benefits or fail to repudiate them once known.   [verdictwell.com](https://verdictwell.com/principals-liability-for-agent-actions/)  
+
+A full paper here could track:
+- the Restatement (Third) of Agency’s treatment of authority and estoppel  
+- case law on misstatements, misdirected letters, and “rogue” agents  
+- how courts balance principal protection vs. marketplace reliance.
+
+---
+
+## Agency and authority
+
+This is the doctrinal backbone: **who can bind whom, and why**.
+
+- **Actual authority:** Express or implied from the principal’s manifestations to the agent; if present, the principal is bound regardless of third‑party knowledge.   [legalclarity.org](https://legalclarity.org/restatement-of-agency-authority-duties-and-liability-3/)  [lexplug.com](https://www.lexplug.com/outlines/business-associations/agency-law-fundamentals/liability-in-contract)  
+- **Apparent authority:** Exists when a third party reasonably believes the agent has authority based on the principal’s conduct; protects reliance even if internal limits exist.   [lexplug.com](https://www.lexplug.com/outlines/business-associations/agency-law-fundamentals/liability-in-contract)  
+- **Respondeat superior:** Vicarious liability for agents’ torts within the scope of employment, including negligent communications.   [podscan.fm](https://podscan.fm/podcasts/law-school/episodes/agency-and-partnership-part-four-principal-liability-in-contract-and-tort)  [arhfoundation.org](https://www.arhfoundation.org/principal-liable-damages-agent-guide)  
+
+A deeper paper could:
+- walk through the hierarchy of authority (actual → apparent → ratification)  
+- analyze “inherent agency power” and its retreat in the Third Restatement  
+- explore modern twists with remote work, digital signatures, and AI tools.
+
+---
+
+## AI‑generated communications
+
+Here, the law is still crystallizing, but the practical stance is blunt: **AI is a tool, not a legal scapegoat**.
+
+- **Attribution:** Courts and regulators generally treat AI‑generated text as the output of the human or entity that deployed the system, not as an independent actor.   [podscan.fm](https://podscan.fm/podcasts/law-school/episodes/agency-and-partnership-part-four-principal-liability-in-contract-and-tort)  
+- **Liability:** Misleading, defamatory, or negligent communications produced by AI at your direction are analyzed under existing doctrines—agency, negligence, product use—not “AI intent.”  
+- **Risk:** The opacity and probabilistic nature of models increase the chance of misalignment, but do not reduce responsibility.
+
+A full paper could:
+- survey emerging AI liability scholarship  
+- compare AI to traditional “agents” and to tools (like word processors)  
+- propose standards for “reasonable review” of AI‑drafted communications.
+
+---
+
+## Workplace delegation
+
+This is the lived, non‑theoretical layer: **how organizations manage the risk of speaking through others**.
+
+- **Operational reality:** Managers and executives must delegate communications to assistants, staff, and systems to function at scale.  
+- **Risk vectors:** Tone drift, over‑commitment, accidental admissions, and inconsistent messaging all arise when messages are sent without principal review.  
+- **Controls:** Policies, templates, approval workflows, and training aim to narrow the gap between principal intent and delegated output.
+
+A paper here could:
+- map common failure modes in delegated communication  
+- tie them to legal exposure (contract, employment, regulatory)  
+- propose governance frameworks for human + AI hybrid communication stacks.
+
+---
+
+## Communication theory
+
+Even before law gets involved, **communication itself is noisy**.
+
+- **Encoding/decoding:** The sender encodes intent into language; the receiver decodes based on their own context, assumptions, and prior knowledge.  
+- **Medium and channel:** Dictation, stenography, email, AI systems—all add layers where distortion can occur.  
+- **Intent vs. effect:** What you meant, what you said, what they heard, and what they *felt* are four different variables.
+
+A theoretical paper could:
+- apply Shannon‑style information theory to delegated messaging  
+- analyze “semantic noise” introduced by intermediaries (human or machine)  
+- connect these models to legal doctrines about reasonable interpretation.
+
+---
+
+## Historical practice: “Dictated but not read”
+
+This is the analog ancestor of today’s “sent via AI” reality.
+
+- **Notation:** Secretaries and stenographers often added “Dictated but not read” or “DBNR” to letters to signal that the principal did not personally proof the final text.  
+- **Function:** It served as a soft disclaimer—acknowledging possible transcription errors and signaling a more informal or hurried communication.  
+- **Limits:** It did not erase responsibility; the sender was still treated as the author, but the tag documented process and context.
+
+A historical paper could:
+- trace the emergence of DBNR in business and legal correspondence  
+- examine how courts and recipients treated such notations  
+- compare DBNR to modern disclaimers about automated or AI‑assisted messages.
