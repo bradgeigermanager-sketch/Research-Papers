@@ -1,0 +1,168 @@
+# **Paper 2 — Agency, Authority, and the Binding Power of Delegated Speech**  
+### *Why Someone Else’s Words Can Become Yours Under Law*
+
+## **Abstract**
+This paper examines the legal architecture of agency and authority as it applies to delegated communication. It explains why a principal can be bound by a communication they did not write, did not read, and may not have intended. Drawing on the Restatement (Third) of Agency, common‑law doctrine, and modern digital communication practices, the paper analyzes actual authority, apparent authority, estoppel, and respondeat superior. It cross‑references Paper 1 (legal responsibility), Paper 3 (AI attribution), and Paper 4 (organizational delegation) to situate agency doctrine within a broader framework of communication risk.
+
+---
+
+# **1. Introduction: Delegated Speech as a Legal Act**
+Delegated communication is not merely a practical convenience; it is a legally significant act. When a principal empowers another person to speak on their behalf, the law treats the agent’s words as the principal’s own. This is true even when:
+
+- the principal did not review the message  
+- the agent misunderstood instructions  
+- the communication contains errors  
+- the principal disagrees with the phrasing  
+
+Paper 1 established that legal responsibility attaches to delegated communications. This paper explains *why*—by unpacking the doctrinal machinery of agency and authority.
+
+---
+
+# **2. The Architecture of Agency Law**
+Agency law governs relationships in which one person (the agent) acts on behalf of another (the principal). The core principle is simple:
+
+> **A principal is bound by the acts of an agent acting with actual or apparent authority.**
+
+This principle applies to:
+- contracts  
+- statements  
+- commitments  
+- representations  
+- disclosures  
+- acknowledgments  
+
+Delegated communication is one of the most common forms of agency in practice.
+
+---
+
+# **3. Actual Authority: The Principal’s Manifestations to the Agent**
+Actual authority arises from the principal’s manifestations to the agent. It is divided into two forms:
+
+## **3.1 Express Actual Authority**
+This exists when the principal explicitly instructs the agent to act.
+
+Examples:
+- “Send this email for me.”  
+- “Draft and send the response.”  
+- “Tell them I agree.”  
+
+If the agent sends a message within the scope of these instructions, the principal is bound—even if the principal never saw the final text.
+
+## **3.2 Implied Actual Authority**
+Implied authority arises from:
+- the agent’s role  
+- customary practices  
+- prior dealings  
+- the nature of the task  
+
+A secretary who routinely sends correspondence on behalf of an executive has implied authority to continue doing so unless explicitly revoked.
+
+Paper 4 will explore how organizations structure and manage these implied authorities.
+
+---
+
+# **4. Apparent Authority: The Principal’s Manifestations to Third Parties**
+Apparent authority protects third parties who reasonably rely on the appearance of authority.
+
+It arises when:
+- the principal’s conduct  
+- the principal’s position  
+- the communication channel  
+- the organizational context  
+
+cause a third party to reasonably believe the agent is authorized.
+
+Examples:
+- An email sent from the principal’s account  
+- A message sent by someone with the title “Assistant to the Director”  
+- A communication sent through an official corporate system  
+
+Even if the principal privately limited the agent’s authority, the principal is bound if the third party’s reliance was reasonable.
+
+This doctrine is central to Paper 1’s analysis of legal responsibility.
+
+---
+
+# **5. Estoppel: When the Principal Cannot Deny Authority**
+Estoppel prevents a principal from denying authority when:
+- the principal’s conduct created a misleading impression  
+- a third party relied on that impression  
+- the third party would suffer harm if the principal disavowed the communication  
+
+Estoppel is especially relevant when:
+- the principal fails to correct misunderstandings  
+- the principal allows an agent to act in a way that suggests authority  
+- the principal benefits from the communication  
+
+Estoppel is a powerful doctrine because it binds the principal even when actual and apparent authority are absent.
+
+---
+
+# **6. Respondeat Superior: Vicarious Liability for Employee Communications**
+Under respondeat superior, employers are liable for torts committed by employees acting within the scope of employment.
+
+This includes:
+- negligent misstatements  
+- erroneous disclosures  
+- defamatory communications  
+- accidental commitments  
+
+If an employee sends a communication as part of their job duties, the employer is responsible—even if the employee acted carelessly or misunderstood instructions.
+
+This doctrine is a major theme in Paper 4’s discussion of organizational risk.
+
+---
+
+# **7. The Retreat of Inherent Agency Power**
+Historically, courts recognized “inherent agency power,” allowing agents to bind principals even without actual or apparent authority. The Restatement (Third) largely abandoned this doctrine, replacing it with more precise reliance‑based frameworks.
+
+However, remnants persist in:
+- corporate officer communications  
+- emergency situations  
+- ambiguous organizational hierarchies  
+
+These edge cases highlight the law’s preference for protecting third‑party reliance over internal principal–agent disputes.
+
+---
+
+# **8. Digital Signatures, Email Delegation, and Modern Extensions**
+Modern communication technologies amplify agency issues.
+
+### **8.1 Email Accounts**
+Courts treat emails sent from a principal’s account as presumptively authorized.
+
+### **8.2 Delegated Inboxes**
+Assistants with access to a principal’s inbox often possess both actual and apparent authority.
+
+### **8.3 Automated Systems**
+When automated systems send messages, the organization is treated as the speaker.
+
+### **8.4 AI Systems**
+Paper 3 will explain why AI cannot be an agent under current law—but why principals are still responsible for AI‑generated communications.
+
+---
+
+# **9. Why Agency Doctrine Binds Principals to Delegated Speech**
+The law binds principals to delegated communications for three reasons:
+
+### **9.1 Efficiency**
+Third parties must be able to rely on communications without investigating internal authorization structures.
+
+### **9.2 Risk Allocation**
+The principal is in the best position to:
+- choose agents  
+- supervise agents  
+- implement controls  
+- prevent errors  
+
+### **9.3 Fairness**
+If a principal benefits from delegation, they must also bear the risks.
+
+These rationales echo throughout Papers 1, 3, and 4.
+
+---
+
+# **10. Conclusion**
+Agency doctrine explains why delegated communication binds the principal even when the principal did not review the message. Actual authority, apparent authority, estoppel, and respondeat superior form a coherent framework that protects third‑party reliance and allocates risk to the party best positioned to manage it.
+
+Paper 3 will extend this analysis to AI systems, showing why AI is not an agent but why its outputs are still attributed to the human or organization that deploys it.
