@@ -1,0 +1,124 @@
+# **THE DELEGATED COMMUNICATION MONOGRAPH**  
+### *Intent, Agency, and Responsibility in Human and Machine‑Mediated Communication*
+
+---
+
+# **Preface**
+Delegated communication is one of the oldest and most persistent features of human organization. From ancient scribes to modern AI systems, individuals and institutions have always relied on intermediaries to express, transmit, and operationalize their intentions. Yet delegation introduces a fundamental tension: **the message sent may not match the message intended**.
+
+This monograph examines that tension across six dimensions:
+
+1. **Legal responsibility**  
+2. **Agency and authority**  
+3. **AI attribution**  
+4. **Organizational delegation**  
+5. **Communication theory**  
+6. **Historical practices**  
+
+Together, these chapters form a unified theory of delegated communication—explaining why misalignment is inevitable, why responsibility persists, and how societies have historically managed the risks.
+
+---
+
+# **Chapter 1 — Legal Responsibility for Delegated Communications**  
+### *How Law Treats Messages Sent in Your Name, Even When You Didn’t Read Them*
+
+This chapter establishes the legal foundation: if you authorize someone—or something—to speak for you, **you bear the consequences**. Courts focus not on subjective intent but on:
+
+- authority  
+- reliance  
+- risk allocation  
+
+Actual authority, apparent authority, and ratification form the backbone of legal responsibility. Even unreviewed communications bind the principal when sent through authorized channels. This chapter sets the stage for the doctrinal analysis in Chapter 2 and the AI‑specific attribution issues in Chapter 3.
+
+---
+
+# **Chapter 2 — Agency, Authority, and the Binding Power of Delegated Speech**  
+### *Why Someone Else’s Words Can Become Yours Under Law*
+
+This chapter explains *why* delegated communication binds the principal. Agency law rests on three pillars:
+
+- **Actual authority** (express or implied)  
+- **Apparent authority** (third‑party reliance)  
+- **Estoppel** (preventing denial of authority)  
+
+Respondeat superior extends liability to employee communications. The chapter also examines the retreat of “inherent agency power” and the rise of reliance‑based doctrines. These principles underpin the attribution logic applied to AI systems in Chapter 3 and the organizational practices in Chapter 4.
+
+---
+
+# **Chapter 3 — AI‑Generated Communications and the Law of Attribution**  
+### *Why AI Is a Tool, Not an Agent — and Why You Still Bear Responsibility*
+
+AI systems cannot be legal agents: they lack intent, consent, and personhood. Yet their outputs are attributed to the user because:
+
+- the user initiates the communication  
+- the user controls the system  
+- the user benefits from the output  
+
+Liability arises through **foreseeability** and **negligence**, not agency. This chapter explains why AI hallucinations, tone drift, and over‑confident phrasing still bind the human or organization deploying the system. It connects directly to the organizational governance issues in Chapter 4 and the communication‑theory limits in Chapter 5.
+
+---
+
+# **Chapter 4 — Delegation in the Workplace: Risk, Governance, and Communication Drift**  
+### *How Organizations Manage the Gap Between Intent and Output*
+
+This chapter shifts from doctrine to practice. Delegation is structurally necessary in organizations, but it introduces predictable failure modes:
+
+- tone drift  
+- commitment drift  
+- misinterpretation  
+- information leakage  
+- automation errors  
+
+Organizations respond with templates, approval chains, role‑based permissions, and audit trails. The chapter also analyzes hybrid human–AI communication stacks, where AI systems act as drafting assistants, summarizers, and automated responders. These dynamics illustrate the theoretical limits explored in Chapter 5.
+
+---
+
+# **Chapter 5 — Communication Theory and the Limits of Intent Transmission**  
+### *Why Perfect Alignment Between Intent and Delegated Output Is Impossible*
+
+This chapter provides the theoretical core of the monograph. Communication is a multi‑stage process involving:
+
+- intent  
+- expression  
+- interpretation  
+- action  
+
+Delegation multiplies the number of encoding and decoding steps, introducing noise at every stage. Perfect fidelity is impossible because:
+
+- language underdetermines intent  
+- intermediaries reinterpret instructions  
+- channels distort signals  
+- receivers decode through their own filters  
+
+These theoretical constraints explain why legal responsibility (Chapter 1), agency doctrine (Chapter 2), AI attribution (Chapter 3), and organizational controls (Chapter 4) all assume misalignment as a baseline condition.
+
+---
+
+# **Chapter 6 — “Dictated But Not Read”: Historical Precedents for Modern Delegation**  
+### *How Stenographers, Secretaries, and Early Office Systems Managed Unreviewed Messages*
+
+This chapter traces the origins of the “Dictated but not read” (DBNR) notation. DBNR served as:
+
+- an acknowledgment of delegation  
+- a softening mechanism  
+- a workflow marker  
+- a social signal  
+
+Courts treated DBNR letters as fully binding, just as modern law treats AI‑generated communications. The chapter shows that AI is not a radical break but the latest iteration of a centuries‑old pattern: humans delegating expressive labor to intermediaries and managing the resulting risks.
+
+---
+
+# **Conclusion — A Unified Theory of Delegated Communication**
+
+Across law, technology, organizations, and history, one principle emerges:
+
+> **Delegation is necessary, misalignment is inevitable, and responsibility persists.**
+
+The legal system protects reliance.  
+Organizations manage drift.  
+Communication theory explains distortion.  
+History shows we’ve been here before.
+
+AI does not change these fundamentals—it amplifies them.  
+The future of communication will not eliminate delegation; it will deepen it.  
+Understanding the structural limits and responsibilities of delegated communication is essential for navigating that future.
