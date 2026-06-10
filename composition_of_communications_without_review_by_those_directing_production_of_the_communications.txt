@@ -1,0 +1,88 @@
+If a secretary or a device composes a communication (at your direction) but you do not review it prior to sending or delivery, is it guaranteed that the communication will match your intent or purpose (presuming it is not directed verbatim)?
+
+Short answer: **No — it is never guaranteed.**  
+Whether it’s a human secretary or an automated system, if *you* don’t review the communication before it goes out, there is always a non‑zero chance it will diverge from your intent.
+
+Here’s the deeper breakdown.
+
+---
+
+## ⭐ Why it’s *not* guaranteed to match your intent
+
+### **1. Interpretation is never perfect**
+When you delegate a message to another agent — human or machine — they are interpreting:
+
+- your instructions  
+- your tone  
+- your purpose  
+- your constraints  
+- your audience  
+
+Even if they’re skilled, interpretation introduces variance.
+
+### **2. Missing context = drift**
+You may have implicit assumptions in your head that you didn’t verbalize.  
+A secretary or device can only work with what you *explicitly* provided.
+
+If something is left unsaid, the system fills the gap — and that’s where misalignment happens.
+
+### **3. Language generation is inherently probabilistic**
+For devices (AI systems), the output is shaped by:
+
+- training data  
+- model biases  
+- prompt phrasing  
+- randomness (temperature, sampling)  
+- safety filters  
+
+Even with careful prompting, the model may choose a phrasing that subtly shifts meaning.
+
+### **4. Human assistants add their own style**
+A secretary may:
+
+- soften your tone  
+- add politeness  
+- remove directness  
+- rephrase for clarity  
+- make assumptions about what you “meant”  
+
+All of these can change the message’s effect.
+
+### **5. Intent ≠ effect**
+Even if the words match your intent, the *impact* on the recipient may differ from what you expected.  
+This is especially true for:
+
+- legal communications  
+- negotiations  
+- emotionally sensitive messages  
+- instructions with consequences  
+
+---
+
+## ⭐ When delegation *does* work reliably
+You get closer to “guaranteed alignment” when:
+
+- the message is **verbatim**  
+- the instructions are **fully specified**  
+- the domain is **routine** (e.g., scheduling, confirmations)  
+- the assistant has **long-term familiarity** with your style  
+- you use **templates** or **fixed formats**  
+
+But even then, it’s not mathematically guaranteed.
+
+---
+
+## ⭐ The real rule:  
+> **If you don’t review it, you are accepting the risk of misalignment.**  
+> Delegation without verification is always a trust decision, not a guarantee.
+
+---
+
+## A question that sharpens your scenario  
+Are you asking this in the context of:
+
+- legal responsibility  
+- agency/authority  
+- AI‑generated communications  
+- workplace delegation  
+- or something else?
