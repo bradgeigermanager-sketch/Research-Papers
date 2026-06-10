@@ -1,0 +1,4 @@
+technology -  modes of communication used directly by devices
+technology -  modes of communication used directly by lifeforms
+technology -  modes of communication useable by devices
+technology -  modes of communication useable by lifeforms
