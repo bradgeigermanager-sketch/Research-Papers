@@ -1,0 +1,162 @@
+# **Paper 1 — Legal Responsibility for Delegated Communications**  
+### *How Law Treats Messages Sent in Your Name, Even When You Didn’t Read Them*
+
+## **Abstract**
+This paper examines the legal consequences of delegating communication to another human or to a technological system when the principal does not review the final message before it is sent. Drawing on agency law, contract doctrine, tort liability, and modern digital communication practices, the paper argues that legal responsibility attaches not to subjective intent but to the *reasonable manifestations* of authority and authorship. The analysis cross‑references Paper 2 (agency doctrine), Paper 3 (AI attribution), and Paper 6 (historical DBNR practices) to situate delegated communication within a broader legal and historical framework.
+
+---
+
+# **1. Introduction: The Problem of Unreviewed Communications**
+Delegated communication is as old as writing itself. From scribes and stenographers to email assistants and AI systems, individuals routinely authorize others to speak on their behalf. Yet delegation introduces a fundamental tension: **the message may not reflect the principal’s actual intent**.
+
+The law resolves this tension not by examining subjective mental states but by focusing on **authority, reliance, and responsibility**. This paper explores how courts treat communications sent in a principal’s name when the principal did not review the final text.
+
+---
+
+# **2. The Legal Fiction of Authorship**
+In law, authorship is not a metaphysical question. It is a functional one.
+
+If a communication is sent:
+- in your name,  
+- by someone you authorized,  
+- through a channel you control,  
+
+then **you are treated as the author**, even if you never saw the message.
+
+This principle underlies:
+- contract formation  
+- tort liability  
+- employment law  
+- corporate governance  
+- regulatory compliance  
+
+The law presumes that principals bear the risk of their chosen methods of communication.
+
+---
+
+# **3. Actual Authority: When You Explicitly or Implicitly Empower Another**
+Actual authority arises when the principal’s manifestations to the agent reasonably cause the agent to believe they are empowered to act.
+
+Two forms matter here:
+
+### **3.1 Express Actual Authority**
+You explicitly tell someone:
+- “Send this email for me.”  
+- “Draft and send the letter.”  
+- “Respond to that inquiry.”  
+
+Even if you do not review the final text, the agent’s communication is legally yours.
+
+### **3.2 Implied Actual Authority**
+Authority may also arise from:
+- job roles  
+- past practice  
+- customary office procedures  
+
+If a secretary routinely sends correspondence on your behalf, courts infer authority even without explicit instructions.
+
+This doctrine is explored in depth in **Paper 2**.
+
+---
+
+# **4. Apparent Authority: When Third Parties Reasonably Believe the Agent Speaks for You**
+Even if you privately limit an agent’s authority, you may still be bound if a third party reasonably believes the agent is authorized.
+
+Apparent authority arises from:
+- your conduct  
+- your organizational role  
+- your communication channels  
+- your failure to correct misunderstandings  
+
+If a message appears to come from you, the law protects the recipient’s reliance.
+
+This is especially important in:
+- corporate email systems  
+- delegated inboxes  
+- automated communication tools  
+
+Apparent authority is one of the strongest bases for liability in delegated communication.
+
+---
+
+# **5. Liability for Negligent or Erroneous Communications**
+When an agent makes a mistake—misstates a fact, commits you to something unintended, or sends an erroneous message—the principal is typically liable if:
+
+1. The agent acted within actual or apparent authority  
+2. The mistake was foreseeable  
+3. The communication was part of the agent’s assigned duties  
+
+This includes:
+- misaddressed emails  
+- incorrect commitments  
+- accidental disclosures  
+- tone or phrasing that creates legal obligations  
+
+Courts rarely accept “I didn’t read it” as a defense.
+
+---
+
+# **6. Ratification: When Silence Becomes Consent**
+Even if a communication was unauthorized, you may become bound by **ratification** if you:
+
+- accept benefits from the communication  
+- fail to repudiate it once aware  
+- allow the recipient to rely on it  
+
+Ratification can occur:
+- explicitly  
+- implicitly  
+- through inaction  
+
+This doctrine ensures that principals cannot selectively disavow communications after the fact.
+
+---
+
+# **7. Case Law Survey**
+A full case survey would be extensive, but the following themes recur:
+
+### **7.1 Miscommunication by Employees**
+Courts routinely hold employers liable for employee‑sent messages within the scope of employment, even when erroneous.
+
+### **7.2 Unauthorized Commitments**
+If a communication appears to come from a person with authority, courts often enforce the commitment unless the recipient had reason to doubt it.
+
+### **7.3 Digital Signatures and Email**
+Courts treat emails sent from a principal’s account as presumptively authorized unless strong evidence shows otherwise.
+
+### **7.4 Automated Systems**
+When automated systems send messages (billing notices, confirmations, alerts), the organization is responsible for their content.
+
+These themes connect directly to **Paper 3**, which analyzes AI‑generated communications.
+
+---
+
+# **8. Implications for Modern Digital Communication**
+Delegation today includes:
+- email assistants  
+- CRM systems  
+- automated replies  
+- AI drafting tools  
+- delegated inboxes  
+- workflow automation  
+
+The legal principles remain the same:
+- If you authorize the system, you own the output.  
+- If the system misfires, you bear the risk.  
+- If recipients reasonably rely on the communication, you are bound.  
+
+This continuity is striking when compared to **Paper 6**, which shows that even stenographers used “Dictated but not read” disclaimers to signal risk.
+
+---
+
+# **9. Conclusion**
+The law of delegated communication is built on a simple premise:
+
+> **If you empower someone—or something—to speak for you, you bear the consequences of what is said.**
+
+Review is a safeguard, not a requirement.  
+Intent matters less than authority and reliance.  
+Delegation without oversight is always a risk allocation decision.
+
+This paper establishes the legal foundation for the rest of the series.  
+Paper 2 will explore the doctrinal structure of agency and authority in greater depth, while Paper 3 will examine how these doctrines apply to AI systems.
