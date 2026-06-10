@@ -1,0 +1,171 @@
+# ⭐ **THE DELEGATED COMMUNICATION SERIES**  
+### *Six Papers on Intent, Agency, and Responsibility in Human and Machine‑Mediated Communication*
+
+This series consists of **six full papers**, each addressing a different dimension of the same core problem:
+
+> **What happens when a communication is sent in your name, but not reviewed by you?**
+
+Each paper is designed to be:
+- independently publishable  
+- cross‑referenced with the others  
+- theoretically grounded  
+- historically informed  
+- technologically current  
+
+---
+
+# ⭐ **Paper 1 — Legal Responsibility for Delegated Communications**  
+### *How Law Treats Messages Sent in Your Name, Even When You Didn’t Read Them*
+
+**Core themes:**  
+- Principal–agent liability  
+- Apparent authority  
+- Ratification  
+- Reasonable reliance  
+- Misaligned communications and legal consequences  
+
+**Cross‑references:**  
+- Paper 2 (agency doctrine)  
+- Paper 3 (AI as non‑agent tool)  
+- Paper 6 (historical DBNR practice)
+
+**Sections:**  
+1. Introduction: The problem of unreviewed communications  
+2. The legal fiction of authorship  
+3. Actual vs. apparent authority  
+4. Liability for negligent or erroneous communications  
+5. Ratification and silence  
+6. Case law survey  
+7. Implications for modern digital communication  
+8. Conclusion  
+
+---
+
+# ⭐ **Paper 2 — Agency, Authority, and the Binding Power of Delegated Speech**  
+### *Why Someone Else’s Words Can Become Yours Under Law*
+
+**Core themes:**  
+- Actual authority  
+- Apparent authority  
+- Inherent agency power  
+- Estoppel  
+- Respondeat superior  
+
+**Cross‑references:**  
+- Paper 1 (legal consequences)  
+- Paper 4 (organizational delegation)  
+- Paper 3 (why AI is not an agent)
+
+**Sections:**  
+1. The architecture of agency law  
+2. How authority is created  
+3. How authority is perceived  
+4. When principals are bound by unauthorized acts  
+5. The shrinking doctrine of inherent agency power  
+6. Digital signatures, email delegation, and modern extensions  
+7. Conclusion  
+
+---
+
+# ⭐ **Paper 3 — AI‑Generated Communications and the Law of Attribution**  
+### *Why AI Is a Tool, Not an Agent — and Why You Still Bear Responsibility*
+
+**Core themes:**  
+- AI as instrument, not legal person  
+- Attribution of speech  
+- Negligence and foreseeability  
+- Model unpredictability  
+- Regulatory trends  
+
+**Cross‑references:**  
+- Paper 1 (liability)  
+- Paper 2 (agency comparison)  
+- Paper 5 (communication theory)  
+
+**Sections:**  
+1. Introduction: The myth of “AI intent”  
+2. Why AI cannot be an agent under current law  
+3. Attribution and authorship  
+4. Foreseeability and negligence  
+5. The problem of probabilistic output  
+6. Regulatory frameworks (EU AI Act, FTC guidance, etc.)  
+7. Governance recommendations  
+8. Conclusion  
+
+---
+
+# ⭐ **Paper 4 — Delegation in the Workplace: Risk, Governance, and Communication Drift**  
+### *How Organizations Manage the Gap Between Intent and Output*
+
+**Core themes:**  
+- Delegation workflows  
+- Tone drift  
+- Over‑commitment risk  
+- Internal controls  
+- Hybrid human–AI communication stacks  
+
+**Cross‑references:**  
+- Paper 2 (authority structures)  
+- Paper 3 (AI delegation)  
+- Paper 5 (communication noise)
+
+**Sections:**  
+1. Why delegation is unavoidable  
+2. Common failure modes  
+3. Tone, style, and commitment drift  
+4. Organizational controls and approval chains  
+5. AI‑augmented delegation  
+6. Case studies  
+7. Conclusion  
+
+---
+
+# ⭐ **Paper 5 — Communication Theory and the Limits of Intent Transmission**  
+### *Why Even Perfect Delegation Cannot Guarantee Perfect Alignment*
+
+**Core themes:**  
+- Encoding/decoding  
+- Semantic noise  
+- Channel distortion  
+- Intent vs. effect  
+- Multi‑layer delegation  
+
+**Cross‑references:**  
+- Paper 1 (legal interpretation)  
+- Paper 3 (AI unpredictability)  
+- Paper 6 (historical practices)
+
+**Sections:**  
+1. Communication as information transfer  
+2. The four‑variable model (intent, expression, reception, effect)  
+3. Noise introduced by intermediaries  
+4. Delegation as a multi‑channel system  
+5. AI as a high‑variance encoder  
+6. Implications for law and governance  
+7. Conclusion  
+
+---
+
+# ⭐ **Paper 6 — “Dictated But Not Read”: Historical Precedents for Modern Delegation**  
+### *How Stenographers, Secretaries, and Early Office Systems Managed Unreviewed Messages*
+
+**Core themes:**  
+- DBNR notation  
+- Office workflow history  
+- Early liability concerns  
+- Social norms around delegation  
+- Continuity with modern AI‑assisted communication  
+
+**Cross‑references:**  
+- Paper 1 (legal responsibility)  
+- Paper 5 (communication theory)  
+- Paper 3 (AI as successor to stenographers)
+
+**Sections:**  
+1. Origins of DBNR  
+2. Why the notation existed  
+3. How recipients interpreted it  
+4. Legal treatment of DBNR communications  
+5. Comparison to modern disclaimers  
+6. AI as the new stenographer  
+7. Conclusion
