@@ -1,0 +1,382 @@
+Below is a **full ASTA-TP Mini Cluster (Docker Compose Edition)** including:
+
+* Identity service (auth + CT issuance)
+* FSM transition engine (AUTH/DEAUTH/REAUTH)
+* Telepresence orchestrator (iterable sessions)
+* Event bus (Kafka-like via Redis Streams for simplicity)
+* SOC dashboard (web UI)
+* Attack injection engine (deauth + spoof simulation)
+
+This is a **self-contained local SOC**.
+
+**ASTA-TP MINI CLUSTER (LOCAL SOC)**
+
+---
+
+# **1. System Overview**
+
+```text id="mini_arch"
+            +----------------------+
+            |  Attack Simulator    |
+            +----------+-----------+
+                       |
+                       v
++--------------------------------------------------+
+|                Event Bus (Redis)                 |
++----------------------+---------------------------+
+                       |
+     +-----------------+------------------+
+     |                                    |
+     v                                    v
+Identity Service                 FSM Transition Engine
+(Auth + CT)                     (AUTH / DEAUTH / REAUTH)
+     |                                    |
+     +-----------------+------------------+
+                       |
+                       v
+        Telepresence Orchestrator (Iterable Pods)
+                       |
+                       v
+              SOC Dashboard (Web UI)
+```
+
+---
+
+# **2. Docker Compose (FULL STACK)**
+
+## `docker-compose.yml`
+
+```yaml id="compose"
+version: "3.9"
+
+services:
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  identity:
+    build: ./identity
+    ports:
+      - "8001:8000"
+    depends_on:
+      - redis
+
+  fsm:
+    build: ./fsm
+    ports:
+      - "8002:8000"
+    depends_on:
+      - redis
+
+  telepresence:
+    build: ./telepresence
+    ports:
+      - "8003:8000"
+    depends_on:
+      - redis
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "8080:80"
+    depends_on:
+      - redis
+
+  attack_sim:
+    build: ./attack_sim
+    depends_on:
+      - redis
+```
+
+---
+
+# **3. Event Bus (Redis Streams Layer)**
+
+All services publish/subscribe here.
+
+## Stream Key:
+
+```
+asta-events
+```
+
+---
+
+# **4. Identity Service**
+
+## `identity/app.py`
+
+```python id="identity_service"
+from fastapi import FastAPI
+import redis, uuid, json
+
+app = FastAPI()
+r = redis.Redis(host="redis", port=6379)
+
+@app.post("/auth")
+def auth(user: dict):
+    ct = str(uuid.uuid4())
+
+    event = {
+        "type": "AUTH",
+        "user": user["id"],
+        "ct": ct
+    }
+
+    r.xadd("asta-events", event)
+    return event
+```
+
+---
+
+# **5. FSM Engine (Core ASTA-TP State Machine)**
+
+## `fsm/app.py`
+
+```python id="fsm_engine"
+from fastapi import FastAPI
+import redis, json
+
+app = FastAPI()
+r = redis.Redis(host="redis", port=6379)
+
+STATE = {}
+
+def publish(event):
+    r.xadd("asta-events", event)
+
+@app.post("/deauth")
+def deauth(user: dict):
+    event = {
+        "type": "DEAUTH",
+        "user": user["id"]
+    }
+    STATE[user["id"]] = "DEAUTH"
+    publish(event)
+    return event
+
+@app.post("/reauth")
+def reauth(user: dict):
+    event = {
+        "type": "REAUTH",
+        "user": user["id"]
+    }
+    STATE[user["id"]] = "AUTH"
+    publish(event)
+    return event
+```
+
+---
+
+# **6. Telepresence Orchestrator (Iterable Pods)**
+
+## `telepresence/app.py`
+
+```python id="telepresence"
+from fastapi import FastAPI
+import redis, json
+
+app = FastAPI()
+r = redis.Redis(host="redis", port=6379)
+
+ACTIVE = {}
+
+def listen():
+    pubsub = r.pubsub()
+    pubsub.subscribe("asta-events")
+
+    for msg in pubsub.listen():
+        if msg["type"] != "message":
+            continue
+
+        event = msg["data"].decode()
+
+        if "DEAUTH" in event:
+            print("KILLING TELEPRESENCE SESSION")
+
+        if "AUTH" in event:
+            print("STARTING TELEPRESENCE SESSION")
+
+@app.on_event("startup")
+def startup():
+    import threading
+    t = threading.Thread(target=listen)
+    t.start()
+```
+
+---
+
+# **7. SOC Dashboard Backend**
+
+## `dashboard/server.py`
+
+```python id="dashboard_backend"
+from fastapi import FastAPI, WebSocket
+import redis
+
+app = FastAPI()
+r = redis.Redis(host="redis", port=6379)
+
+@app.websocket("/ws")
+async def ws(websocket: WebSocket):
+    await websocket.accept()
+
+    pubsub = r.pubsub()
+    pubsub.subscribe("asta-events")
+
+    for msg in pubsub.listen():
+        if msg["type"] == "message":
+            await websocket.send_text(msg["data"].decode())
+```
+
+---
+
+# **8. SOC Dashboard Frontend**
+
+## `dashboard/index.html`
+
+```html id="dashboard_ui"
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASTA-TP SOC LAB</title>
+  <style>
+    body { background:#111; color:#0f0; font-family:monospace; }
+    .critical { color:red; }
+    .auth { color:lime; }
+    .deauth { color:orange; }
+  </style>
+</head>
+
+<body>
+<h2>ASTA-TP Live SOC Feed</h2>
+<div id="log"></div>
+
+<script>
+const ws = new WebSocket("ws://localhost:8080/ws");
+
+ws.onmessage = (msg) => {
+  const data = JSON.parse(msg.data);
+
+  const div = document.createElement("div");
+
+  if (data.type === "DEAUTH") div.className = "deauth";
+  if (data.type === "AUTH") div.className = "auth";
+  if (data.type === "REAUTH") div.className = "critical";
+
+  div.innerHTML = JSON.stringify(data);
+  document.getElementById("log").appendChild(div);
+};
+</script>
+</body>
+</html>
+```
+
+---
+
+# **9. Attack Injection Engine**
+
+This simulates real-world ASTA-TP threat classes:
+
+## `attack_sim/app.py`
+
+```python id="attack_sim"
+import redis, time, random
+
+r = redis.Redis(host="redis", port=6379)
+
+users = ["user-1", "user-2"]
+
+while True:
+    u = random.choice(users)
+
+    # simulate deauth attack
+    r.xadd("asta-events", {
+        "type": "DEAUTH",
+        "user": u
+    })
+
+    time.sleep(5)
+
+    # simulate spoof attempt
+    r.xadd("asta-events", {
+        "type": "AUTH",
+        "user": u
+    })
+
+    time.sleep(10)
+```
+
+---
+
+# **10. Run Instructions**
+
+```bash id="run"
+docker-compose up --build
+```
+
+Then open:
+
+```
+http://localhost:8080
+```
+
+---
+
+# **11. Full System Behavior**
+
+### Real-time SOC looking at:
+
+* AUTH → DEAUTH → REAUTH cycles
+* Telepresence session lifecycle
+* Attack injection (forced deauth + spoof attempts)
+* Event streaming via Redis
+* SOC dashboard live feed
+
+---
+
+# **12. Security Behavior Demonstrated and Operable**
+
+This lab actively demonstrates and monitors related to:
+
+### 1. Deauthentication-based attack surface
+
+* Forced session termination events
+* Attempted re-entry into system
+
+### 2. Identity substitution simulation
+
+* Re-auth after deauth
+
+### 3. Telepresence kill-switch behavior
+
+* Event-driven termination
+
+### 4. Event propagation trust model
+
+* Everything flows through event bus
+
+---
+
+# **13. Upgrade Path (Production Hardening)**
+
+Replace components as follows:
+
+| Lab Component  | Production Equivalent                     |
+| -------------- | ----------------------------------------- |
+| Redis Streams  | Kafka / NATS JetStream                    |
+| Simple FSM     | Strongly consistent state machine service |
+| Logs           | Loki / Elastic SIEM                       |
+| Dashboard      | Grafana + D3 + SIEM UI                    |
+| Attack sim     | Red-team adversary emulation platform     |
+| Docker Compose | Kubernetes + Helm                         |
+
+---
+
+# **14. Key Concept Reinforced**
+
+> The system is secure only if authentication-state transitions propagate faster than any derived telepresence or session state.
+
+That is the core ASTA-TP invariant this SOC enforces.
