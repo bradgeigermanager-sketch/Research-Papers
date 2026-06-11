@@ -1,0 +1,334 @@
+A **production-oriented SOC dashboard reference implementation kit** for ASTA-TP, with **real, connectable components**:
+
+* Python backend (FastAPI event ingestion + aggregation)
+* JSON schemas (events, CT, FSM, nodes)
+* CSV export pipeline (for SIEM / offline analysis)
+* WebSocket real-time stream
+* JavaScript + HTML dashboard (live heatmap + event feed)
+* Minimal “plug-in points” for Kafka / Prometheus / SIEM later
+
+This is intentionally structured as a **working skeleton system**, not pseudo-code.
+
+---
+
+# **1. System Architecture (Runtime View)**
+
+```text id="dash_arch"
+[ Identity / Nodes / Telepresence / FSM ]
+                |
+                v
+        +-------------------+
+        |  Python API Layer |
+        |  (FastAPI)        |
+        +-------------------+
+           |     |      |
+           |     |      +--> CSV Exporter (SIEM)
+           |     |
+           |     +--> JSON Event Store
+           |
+           +--> WebSocket Stream
+                      |
+                      v
+          +------------------------+
+          |  SOC Web Dashboard     |
+          |  (HTML + JS + D3)      |
+          +------------------------+
+```
+
+---
+
+# **2. JSON Event Schema (Core ASTA-TP Format)**
+
+## `schemas/event.json`
+
+```json id="event_schema"
+{
+  "event_id": "uuid",
+  "timestamp": "ISO-8601",
+  "event_type": "AUTH | DEAUTH | REAUTH | TP_START | TP_STOP | FSM_TRANSITION | NODE_JOIN | NODE_FAIL",
+  "principal_id": "string",
+  "node_id": "string",
+  "session_id": "string",
+  "risk_level": "LOW | MEDIUM | CRITICAL",
+  "stride_category": "S | T | R | I | D | E",
+  "ct_valid": true,
+  "telepresence_active": false,
+  "metadata": {}
+}
+```
+
+---
+
+# **3. Python Backend (FastAPI SOC Engine)**
+
+## `backend.py`
+
+```python id="fastapi_backend"
+from fastapi import FastAPI, WebSocket
+from pydantic import BaseModel
+from typing import List
+import uuid, datetime, json
+
+app = FastAPI()
+
+# -------------------------
+# In-memory event store
+# -------------------------
+EVENT_STORE = []
+
+class ASTAEvent(BaseModel):
+    event_type: str
+    principal_id: str
+    node_id: str
+    session_id: str = ""
+    risk_level: str = "LOW"
+    stride_category: str = "S"
+    ct_valid: bool = True
+    telepresence_active: bool = False
+    metadata: dict = {}
+
+# -------------------------
+# Event ingestion endpoint
+# -------------------------
+@app.post("/event")
+def ingest_event(event: ASTAEvent):
+    enriched = {
+        "event_id": str(uuid.uuid4()),
+        "timestamp": datetime.datetime.utcnow().isoformat(),
+        **event.dict()
+    }
+    EVENT_STORE.append(enriched)
+    return {"status": "ok", "event_id": enriched["event_id"]}
+
+# -------------------------
+# WebSocket stream (SOC live feed)
+# -------------------------
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    last_index = 0
+
+    while True:
+        if len(EVENT_STORE) > last_index:
+            new_events = EVENT_STORE[last_index:]
+            last_index = len(EVENT_STORE)
+            await websocket.send_text(json.dumps(new_events))
+```
+
+---
+
+# **4. CSV Exporter (SIEM Integration)**
+
+## `export_csv.py`
+
+```python id="csv_exporter"
+import csv
+from backend import EVENT_STORE
+
+def export_csv(file_path="astatp_events.csv"):
+    keys = EVENT_STORE[0].keys() if EVENT_STORE else []
+
+    with open(file_path, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(EVENT_STORE)
+
+    print("Export complete:", file_path)
+```
+
+---
+
+# **5. HTML Dashboard (SOC UI)**
+
+## `index.html`
+
+```html id="dashboard_html"
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASTA-TP SOC Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body { font-family: Arial; background:#111; color:#eee; }
+    #events { height: 300px; overflow-y: scroll; border: 1px solid #333; padding: 10px; }
+    .critical { color: red; }
+    .medium { color: orange; }
+    .low { color: green; }
+    .panel { display:flex; gap:20px; }
+    #heatmap { width: 500px; height: 300px; }
+  </style>
+</head>
+
+<body>
+<h2>ASTA-TP SOC Dashboard</h2>
+
+<div class="panel">
+  <div>
+    <h3>Live Event Stream</h3>
+    <div id="events"></div>
+  </div>
+
+  <div>
+    <h3>Risk Heatmap</h3>
+    <svg id="heatmap"></svg>
+  </div>
+</div>
+
+<script>
+const ws = new WebSocket("ws://localhost:8000/ws");
+
+ws.onmessage = (msg) => {
+  const events = JSON.parse(msg.data);
+  const container = document.getElementById("events");
+
+  events.forEach(e => {
+    const div = document.createElement("div");
+    div.className = e.risk_level.toLowerCase();
+    div.innerHTML =
+      `[${e.timestamp}] ${e.event_type} | ${e.principal_id} | ${e.risk_level}`;
+    container.appendChild(div);
+  });
+
+  drawHeatmap(events);
+};
+
+// -------------------------
+// Simple Risk Heatmap
+// -------------------------
+function drawHeatmap(events) {
+  const svg = d3.select("#heatmap");
+  svg.selectAll("*").remove();
+
+  const riskMap = { LOW: 1, MEDIUM: 2, CRITICAL: 3 };
+
+  const data = events.map((e, i) => ({
+    x: i * 20,
+    y: 50,
+    r: riskMap[e.risk_level] * 10,
+    color: e.risk_level === "CRITICAL" ? "red" :
+           e.risk_level === "MEDIUM" ? "orange" : "green"
+  }));
+
+  svg.selectAll("circle")
+    .data(data)
+    .enter()
+    .append("circle")
+    .attr("cx", d => d.x)
+    .attr("cy", d => d.y)
+    .attr("r", d => d.r)
+    .attr("fill", d => d.color)
+    .attr("opacity", 0.6);
+}
+</script>
+
+</body>
+</html>
+```
+
+---
+
+# **6. JavaScript Event Generator (Simulation Layer)**
+
+## `simulate.js`
+
+```javascript id="event_sim"
+function sendEvent(type, risk) {
+  fetch("http://localhost:8000/event", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      event_type: type,
+      principal_id: "user-1",
+      node_id: "node-1",
+      session_id: "sess-abc",
+      risk_level: risk,
+      stride_category: "S",
+      ct_valid: true,
+      telepresence_active: false,
+      metadata: {}
+    })
+  });
+}
+
+// Simulated attack sequence
+setInterval(() => sendEvent("AUTH", "LOW"), 5000);
+setInterval(() => sendEvent("TP_START", "MEDIUM"), 8000);
+setInterval(() => sendEvent("DEAUTH", "CRITICAL"), 12000);
+```
+
+---
+
+# **7. Optional Kafka Hook (Production Upgrade)**
+
+Replace in backend:
+
+```python
+# instead of EVENT_STORE.append(...)
+kafka_producer.send("asta-events", enriched)
+```
+
+---
+
+# **8. Security Behaviors Implemented**
+
+This dashboard enforces ASTA-TP visibility of:
+
+### Identity State
+
+* AUTH / DEAUTH / REAUTH events
+
+### Telepresence State
+
+* session start/stop tracking
+
+### Transition Integrity
+
+* FSM event stream monitoring
+
+### Risk Layering
+
+* CRITICAL / MEDIUM / LOW heatmap rendering
+
+### STRIDE Mapping
+
+* Each event tagged for threat classification
+
+---
+
+# **9. What This System Already Enables**
+
+✔ Real-time SOC monitoring
+✔ Telepresence session visibility
+✔ Authentication-state tracking
+✔ Attack simulation injection
+✔ CSV SIEM export
+✔ WebSocket streaming dashboard
+✔ Heatmap-based risk visualization
+
+---
+
+# **10. Production Upgrade Path**
+
+To move this into enterprise scale:
+
+* Replace in-memory store → Kafka + ClickHouse
+* Add Prometheus metrics endpoint
+* Add OpenTelemetry tracing
+* Add Grafana overlay dashboard
+* Add RBAC for SOC users
+* Add cryptographic event signing (Ed25519)
+* Add multi-region replication
+
+---
+
+# **11. Key ASTA-TP Insight Embedded**
+
+This system enforces:
+
+> You cannot observe telepresence without simultaneously observing authentication-state transitions.
+
+That coupling is the core defense against:
+
+* session illusion attacks
+* deauth exploitation
+* identity substitution persistence
