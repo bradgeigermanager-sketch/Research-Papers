@@ -1,0 +1,116 @@
+**ASTA-TP Security Architecture Diagram – PDF Version (Concept)**
+
+---
+
+## **1. Diagram Layout**
+
+**Orientation:** Landscape, layered top-down flow
+**Layers:** 4 major horizontal tiers
+
+1. **Identity & Authentication Layer** (top)
+
+   * Users, Devices, Identity Control Plane
+   * Color: Red 🔴 Critical
+   * STRIDE: Spoofing, Information Disclosure
+
+2. **Authentication-State / Transition Layer** (second)
+
+   * FSM, Transition Control Plane
+   * Color: Orange 🟠 Medium
+   * STRIDE: Tampering, Denial of Service
+
+3. **Telepresence & Node Layer** (third)
+
+   * Telepresence Orchestrator, Telepresence Pods, Service Mesh, Edge Nodes
+   * Colors: Telepresence = Red 🔴 Critical, Nodes & Mesh = Orange 🟠 Medium
+   * STRIDE: Elevation of Privilege, Session Hijack, Node Impersonation
+
+4. **Audit / Mitigation Layer** (bottom)
+
+   * Audit Service, Logs, Mitigation Feedback Loops
+   * Color: Green 🟢 Low
+   * STRIDE: Repudiation, Information Disclosure
+
+**Legend Section (bottom-left)**
+
+* Red 🔴 Critical
+* Orange 🟠 Medium
+* Green 🟢 Low
+* Dotted arrows = Attack vectors
+* Solid arrows = Mitigation / feedback
+
+---
+
+## **2. Component Annotations (per box)**
+
+Each box should include:
+
+1. **Name of Component**
+2. **Risk Level & Heatmap Color**
+3. **Dominant STRIDE Category**
+4. **Key Threats / Attack Vectors**
+5. **Primary Mitigations**
+
+Example (Telepresence Orchestrator):
+
+```
+Telepresence Orchestrator
+Risk: 🔴 Critical
+STRIDE: E / T
+Threats: Session Hijack, Privilege Escalation
+Mitigation: Sandbox Pods, Ephemeral CTs, FSM Enforcement
+```
+
+---
+
+## **3. Flow and Arrows**
+
+**Attack vectors** (dotted red/orange lines):
+
+* User → Identity: Credential theft / spoofing
+* Transition → Telepresence: FSM tampering / event suppression
+* Telepresence → Nodes: Session hijack / privilege escalation
+* Service Mesh → Nodes: Node impersonation
+
+**Mitigation arrows** (solid green):
+
+* Audit → Transition → Telepresence: Alerts, revocation, session termination
+* Service Mesh → Telepresence: mTLS + CT validation
+* Node → Telepresence: Device attestation
+
+**Feedback loops**:
+
+* Audit logs trigger SOC alerts → mitigation enforcement
+* FSM ensures ephemeral CTs terminate unauthorized telepresence
+
+---
+
+## **4. Heatmap Representation**
+
+* **Red 🔴**: Critical risk, requires immediate attention
+* **Orange 🟠**: Medium risk, needs continuous monitoring
+* **Green 🟢**: Low risk, passive monitoring / auditing
+
+**Recommendation for PDF Rendering**:
+
+* Use **vector-based diagramming tools** (Visio, Lucidchart, Draw.io)
+* Set **layered swimlanes** for Identity → Transition → Telepresence → Audit
+* Use **color-coded boxes** for risk level
+* Dotted arrows for attacks, solid arrows for mitigations
+* Include **legend and STRIDE notes** in margin
+
+---
+
+## **5. Optional Enhancements**
+
+1. Add **timeline overlays** for attack scenario replay
+2. Include **ephemeral session state indicators** on Telepresence pods
+3. Use **icons** for MFA, TPM, mTLS, Sandbox Pods for clarity
+4. Include **node replication icons** for global clusters
+
+---
+
+### ✅ Output Ready for Export
+
+* Once the above is constructed in a vector-based diagram tool, export as **PDF** with **landscape orientation, high-resolution vector graphics, and annotations**.
+* Can serve as **enterprise architecture documentation, SOC briefing, or compliance submission**.
