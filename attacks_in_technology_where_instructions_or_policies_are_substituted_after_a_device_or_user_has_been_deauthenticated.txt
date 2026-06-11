@@ -1,0 +1,58 @@
+**Attacks in technology where instructions or policies are substituted after a device or user has been deauthenticated**
+
+### 1. **Core Concept: Deauthentication and Substitution Attacks**
+
+**Deauthentication** is a process in which a device (e.g., a client connecting to a Wi-Fi access point) is forcibly disconnected from a network. Attackers can exploit this in several ways:
+
+* **Deauth attack:** An attacker sends forged deauthentication frames to disconnect a client from a network.
+* **Goal:** Once the client is disconnected, it may automatically try to reconnect, during which the attacker can intercept or manipulate instructions, policies, or configurations.
+
+**Substitution of instructions or policies** after deauthentication can happen when:
+
+* The client reconnects to a **malicious access point** (man-in-the-middle attack).
+* Security policies, firmware updates, or network configurations are **intercepted and replaced**.
+* This can result in malware installation, loss of access control, or altered system behavior.
+
+---
+
+### 2. **Attack Examples**
+
+1. **Evil Twin Attack**
+
+   * The attacker sets up a fake access point mimicking the legitimate network.
+   * After a deauthentication, the client reconnects to the fake AP.
+   * Policies or instructions (e.g., DNS settings, firewall rules) can be **substituted** to redirect traffic, perform phishing, or inject malicious configurations.
+
+2. **Man-in-the-Middle Firmware or Configuration Injection**
+
+   * If a device requests a firmware update or policy download after reconnecting, an attacker can **replace legitimate files with malicious ones**.
+   * Example: Replacing a router’s configuration file with one that opens ports to attackers.
+
+3. **Network Policy Manipulation**
+
+   * In corporate networks using WPA2-Enterprise or similar, policy files (e.g., group policy, security instructions) may be fetched automatically.
+   * Deauthentication can trigger **automatic reapplication of these policies**, but attackers can **intercept and modify the instructions**, causing privilege escalation or bypassing restrictions.
+
+---
+
+### 3. **Mitigation Strategies**
+
+1. **Encryption and Authentication**
+
+   * Use strong encryption (WPA3, TLS, certificate-based authentication) to prevent spoofed APs.
+2. **Mutual Authentication**
+
+   * Devices must verify the authenticity of the server/AP before accepting policies or instructions.
+3. **Integrity Checks**
+
+   * Always verify digital signatures of downloaded instructions, firmware, and policy files.
+4. **Monitoring and Alerts**
+
+   * Detect unusual deauthentication events and log them for investigation.
+5. **Rate-limiting Deauthentication Frames**
+
+   * Some enterprise networks limit how often a client can be deauthenticated to reduce attack surface.
+
+---
+
+In short, what you’re describing is a **post-deauthentication substitution attack**, commonly part of **Evil Twin / Man-in-the-Middle scenarios**, where attackers exploit forced disconnections to replace instructions, configurations, or policies with malicious versions.
