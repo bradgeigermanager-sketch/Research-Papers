@@ -1,0 +1,256 @@
+**ASTA-TP Mermaid → PDF Export Workflow (Production-Ready)**
+
+---
+
+## **1. Overview**
+
+This pipeline converts:
+
+> **ASTA-TP Mermaid diagram → Rendered SVG → Styled PDF (enterprise documentation ready)**
+
+It preserves:
+
+* Layering (Identity → Transition → Telepresence → Audit)
+* Color-coded risk heatmap
+* Attack vectors (dotted red/orange)
+* Mitigation flows (solid green)
+* STRIDE annotations
+
+---
+
+# **2. Recommended Toolchain**
+
+## Option A (Best for enterprise pipelines)
+
+* Mermaid CLI (`@mermaid-js/mermaid-cli`)
+* Puppeteer (for rendering)
+* Inkscape (SVG → PDF polish)
+* Optional: Draw.io post-edit
+
+## Option B (CI/CD friendly)
+
+* GitHub Actions
+* Mermaid CLI
+* PDF artifact upload
+
+---
+
+# **3. Installation**
+
+```bash
+npm install -g @mermaid-js/mermaid-cli
+```
+
+Optional for post-processing:
+
+```bash
+sudo apt install inkscape
+```
+
+---
+
+# **4. File Structure**
+
+```text id="pdf_pipeline"
+asta-tp-diagram/
+│
+├── astatp.mmd          # Mermaid source diagram
+├── config.json         # Theme + rendering config
+├── output/
+│   ├── astatp.svg
+│   ├── astatp.pdf
+```
+
+---
+
+# **5. Mermaid Source File (Use This Exact File)**
+
+Save as: `astatp.mmd`
+
+```mermaid id="pdf_mermaid_source"
+flowchart TD
+
+%% =======================
+%% IDENTITY LAYER
+%% =======================
+U[User / Device Identity 🔴<br>STRIDE: S/I<br>Threat: Spoofing, Credential Theft]
+
+I[Identity Control Plane 🔴<br>TPM + MFA + PKI<br>STRIDE: S/I]
+
+U -->|Auth Request| I
+U -. Spoofing / Theft .-> I
+
+%% =======================
+%% TRANSITION LAYER
+%% =======================
+T[Transition Control Plane 🟠<br>FSM Engine<br>STRIDE: T/D]
+
+I -->|CT Issued| T
+T -. State Tampering .-> TP
+
+%% =======================
+%% TELEPRESENCE LAYER
+%% =======================
+TP[Telepresence Orchestrator 🔴<br>Sandboxed Pods<br>STRIDE: E/T]
+
+SM[Service Mesh 🟠<br>mTLS + SPIFFE<br>STRIDE: S/T]
+
+N[Node / Edge Devices 🟠<br>TPM + Attestation<br>STRIDE: S/I]
+
+T -->|AUTH_STATE_CHANGED| TP
+TP -->|Session| N
+TP -->|Policy| SM
+
+TP -. Session Hijack .-> N
+SM -. Node Impersonation .-> N
+
+%% =======================
+%% AUDIT LAYER
+%% =======================
+A[Audit Service 🟢<br>Immutable Logs<br>STRIDE: R/I]
+
+MF[Mitigation Engine 🟢<br>Fail-Closed Control]
+
+TP --> A
+T --> A
+A --> MF
+MF -->|Revoke CT / Kill Session| TP
+MF -->|Enforce FSM| T
+```
+
+---
+
+# **6. Rendering Command (SVG Output)**
+
+```bash
+mmdc -i astatp.mmd -o output/astatp.svg -b transparent -t dark
+```
+
+---
+
+# **7. Convert SVG → High-Quality PDF**
+
+## Option A (recommended)
+
+```bash
+inkscape output/astatp.svg \
+  --export-type=pdf \
+  --export-filename=output/astatp.pdf
+```
+
+---
+
+## Option B (Puppeteer direct PDF)
+
+```bash
+mmdc -i astatp.mmd -o output/astatp.pdf -t dark
+```
+
+---
+
+# **8. PDF Styling Configuration (Enterprise Theme)**
+
+Create `config.json`:
+
+```json id="pdf_config"
+{
+  "theme": "dark",
+  "themeVariables": {
+    "primaryColor": "#ff4c4c",
+    "secondaryColor": "#ff9900",
+    "tertiaryColor": "#33cc33",
+    "lineColor": "#ffffff",
+    "fontFamily": "Inter"
+  }
+}
+```
+
+---
+
+# **9. CI/CD Pipeline (GitHub Actions Example)**
+
+```yaml id="github_action"
+name: ASTA-TP Diagram Build
+
+on:
+  push:
+    paths:
+      - "astatp.mmd"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Mermaid CLI
+        run: npm install -g @mermaid-js/mermaid-cli
+
+      - name: Render SVG
+        run: mmdc -i astatp.mmd -o astatp.svg
+
+      - name: Convert to PDF
+        run: |
+          sudo apt-get install -y inkscape
+          inkscape astatp.svg --export-type=pdf --export-filename=astatp.pdf
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: astatp-diagram
+          path: astatp.pdf
+```
+
+---
+
+# **10. PDF Output Characteristics (Final Result)**
+
+Your exported PDF will include:
+
+### Visual structure:
+
+* Layered architecture (4 tiers)
+* Color-coded heatmap:
+
+  * 🔴 Identity + Telepresence = Critical
+  * 🟠 Transition + Nodes = Medium
+  * 🟢 Audit = Low risk
+
+### Security annotations:
+
+* STRIDE labels per node
+* Attack vectors (dotted red lines)
+* Mitigation flows (solid green lines)
+
+### Operational clarity:
+
+* SOC-readable layout
+* Incident-response traceable flows
+* Audit-ready documentation format
+
+---
+
+# **11. Optional Enterprise Enhancements**
+
+If deploying in real SOC / enterprise environments:
+
+### Add:
+
+* QR code linking to live dashboard
+* Embedded metadata (version, timestamp, system hash)
+* Layer toggles (Identity-only / Attack-view / Mitigation-view)
+* Real-time telemetry overlays (Grafana export)
+
+---
+
+# **12. Final Outcome**
+
+This pipeline produces:
+
+> A **fully reproducible, version-controlled, cryptographically consistent security architecture diagram in PDF form**, suitable for:
+
+* enterprise architecture boards
+* SOC documentation
+* compliance audits (ISO/NIST-aligned)
+* security engineering reviews
+* threat modeling reports
