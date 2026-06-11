@@ -1,0 +1,344 @@
+# Scenario 2: Deauthentication Followed by Identity Reuse / Session Replacement
+
+## Abstract
+
+This scenario differs fundamentally from the absence-based case. Here, the attacker's objective is not merely to remove the legitimate user from the system but to **replace them operationally**. The attacker first induces deauthentication, session termination, loss of connectivity, or another form of removal of the legitimate principal. They then leverage stolen credentials, session artifacts, authentication tokens, cryptographic keys, device identities, or authentication mechanisms to reauthenticate as that principal.
+
+The result is a form of **identity substitution** in which subsequent actions appear authorized and attributable to the legitimate user or device.
+
+This pattern appears across wireless networks, web applications, enterprise identity systems, cloud infrastructures, industrial control systems, and IoT deployments.
+
+---
+
+# Formal Model
+
+The attack consists of four phases:
+
+### Phase 1: Removal
+
+The legitimate principal is removed from active participation.
+
+Examples:
+
+* Wi-Fi deauthentication attack
+* Forced logout
+* Session termination
+* Account lockout
+* SIM swap
+* Service interruption
+* Device disconnection
+* Authentication token invalidation
+
+The attacker creates a state in which the legitimate principal is no longer actively occupying the authenticated role.
+
+---
+
+### Phase 2: Credential Acquisition
+
+The attacker obtains one or more identity artifacts:
+
+* Passwords
+* Session cookies
+* OAuth tokens
+* Kerberos tickets
+* Device certificates
+* API keys
+* Private keys
+* Authentication tokens
+* Cached credentials
+
+These may have been stolen before or during the deauthentication event.
+
+---
+
+### Phase 3: Identity Substitution
+
+The attacker assumes the identity.
+
+This can occur through:
+
+* Session hijacking
+* Token replay
+* Pass-the-hash
+* Pass-the-ticket
+* Certificate theft
+* Device cloning
+* OAuth token abuse
+* Credential stuffing
+* Browser session theft
+
+The system perceives the attacker as the legitimate principal.
+
+---
+
+### Phase 4: Authorized-Looking Malicious Activity
+
+Actions are now attributed to the victim.
+
+Examples include:
+
+* Policy modifications
+* Administrative changes
+* Code deployment
+* Data exfiltration
+* Security control disabling
+* Configuration replacement
+* Creation of persistence mechanisms
+
+From an audit perspective, the activity often appears legitimate.
+
+---
+
+# Why Deauthentication Helps
+
+An important observation is that deauthentication is often not necessary for credential abuse.
+
+However, it can significantly improve attack success rates.
+
+## Reduction of Concurrent Sessions
+
+Many systems limit simultaneous sessions.
+
+Removing the legitimate user:
+
+* eliminates session conflicts
+* prevents warnings
+* prevents "another user logged in" alerts
+* reduces anomalous behavior indicators
+
+---
+
+## Removal of Human Oversight
+
+A disconnected user cannot:
+
+* notice strange prompts
+* reject MFA requests
+* revoke tokens
+* terminate attacker sessions
+* contact administrators
+
+The attack window expands.
+
+---
+
+## Race Condition Advantage
+
+Many identity systems implicitly trust the first authenticated party following a disconnect.
+
+Examples include:
+
+* VPN reconnects
+* device registration workflows
+* cloud synchronization systems
+* industrial control consoles
+
+The attacker attempts to become the first party that returns after the legitimate user disappears.
+
+---
+
+# Representative Attack Families
+
+## Session Hijacking
+
+The classic example.
+
+The attacker steals a session cookie.
+
+They then force the victim out of the session.
+
+The attacker continues operating under the victim's authenticated context.
+
+Research examples include extensive work on web session hijacking and cookie theft.
+
+---
+
+## Pass-the-Hash
+
+Prominent in enterprise environments.
+
+The attacker:
+
+1. obtains credential hashes
+2. disconnects or sidelines the legitimate user
+3. authenticates using the stolen material
+
+The victim's identity becomes the attacker's operating identity.
+
+---
+
+## Pass-the-Ticket
+
+Common in environments using:
+
+* Kerberos
+* Active Directory
+
+The attacker uses stolen Kerberos tickets after the legitimate user has been removed from active participation.
+
+---
+
+## OAuth Token Theft
+
+Modern cloud environments frequently rely on bearer tokens.
+
+If a token is stolen:
+
+* deauthentication of the legitimate user may not invalidate the token
+* attacker continues operating
+* actions appear fully authorized
+
+This has become a major cloud security concern.
+
+---
+
+## Device Identity Cloning
+
+Particularly important in:
+
+* IoT
+* industrial systems
+* telecommunications
+
+The attacker copies:
+
+* certificates
+* keys
+* device credentials
+
+The legitimate device is disconnected.
+
+The cloned device reconnects.
+
+The infrastructure may believe the cloned device is genuine.
+
+---
+
+# Security Research Foundations
+
+## Session Hijacking Research
+
+### The Web Application Hacker's Handbook
+
+Widely cited work discussing:
+
+* session fixation
+* session hijacking
+* authentication weaknesses
+* identity substitution mechanisms
+
+Authors:
+
+* Dafydd Stuttard
+* Marcus Pinto
+
+---
+
+## Pass-the-Hash Research
+
+### Pass-the-Hash Attacks
+
+Seminal analyses by researchers from:
+
+* Microsoft
+* SANS Institute
+
+These works describe credential reuse after the legitimate user has been displaced.
+
+---
+
+## Kerberos Ticket Abuse
+
+### Pass-the-Ticket Attacks
+
+Research from:
+
+* MIT Kerberos Project
+* Microsoft
+* numerous Active Directory security researchers
+
+Shows how authentication artifacts can be reused independently of user presence.
+
+---
+
+## OAuth Token Theft
+
+### Research by OWASP Foundation
+
+Discusses:
+
+* bearer token theft
+* session replacement
+* delegated identity abuse
+* cloud authentication weaknesses
+
+---
+
+## Device Identity Theft
+
+Research in IoT security has repeatedly demonstrated:
+
+* certificate extraction
+* firmware key extraction
+* device cloning
+
+Particularly discussed in work from:
+
+* ENISA
+* NIST
+
+---
+
+# Attribution Problems
+
+One of the most important consequences is attribution failure.
+
+Security systems often record:
+
+> User X changed policy Y.
+
+What actually occurred:
+
+> Attacker used User X's identity to change policy Y.
+
+The distinction may be invisible in logs.
+
+This creates:
+
+* forensic challenges
+* insider-threat confusion
+* compliance issues
+* incident-response delays
+
+---
+
+# Relationship Between the Two Scenarios
+
+The two scenarios are closely related but distinct.
+
+| Property                          | Scenario 1 (Absence-Based)                    | Scenario 2 (Identity Substitution)            |
+| --------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| User removed                      | Yes                                           | Yes                                           |
+| User identity reused              | No                                            | Yes                                           |
+| Attack depends on absence         | Primary mechanism                             | Facilitating mechanism                        |
+| Audit trail shows victim activity | Usually no                                    | Frequently yes                                |
+| Main security failure             | Absence-triggered logic                       | Authentication trust failure                  |
+| Typical examples                  | Fail-open policies, unattended-state exploits | Session hijacking, token theft, pass-the-hash |
+
+---
+
+# Unifying Concept
+
+Both scenarios can be viewed as forms of what might be called **authentication-state transition attacks**.
+
+The critical event is not simply credential theft or deauthentication by itself.
+
+Instead, the attack exploits a transition:
+
+> authenticated → deauthenticated → altered security state
+
+In Scenario 1, the attacker exploits what the system does when the legitimate principal disappears.
+
+In Scenario 2, the attacker exploits the fact that the legitimate principal disappears and then occupies the resulting vacant identity position.
+
+Viewed this way, deauthentication becomes a strategic enabler rather than the primary objective. The security challenge is ensuring that changes in authentication state cannot create opportunities for either unauthorized absence-based actions or identity substitution.
