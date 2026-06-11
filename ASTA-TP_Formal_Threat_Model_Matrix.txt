@@ -1,0 +1,112 @@
+The **ASTA-TP Threat Model Matrix**, mapping **real-world attack classes** against **system components** with **STRIDE categories, impact analysis, and mitigation strategies** - complete end-to-end security design lifecycle for production-grade ASTA-TP deployments.
+
+**ASTA-TP Formal Threat Model Matrix**
+
+**Version 1.0 – 2026-06-10**
+
+---
+
+## **1. STRIDE Overview**
+
+| STRIDE Category            | Definition                                |
+| -------------------------- | ----------------------------------------- |
+| **S**poofing               | Impersonating identity or credentials     |
+| **T**ampering              | Unauthorized modification of data or code |
+| **R**epudiation            | Denying actions or events without trace   |
+| **I**nformation Disclosure | Unauthorized data access                  |
+| **D**enial of Service      | Service disruption or unavailability      |
+| **E**levation of Privilege | Gaining higher privileges than allowed    |
+
+---
+
+## **2. Threat Matrix Table**
+
+| Component                  | STRIDE | Threat Description           | Attack Scenario                                                 | Impact                                                   | Mitigation (ASTA-TP)                                                              |
+| -------------------------- | ------ | ---------------------------- | --------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Identity Control Plane     | S      | Credential/identity spoofing | Attacker uses stolen credentials or fake device to authenticate | Full system compromise, unauthorized telepresence        | MFA, TPM-backed device attestation, ephemeral session IDs, CT binding             |
+| Identity Control Plane     | I      | Identity info leakage        | Exfiltrate user/device certificates                             | Reconnaissance for targeted attacks                      | TLS encryption, PKI, restricted access, audit logging                             |
+| Transition Control Plane   | T      | State tampering              | Alter authentication-state events                               | Telepresence persists after deauth, unauthorized actions | Event-sourcing with signed state transitions, immutable logs                      |
+| Transition Control Plane   | D      | Event suppression            | Drop/defer AUTH_STATE_CHANGED messages                          | Nodes see outdated state, allowing session abuse         | Redundant message bus, quorum verification, monitoring                            |
+| Telepresence Orchestrator  | E      | Privilege escalation         | Telepresence pod gains host access                              | Unauthorized local or remote access                      | Sandbox containers (gVisor/Kata), policy enforcement, no direct credential access |
+| Telepresence Orchestrator  | T      | Session hijacking            | Inject fake telepresence session                                | Impersonation or data exfiltration                       | CT validation, ephemeral session IDs, mTLS mesh isolation                         |
+| Telepresence Orchestrator  | D      | Resource exhaustion          | Create excessive telepresence pods                              | Denial of service, latency spikes                        | Rate-limiting, policy engine, autoscaling with fail-closed                        |
+| Service Mesh               | S      | Node impersonation           | Unauthorized node joins mesh                                    | Cross-node attack propagation                            | SPIFFE/SPIRE identity verification, mutual TLS, attestation                       |
+| Service Mesh               | I      | Traffic sniffing             | Capture telepresence or API traffic                             | Sensitive data exposure                                  | mTLS, policy-based routing, encrypted payloads                                    |
+| Edge / IoT Layer           | S      | Device spoofing              | Fake device attempts telepresence                               | Unauthorized remote presence                             | TPM-based attestation, certificate validation                                     |
+| Edge / IoT Layer           | D      | Denial of device service     | Device disconnected, attacks gateway                            | Users cannot authenticate or use telepresence            | Redundant gateways, event bus failover, alerting                                  |
+| Audit / Logging            | R      | Log tampering / repudiation  | Remove or alter logs                                            | Hide attacks, fail forensic analysis                     | Append-only WORM storage, blockchain-like replication, cryptographic signatures   |
+| Audit / Logging            | I      | Audit leakage                | Extract audit records                                           | Reveal system topology or active users                   | Encrypted storage, access controls, masked PII                                    |
+| Node-to-Node Communication | S      | Identity spoof               | Send forged messages                                            | Cross-node compromise                                    | Signed messages, CT binding, mutual attestation                                   |
+| Node-to-Node Communication | T      | Message tampering            | Modify messages in transit                                      | Unauthorized telepresence or state change                | End-to-end encryption, signed payloads                                            |
+| Node-to-Node Communication | D      | Replay attack                | Re-send old messages                                            | Bypass revocation or state transition                    | Nonce + timestamp validation, ephemeral CT enforcement                            |
+| Overall System             | E      | Unauthorized telepresence    | Exploit race between auth and TP activation                     | Access without authentication                            | Strict FSM enforcement, event-driven activation, fail-closed principle            |
+| Overall System             | D      | Deauthentication attack      | Force user/device offline to inject malicious state             | Session takeover or data tampering                       | Real-time detection, rapid CT revocation, anomaly alerting                        |
+
+---
+
+## **3. Analysis Notes**
+
+1. **Deauthentication-related attacks**
+
+   * The matrix explicitly covers **classical and substitution attacks**:
+
+     * **User absent → data manipulation**
+     * **User identity reused → telepresence & session abuse**
+   * Mitigation relies on **ephemeral tokens, signed FSM events, and immediate session termination**.
+
+2. **Telepresence-specific threats**
+
+   * Telepresence pods are ephemeral, sandboxed, and bound to CTs to **prevent privilege escalation or cross-node impersonation**.
+   * No telepresence session persists if the authentication state transitions to DEAUTH or SUBSTITUTED.
+
+3. **Node-to-node communication threats**
+
+   * Attacks across distributed nodes (spoof, tamper, replay) are mitigated via **mutual attestation, signed messages, ephemeral CTs, and encrypted transport**.
+
+4. **Audit & Forensics**
+
+   * Append-only logs with cryptographic verification prevent **repudiation and tampering**, ensuring **post-incident analysis** is reliable.
+
+5. **Zero Trust Enforcement**
+
+   * Every component assumes **no implicit trust**, requiring **continuous validation of identity, CT, and FSM state**.
+
+---
+
+## **4. Threat Prioritization**
+
+| STRIDE                | Likelihood | Impact   | Priority | Notes                                                     |
+| --------------------- | ---------- | -------- | -------- | --------------------------------------------------------- |
+| S (Spoofing)          | High       | Critical | P1       | Identity & node impersonation top risk                    |
+| T (Tampering)         | Medium     | High     | P2       | Critical for telepresence & FSM events                    |
+| R (Repudiation)       | Low        | Medium   | P3       | Mitigated by immutable logs                               |
+| I (Info Disclosure)   | Medium     | High     | P2       | Telepresence & identity leakage potential                 |
+| D (Denial of Service) | Medium     | Medium   | P2       | Attackers can exhaust resources, mitigated by fail-closed |
+| E (Elevation)         | Low        | Critical | P1       | Telepresence sandbox ensures containment                  |
+
+---
+
+## **5. Threat Mitigation Map**
+
+| Attack Vector       | Component                 | Mitigation Mechanism                       |
+| ------------------- | ------------------------- | ------------------------------------------ |
+| Credential theft    | Identity Service          | MFA, TPM attestation, ephemeral sessions   |
+| Telepresence hijack | Telepresence Orchestrator | Sandbox, ephemeral CT, mTLS routing        |
+| State tampering     | Transition Control        | Signed FSM events, event sourcing          |
+| Replay attacks      | Node Communication        | Nonce + timestamp validation               |
+| Audit tampering     | Audit Service             | Append-only logs, cryptographic signatures |
+| Node impersonation  | Service Mesh              | Mutual attestation, SPIFFE IDs             |
+
+---
+
+## **6. Key Security Principles Enforced**
+
+1. **Authentication-state transitions are authoritative** – all telepresence and downstream operations are subordinate.
+2. **All ephemeral tokens are bound to state** – no session persists after deauth.
+3. **Zero-trust policy is enforced everywhere** – no component is implicitly trusted.
+4. **Full observability** – immutable logs enable real-time monitoring and forensic analysis.
+5. **Fail-closed by default** – any validation failure results in immediate session termination or denial.
+
+---
+
+This **ASTA-TP Threat Model Matrix** gives a **full mapping from STRIDE categories to components, attack vectors, mitigations, and priorities**, forming a **formal security baseline for production deployment**.
