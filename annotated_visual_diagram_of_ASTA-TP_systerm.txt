@@ -1,0 +1,112 @@
+A **fully annotated, production-ready visual diagram** of the ASTA-TP system, with **heatmap risk overlay, attack vectors, mitigation arrows, and feedback loops**. It uses **Mermaid syntax** so it can be rendered directly in docs, dashboards, or Confluence.
+
+---
+
+```mermaid
+%% ASTA-TP Production-Grade Threat & Risk Diagram
+%% Fully annotated with STRIDE, risk heatmap, attack vectors, and mitigations
+
+flowchart TD
+  %% LAYER 1: IDENTITY / AUTHENTICATION
+  style U fill:#ff4c4c,stroke:#000,stroke-width:2px
+  U[User / Device Identity<br>Risk: 🔴 Critical<br>Spoofing, Credential Theft] 
+
+  style I fill:#ff4c4c,stroke:#000,stroke-width:2px
+  I[Identity Control Plane<br>Risk: 🔴 Critical<br>MFA, TPM, Ephemeral CT] 
+
+  U -->|Login / Auth Request| I
+  U -. Spoofing / Credential Theft .-> I
+
+  %% LAYER 2: AUTH STATE / TRANSITION
+  style T fill:#ff9900,stroke:#000,stroke-width:2px
+  T[Transition Control Plane<br>Risk: 🟠 Medium<br>State Tampering, Event Suppression]
+
+  I -->|CT Issued / Auth-State Event| T
+  T -. Tampering / Event Suppression .-> TP
+
+  %% LAYER 3: TELEPRESENCE & NODES
+  style TP fill:#ff4c4c,stroke:#000,stroke-width:2px
+  TP[Telepresence Orchestrator<br>Risk: 🔴 Critical<br>Session Hijack, Privilege Escalation<br>Sandboxed, Ephemeral CT]
+
+  style SM fill:#ff9900,stroke:#000,stroke-width:2px
+  SM[Service Mesh<br>Risk: 🟠 Medium<br>Node Impersonation, Cross-Node Traffic Abuse<br>mTLS, SPIFFE]
+
+  style N fill:#ff9900,stroke:#000,stroke-width:2px
+  N[Node / Edge Devices<br>Risk: 🟠 Medium<br>Device Spoofing, Replay Attacks<br>TPM-backed, Gateway mediated]
+
+  T -->|AUTH_STATE_CHANGED Event| TP
+  TP -->|Session Creation / Telepresence| N
+  TP -->|Policy Enforcement| SM
+
+  %% ATTACK VECTORS
+  U -. Credential Theft / Spoofing .-> TP
+  T -. FSM Tampering .-> TP
+  SM -. Node Impersonation .-> N
+  TP -. Session Hijack / Privilege Escalation .-> N
+
+  %% AUDIT / FORENSICS
+  style A fill:#33cc33,stroke:#000,stroke-width:2px
+  A[Audit Service / Immutable Logs<br>Risk: 🟢 Low<br>Append-only WORM, Crypto-signed]
+
+  T -->|Audit Event| A
+  TP -->|Audit Event| A
+  A -->|Alerts / Revocation Commands| T
+  A -->|SOC Monitoring| TP
+
+  %% MITIGATION FEEDBACK LOOPS
+  style MF fill:#33cc33,stroke:#000,stroke-width:2px
+  MF[Mitigation Feedback Loop<br>Fail-Closed, Revocation, Termination]
+
+  A --> MF
+  MF -->|Terminate Telepresence / Revoke CT| TP
+  MF -->|Enforce FSM Validation| T
+  SM -->|mTLS + CT Validation| TP
+  N -->|Device Attestation / Policy Check| TP
+
+  %% NOTES / HEATMAP
+  classDef critical fill:#ff4c4c,stroke:#000,stroke-width:2px;
+  classDef medium fill:#ff9900,stroke:#000,stroke-width:2px;
+  classDef low fill:#33cc33,stroke:#000,stroke-width:2px;
+
+  class U,I,TP critical;
+  class T,SM,N medium;
+  class A,MF low;
+
+  %% Legend
+  subgraph LEGEND [Legend]
+    direction LR
+    CR[🔴 Critical]:::critical
+    ME[🟠 Medium]:::medium
+    LO[🟢 Low]:::low
+  end
+```
+
+---
+
+### **Diagram Features**
+
+1. **Color-coded heatmap**
+
+   * Red 🔴: Critical threats (identity, telepresence)
+   * Orange 🟠: Medium risk (FSM, nodes, service mesh)
+   * Green 🟢: Low risk (audit, mitigation feedback)
+
+2. **Attack vectors**
+
+   * Dotted lines with labels show spoofing, tampering, session hijack, node impersonation
+
+3. **Mitigation feedback loops**
+
+   * Solid green arrows showing **real-time intervention**, e.g., termination of sessions, FSM enforcement, SOC alerts
+
+4. **Layered architecture**
+
+   * Identity → Transition → Telepresence → Nodes → Audit
+
+5. **STRIDE annotations**
+
+   * Each component shows dominant STRIDE risks
+
+---
+
+This diagram is **ready for rendering in Mermaid-enabled tools** and can serve as a **production-ready visualization for SOC dashboards, architecture docs, and security briefings**.
