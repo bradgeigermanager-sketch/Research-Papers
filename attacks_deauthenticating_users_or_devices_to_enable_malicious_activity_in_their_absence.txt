@@ -1,0 +1,71 @@
+Attacks inducing deauthentication to enable malicious code insertion or other system or network changes in the absence of the authorized users or devices
+
+**Scenario Overview**
+
+1. **Attacker Forces Deauthentication**
+
+   * Target: User devices, IoT devices, or systems connected to a network.
+   * Method: Sending deauthentication frames (for Wi-Fi), session termination commands, or disconnecting users from a service.
+   * Result: Device temporarily loses connectivity or loses its authenticated session.
+
+2. **Vulnerability Window**
+
+   * During or immediately after deauthentication:
+
+     * Devices may **automatically try to reconnect**.
+     * Devices may **pull updates, configurations, or policies** once reconnected.
+     * The system might **accept instructions from any source that appears legitimate**.
+
+3. **Exploitation**
+
+   * Attacker uses the window created by deauthentication to:
+
+     * **Insert new instructions** (e.g., malicious scripts, rogue policies).
+     * **Substitute or replace existing instructions** (e.g., replace legitimate firmware with compromised firmware).
+     * **Manipulate configuration data** (e.g., DNS settings, routing tables, or security policies).
+   * Techniques can include:
+
+     * **Evil Twin / Rogue AP**: Device connects to a fake network controlled by the attacker.
+     * **Session Hijacking / MITM**: Attacker intercepts requests during reconnection.
+     * **Update or Policy Injection**: Target fetches instructions from a compromised server or attacker-supplied resource.
+
+4. **Outcome**
+
+   * Device executes malicious instructions believing they are legitimate.
+   * Data, policies, or configurations can be silently modified or replaced.
+   * The attack may persist even after reconnection to the legitimate network, if the instructions remain active.
+
+---
+
+### **Key Characteristics**
+
+* **Deauthentication is a tool, not the end goal**: It creates a window of opportunity.
+* **Timing is critical**: The attacker exploits the reconnection or resynchronization process.
+* **Trust exploitation**: Systems often assume that instructions or policies fetched post-reconnection are trustworthy.
+* **Can target multiple layers**: Network-level (Wi-Fi), application-level (cloud services), or device-level (IoT firmware).
+
+---
+
+### **Examples in Practice**
+
+1. **Wi-Fi Networks**
+
+   * Attacker sends deauth frames → device reconnects to rogue AP → rogue AP supplies malicious DHCP, DNS, or configuration instructions.
+
+2. **IoT Device Exploitation**
+
+   * Smart home device is disconnected → reconnects to compromised update server → attacker substitutes firmware or automation rules.
+
+3. **Enterprise Systems**
+
+   * VPN or remote desktop session is terminated → user reconnects → attacker injects malicious group policies or scripts via a compromised update endpoint.
+
+---
+
+### **Defensive Strategies**
+
+* **Mutual authentication for all instructions and updates**
+* **Digital signatures and integrity checks** for all policies, configurations, and firmware
+* **Alerting on unusual deauthentication patterns**
+* **Network segmentation** to reduce what instructions can be changed if a device is compromised
+* **Rate limiting and monitoring deauthentication attempts** to prevent forced disconnects
