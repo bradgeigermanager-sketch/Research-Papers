@@ -1,0 +1,263 @@
+**ASTA-TP Reference Implementation Architecture**
+
+*Authentication-State Transition & Telepresence Systems*
+**Version 1.0** – 2026-06-10
+
+---
+
+## **1. Architecture Overview**
+
+The system is divided into the following **implementation modules**:
+
+1. **Identity & Authentication Module** – handles user/device trust and credential lifecycle.
+2. **Telepresence Module** – manages perception/state continuity across nodes.
+3. **Transition Control Module** – enforces ASTA-TP state transitions.
+4. **Supervisory & Audit Module** – logs, monitors, and triggers response actions.
+5. **Node-to-Node Communication Module** – secure distributed coordination between hubs/nodes.
+
+---
+
+### **1.1 Module Interaction Diagram**
+
+```text
++-------------------------+
+| Identity & Authentication |
+|  - MFA                  |
+|  - PKI / TPM            |
+|  - Device Attestation   |
++-------------------------+
+           |
+           v
++-------------------------+
+| Transition Control       |
+|  - State Machine         |
+|  - Policy Enforcement    |
+|  - Revocation Engine     |
++-------------------------+
+           |
+           v
++-------------------------+
+| Telepresence Module      |
+|  - Session Sandbox       |
+|  - Continuity Tokens     |
+|  - Telepresence Channels |
++-------------------------+
+           |
+           v
++-------------------------+
+| Supervisory / Audit      |
+|  - Event Logging         |
+|  - Anomaly Detection     |
+|  - Forensic Replay       |
++-------------------------+
+           |
+           v
++-------------------------+
+| Node-to-Node Communication |
+|  - Mutual Attestation      |
+|  - Secure Messaging        |
+|  - Token Propagation       |
++-------------------------+
+```
+
+---
+
+## **2. Identity & Authentication Module**
+
+### **2.1 API Definitions**
+
+| API Endpoint          | Purpose              | Input                             | Output                   | Notes                                           |
+| --------------------- | -------------------- | --------------------------------- | ------------------------ | ----------------------------------------------- |
+| `/auth/login`         | Start authentication | username, password, MFA token     | session_id, ephemeral CT | Triggers ASTA-TP AUTHENTICATING → AUTHENTICATED |
+| `/auth/reauth`        | Reauthentication     | session_id, MFA                   | new session_id, new CT   | Required for REAUTHENTICATING state             |
+| `/auth/device/attest` | Device attestation   | device certificate, firmware hash | attestation_result       | Must succeed before telepresence activation     |
+| `/auth/logout`        | Terminate session    | session_id                        | confirmation             | Triggers AUTHENTICATED → DEAUTHENTICATED        |
+
+---
+
+### **2.2 Token Formats**
+
+**Continuity Token (CT) – JSON Web Token (JWT) Style Example:**
+
+```json
+{
+  "ct_id": "uuid-v4",
+  "principal_id": "user-1234",
+  "session_id": "sess-5678",
+  "issued_at": "2026-06-10T12:00:00Z",
+  "expires_at": "2026-06-10T12:05:00Z",
+  "node_id": "node-01",
+  "signature": "base64-ed25519-signature"
+}
+```
+
+* Ephemeral (TTL ≤ 5 min)
+* Non-transferable (bound to session_id)
+* Signed by node or enterprise trust anchor
+
+---
+
+## **3. Transition Control Module**
+
+### **3.1 State-Machine Template (Pseudo-Python)**
+
+```python
+from enum import Enum, auto
+
+class AuthState(Enum):
+    UNAUTHENTICATED = auto()
+    AUTHENTICATING = auto()
+    AUTHENTICATED = auto()
+    DEAUTHENTICATED = auto()
+    REAUTHENTICATING = auto()
+    SUBSTITUTED = auto()
+
+class TransitionController:
+    def __init__(self):
+        self.state = AuthState.UNAUTHENTICATED
+
+    def transition(self, target_state):
+        allowed = self.is_transition_allowed(target_state)
+        if allowed:
+            self.state = target_state
+            self.enforce_policies()
+        else:
+            raise Exception(f"Invalid transition: {self.state} → {target_state}")
+
+    def is_transition_allowed(self, target):
+        rules = {
+            AuthState.UNAUTHENTICATED: [AuthState.AUTHENTICATING],
+            AuthState.AUTHENTICATING: [AuthState.AUTHENTICATED],
+            AuthState.AUTHENTICATED: [AuthState.DEAUTHENTICATED, AuthState.SUBSTITUTED],
+            AuthState.DEAUTHENTICATED: [AuthState.REAUTHENTICATING],
+            AuthState.REAUTHENTICATING: [AuthState.AUTHENTICATED]
+        }
+        return target in rules.get(self.state, [])
+
+    def enforce_policies(self):
+        if self.state in [AuthState.DEAUTHENTICATED, AuthState.SUBSTITUTED]:
+            TelepresenceModule.terminate_sessions()
+        if self.state == AuthState.AUTHENTICATED:
+            TelepresenceModule.activate_sessions()
+```
+
+---
+
+### **3.2 Policy Enforcement Rules**
+
+* All telepresence session initiation must validate current **AuthState**.
+* Deauthentication must **immediately revoke all continuity tokens**.
+* Reauthentication must regenerate **new session IDs** and CTs.
+
+---
+
+## **4. Telepresence Module**
+
+### **4.1 API Definitions**
+
+| API Endpoint | Purpose                  | Input          | Output                    |
+| ------------ | ------------------------ | -------------- | ------------------------- |
+| `/tp/start`  | Activate telepresence    | session_id, CT | confirmation              |
+| `/tp/stop`   | Terminate telepresence   | session_id     | confirmation              |
+| `/tp/status` | Query telepresence state | session_id     | {active: bool, node: str} |
+
+---
+
+### **4.2 Sandbox Interface**
+
+* All telepresence operations execute within isolated containers.
+* No direct access to local credentials or sensitive APIs.
+* Cross-node commands only allowed if CT verified.
+
+---
+
+### **4.3 Telepresence Event Logging Schema**
+
+```json
+{
+  "event_id": "uuid-v4",
+  "session_id": "sess-5678",
+  "principal_id": "user-1234",
+  "node_id": "node-01",
+  "timestamp": "2026-06-10T12:01:23Z",
+  "event_type": "TP_START",
+  "ct_id": "ct-1234",
+  "signature": "base64-ed25519"
+}
+```
+
+---
+
+## **5. Node-to-Node Communication Module**
+
+### **5.1 Message Format**
+
+```json
+{
+  "msg_id": "uuid-v4",
+  "src_node": "node-01",
+  "dst_node": "node-02",
+  "payload": "encrypted_base64_data",
+  "ct_id": "ct-1234",
+  "timestamp": "2026-06-10T12:02:00Z",
+  "signature": "base64-ed25519-signature"
+}
+```
+
+* Mutual attestation required before processing.
+* All payloads encrypted with **TLS or enterprise KMS keys**.
+
+### **5.2 Mutual Attestation Protocol**
+
+1. Node A sends attestation request + certificate chain.
+2. Node B validates device and firmware hashes, then responds with signed acknowledgement.
+3. Both nodes exchange ephemeral session keys for encrypted telepresence data.
+
+---
+
+## **6. Supervisory & Audit Module**
+
+### **6.1 API Endpoints**
+
+| Endpoint          | Purpose                 | Input                    | Output                       |
+| ----------------- | ----------------------- | ------------------------ | ---------------------------- |
+| `/audit/logs`     | Retrieve immutable logs | time_range, node_id      | JSON array of events         |
+| `/audit/anomaly`  | Query anomaly scores    | principal_id, session_id | score, alerts                |
+| `/audit/forensic` | Trigger forensic replay | session_id               | reconstructed event timeline |
+
+### **6.2 Anomaly Detection Example**
+
+* Monitor unexpected deauthentication bursts
+* Telepresence session activation without authentication
+* Multiple node identity inconsistencies
+
+---
+
+## **7. Sample Operational Flow**
+
+**Scenario: User login → telepresence → deauthentication**
+
+1. User requests login → `/auth/login`
+2. AuthState: UNAUTH → AUTHENTICATING → AUTHENTICATED
+3. Continuity Token generated
+4. Telepresence session requested → `/tp/start`
+5. TransitionController enforces policies
+6. Session active
+7. User logs out → `/auth/logout`
+8. AuthState: AUTH → DEAUTH
+9. Telepresence session terminated → `/tp/stop`
+10. CT invalidated, logs generated
+
+---
+
+## **8. Security Hardening Guidelines**
+
+* All CTs signed with **Ed25519 or equivalent**
+* Session tokens must be short-lived (≤ 5 minutes)
+* Logs stored in **append-only, tamper-evident storage**
+* Supervisory devices must maintain **separate high-assurance credentials**
+* Nodes must reject any telepresence request without valid CT
+
+---
+
+This **reference implementation architecture** is now actionable for developers, system architects, and security engineers. It can be implemented in software applications, cloud services, IoT frameworks, and enterprise telepresence systems.
