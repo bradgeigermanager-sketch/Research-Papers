@@ -1,0 +1,155 @@
+The ASTA-TP threat model in a **graphical risk heatmap + multi-stage attack flow diagram**, showing how threats propagate across **authentication-state, telepresence, and node communication layers**, and where mitigations intervene. It can be implemented in visualization tools like **Mermaid, Graphviz, or Lucidchart**.
+
+---
+
+# **ASTA-TP Attack Flow & Risk Heatmap Diagram**
+
+---
+
+## **1. Layered Structure**
+
+We define **three primary layers**:
+
+1. **Identity & Authentication Layer**
+
+   * Users, devices, credentials, MFA, TPMs
+   * Key threats: Spoofing, info disclosure, replay
+
+2. **Authentication-State / Transition Layer**
+
+   * FSM enforcing AUTH, DEAUTH, REAUTH, SUBSTITUTED
+   * Key threats: Tampering, denial of service, state mismatch
+
+3. **Telepresence & Node Communication Layer**
+
+   * Telepresence pods, node-to-node messaging, service mesh
+   * Key threats: Elevation, session hijack, cross-node impersonation
+
+---
+
+## **2. Diagram Representation (Mermaid Syntax)**
+
+```mermaid
+flowchart TD
+  %% LAYER 1: IDENTITY
+  U[User/Device Identity] -->|Login| I[Identity Control Plane]
+  I -->|CT Issued| T[Transition Control Plane]
+  
+  %% Threats on Identity
+  U -. Spoofing .-> I
+  U -. Credential Theft .-> I
+  I -. Info Disclosure .-> U
+
+  %% LAYER 2: TRANSITION
+  T -->|AUTH_STATE_CHANGED Event| TP[Telepresence Orchestrator]
+  T -->|Audit Event| A[Audit Service]
+  
+  %% Threats on FSM
+  T -. State Tampering .-> TP
+  T -. Event Suppression .-> TP
+
+  %% LAYER 3: TELEPRESENCE & NODES
+  TP -->|Telepresence Pod| N[Node / Edge Devices]
+  TP -->|Policy Enforcement| SM[Service Mesh]
+  
+  %% Threats on Telepresence
+  TP -. Session Hijack .-> N
+  TP -. Privilege Escalation .-> SM
+  SM -. Node Impersonation .-> N
+
+  %% Audit / Monitoring
+  A -->|Immutable Logs| AuditLog[Append-Only Ledger]
+  A -. Log Tampering .-> AuditLog
+
+  %% Feedback / Mitigation
+  AuditLog -->|Alerts / Revocation| T
+  T -->|Terminate Session / Revoke CT| TP
+  SM -->|mTLS + CT Validation| TP
+```
+
+---
+
+## **3. Heatmap Overlay**
+
+We assign **risk levels** per layer/component using **color coding**:
+
+| Risk Level      | Color     | Notes                                             |
+| --------------- | --------- | ------------------------------------------------- |
+| Critical / High | 🔴 Red    | Spoofing, Elevation of Privilege, State Tampering |
+| Medium          | 🟠 Orange | Replay attacks, Info Disclosure, Session Hijack   |
+| Low             | 🟢 Green  | Audit delays, minor DoS                           |
+
+---
+
+### **Layer Heatmap Annotations**
+
+1. **Identity Layer (U → I)** 🔴
+
+   * Highest risk: Credential theft, device spoofing
+   * Mitigation: MFA + TPM attestation + ephemeral CT
+
+2. **Transition Layer (I → T → TP)** 🟠
+
+   * Risk: State tampering, event suppression
+   * Mitigation: Signed FSM events, redundant message bus
+
+3. **Telepresence & Node Layer (TP → N, TP → SM)** 🔴
+
+   * Risk: Session hijacking, privilege escalation
+   * Mitigation: Sandbox pods, mTLS, ephemeral CT binding, strict FSM enforcement
+
+4. **Audit Layer (A → AuditLog)** 🟢
+
+   * Risk: Log tampering
+   * Mitigation: Append-only, cryptographically signed logs
+
+---
+
+## **4. Multi-Stage Attack Flow Examples**
+
+### **Scenario 1: Deauthentication Exploit**
+
+1. Attacker forces user deauth (DEAUTH state) 🔴
+2. Attempt to insert malicious telepresence actions 🟠
+3. Mitigation triggers:
+
+   * FSM revokes CT
+   * Telepresence pods terminated
+   * Audit logs record the attempted action
+
+### **Scenario 2: Identity Substitution**
+
+1. Attacker steals CT from deauthenticated user 🔴
+2. Attempts telepresence session as that user 🔴
+3. Mitigation:
+
+   * Node-to-node attestation fails
+   * Sandbox prevents privilege escalation
+   * Alert fired to SOC
+
+### **Scenario 3: Cross-Node Replay**
+
+1. Replays AUTH_STATE_CHANGED event from older session 🟠
+2. Attempt to revive old telepresence session 🟠
+3. Mitigation:
+
+   * Nonce + timestamp validation fails
+   * FSM rejects unauthorized transition
+
+---
+
+## **5. Diagram Interpretation**
+
+* **Flow Direction**: Top-to-bottom, Identity → Transition → Telepresence/Node
+* **Threat Arrows**: Dotted red/orange lines showing attack vectors
+* **Mitigation Arrows**: Solid green lines showing automated defense response
+* **Feedback Loops**: Audit → SOC → Transition → Telepresence
+* **Heatmap Overlay**: Color-coded per component criticality
+
+---
+
+## **6. Observations**
+
+1. **Critical attack surfaces**: Identity issuance, telepresence activation, node communication
+2. **Mitigation philosophy**: Fail-closed + ephemeral tokens + sandboxed execution
+3. **Audit & monitoring**: Continuous feedback loops ensure attacks trigger immediate system response
