@@ -1,0 +1,128 @@
+Unified Threat Taxonomy: Authentication-State Transition Attacks (ASTA)
+
+Purpose: Provide a framework to classify, analyze, and mitigate attacks that exploit transitions in authentication state, identity anchoring, or trust establishment.
+
+1. Scope and Definitions
+1.1 Authentication-State Transition
+
+An authentication-state transition occurs when a principal (user, device, or system) moves from one security state to another, e.g.:
+
+State	Description
+Unauthenticated	No verified identity
+Authenticated	Verified identity present in the system
+Deauthenticated / Absent	Identity is temporarily removed or disconnected
+Impersonated	Attacker occupies the identity of another principal
+Trust-Anchored	Identity is cryptographically or procedurally anchored
+1.2 Key Concepts
+Principal: Any entity capable of performing authenticated actions (user, device, service).
+Trust Anchor: Mechanism by which a principal’s identity is considered valid (PKI, hardware key, co-location verification, MFA).
+First Contact / Onboarding: Initial trust establishment with a principal.
+Contact Continuity: Maintaining trust and communication after first contact.
+Attack Window: A time period during which a principal’s absence or transition creates exploitable conditions.
+2. Taxonomy Categories
+
+We can classify attacks along three axes:
+
+Transition Type
+Mechanism Exploited
+Attack Outcome
+2.1 Transition-Based Categories
+Category	Description	Example Scenarios
+Absence Exploitation	Malicious activity triggered by the lack of a principal	Forced deauth → policy bypass → unattended system misconfiguration
+Identity Substitution / Hijacking	Exploitation of a principal’s identity after they are deauthenticated	Session hijacking, token replay, pass-the-hash
+First-Contact Manipulation	Attacks during initial trust establishment	Remote onboarding spoofing, fake provisioning endpoints
+Post-Onboarding Drift / Continuity Exploitation	Exploitation of continuity mechanisms after identity is anchored	Replay of tokens, exploitation of trust between co-located devices, lateral movement in networked clusters
+Co-location Exploitation	Manipulation or spoofing in environments that rely on physical proximity or co-location	BLE/NFC relay attacks, device cloning in physical proximity
+2.2 Mechanism-Based Subcategories
+Mechanism	Attack Vector	Notes
+Network Deauthentication / Disconnection	Loss of session / forced removal	Exploited in Absence or Substitution attacks
+Credential Theft / Replay	Hashes, tokens, certificates	Essential for Identity Substitution
+Protocol Exploitation	Weak handshake, insecure session re-establishment	Critical during First Contact & Continuity
+Trust Anchoring Weakness	Failure in cryptographic or procedural verification	Weak anchors amplify all categories
+Human-In-The-Loop Manipulation	Social engineering, phishing during onboarding	Typically seen in First Contact manipulation
+Device or Endpoint Cloning	Duplication of identity artifacts	Amplifies Identity Substitution & Co-location attacks
+2.3 Outcome-Based Taxonomy
+Outcome	Definition	Examples
+Unauthorized Action Execution	Attacker performs actions under false authorization	Config changes, code deployment
+Policy/Configuration Tampering	Alteration or replacement of instructions	Security policy substitution, firmware injection
+Data Exfiltration / Theft	Extraction of sensitive information	Exploiting unattended devices, networked storage
+Audit and Attribution Corruption	Logs or actions misattributed to legitimate principal	Identity substitution, session hijacking
+Trust Erosion	Degradation of system confidence in principals	Remote onboarding abuse, compromised anchors
+3. Mapping Scenarios to the Taxonomy
+Scenario	Transition Category	Mechanism	Outcome
+Forced deauth → unattended exploitation	Absence Exploitation	Network deauthentication, trust anchoring gap	Unauthorized actions, policy tampering
+Forced deauth → identity reuse	Identity Substitution	Credential theft, session replay	Unauthorized action execution, audit corruption
+Remote onboarding vs co-location debate	First-Contact Manipulation	Protocol exploitation, human-in-the-loop manipulation	Trust erosion, policy misconfiguration
+Post-authenticated communication exploits	Post-Onboarding Drift	Replay attacks, lateral movement	Data exfiltration, audit corruption
+Relay/NFC or device cloning in physical space	Co-location Exploitation	Device cloning, protocol weakness	Unauthorized actions, audit corruption
+4. Security Considerations Across Categories
+High-risk phases
+First-contact / onboarding
+Deauthentication / absence windows
+Trust re-establishment after network transitions
+Mitigation strategies
+Multi-factor verification for first contact
+Strong cryptographic anchors (hardware-backed keys)
+Continuous authentication / behavioral monitoring
+Monitoring deauthentication events
+Rate-limiting critical session terminations
+Secure device provisioning and anti-cloning measures
+Design principle
+Authentication-state transitions must be treated as critical attack surfaces.
+Security must be evaluated not only in steady-state but during all transition windows.
+5. Integrating Co-location and Remote Trust
+Co-location is a strong but not always feasible trust anchor.
+Remote onboarding is unavoidable in global networks but requires cryptographically or procedurally verified first-contact mechanisms.
+Systems should never assume absence or presence is benign—all transitions should be logged, monitored, and protected.
+6. Illustrative Flow: Identity-State Transition Attack
+[Unauthenticated] 
+       |
+       v
+[First Contact / Onboarding] 
+       |  <-- protected by trust anchors (co-location or cryptography)
+       v
+[Authenticated]
+       |  <-- attacker may force deauth / exploit absence
+       v
+[Deauthenticated / Absent]
+       |  <-- absence exploitation possible
+       v
+[Identity Substitution / Hijacking]
+       |  <-- attacker acts under victim identity
+       v
+[Authenticated as Attacker]
+       |  <-- unauthorized actions executed
+       v
+[Audit / Trust Corruption]
+
+This flow can be annotated with mitigation checkpoints at every transition.
+
+7. Research Alignment
+The taxonomy unifies concepts found in:
+Deauthentication attacks in wireless systems
+Identity substitution in enterprise networks (pass-the-hash, session hijacking)
+Remote onboarding and zero-trust architectures
+IoT device pairing and co-location security
+Continuous authentication / behavioral verification research
+8. Practical Implications
+Risk modeling
+Each transition is a potential attack surface
+Prioritize monitoring & mitigation during transitions
+Security policy design
+Treat first-contact as the most sensitive operation
+Use continuous verification after trust establishment
+Consider co-location only when cryptographic trust is unavailable
+System architecture
+Design networked systems to limit the impact of absence or identity substitution
+Ensure that audit logs distinguish between absence-induced actions and identity-substituted actions
+✅ Summary
+
+The Authentication-State Transition Attack (ASTA) Taxonomy unifies:
+
+Absence exploitation
+Identity substitution
+Remote vs co-located onboarding
+Post-onboarding continuity attacks
+Co-location-dependent vulnerabilities
+
+It emphasizes transitions, not just steady-state security, as the fundamental attack vector, offering a clear framework for both system designers and security researchers to reason about threats across domains, from wireless networks to cloud and IoT ecosystems.
