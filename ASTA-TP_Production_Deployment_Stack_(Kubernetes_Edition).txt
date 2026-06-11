@@ -1,0 +1,369 @@
+**ASTA-TP Production Deployment Stack (Kubernetes Edition)**
+
+---
+
+# **1. Target Architecture**
+
+```text id="k8s_arch"
+                        ┌──────────────────────────────┐
+                        │        Grafana SOC UI         │
+                        │  (Dashboards + Heatmaps)      │
+                        └──────────────┬───────────────┘
+                                       │
+                        ┌──────────────▼───────────────┐
+                        │     Observability Layer       │
+                        │ Prometheus / Loki / Tempo     │
+                        └──────────────┬───────────────┘
+                                       │
+        ┌──────────────────────────────▼──────────────────────────────┐
+        │                ASTA-TP Control Plane (K8s)                  │
+        │-------------------------------------------------------------│
+        │ Identity | FSM Transition | Telepresence Orchestrator       │
+        │ Audit    | Mitigation Engine | Event Bus (Kafka/NATS)       │
+        └──────────────┬───────────────────────────┬─────────────────┘
+                       │                           │
+        ┌──────────────▼──────────────┐ ┌─────────▼───────────┐
+        │ Service Mesh (Istio / Linkerd│ │ Telepresence Pods   │
+        │ SPIFFE Identity + mTLS       │ │ gVisor / Kata       │
+        └──────────────┬──────────────┘ └─────────┬───────────┘
+                       │                           │
+                ┌──────▼────────┐        ┌───────▼──────────┐
+                │ Edge Nodes     │        │ External Devices  │
+                │ IoT / Gateways │        │ TPM Attested      │
+                └────────────────┘        └───────────────────┘
+```
+
+---
+
+# **2. Kubernetes Namespace Design**
+
+```yaml id="namespaces"
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asta-identity
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asta-fsm
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asta-telepresence
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asta-audit
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asta-observability
+```
+
+---
+
+# **3. Helm Chart Structure**
+
+```text id="helm_structure"
+asta-tp/
+│
+├── charts/
+│   ├── identity/
+│   ├── fsm/
+│   ├── telepresence/
+│   ├── audit/
+│   ├── gateway/
+│
+├── templates/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── hpa.yaml
+│   ├── configmap.yaml
+│
+├── values.yaml
+```
+
+---
+
+# **4. Identity Service (K8s Deployment)**
+
+```yaml id="identity_deploy"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: identity-service
+  namespace: asta-identity
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: identity
+  template:
+    metadata:
+      labels:
+        app: identity
+    spec:
+      containers:
+        - name: identity
+          image: astatp/identity:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MFA_REQUIRED
+              value: "true"
+            - name: TPM_ENFORCED
+              value: "true"
+```
+
+---
+
+# **5. FSM Transition Engine (Critical Control Plane)**
+
+```yaml id="fsm_deploy"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fsm-controller
+  namespace: asta-fsm
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+        - name: fsm
+          image: astatp/fsm:latest
+          env:
+            - name: STRICT_MODE
+              value: "true"
+            - name: FAIL_CLOSED
+              value: "true"
+```
+
+---
+
+# **6. Telepresence Orchestrator (Sandboxed Pods)**
+
+```yaml id="telepresence_deploy"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telepresence-orchestrator
+  namespace: asta-telepresence
+spec:
+  replicas: 4
+  template:
+    spec:
+      containers:
+        - name: tp
+          image: astatp/telepresence:latest
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+```
+
+---
+
+# **7. Service Mesh (Istio Security Policy)**
+
+```yaml id="istio_policy"
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: asta-telepresence
+spec:
+  mtls:
+    mode: STRICT
+```
+
+---
+
+```yaml id="authorization_policy"
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: tp-policy
+  namespace: asta-telepresence
+spec:
+  rules:
+  - from:
+    - source:
+        principals: ["cluster.local/ns/asta-fsm/*"]
+```
+
+---
+
+# **8. Event Bus (Kafka Deployment)**
+
+```yaml id="kafka"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka
+  namespace: asta-fsm
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: kafka
+          image: bitnami/kafka:latest
+          env:
+            - name: KAFKA_CFG_PROCESS_ROLES
+              value: broker
+```
+
+---
+
+# **9. Prometheus + Grafana Observability Stack**
+
+```yaml id="prometheus"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus
+  namespace: asta-observability
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: prometheus
+          image: prom/prometheus
+```
+
+---
+
+```yaml id="grafana"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana
+  namespace: asta-observability
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: grafana
+          image: grafana/grafana
+          ports:
+            - containerPort: 3000
+```
+
+---
+
+# **10. Telemetry Metrics (ASTA-TP Core Signals)**
+
+## Prometheus Metrics
+
+```text id="metrics"
+asta_auth_state_transition_total
+asta_deauth_events_total
+asta_telepresence_sessions_active
+asta_ct_revocations_total
+asta_node_attestation_failures_total
+asta_fsm_invalid_transitions_total
+```
+
+---
+
+# **11. Grafana Dashboard Panels**
+
+### Panel 1 — Authentication State Flow
+
+* AUTH → DEAUTH → REAUTH timeline
+
+### Panel 2 — Telepresence Sessions
+
+* Active pods per node
+
+### Panel 3 — Attack Detection Heatmap
+
+* STRIDE-based risk visualization
+
+### Panel 4 — FSM Violations
+
+* Invalid transitions over time
+
+### Panel 5 — Node Trust Score
+
+* TPM attestation success/failure
+
+---
+
+# **12. Alert Rules (Prometheus)**
+
+```yaml id="alerts"
+groups:
+- name: asta-alerts
+  rules:
+  - alert: DeauthSpike
+    expr: increase(asta_deauth_events_total[1m]) > 5
+    for: 10s
+
+  - alert: FSMViolation
+    expr: asta_fsm_invalid_transitions_total > 0
+
+  - alert: TelepresenceHijackRisk
+    expr: asta_telepresence_sessions_active == 0 and increase(asta_auth_state_transition_total[5m]) > 10
+```
+
+---
+
+# **13. Security Hardening (Critical Layer)**
+
+### Enforced Globally:
+
+* mTLS everywhere (Istio STRICT mode)
+* No privileged containers
+* Ephemeral CTs required for all requests
+* Telepresence pods are:
+
+  * sandboxed (gVisor / Kata)
+  * stateless
+  * auto-terminated on DEAUTH
+* All FSM transitions signed
+
+---
+
+# **14. Fail-Closed Behavior Model**
+
+| Failure               | System Response           |
+| --------------------- | ------------------------- |
+| Identity service down | deny all authentication   |
+| FSM mismatch          | terminate telepresence    |
+| CT invalidation       | revoke session instantly  |
+| Kafka outage          | freeze telepresence layer |
+| Mesh failure          | isolate nodes             |
+
+---
+
+# **15. What This System Now Is**
+
+This architecture upgrades ASTA-TP into:
+
+* a **distributed zero-trust OS-like security fabric**
+* a **real-time authentication-state enforcement system**
+* a **telepresence sandbox orchestration layer**
+* a **SOC-native observability platform**
+* a **self-revoking trust system under attack conditions**
+
+---
+
+# **16. Key Design Insight**
+
+> The system does not assume users are trusted actors in steady state — only in continuously validated authentication-state intervals.
+
+That is what prevents:
+
+* deauthentication-based injection attacks
+* session substitution
+* stale credential reuse
+* telepresence persistence after identity loss
