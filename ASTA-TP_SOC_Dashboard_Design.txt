@@ -1,0 +1,165 @@
+A **production-ready ASTA-TP SOC dashboard** that integrates the threat model, telepresence monitoring, node attestation, and mitigation feedback loops into a **real-time visualization and alerting platform**. Broken down into **architecture, components, data flows, and UI layout**, so it can be implemented in practice.
+
+---
+
+# **ASTA-TP SOC Dashboard Design**
+
+---
+
+## **1. Dashboard Goals**
+
+1. **Real-time monitoring** of telepresence sessions, FSM state transitions, node activity, and identity events.
+2. **Threat detection and alerting** for spoofing, tampering, session hijacking, and node impersonation.
+3. **Mitigation visibility** — show which mitigation actions were triggered (CT revocation, session termination, sandboxing).
+4. **Historical analytics** for auditing and forensics.
+
+---
+
+## **2. Core Architecture**
+
+### **Layers & Components**
+
+| Layer                     | Component                      | Function                                                           |
+| ------------------------- | ------------------------------ | ------------------------------------------------------------------ |
+| **Data Collection**       | Identity & Auth Logger         | Collect MFA, CT issuance, and auth events                          |
+|                           | Transition Event Bus           | Stream FSM events (AUTH, DEAUTH, REAUTH, SUBSTITUTED)              |
+|                           | Telepresence Orchestrator Logs | Session creation, sandbox status, ephemeral CTs                    |
+|                           | Node Telemetry                 | Node status, attestation results, mesh communication               |
+| **Processing & Analysis** | Event Aggregator               | Combines streams for correlation                                   |
+|                           | Threat Detection Engine        | Applies ASTA-TP rules (STRIDE mapping, anomaly detection)          |
+|                           | Mitigation Controller          | Triggers fail-closed actions, revokes CTs, kills telepresence pods |
+| **Storage**               | Time-series DB                 | Telemetry + event history (Prometheus, InfluxDB)                   |
+|                           | Audit Ledger                   | Immutable append-only logs for compliance                          |
+| **Visualization**         | SOC Dashboard UI               | Layered views, heatmap overlays, attack flows                      |
+|                           | Alert Panel                    | Critical/Major/Minor alerts, linked to mitigation actions          |
+
+---
+
+## **3. Data Flow Diagram**
+
+```mermaid
+flowchart TD
+  %% Identity Events
+  ID[Identity / Auth Events] --> EB[Event Bus]
+
+  %% FSM / Transition
+  FSM[FSM / Transition Events] --> EB
+
+  %% Telepresence
+  TP[Telepresence Orchestrator Logs] --> EB
+
+  %% Nodes
+  NODE[Node Telemetry] --> EB
+
+  %% Aggregation & Threat Detection
+  EB --> AGG[Event Aggregator]
+  AGG --> TDE[Threat Detection Engine]
+  TDE --> MIT[Mitigation Controller]
+  MIT --> EB
+
+  %% Storage
+  AGG --> TSDB[Time-Series DB]
+  TDE --> Audit[Immutable Audit Ledger]
+
+  %% Visualization
+  TSDB --> Dash[SOC Dashboard UI]
+  Audit --> Dash
+  TDE --> Dash
+  MIT --> Dash
+```
+
+---
+
+## **4. Dashboard Layout (UI / UX)**
+
+### **Top Section – System Status**
+
+* Heatmap of components:
+
+  * Identity layer (red)
+  * Transition layer (orange)
+  * Telepresence layer (red/orange)
+  * Nodes (orange)
+  * Audit & Mitigation (green)
+* Hover for STRIDE risks and last event timestamps.
+
+### **Middle Section – Live Event Stream**
+
+* Table or timeline:
+
+  * Event type (AUTH, DEAUTH, SUBSTITUTED, session creation, revocation)
+  * Component / Node / User
+  * Risk level (Critical / Medium / Low)
+  * Action taken (mitigation, alert, none)
+
+### **Bottom Section – Attack Flow Visualization**
+
+* Force-directed or Sankey diagram showing:
+
+  * Active telepresence sessions
+  * Node-to-node communication
+  * Mitigation triggers (arrows in green)
+  * Active attack vectors (arrows in red/orange)
+* Optional: animated “real-time” flow for SOC operators
+
+### **Right Sidebar – Alerts & Mitigation Panel**
+
+* Sorted by severity:
+
+  * 🔴 Critical (e.g., Identity spoofing, telepresence hijack)
+  * 🟠 Medium (FSM tampering, node impersonation)
+  * 🟢 Low (audit anomalies)
+* Click → view mitigation logs and event trace
+
+### **Bottom-left – Historical Analytics**
+
+* Telepresence session trends
+* Node attestation history
+* FSM transition history
+* Mitigation outcomes
+
+---
+
+## **5. Components / Technology Stack**
+
+| Function                        | Technology Options                                         |
+| ------------------------------- | ---------------------------------------------------------- |
+| Event Bus                       | Kafka, NATS, or RabbitMQ                                   |
+| Telemetry / Metrics             | Prometheus, InfluxDB                                       |
+| Threat Detection                | Custom rule engine + ML anomaly detection (Python, Go)     |
+| Dashboard                       | Grafana, Kibana, or custom React/D3.js                     |
+| Alerts                          | Grafana Alerts, PagerDuty, Slack/Webhook integration       |
+| Storage / Audit                 | Append-only ledger (PostgreSQL + cryptographic signatures) |
+| Node / Telepresence Integration | gRPC, mTLS, ephemeral CT validation                        |
+
+---
+
+## **6. Mitigation Integration**
+
+* Dashboard UI shows **active mitigation status per node/session**
+* Mitigation Controller APIs:
+
+  * `RevokeCT(userID, deviceID)`
+  * `TerminateTP(sessionID)`
+  * `SandboxReset(nodeID)`
+  * `TriggerFSMValidation()`
+* Alert icons visually overlay the active attack vector on the dashboard map.
+
+---
+
+## **7. Security Principles Applied**
+
+1. **Zero Trust**: All components validate ephemeral CTs before allowing activity.
+2. **Fail-Closed**: Any unverified event leads to automatic session termination.
+3. **Immutable Audit**: All dashboard events are backed by append-only cryptographic logs.
+4. **Real-Time Correlation**: Identity, FSM, Telepresence, and Node events are aggregated for instant threat detection.
+5. **STRIDE Mapping**: Dashboard annotates which STRIDE categories are currently active per event.
+
+---
+
+## **8. Optional Enhancements**
+
+* Geographical or cluster map of nodes for distributed deployments.
+* Live attack “playback mode” for SOC drills.
+* ML-based anomaly detection for subtle tampering or substitution attacks.
+* Export PDF or SVG of live heatmap for board review or incident reporting.
