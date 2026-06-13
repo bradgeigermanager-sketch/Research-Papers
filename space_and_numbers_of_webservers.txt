@@ -1,0 +1,12 @@
+How large is an average sized server data center?
+
+How many square meters does an average server data center occupy?
+
+How many square feet does an average server data center occupy?
+
+How many webservers are on this planet?
+
+How many kilobytes of digital data are currently stored on this instance of this planet?
+How many megabytes of digital data are currently stored on this instance of this planet?
+How many gigabytes of digital data are currently stored on this instance of this planet?
+How many terabytes of digital data are currently stored on this instance of this planet?
