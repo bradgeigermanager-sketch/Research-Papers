@@ -1,0 +1,9 @@
+How many webpages might be reasonably stored in 1 terabyte of hard drive space?
+How many webpages might be reasonably stored in 1 gigabyte of hard drive space?
+How many webpages might be reasonably stored in 1 megabyte of hard drive space?
+How many webpages might be reasonably stored in 1 kilobyte of hard drive space?
+
+How much physical space does 1 terabyte of stored computer memory consume in a server data center?
+How much physical space does 1 gigabyte of stored computer memory consume in a server data center?
+How much physical space does 1 megabyte of stored computer memory consume in a server data center?
+How much physical space does 1 kilobyte of stored computer memory consume in a server data center?
