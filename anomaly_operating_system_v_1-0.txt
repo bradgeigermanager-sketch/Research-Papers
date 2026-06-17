@@ -1,0 +1,421 @@
+Anomaly Operating System (AOS)
+a **systems‑engineering specification**
+**interfaces, data structures, lifecycle phases, module contracts, correlation logic, and compliance requirements**
+
+
+“Build this."
+
+---
+
+# **AOS‑SPEC v1.0 — Unified Cross‑Domain Anomaly Operating System Specification**
+
+---
+
+# **0. Scope**
+
+This specification defines the architecture, data models, lifecycle, interfaces, and operational semantics of the **Anomaly Operating System (AOS)**.  
+AOS provides a unified framework for detecting, triaging, explaining, correlating, and codifying anomalies across four domains:
+
+- **Financial Flows**  
+- **Law‑Enforcement Processes**  
+- **System Logs**  
+- **Social Dynamics**  
+
+AOS is domain‑agnostic at its core and uses domain modules as plug‑ins.
+
+---
+
+# **1. System Architecture**
+
+AOS consists of five primary subsystems:
+
+1. **Sensing Layer**  
+2. **Triage Engine**  
+3. **Root‑Cause Engine**  
+4. **Correlation Layer**  
+5. **Codification Layer**
+
+Each subsystem exposes a defined interface and consumes/produces standardized objects.
+
+---
+
+# **2. Core Data Model**
+
+All anomalies are represented using a unified schema.
+
+## **2.1 AnomalyRecord**
+
+```
+AnomalyRecord {
+    id: UUID
+    domain: enum { financial, law_enforcement, system_logs, social }
+
+    timestamp_detected: datetime
+    detection_source: enum { automated, human, llm, hybrid }
+
+    baseline_snapshot: BaselineSnapshot
+    observed_event: ObservedEvent
+
+    deviation_features: DeviationFeatures
+    impact_assessment: ImpactAssessment
+
+    status: enum { new, triaged, investigating, resolved, codified }
+
+    links: {
+        related_anomalies: list<UUID>
+        related_cases: list<UUID>
+    }
+
+    domain_specific: object   # defined by module contract
+}
+```
+
+---
+
+## **2.2 BaselineSnapshot**
+
+```
+BaselineSnapshot {
+    domain: enum
+    quantitative_profile: object
+    qualitative_profile: object
+    temporal_profile: object
+    structural_profile: object
+}
+```
+
+---
+
+## **2.3 ObservedEvent**
+
+```
+ObservedEvent {
+    raw_data: object
+    timestamp: datetime
+    actors: list<string>
+    entities: list<string>
+    metadata: object
+}
+```
+
+---
+
+## **2.4 DeviationFeatures**
+
+```
+DeviationFeatures {
+    magnitude: float | categorical
+    type: list<string>     # e.g., "timeline", "velocity", "narrative", "structure"
+    direction: string      # e.g., "spike", "drop", "shift", "fragmentation"
+    novelty_score: float   # 0–1
+}
+```
+
+---
+
+## **2.5 ImpactAssessment**
+
+```
+ImpactAssessment {
+    surfaces: list<string>   # financial, legal, technical, social
+    severity: enum { low, medium, high, critical }
+    urgency: enum { low, medium, high }
+    reversibility: enum { easy, moderate, hard, irreversible }
+}
+```
+
+---
+
+# **3. Domain Modules**
+
+Each domain implements a **Module Contract**.
+
+## **3.1 Module Contract**
+
+```
+DomainModule {
+    build_baseline(entity_or_group) -> BaselineSnapshot
+    detect_anomalies(input_stream, baseline) -> list<AnomalyRecord>
+    enrich_record(AnomalyRecord) -> AnomalyRecord
+    provide_playbooks() -> list<Playbook>
+    domain_specific_fields() -> schema
+}
+```
+
+---
+
+# **4. Anomaly Lifecycle**
+
+AOS defines a universal lifecycle:
+
+1. **Sense**  
+2. **Triage**  
+3. **Explain**  
+4. **Adapt**
+
+Each stage has strict semantics.
+
+---
+
+# **4.1 Sense Stage**
+
+### **Purpose:**  
+Identify deviations from baseline.
+
+### **Inputs:**  
+- Raw domain data  
+- BaselineSnapshot  
+
+### **Outputs:**  
+- Preliminary AnomalyRecord(s)
+
+### **Requirements:**  
+- Must support automated, human, and LLM sensing.  
+- Must compute deviation features.  
+- Must attach baseline snapshot.
+
+---
+
+# **4.2 Triage Stage**
+
+### **Purpose:**  
+Assess severity, urgency, and routing.
+
+### **Inputs:**  
+- AnomalyRecord  
+
+### **Outputs:**  
+- Updated AnomalyRecord with ImpactAssessment  
+- Routing decision
+
+### **Decision Logic:**  
+AOS uses a universal triage spine:
+
+```
+If critical_surface_risk → HighPriorityTrack
+Else if clustered → CaseTrack
+Else → MonitorTrack
+```
+
+### **Routing:**  
+- Domain playbook  
+- Cross-domain correlation engine  
+- Human escalation path  
+
+---
+
+# **4.3 Explain Stage (Root‑Cause Engine)**
+
+### **Purpose:**  
+Generate hypotheses, evaluate evidence, and propose tests.
+
+### **Inputs:**  
+- AnomalyRecord  
+- Multi-domain context  
+
+### **Outputs:**  
+- RootCauseReport  
+- InvestigationPlan  
+
+### **RootCauseReport Schema:**
+
+```
+RootCauseReport {
+    hypotheses: list<Hypothesis>
+    ranked_list: list<Hypothesis>
+    cross_domain_interactions: list<string>
+}
+```
+
+### **Hypothesis Schema:**
+
+```
+Hypothesis {
+    description: string
+    domains_involved: list<string>
+    supporting_evidence: list<string>
+    contradicting_evidence: list<string>
+    tests: list<string>
+    plausibility_score: float
+    risk_score: float
+}
+```
+
+---
+
+# **4.4 Adapt Stage (Codification Layer)**
+
+### **Purpose:**  
+Convert lessons into durable system improvements.
+
+### **Outputs:**  
+- Detection rules  
+- Updated baselines  
+- Updated playbooks  
+- Training examples  
+- Documentation updates  
+
+### **Codification Object:**
+
+```
+Codification {
+    detection_rules: list<Rule>
+    playbook_updates: list<Playbook>
+    baseline_updates: list<BaselineSnapshot>
+    training_examples: list<TrainingExample>
+}
+```
+
+---
+
+# **5. Correlation Layer**
+
+The correlation layer links anomalies across domains.
+
+## **5.1 Correlation Primitives**
+
+For each anomaly, compute:
+
+```
+CorrelationVector {
+    time_window: [t0, t1]
+    entities: list<string>
+    actors: list<string>
+    surfaces: list<string>
+    pattern_tags: list<string>
+}
+```
+
+## **5.2 Correlation Logic**
+
+Two anomalies A and B are correlated if:
+
+```
+Overlap(A.time_window, B.time_window) > threshold
+AND
+Intersect(A.entities, B.entities) != empty
+OR
+Intersect(A.pattern_tags, B.pattern_tags) != empty
+OR
+Intersect(A.surfaces, B.surfaces) != empty
+```
+
+## **5.3 Correlation Output**
+
+```
+CorrelationCluster {
+    anomalies: list<AnomalyRecord>
+    cluster_type: enum { temporal, entity, pattern, surface }
+    risk_level: enum { low, medium, high, critical }
+}
+```
+
+---
+
+# **6. Playbook Specification**
+
+A playbook is a structured response template.
+
+```
+Playbook {
+    id: string
+    domain: enum
+    trigger_conditions: list<Rule>
+    immediate_checks: list<string>
+    escalation_path: list<string>
+    mitigation_steps: list<string>
+    evidence_preservation: list<string>
+}
+```
+
+---
+
+# **7. LLM Integration Specification**
+
+AOS defines two LLM interfaces:
+
+## **7.1 LLM‑Triage Interface**
+
+```
+LLM_Triage(anomaly_input) -> AnomalyRecord
+```
+
+### **Required Capabilities:**
+- Deviation description  
+- Impact assessment  
+- Routing recommendation  
+
+---
+
+## **7.2 LLM‑RootCause Interface**
+
+```
+LLM_RootCause(anomaly_record, context) -> RootCauseReport
+```
+
+### **Required Capabilities:**
+- Hypothesis generation  
+- Evidence mapping  
+- Cross-domain reasoning  
+- Test design  
+
+---
+
+# **8. Compliance Requirements**
+
+AOS must:
+
+- Maintain auditability of all anomaly decisions  
+- Preserve raw data for forensic review  
+- Support human override at all stages  
+- Maintain domain separation where required by law  
+- Log all LLM interactions with metadata  
+
+---
+
+# **9. Security Requirements**
+
+- All anomaly records must be immutable after creation  
+- Correlation clusters must be access‑controlled  
+- Domain modules must enforce least privilege  
+- LLM outputs must be validated before execution  
+
+---
+
+# **10. Extensibility**
+
+AOS must support:
+
+- New domains  
+- New anomaly types  
+- New playbooks  
+- New correlation rules  
+- New LLM models  
+
+---
+
+# **11. End‑to‑End Example (Abstract)**
+
+```
+Input: Raw financial transactions
+↓
+Sense: detect structuring pattern
+↓
+Triage: high severity (financial surface)
+↓
+Explain: LLM identifies possible laundering scheme
+↓
+Correlation: matches law-enforcement procedural anomaly
+↓
+Adapt: new rule added for velocity + jurisdiction pattern
+```
+
+---
+
+# **AOS‑SPEC v1.0 Complete**
+
+
+- **AOS‑SPEC v1.1 with UML diagrams**  
+- **AOS‑SPEC v1.1 with API endpoints**  
+- **AOS‑SPEC v1.1 with example datasets**  
+- **AOS‑SPEC v1.1 with implementation blueprint**
