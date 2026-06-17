@@ -1,0 +1,321 @@
+### 1. Implementation goals
+
+- **Unify anomaly handling** across financial, law‑enforcement, system‑logs, and social‑dynamics domains.  
+- **Keep domains modular** while enforcing a shared lifecycle and data model.  
+- **Support human + LLM collaboration** without ceding control of high‑stakes decisions.  
+- **Enable cross‑domain correlation** and long‑term learning (rules, playbooks, baselines).
+
+---
+
+### 2. High‑level architecture
+
+**Core pattern:**  
+AOS as a **set of services** around a **central anomaly store**, with **domain plug‑ins** and **LLM orchestration**.
+
+- **Ingestion Layer**
+  - Domain‑specific data collectors (financial, LE, logs, social)
+  - Normalization and enrichment pipelines
+
+- **Anomaly Engine**
+  - Baseline service
+  - Detection service
+  - Triage service
+  - Root‑cause service
+  - Codification service
+
+- **Domain Modules**
+  - Financial module
+  - Law‑enforcement module
+  - System‑logs module
+  - Social‑dynamics module
+
+- **Correlation Service**
+  - Cross‑domain linking and clustering
+
+- **LLM Orchestration Layer**
+  - Triage LLM worker
+  - Root‑cause LLM worker
+  - Codification LLM worker
+
+- **Storage**
+  - Anomaly store (structured)
+  - Raw data lake (immutable)
+  - Playbook/rule repository
+  - Audit log store
+
+- **Interfaces**
+  - Analyst UI
+  - API endpoints
+  - Reporting/analytics
+
+---
+
+### 3. Services and responsibilities
+
+#### 3.1 Baseline Service
+
+- **Responsibility:**  
+  Maintain and serve `BaselineSnapshot` for entities/groups per domain.
+
+- **Key operations:**
+  - `build_baseline(entity_or_group, domain)`
+  - `get_baseline(entity_or_group, domain)`
+  - `update_baseline(baseline_id, changes)`
+
+- **Implementation notes:**
+  - Store baselines as versioned documents.
+  - Support both quantitative and qualitative fields.
+
+---
+
+#### 3.2 Detection Service
+
+- **Responsibility:**  
+  Convert normalized domain data into `AnomalyRecord`s.
+
+- **Key operations:**
+  - `detect(domain, input_stream, baseline)`
+  - `emit_anomaly(AnomalyRecord)`
+
+- **Implementation notes:**
+  - Use domain modules for domain‑specific detection logic.
+  - Support batch and streaming modes.
+  - Attach `baseline_snapshot` and `deviation_features`.
+
+---
+
+#### 3.3 Triage Service
+
+- **Responsibility:**  
+  Apply universal triage spine and domain routing.
+
+- **Key operations:**
+  - `triage(AnomalyRecord)`
+  - `route_to_playbook(AnomalyRecord)`
+  - `invoke_llm_triage(AnomalyRecord)` (optional)
+
+- **Implementation notes:**
+  - Implement severity/urgency scoring.
+  - Maintain `status` transitions (`new → triaged → investigating`).
+  - Log all triage decisions.
+
+---
+
+#### 3.4 Root‑Cause Service
+
+- **Responsibility:**  
+  Generate and manage `RootCauseReport` and `InvestigationPlan`.
+
+- **Key operations:**
+  - `generate_root_cause(AnomalyRecord, context)`
+  - `invoke_llm_root_cause(AnomalyRecord, context)`
+  - `store_root_cause_report(RootCauseReport)`
+
+- **Implementation notes:**
+  - Pull multi‑domain context from anomaly store and raw data lake.
+  - Support human‑authored and LLM‑assisted reports.
+
+---
+
+#### 3.5 Codification Service
+
+- **Responsibility:**  
+  Turn resolved cases into rules, playbooks, baseline updates, and training examples.
+
+- **Key operations:**
+  - `codify(anomaly_case, resolution)`
+  - `invoke_llm_codification(anomaly_case, resolution)`
+  - `update_rules(DetectionRules)`
+  - `update_playbooks(Playbook)`
+  - `update_baselines(BaselineSnapshot)`
+
+- **Implementation notes:**
+  - Maintain rule/playbook versioning.
+  - Require human approval for high‑impact changes.
+
+---
+
+#### 3.6 Correlation Service
+
+- **Responsibility:**  
+  Link anomalies across domains into `CorrelationCluster`s.
+
+- **Key operations:**
+  - `compute_correlation_vector(AnomalyRecord)`
+  - `cluster_anomalies(list<AnomalyRecord>)`
+  - `emit_correlation_cluster(CorrelationCluster)`
+
+- **Implementation notes:**
+  - Use time, entities, surfaces, pattern tags.
+  - Support incremental clustering as new anomalies arrive.
+
+---
+
+### 4. Domain module implementation
+
+Each module implements the **DomainModule contract**.
+
+#### 4.1 Financial Module
+
+- **Inputs:** transactions, account profiles, KYC data.  
+- **Baseline:** typical flows, amounts, counterparties, jurisdictions.  
+- **Detection:** structuring, velocity anomalies, typology matches.  
+- **Playbooks:** fraud, AML, sanctions, internal abuse.
+
+#### 4.2 Law‑Enforcement Module
+
+- **Inputs:** case files, CAD/RMS logs, BWC metadata, evidence logs.  
+- **Baseline:** case lifecycle, chain‑of‑custody, officer activity norms.  
+- **Detection:** missing steps, timeline gaps, evidence anomalies.  
+- **Playbooks:** procedural correction, IA, legal review.
+
+#### 4.3 System‑Logs Module
+
+- **Inputs:** infra/app/auth logs, metrics, deploy metadata.  
+- **Baseline:** log rates, error profiles, diurnal cycles.  
+- **Detection:** spikes/drops, new patterns, security signatures.  
+- **Playbooks:** SRE incident, security incident, postmortem.
+
+#### 4.4 Social‑Dynamics Module
+
+- **Inputs:** interaction graphs, communication logs, sentiment/narrative data.  
+- **Baseline:** alliances, narratives, influence structure, emotional tone.  
+- **Detection:** alliance shifts, rumor surges, structural fragmentation.  
+- **Playbooks:** de‑escalation, trust repair, narrative stabilization.
+
+---
+
+### 5. Data stores
+
+#### 5.1 Anomaly Store
+
+- **Type:** relational or document DB.  
+- **Content:** `AnomalyRecord`, `RootCauseReport`, `CorrelationCluster`.  
+- **Requirements:**
+  - Immutable records (append‑only updates).
+  - Strong audit logging.
+
+#### 5.2 Raw Data Lake
+
+- **Type:** object store.  
+- **Content:** raw domain data (transactions, logs, case files, social data).  
+- **Requirements:**
+  - Immutable storage.
+  - Indexed by time, entity, domain.
+
+#### 5.3 Rules/Playbooks Repository
+
+- **Type:** config store or versioned DB.  
+- **Content:** `Rule`, `Playbook`, baseline definitions.  
+- **Requirements:**
+  - Version control.
+  - Approval workflow.
+
+#### 5.4 Audit Log Store
+
+- **Type:** append‑only log.  
+- **Content:** all decisions, LLM calls, human overrides.  
+- **Requirements:**
+  - Tamper‑evident.
+  - Long‑term retention.
+
+---
+
+### 6. LLM orchestration
+
+#### 6.1 LLM Workers
+
+- **Triage Worker**
+  - Consumes `AnomalyRecord`s needing LLM triage.
+  - Produces updated `AnomalyRecord` with `ImpactAssessment`.
+
+- **Root‑Cause Worker**
+  - Consumes anomalies + context.
+  - Produces `RootCauseReport`.
+
+- **Codification Worker**
+  - Consumes resolved cases.
+  - Produces rules, playbooks, training examples.
+
+#### 6.2 Orchestration Patterns
+
+- Use **message queues** for async LLM tasks.  
+- Enforce **rate limits** and **timeouts**.  
+- Require **human review** for:
+  - High‑severity impact assessments.
+  - New rules/playbooks affecting critical surfaces.
+
+---
+
+### 7. APIs and integration points
+
+#### 7.1 External APIs
+
+- `POST /ingest/{domain}`  
+  - Accepts normalized domain data.  
+- `GET /anomalies/{id}`  
+  - Returns `AnomalyRecord`.  
+- `GET /clusters/{id}`  
+  - Returns `CorrelationCluster`.  
+- `POST /resolve/{id}`  
+  - Marks anomaly as resolved and triggers codification.
+
+#### 7.2 Internal APIs
+
+- `BaselineService`  
+- `DetectionService`  
+- `TriageService`  
+- `RootCauseService`  
+- `CodificationService`  
+- `CorrelationService`  
+- `DomainModule` interfaces
+
+---
+
+### 8. Security and governance
+
+- **Access control:**  
+  - Role‑based access to domains and correlation clusters.  
+- **Immutability:**  
+  - No hard deletes; use soft‑delete flags.  
+- **Auditability:**  
+  - Every state change logged with actor, time, reason.  
+- **Separation of concerns:**  
+  - Domain data may have legal constraints; enforce per‑domain policies.  
+- **LLM governance:**  
+  - Log prompts/responses.  
+  - Restrict LLM from directly executing actions; it only proposes.
+
+---
+
+### 9. Deployment and evolution
+
+#### 9.1 Initial rollout
+
+1. Implement core anomaly store + baseline service.  
+2. Stand up one domain module (e.g., system‑logs) end‑to‑end.  
+3. Add triage + root‑cause services.  
+4. Introduce LLM workers for triage/root‑cause.  
+5. Add codification + rules/playbooks.  
+6. Expand to additional domains.  
+7. Enable correlation service once at least two domains are live.
+
+#### 9.2 Iterative improvement
+
+- Add new anomaly types per domain.  
+- Refine triage scoring and routing.  
+- Expand playbooks and rules.  
+- Improve correlation heuristics.  
+- Periodically review codified learnings and retire obsolete rules.
+
+---
+
+### 10. Mental model for implementers
+
+When building AOS, engineers and analysts should think in terms of:
+
+- **One core lifecycle** (Sense → Triage → Explain → Adapt).  
+- **One anomaly schema**, extended per domain.  
+- **Four domain modules**, all implementing the same contract.  
+- **LLM as a reasoning co‑processor**, not an autonomous actor.  
+- **Correlation as a first‑class feature**, not an afterthought.
