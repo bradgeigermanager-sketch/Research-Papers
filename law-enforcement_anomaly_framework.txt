@@ -1,0 +1,320 @@
+Here is the specialized anomaly‑detection and response framework for law‑enforcement processes, built at the same level of rigor as the financial‑flows framework.  
+This one is designed for case flow, reporting chains, custody, evidence handling, officer activity, and procedural integrity — the places where anomalies matter most.
+
+This will walk you through Detection → Triage → Investigation → Codification, with decision trees, pseudocode, and human/LLM cognitive guides.
+
+---
+
+# **LAW‑ENFORCEMENT ANOMALY FRAMEWORK
+Detection, Classification, and Response for Procedural Irregularities
+
+
+
+
+
+---
+
+# **1. What “normal” looks like in law‑enforcement processes**
+
+To detect anomalies, you need a baseline across the major operational domains:
+
+### **1.1 Case lifecycle baselines**
+- Report → intake → assignment → investigation → charging → prosecution → closure  
+- Expected **timelines**, **handoffs**, and **documentation** at each stage  
+- Normal **case load** per officer/unit  
+- Typical **clearance rates** and **investigative steps**
+
+### **1.2 Evidence handling baselines**
+- Chain‑of‑custody entries at each transfer  
+- Expected storage locations  
+- Standard logging intervals  
+- Required signatures and timestamps
+
+### **1.3 Officer activity baselines**
+- Patrol routes  
+- Shift timing  
+- Report frequency  
+- Use‑of‑force reporting patterns  
+- Vehicle GPS logs  
+- Body‑worn camera activation patterns
+
+### **1.4 Administrative baselines**
+- Warrants: issuance → service → return  
+- Arrest documentation  
+- Booking procedures  
+- Court‑appearance notifications  
+- Interagency communication logs
+
+These baselines allow you to detect **temporal**, **procedural**, **behavioral**, and **documentation** anomalies.
+
+---
+
+# **2. Detection workflow (law‑enforcement specific)**
+
+## **2.1 Automated anomaly signals**
+- **Timeline deviations:**  
+  - Case sits idle beyond expected window  
+  - Evidence transfer missing expected timestamp  
+  - Warrant served unusually fast/slow  
+- **Documentation gaps:**  
+  - Missing forms, missing signatures, missing BWC footage  
+  - Incomplete arrest reports  
+- **Behavioral anomalies:**  
+  - Officer deviates from patrol route  
+  - Sudden spike/drop in arrests, stops, or citations  
+  - BWC turned off during critical moments  
+- **Cross‑system mismatches:**  
+  - CAD logs don’t match RMS entries  
+  - GPS logs don’t match officer narratives  
+  - Evidence room logs don’t match case file
+
+## **2.2 Human/LLM qualitative signals**
+- **Narrative contradictions**  
+  - Officer statement conflicts with witness statement  
+  - Report conflicts with video  
+- **Sequence anomalies**  
+  - Evidence logged before seizure  
+  - Arrest time after booking time  
+- **Context anomalies**  
+  - Officer present at two locations simultaneously  
+  - Case closed without required investigative steps  
+- **Pattern anomalies**  
+  - Repeated procedural shortcuts by same officer/unit  
+  - Recurrent missing evidence in same chain of custody
+
+---
+
+# **3. Triage decision tree (law‑enforcement)**
+
+```text
+[Start: Procedural anomaly detected]
+
+1. Does the anomaly pose immediate legal or safety risk?
+   - Evidence integrity at risk?
+   - Potential wrongful arrest/detention?
+   - Officer safety issue?
+   - Public safety issue?
+
+        Yes → Immediate containment:
+               - Secure evidence
+               - Notify supervisor/IA
+               - Freeze related actions
+               - Document everything
+               END (for now)
+
+        No → Continue
+
+2. Does the anomaly violate statutory or constitutional requirements?
+   - Miranda issues?
+   - Warrant defects?
+   - Unlawful detention?
+   - Improper search/seizure?
+
+        Yes → High-priority legal review
+               - Flag for prosecutor
+               - Begin corrective action
+               - Preserve all logs
+
+        No → Continue
+
+3. Is the anomaly isolated or part of a pattern?
+   - Check last 6–24 months for:
+     - Same officer
+     - Same unit
+     - Same evidence room
+     - Same case type
+
+        Pattern → Open administrative or IA case
+                   Assign investigator
+                   Expand scope
+
+        Isolated → Log and monitor
+
+4. Does the anomaly affect case outcome?
+   - Evidence admissibility?
+   - Witness reliability?
+   - Procedural compliance?
+
+        Yes → Case-level corrective plan
+        No  → Administrative follow-up only
+```
+
+---
+
+# **4. Root‑cause exploration (law‑enforcement)**
+
+## **4.1 Hypothesis categories**
+
+### **Benign explanations**
+- Training gaps  
+- System outages (CAD/RMS)  
+- Misfiled paperwork  
+- High workload causing delays  
+
+### **Operational issues**
+- Evidence room bottlenecks  
+- Misconfigured GPS/BWC systems  
+- Incorrect case routing  
+- Court scheduling errors  
+
+### **Risky but non‑malicious**
+- Officer burnout  
+- Informal shortcuts  
+- Misunderstood policy  
+
+### **Misconduct or criminality**
+- Falsified reports  
+- Evidence tampering  
+- Unlawful stops/searches  
+- Retaliatory arrests  
+- Collusion with offenders  
+
+---
+
+# **5. Investigation workflow (law‑enforcement)**
+
+## **5.1 Evidence integrity investigation**
+- Compare chain‑of‑custody logs with:
+  - RMS entries  
+  - Evidence room logs  
+  - Officer narratives  
+  - BWC timestamps  
+- Look for:
+  - Missing links  
+  - Time gaps  
+  - Unauthorized access  
+  - Conflicting signatures  
+
+## **5.2 Officer activity investigation**
+- Cross‑check:
+  - GPS logs  
+  - CAD dispatch logs  
+  - BWC activation logs  
+  - Arrest/stop reports  
+- Look for:
+  - Impossible travel times  
+  - Unlogged stops  
+  - BWC deactivations during key events  
+
+## **5.3 Case‑flow investigation**
+- Compare case file to:
+  - Required investigative steps  
+  - Prosecutor expectations  
+  - Statutory timelines  
+- Look for:
+  - Missing interviews  
+  - Missing warrants  
+  - Premature closure  
+  - Unexplained delays  
+
+---
+
+# **6. LLM‑assisted workflows (law‑enforcement)**
+
+## **6.1 LLM anomaly triage for case files**
+
+```pseudo
+function llm_triage_case(case_file, policies, logs):
+    baseline = summarize_expected_case_flow(case_file.type, policies)
+
+    llm_input = {
+        "case_file": case_file,
+        "baseline": baseline,
+        "logs": logs,
+        "policies": policies
+    }
+
+    llm_output = LLM("""
+        You are a law-enforcement procedural analyst.
+        1. Identify deviations from required case flow.
+        2. Classify anomaly type:
+           - timeline, documentation, evidence, officer activity, legal compliance.
+        3. Rate severity: low / medium / high / critical.
+        4. Recommend next steps.
+        Return JSON.
+    """, llm_input)
+
+    return parse_llm_output(llm_output)
+```
+
+## **6.2 LLM root‑cause exploration**
+
+```pseudo
+function llm_root_cause(anomaly_record, cross_system_data):
+    llm_input = {
+        "anomaly": anomaly_record,
+        "data": cross_system_data,
+        "policies": load_policies(),
+        "historical_patterns": fetch_historical_patterns()
+    }
+
+    llm_output = LLM("""
+        You are an internal-affairs investigator.
+        1. Propose 3–7 plausible root causes.
+        2. For each:
+           - Supporting evidence
+           - Contradicting evidence
+           - How to test it
+        3. Rank by plausibility and risk.
+        Return structured JSON.
+    """, llm_input)
+
+    return build_investigation_plan(llm_output)
+```
+
+---
+
+# **7. Human cognitive checklists (law‑enforcement)**
+
+## **7.1 “Procedural anomaly” checklist**
+- What *should* have happened at this stage?  
+- What *actually* happened?  
+- What documentation is missing or contradictory?  
+- Who touched the case/evidence last?  
+- Does this conflict with policy, law, or past practice?  
+- Could this be:
+  - A training issue?  
+  - A system issue?  
+  - A misconduct issue?  
+
+## **7.2 “Officer activity anomaly” checklist**
+- Does the officer’s narrative match:
+  - GPS logs  
+  - CAD logs  
+  - BWC footage  
+- Are there unexplained gaps?  
+- Are there repeated patterns across shifts/days?  
+
+## **7.3 “Evidence anomaly” checklist**
+- Is chain‑of‑custody complete?  
+- Are timestamps sequential and plausible?  
+- Any unauthorized access?  
+- Any mismatches between physical evidence and documentation?  
+
+---
+
+# **8. Codifying learning (law‑enforcement)**
+
+## **8.1 Detection rules**
+- “If BWC is off during any use‑of‑force event → flag critical anomaly.”  
+- “If evidence transfer lacks timestamp or signature → flag high‑risk anomaly.”  
+- “If officer GPS contradicts narrative by > X miles → flag for review.”  
+
+## **8.2 Playbooks**
+- **Trigger:** Missing evidence log  
+- **Immediate checks:**  
+  - Verify physical evidence  
+  - Check RMS/CAD logs  
+  - Interview last custodian  
+- **Escalation:**  
+  - Supervisor → IA → prosecutor (if case‑impacting)  
+
+## **8.3 Recurrence methodology**
+- Cluster anomalies by:
+  - Officer  
+  - Unit  
+  - Evidence room  
+  - Case type  
+  - Time period  
+- Label patterns (“Recurring BWC deactivation cluster”)  
+- Add to training and oversight dashboards
