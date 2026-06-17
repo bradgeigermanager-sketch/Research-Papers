@@ -1,0 +1,243 @@
+### 1. What “normal” looks like in system logs
+
+You’re in the land of **high‑volume, low‑signal** data—so “normal” must be explicit.
+
+- **Sources:**
+  - **Infra:** OS logs, syslog, kernel, dmesg, hardware alerts  
+  - **Network:** firewall, IDS/IPS, proxy, VPN, load balancers  
+  - **App:** web server logs, API gateways, app logs, DB logs  
+  - **Auth/Identity:** SSO, LDAP/AD, MFA, PAM, cloud IAM  
+- **Baselines:**
+  - **Rates:** events/sec per source, per host, per app  
+  - **Patterns:** typical sequences (login → token → API calls)  
+  - **Diurnal cycles:** day/night, weekday/weekend, release days  
+  - **Error profile:** “normal” error/warn mix for each service  
+
+---
+
+### 2. Detection workflow for system logs
+
+#### 2.1 Automated signals
+
+- **Volume anomalies:**
+  - Sudden spikes/drops in log volume  
+  - Burst of specific event types (e.g., 401s, 5xx, timeouts)  
+- **Pattern anomalies:**
+  - New error codes  
+  - New user agents or API clients  
+  - New process names or command lines  
+- **Sequence anomalies:**
+  - Login without expected MFA step  
+  - Service restart loops  
+  - DB errors followed by auth failures  
+- **Entity anomalies:**
+  - New IPs, ASNs, geos  
+  - New service accounts  
+  - Unusual privilege escalations  
+
+#### 2.2 LLM/analyst qualitative signals
+
+- **Narrative mismatch:**  
+  - Logs don’t match the expected story of a request or job  
+- **Context mismatch:**  
+  - High load with no known traffic spike  
+  - Deploy logs missing around a known release  
+- **Cross‑system mismatch:**  
+  - Metrics say “healthy” while logs scream errors  
+  - Auth logs show success where app logs show failure  
+
+---
+
+### 3. Triage decision tree (system logs)
+
+```text
+[Start: Log anomaly detected]
+
+1. Is there an immediate risk to availability, integrity, or confidentiality?
+   - Service down or degraded?
+   - Data corruption or loss?
+   - Possible compromise (privilege escalation, lateral movement)?
+
+        Yes → Incident mode:
+               - Page on-call
+               - Start incident channel/bridge
+               - Preserve logs and context
+               END (for now)
+
+        No → Continue
+
+2. Is the anomaly localized or widespread?
+   - Single host/service vs multiple
+   - Single tenant vs multi-tenant
+
+        Widespread → Higher priority
+                     - Check recent changes (deploys, config)
+                     - Check shared dependencies (DB, network)
+
+        Localized → Lower/medium priority
+                    - Isolate host/service
+                    - Monitor for spread
+
+3. Is there a known benign explanation?
+   - Recent deploy?
+   - Planned maintenance?
+   - Load test?
+
+        Yes → Tag as "explained anomaly"
+               - Adjust baselines if appropriate
+
+        No → Continue
+
+4. Does the anomaly repeat or cluster?
+   - Same error code, host, user, IP, or time window?
+
+        Yes → Open investigation ticket
+               - Attach log samples
+               - Assign owner
+
+        No → Log as isolated anomaly
+             - Monitor for recurrence
+```
+
+---
+
+### 4. Investigation workflow (system logs)
+
+#### 4.1 Quick triage steps
+
+- **Check “golden signals”:** latency, traffic, errors, saturation  
+- **Correlate across layers:**
+  - App logs ↔ DB logs ↔ infra logs ↔ auth logs  
+- **Time‑window analysis:**
+  - 5–30 minutes before and after anomaly  
+- **Change correlation:**
+  - Deploys, config changes, infra changes, cert rotations  
+
+#### 4.2 Hypothesis categories
+
+- **Benign/expected:**
+  - New feature rollout  
+  - Load test  
+  - Customer spike  
+- **Operational issues:**
+  - Resource exhaustion (CPU, memory, disk, file descriptors)  
+  - Network partition  
+  - Misconfig (timeouts, retries, TLS)  
+- **Security issues:**
+  - Brute‑force auth attempts  
+  - Suspicious lateral movement  
+  - Data exfiltration patterns  
+- **Software defects:**
+  - Memory leaks  
+  - Race conditions  
+  - Unhandled exceptions  
+
+---
+
+### 5. LLM‑assisted workflows (system logs)
+
+#### 5.1 LLM log‑cluster triage
+
+```pseudo
+function llm_triage_log_cluster(log_cluster, metrics, changes):
+    baseline = summarize_normal_behavior(log_cluster.service)
+
+    llm_input = {
+        "log_cluster": sample_logs(log_cluster),
+        "baseline": baseline,
+        "metrics": metrics,
+        "recent_changes": changes
+    }
+
+    llm_output = LLM("""
+        You are an SRE/security analyst.
+        1. Describe what is happening in these logs.
+        2. Classify anomaly type:
+           - performance, reliability, security, config, dependency, unknown.
+        3. Rate severity: low / medium / high / critical.
+        4. Suggest immediate checks and mitigations.
+        Return JSON.
+    """, llm_input)
+
+    return parse_llm_triage(llm_output)
+```
+
+#### 5.2 LLM root‑cause exploration
+
+```pseudo
+function llm_root_cause_logs(incident_timeline, multi_source_logs):
+    llm_input = {
+        "timeline": incident_timeline,
+        "logs": multi_source_logs,
+        "known_incidents": fetch_similar_incidents()
+    }
+
+    llm_output = LLM("""
+        You are a post-incident analyst.
+        1. Reconstruct a plausible narrative of the incident.
+        2. Propose 3–5 root-cause hypotheses.
+        3. For each:
+           - Supporting log evidence
+           - Missing data
+           - How to confirm or refute
+        4. Suggest durable fixes (code, config, process, monitoring).
+        Return structured JSON.
+    """, llm_input)
+
+    return build_root_cause_doc(llm_output)
+```
+
+---
+
+### 6. Human checklists for system‑log anomalies
+
+#### 6.1 “First five minutes” checklist
+
+- **Scope:** One service, many services, whole region?  
+- **Impact:** User‑visible? Data at risk? Internal only?  
+- **Recent changes:** Any deploys/config/infra changes in last 1–2 hours?  
+- **Correlated signals:** Do metrics and traces agree with logs?  
+- **Roll‑back lever:** Is there a quick safe rollback or feature flag?  
+
+#### 6.2 “Is this security?” checklist
+
+- Unusual auth failures or successes?  
+- New IPs/geos/ASNs?  
+- Unusual privilege escalations?  
+- Data access patterns different from normal?  
+- Tools/commands indicative of recon or exfiltration?  
+
+---
+
+### 7. Codifying learning (system logs)
+
+#### 7.1 Detection rules
+
+- “If 5xx error rate > X% for Y minutes → trigger incident.”  
+- “If failed logins from same IP > N in M minutes → security alert.”  
+- “If log volume drops to near‑zero for critical service → alert (logging broken).”  
+
+#### 7.2 Playbooks
+
+- **Trigger:** 5xx spike on API gateway  
+  - **Immediate checks:**  
+    - Compare to deploy timeline  
+    - Check DB health, dependency health  
+    - Sample logs for common error signatures  
+  - **Mitigations:**  
+    - Roll back recent change  
+    - Rate‑limit or shed load  
+    - Scale up resources  
+
+#### 7.3 Recurrence methodology
+
+- Cluster incidents by:
+  - Service  
+  - Error signature  
+  - Root cause category  
+- Create **“pattern cards”**:
+  - Signature, likely cause, quick checks, durable fix  
+- Feed back into:
+  - Alert rules  
+  - Runbooks  
+  - Post‑incident training
