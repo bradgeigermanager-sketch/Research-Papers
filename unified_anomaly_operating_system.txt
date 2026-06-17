@@ -1,0 +1,341 @@
+A **unified anomaly operating system** with:
+
+- A **shared core model**  
+- A **cross-domain decision spine**  
+- **Reusable pseudocode** for humans + LLMs  
+- A **mapping layer** that plugs each domain into the same machinery  
+
+---
+
+## 1. Core abstraction: what an anomaly is across domains
+
+At the highest level, every anomaly is:
+
+> **A deviation from an expected pattern in a defined system, with potential impact on valued outcomes.**
+
+So we define four universal components:
+
+- **System:**  
+  **Label:** financial, law‑enforcement, system‑logs, social  
+- **Baseline:**  
+  What “normal” looks like in that system (quantitative + qualitative)  
+- **Deviation:**  
+  How the observed event differs from baseline (magnitude, direction, structure)  
+- **Impact surface:**  
+  What can be harmed: money, legality, safety, availability, trust, cohesion  
+- **Trajectory:**  
+  How it might evolve if left alone
+
+Everything else is implementation detail.
+
+---
+
+## 2. Cross-domain anomaly lifecycle
+
+Same four stages everywhere:
+
+1. **Sense**  
+   - Detect deviations from baseline  
+   - Automated + human + LLM sensing
+
+2. **Triage**  
+   - How serious? How urgent? Where to route it?
+
+3. **Explain**  
+   - What could be causing this?  
+   - What evidence supports/contradicts each hypothesis?
+
+4. **Adapt**  
+   - What do we change so next time we:  
+     - detect earlier  
+     - respond better  
+     - maybe prevent it entirely?
+
+This is your **OS kernel**.
+
+---
+
+## 3. Unified decision spine
+
+### 3.1 Cross-domain triage decision tree
+
+```text
+[Start: Anomaly detected in ANY domain]
+
+1. Which critical surfaces might be affected?
+   - Financial: loss, fraud, sanctions, regulatory
+   - Legal/procedural: due process, evidence, liability
+   - Technical: availability, integrity, confidentiality
+   - Social: trust, cohesion, conflict, legitimacy
+
+   If ANY critical surface at high risk → High-priority track
+   Else → Medium/low track
+
+2. Is the anomaly:
+   - Isolated (single event)?
+   - Clustered (multiple similar events)?
+   - Systemic (pattern across time/units/services/groups)?
+
+   Isolated → Log + monitor
+   Clustered → Open case
+   Systemic → Open program-level investigation
+
+3. Is there a known benign explanation?
+   - Planned change, known edge case, documented exception
+
+   Yes → Tag as "explained anomaly"
+          Optionally update baseline
+   No  → Continue
+
+4. Route to domain-specific playbook:
+   - Financial → financial playbooks
+   - Law-enforcement → procedural/IA playbooks
+   - System logs → SRE/security playbooks
+   - Social → social-dynamics playbooks
+
+5. Cross-domain check:
+   - Does this anomaly correlate with anomalies in other domains?
+     (e.g., financial + social, logs + law-enforcement)
+
+   Yes → Open cross-domain case
+   No  → Stay in domain lane but keep correlation hooks
+```
+
+---
+
+## 4. Unified data model for anomalies
+
+Define a **single schema** that all domains use, with domain‑specific extensions.
+
+```text
+AnomalyRecord {
+  id: string
+  domain: enum { financial, law_enforcement, system_logs, social }
+
+  timestamp_detected: datetime
+  detection_source: enum { automated, human, llm, hybrid }
+
+  baseline_snapshot: object        # what "normal" looked like
+  observed_event: object           # raw facts
+
+  deviation_features: {
+    magnitude: float or categorical
+    type: list<string>             # e.g., "timeline", "narrative", "velocity"
+    direction: string              # e.g., "spike", "drop", "shift", "fragmentation"
+  }
+
+  impact_assessment: {
+    surfaces: list<string>         # financial, legal, technical, social
+    severity: enum { low, medium, high, critical }
+    urgency: enum { low, medium, high }
+    reversibility: enum { easy, hard, irreversible }
+  }
+
+  status: enum { new, triaged, investigating, resolved, codified }
+  links: {
+    related_anomalies: list<id>
+    related_cases: list<id>
+  }
+
+  domain_specific: object          # per-domain fields
+}
+```
+
+Each domain just fills `domain_specific` differently.
+
+---
+
+## 5. Unified LLM workflow patterns
+
+### 5.1 Generic LLM triage function
+
+```pseudo
+function llm_triage_generic(anomaly_input):
+    # anomaly_input includes: domain, baseline, event, context
+
+    llm_output = LLM("""
+        You are a cross-domain anomaly analyst.
+        Domain: {domain}
+
+        1. Describe how this event deviates from the baseline.
+        2. Classify anomaly types (choose any that apply):
+           - timeline, volume, structure, narrative, behavior, legal, security, etc.
+        3. Assess impact:
+           - financial, legal/procedural, technical, social
+           - severity: low / medium / high / critical
+           - urgency: low / medium / high
+        4. Suggest routing:
+           - which domain playbooks to invoke
+           - whether cross-domain correlation is likely
+        Return JSON.
+    """, anomaly_input)
+
+    return normalize_to_AnomalyRecord(llm_output)
+```
+
+### 5.2 Generic LLM root‑cause engine
+
+```pseudo
+function llm_root_cause_generic(anomaly_record, multi_domain_context):
+    llm_input = {
+        "anomaly": anomaly_record,
+        "context": multi_domain_context,
+        "historical_cases": fetch_similar_anomalies(anomaly_record)
+    }
+
+    llm_output = LLM("""
+        You are a root-cause analyst working across financial, legal, technical, and social domains.
+        1. Propose 3–7 plausible root-cause hypotheses.
+        2. For each hypothesis:
+           - Which domain(s) it primarily involves
+           - Supporting evidence from the context
+           - Contradicting or missing evidence
+           - How to test it cheaply
+        3. Identify any cross-domain interactions (e.g., technical issue causing social distrust).
+        4. Rank hypotheses by plausibility and risk.
+        Return structured JSON.
+    """, llm_input)
+
+    return build_cross_domain_investigation_plan(llm_output)
+```
+
+### 5.3 Generic “codify learning” engine
+
+```pseudo
+function codify_learnings_generic(anomaly_case, resolution):
+    llm_input = {
+        "case": anomaly_case,
+        "resolution": resolution
+    }
+
+    llm_output = LLM("""
+        You are designing durable defenses.
+        1. Derive detection rules that would catch similar anomalies earlier.
+        2. Draft or update playbooks:
+           - triggers
+           - immediate checks
+           - escalation paths
+        3. Suggest training examples for future models and humans.
+        4. Identify any needed baseline updates.
+        Return structured JSON.
+    """, llm_input)
+
+    persist_rules_playbooks_training(llm_output)
+```
+
+---
+
+## 6. Domain plug‑ins: how each domain fits the OS
+
+Think of each domain as a **module** that implements the same interfaces:
+
+### 6.1 Financial module
+- **Implements:**
+  - `build_baseline(entity)` → typical flows, amounts, counterparties  
+  - `detect_anomalies(transactions, baseline)` → velocity, structuring, typologies  
+  - `domain_specific_fields` → KYC, risk scores, jurisdictions  
+  - `playbooks` → fraud, AML, sanctions, internal abuse  
+
+### 6.2 Law‑enforcement module
+- **Implements:**
+  - `build_baseline(case_type)` → normal case flow, evidence handling  
+  - `detect_anomalies(cases, logs)` → missing steps, chain‑of‑custody gaps  
+  - `domain_specific_fields` → officer IDs, IA flags, legal constraints  
+  - `playbooks` → procedural correction, IA, legal review  
+
+### 6.3 System‑logs module
+- **Implements:**
+  - `build_baseline(service)` → normal log rates, error profiles  
+  - `detect_anomalies(logs, metrics)` → spikes, drops, new patterns  
+  - `domain_specific_fields` → host, service, environment, deploy info  
+  - `playbooks` → SRE incident, security incident, postmortem  
+
+### 6.4 Social‑dynamics module
+- **Implements:**
+  - `build_baseline(group)` → normal alliances, narratives, structures  
+  - `detect_anomalies(interactions, narratives)` → shifts, fragmentations  
+  - `domain_specific_fields` → actors, influence scores, sentiment  
+  - `playbooks` → de‑escalation, trust repair, narrative stabilization  
+
+All four modules feed into the **same anomaly record format**, the **same triage spine**, and the **same root‑cause + codification engines**.
+
+---
+
+## 7. Cross-domain correlation layer
+
+This is where it gets interesting.
+
+### 7.1 Correlation primitives
+
+For each anomaly, compute:
+
+- **Time window:** when it occurred  
+- **Entities involved:** people, orgs, systems, locations  
+- **Surfaces touched:** financial, legal, technical, social  
+- **Pattern tags:** e.g., “structuring”, “BWC gap”, “5xx spike”, “rumor surge”
+
+Then:
+
+- **Link anomalies** that share:
+  - Entities  
+  - Time windows  
+  - Pattern tags  
+  - Surfaces  
+
+### 7.2 Example cross‑domain patterns
+
+- **Financial + social:**  
+  - Sudden wealth flows + narrative shifts about “corruption” or “favoritism”  
+- **System logs + social:**  
+  - Outage + surge of hostile narratives or rumor spread  
+- **Law‑enforcement + social:**  
+  - Procedural anomaly + loss of trust, protests, or disengagement  
+- **Financial + law‑enforcement + logs:**  
+  - Suspicious transactions + officer activity anomalies + missing logs  
+
+The OS should be able to say:  
+> “This law‑enforcement anomaly co‑occurs with a social‑trust anomaly and a technical‑logging anomaly—treat as a cross‑domain integrity event.”
+
+---
+
+## 8. Human/LLM joint operating picture
+
+### 8.1 Analyst mental model
+
+When an anomaly appears, a human (optionally with LLM support) asks:
+
+1. **What system is this in?**  
+2. **What’s the baseline I’m comparing against?**  
+3. **What exactly is deviating?**  
+4. **What surfaces could be harmed?**  
+5. **Is this isolated, clustered, or systemic?**  
+6. **Does it correlate with anomalies in other domains?**  
+7. **What’s the smallest, safest experiment or check I can run next?**  
+8. **What should we change so this is easier next time?**
+
+### 8.2 LLM’s role
+
+- **Sense:** pattern recognition, clustering, narrative extraction  
+- **Triage:** structured severity/impact assessment  
+- **Explain:** hypothesis generation, evidence mapping  
+- **Adapt:** drafting rules, playbooks, training examples, baseline updates  
+
+Humans keep control over:
+
+- Value judgments  
+- Legal/ethical constraints  
+- High‑stakes decisions  
+- Cross‑domain tradeoffs  
+
+---
+
+## 9. What you have now
+
+You effectively have:
+
+- **Four domain modules** (financial, law‑enforcement, logs, social)  
+- A **shared anomaly schema**  
+- A **unified triage spine**  
+- **Generic LLM engines** for triage, root cause, and codification  
+- A **correlation layer** for cross‑domain events  
+- Human checklists that mirror the machine workflows
