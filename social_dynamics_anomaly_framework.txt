@@ -1,0 +1,290 @@
+Social dynamics anomalies aren’t about machines or paperwork.  
+They’re about people, groups, narratives, emotions, incentives, and emergent behavior.  
+They’re subtle, contextual, and often only visible when you know what “normal social reality” looks like.
+
+Below is a **full anomaly‑detection + reaction framework** for social dynamics, built to the same standard as the other domains.
+
+---
+
+# **SOCIAL DYNAMICS ANOMALY FRAMEWORK**  
+## *Detecting, interpreting, and responding to unusual group behavior, narrative shifts, and social-pattern disruptions*
+
+
+
+
+
+---
+
+# **1. What “normal” looks like in social systems**
+
+You cannot detect anomalies without a baseline.  
+In social dynamics, “normal” is defined across **four layers**:
+
+## **1.1 Behavioral baselines**
+- Typical interaction frequency  
+- Usual alliances, rivalries, cliques  
+- Expected cooperation/competition levels  
+- Normal emotional tone (calm, tense, neutral)
+
+## **1.2 Narrative baselines**
+- Dominant stories people tell about themselves and others  
+- Expected rumor velocity  
+- Typical sources of information  
+- Normal disagreement patterns
+
+## **1.3 Structural baselines**
+- Usual hierarchy or influence structure  
+- Expected gatekeepers and brokers  
+- Normal flow of information  
+- Typical decision-making pathways
+
+## **1.4 Environmental baselines**
+- Stressors (economic, political, organizational)  
+- Incentives and constraints  
+- Cultural norms and taboos  
+
+These baselines let you detect **behavioral**, **narrative**, **structural**, and **contextual** anomalies.
+
+---
+
+# **2. Detection workflow (social dynamics)**
+
+
+
+
+
+## **2.1 Behavioral anomaly signals**
+- Sudden alliance shifts  
+- Unexpected cooperation between rivals  
+- Abrupt withdrawal of a key actor  
+- Increase in secrecy or side‑channel communication  
+- New gatekeepers emerging
+
+## **2.2 Narrative anomaly signals**
+- Rumors spreading faster than usual  
+- New narratives displacing old ones  
+- Sudden consensus where disagreement is normal  
+- Contradictions between public and private statements  
+- “Too coordinated” messaging
+
+## **2.3 Structural anomaly signals**
+- New influencers rising quickly  
+- Old influencers losing centrality  
+- Information bottlenecks forming  
+- Fragmentation of previously cohesive groups  
+- Emergence of subgroups with distinct norms
+
+## **2.4 Contextual anomaly signals**
+- Behavior inconsistent with incentives  
+- Emotional tone shifts (fear, anger, apathy)  
+- Unusual risk-taking or risk-aversion  
+- Abrupt changes in participation or engagement  
+
+---
+
+# **3. Triage decision tree (social dynamics)**
+
+```text
+[Start: Social anomaly detected]
+
+1. Does the anomaly indicate rising conflict or instability?
+   - Escalating hostility?
+   - Rapid rumor spread?
+   - Group polarization?
+
+        Yes → High-priority stabilization:
+               - Increase monitoring
+               - Identify conflict drivers
+               - Engage trusted intermediaries
+
+        No → Continue
+
+2. Does the anomaly indicate hidden coordination or covert activity?
+   - Sudden alignment of messaging?
+   - Unusual secrecy?
+   - Parallel communication channels?
+
+        Yes → Investigate:
+               - Map communication patterns
+               - Identify brokers and influencers
+               - Look for triggering events
+
+        No → Continue
+
+3. Does the anomaly indicate loss of trust or legitimacy?
+   - Withdrawal from participation?
+   - Avoidance of leadership?
+   - Cynicism or disengagement?
+
+        Yes → Trust-repair track:
+               - Identify grievances
+               - Increase transparency
+               - Rebuild communication pathways
+
+        No → Continue
+
+4. Is the anomaly isolated or part of a pattern?
+   - Compare across time, groups, contexts
+
+        Pattern → Open social-dynamics case
+                   - Build timeline
+                   - Identify drivers
+                   - Predict trajectories
+
+        Isolated → Log and monitor
+```
+
+---
+
+# **4. Investigation workflow (social dynamics)**
+
+
+
+
+
+## **4.1 Behavioral investigation**
+- Map interactions before/after anomaly  
+- Identify who changed behavior first  
+- Look for:
+  - New alliances  
+  - New conflicts  
+  - New absences  
+  - New gatekeepers  
+
+## **4.2 Narrative investigation**
+- Track rumor origin and propagation  
+- Identify narrative entrepreneurs  
+- Compare public vs private narratives  
+- Look for:
+  - Sudden message discipline  
+  - Contradictions  
+  - Emotional tone shifts  
+
+## **4.3 Structural investigation**
+- Run influence/centrality analysis  
+- Detect subgroup formation  
+- Identify new brokers or bridges  
+- Look for:
+  - Fragmentation  
+  - Consolidation  
+  - Shadow hierarchies  
+
+## **4.4 Contextual investigation**
+- Identify triggering events  
+- Examine incentive changes  
+- Look for:
+  - Stressors  
+  - Resource shifts  
+  - External shocks  
+
+---
+
+# **5. LLM‑assisted workflows (social dynamics)**
+
+## **5.1 LLM anomaly triage for social behavior**
+
+```pseudo
+function llm_triage_social_event(event, history, context):
+    baseline = summarize_social_baseline(history)
+
+    llm_input = {
+        "event": event,
+        "baseline": baseline,
+        "history": history,
+        "context": context
+    }
+
+    llm_output = LLM("""
+        You are a social-dynamics analyst.
+        1. Identify deviations from normal behavior, narrative, or structure.
+        2. Classify anomaly type:
+           - behavioral, narrative, structural, contextual.
+        3. Rate severity: low / medium / high / critical.
+        4. Suggest likely drivers and next steps.
+        Return JSON.
+    """, llm_input)
+
+    return parse_llm_output(llm_output)
+```
+
+## **5.2 LLM root‑cause exploration**
+
+```pseudo
+function llm_social_root_cause(anomaly_record, network_data):
+    llm_input = {
+        "anomaly": anomaly_record,
+        "network": network_data,
+        "historical_patterns": fetch_social_patterns()
+    }
+
+    llm_output = LLM("""
+        You are a group-behavior investigator.
+        1. Propose 3–7 plausible root causes.
+        2. For each:
+           - Supporting evidence
+           - Contradicting evidence
+           - How to test it
+        3. Predict short-term and long-term trajectories.
+        4. Suggest stabilizing or corrective actions.
+        Return structured JSON.
+    """, llm_input)
+
+    return build_investigation_plan(llm_output)
+```
+
+---
+
+# **6. Human cognitive checklists (social dynamics)**
+
+## **6.1 “Behavior feels off” checklist**
+- Who changed behavior first?  
+- Who followed?  
+- Who benefits from the change?  
+- What incentives shifted?  
+- What emotions are present?  
+
+## **6.2 “Narrative shift” checklist**
+- What story is being told now?  
+- Who is telling it?  
+- Who is amplifying it?  
+- What story did it replace?  
+- What emotions does it evoke?  
+
+## **6.3 “Group instability” checklist**
+- Are subgroups forming?  
+- Are bridges breaking?  
+- Are leaders losing influence?  
+- Are norms weakening?  
+- Are conflicts escalating?  
+
+---
+
+# **7. Codifying learning (social dynamics)**
+
+## **7.1 Detection rules**
+- “If rumor velocity exceeds baseline by X → flag narrative anomaly.”  
+- “If centrality of a new actor rises > Y% in Z days → flag structural shift.”  
+- “If emotional tone shifts sharply → flag contextual anomaly.”  
+
+## **7.2 Playbooks**
+- **Trigger:** Sudden alliance shift  
+  - **Immediate checks:**  
+    - Identify triggering event  
+    - Map new alliances  
+    - Assess conflict risk  
+  - **Stabilization:**  
+    - Engage trusted intermediaries  
+    - Increase transparency  
+    - Rebuild communication channels  
+
+## **7.3 Recurrence methodology**
+- Cluster anomalies by:
+  - Group  
+  - Narrative  
+  - Trigger  
+  - Emotional tone  
+- Build **pattern cards**:
+  - Signature  
+  - Drivers  
+  - Risks  
+  - Stabilizers
