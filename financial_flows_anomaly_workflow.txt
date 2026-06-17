@@ -1,0 +1,192 @@
+Building a cross‑domain anomaly “operating system”— Let’s start with Financial / Business / Economic related processes, then we can move to the next domain on the list.
+
+---
+
+## Financial flows anomaly workflow (specialized)
+
+### 1. What “normal” looks like in financial flows
+
+- **Baseline dimensions:**
+  - **Volume:** Typical transaction amounts per account, per day/week/month.
+  - **Frequency:** Normal transaction counts and rhythms (payroll cycles, rent, utilities).
+  - **Counterparties:** Usual payers/payees, geographies, institutions.
+  - **Channels:** Card, ACH, wire, cash deposits, crypto, checks.
+  - **Narrative:** “For this entity, a normal month looks like: salary in, rent out, 3–10 card purchases, 1–2 transfers.”
+
+---
+
+## 2. Detection workflow (financial flows)
+
+### 2.1 Automated signals
+
+- **Thresholds:**
+  - **Unusual amount:**  
+    \[
+    \text{z-score} > k \quad \text{for transaction amount vs. historical mean}
+    \]
+- **Velocity:**
+  - **Bursting:** Many transactions in a short window, especially to new recipients.
+- **Pattern shifts:**
+  - Sudden change in **merchant category**, **country**, or **time of day**.
+- **Structure anomalies:**
+  - Round‑number transfers, repeated small amounts, daisy‑chain transfers between related accounts.
+
+### 2.2 Human/LLM qualitative signals
+
+- **Narrative mismatch:** Description or memo doesn’t fit the pattern (“consulting fee” from a known retail customer).
+- **Context mismatch:** Transaction doesn’t fit known life/business events (e.g., large wire to high‑risk jurisdiction with no prior link).
+- **Sequence mismatch:** Order of events is off (refund before purchase, salary after massive outgoing transfers).
+
+---
+
+## 3. Financial flows triage decision framework
+
+```text
+[Start: Suspicious transaction or pattern detected]
+
+1. Is there immediate risk of irreversible loss or legal exposure?
+   - Large outbound transfer?
+   - High-risk jurisdiction or sanctioned entity?
+   - Use of high-risk channels (crypto mixers, shell entities)?
+
+        Yes ──> Immediate containment:
+                - Freeze or hold transaction (if allowed)
+                - Alert fraud/compliance team
+                - Preserve logs and evidence
+                END (for now)
+
+        No ──> Continue
+
+2. Is this anomaly isolated or part of a pattern?
+
+   - Check last 30–90 days for:
+     - Similar counterparties
+     - Similar amounts
+     - Similar timing or channels
+
+        Pattern ──> Treat as potential scheme:
+                    - Create case file
+                    - Link related transactions
+                    - Assign investigator
+
+        Isolated ──> Treat as single-event anomaly:
+                     - Log
+                     - Monitor for recurrence
+
+3. Does it conflict with known customer/entity profile?
+
+   - Income level, business type, geography, historical behavior.
+
+        Strong conflict ──> High-priority review
+        Mild conflict   ──> Medium-priority; monitor
+        No clear conflict ──> Low-priority; keep in anomaly log
+```
+
+---
+
+## 4. Root-cause and scheme exploration (financial flows)
+
+### 4.1 Hypothesis categories
+
+- **Benign explanations:**
+  - One‑off large purchase, life event (house, car, medical), business expansion.
+- **Operational issues:**
+  - Mis‑coded merchant category, batch posting, delayed settlement, duplicate entries.
+- **Risky but non‑criminal:**
+  - Tax optimization, asset protection, informal lending.
+- **Criminal/abusive:**
+  - Money laundering, fraud, embezzlement, sanctions evasion, terrorist financing.
+
+### 4.2 Investigation steps
+
+- **1. Data integrity check:**
+  - Are timestamps, amounts, currencies, and counterparties recorded correctly?
+- **2. Profile check:**
+  - Does this fit any plausible life/business event for this entity?
+- **3. Link analysis:**
+  - Graph connections between accounts, counterparties, jurisdictions.
+- **4. Temporal analysis:**
+  - Look at **before/after** windows:
+    - Inflows preceding outflows
+    - Structuring (many small deposits → one large transfer)
+- **5. External context:**
+  - Sanctions lists, adverse media, known typologies (e.g., trade‑based money laundering patterns).
+
+---
+
+## 5. LLM‑assisted workflows (financial flows)
+
+### 5.1 LLM anomaly triage for transactions
+
+```pseudo
+function llm_triage_transaction(tx, account_profile, history):
+    baseline = summarize_financial_baseline(account_profile, history)
+
+    llm_input = {
+        "transaction": tx,
+        "account_profile": account_profile,
+        "baseline": baseline,
+        "recent_activity": sample_recent_transactions(history, window=90_days)
+    }
+
+    llm_output = LLM("""
+        You are a financial anomaly analyst.
+        1. Decide if this transaction is anomalous vs. the baseline.
+        2. Classify anomaly type:
+           - amount, velocity, counterparties, geography, channel, narrative, sequence.
+        3. Rate severity: low / medium / high / critical.
+        4. Suggest next steps: contain, investigate, monitor, ignore.
+        Return JSON.
+    """, llm_input)
+
+    return parse_llm_triage(llm_output)
+```
+
+### 5.2 LLM scheme pattern exploration
+
+```pseudo
+function llm_explore_scheme(anomaly_cluster, graph_context):
+    llm_input = {
+        "cluster": anomaly_cluster,       # grouped transactions
+        "graph": graph_context,           # links between entities
+        "known_typologies": fetch_typologies()
+    }
+
+    llm_output = LLM("""
+        You are a financial crime typology analyst.
+        1. Map this cluster to known typologies (if any).
+        2. Propose 3–5 candidate schemes explaining the pattern.
+        3. For each scheme:
+           - Key indicators present/absent
+           - Additional data needed
+           - Recommended investigative actions.
+        Return structured JSON.
+    """, llm_input)
+
+    return build_investigation_plan(llm_output)
+```
+
+---
+
+## 6. Codifying learning (financial flows)
+
+### 6.1 Detection rules/playbooks
+
+- **Rules examples:**
+  - **Rule:** “If outbound wires > X times monthly average and to new foreign counterparties → flag high‑risk anomaly.”
+  - **Rule:** “If many small cash deposits followed by a single large transfer within 48 hours → possible structuring.”
+- **Playbook elements:**
+  - **Trigger:** Which pattern activates the playbook.
+  - **Immediate checks:** Verify identity, confirm transaction purpose, check sanctions/adverse media.
+  - **Escalation path:** Who gets notified (fraud, compliance, law enforcement liaison).
+  - **Evidence preservation:** Logs, screenshots, communication records.
+
+### 6.2 Recurrence methodology
+
+- **Cluster recurring anomalies** by:
+  - Counterparty, jurisdiction, channel, amount band, time window.
+- **Name the pattern** (“late‑night micro‑wires to offshore exchanges”).
+- **Attach a typology** (if known) or mark as “emerging pattern.”
+- **Update models and humans:**
+  - Add labeled examples to training sets.
+  - Update analyst training materials with “pattern cards.”
