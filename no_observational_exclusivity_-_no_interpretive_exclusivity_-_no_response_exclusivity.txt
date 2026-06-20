@@ -1,0 +1,63 @@
+Here are the three corollaries, written explicitly and ready to drop under the unified theorem.
+
+```latex
+\begin{corollary}[No Observational Exclusivity]
+\label{cor:observation}
+Under the assumptions of Theorem~\ref{thm:unified_exclusivity}, fix any
+focal observer $O_f \in \mathcal{O}$. If there exists at least one
+additional observer $O_k \neq O_f$ with
+\[
+\Pr(\mathsf{Obs}_k(P) = 1) > 0,
+\]
+then as the number of observers with non-zero observation probability
+increases, the probability that $O_f$ is the sole observer of $P$
+converges to zero:
+\[
+\lim_{|\mathcal{O}|\to\infty}
+\Pr\big(\mathsf{Obs}_f(P) = 1 \ \wedge\ 
+\mathsf{Obs}_k(P) = 0 \ \forall k \neq f\big) = 0.
+\]
+Any strategy by $O_f$ that relies on being the only observer of $P$ is
+therefore structurally unstable in such environments.
+\end{corollary}
+```
+
+```latex
+\begin{corollary}[No Interpretive Exclusivity]
+\label{cor:interpretation}
+Under the assumptions of Theorem~\ref{thm:unified_exclusivity}, suppose
+there exist observers $O_i, O_k \in \mathcal{O}$ with heterogeneous
+interpretive maps $f_i \neq f_k$ and non-zero probability of joint
+observation of $P$. Then the probability that any single narrative
+$N_f$ remains uncontested converges to zero as the number of such
+heterogeneous observers increases:
+\[
+\lim_{|\mathcal{O}|\to\infty}
+\Pr\big(N_f \text{ is the unique interpretation of } P\big) = 0.
+\]
+Consequently, any strategy that relies on uncontested narrative control
+over the meaning of $P$ is structurally unstable in multi-actor
+environments with heterogeneous interpretive maps.
+\end{corollary}
+```
+
+```latex
+\begin{corollary}[No Response Exclusivity]
+\label{cor:response}
+Under the assumptions of Theorem~\ref{thm:unified_exclusivity}, fix any
+focal responder $A_f \in \mathcal{A}$. If there exists at least one
+additional responder $A_\ell \neq A_f$ with a non-trivial action set and
+payoff function that depends on $P$ and $\{N_i\}$, then as the number of
+such responders increases, the probability that $A_f$ is the sole source
+of response to $P$ converges to zero:
+\[
+\lim_{|\mathcal{A}|\to\infty}
+\Pr\big(A_f \text{ responds to } P \ \wedge\ 
+A_\ell \text{ does not respond } \forall \ell \neq f\big) = 0.
+\]
+Any strategy by $A_f$ that relies on being the only responder to $P$ is
+therefore structurally unstable in such multi-actor environments.
+\end{corollary}
+```
+
+If you want, next we can add a short “Discussion” subsection tying these three corollaries back to CIs/HUMINT and your Informant–Handler Game specifically.
