@@ -1,0 +1,180 @@
+### 1. Compact mathematical appendix (generic model)
+
+We’ll write a minimal formalization you can drop into `Research-Papers` as a “Model” section, then specialize it.
+
+#### 1.1 Players, types, and beliefs
+
+- **Players:** Handler \(H\), Source \(S\).  
+- **Source type:** \( \theta_S = (I, M, D) \) with prior \( \mu_0(\theta_S) \).  
+- **Handler type:** \( \theta_H = (V, P, S_c) \) with prior \( \nu_0(\theta_H) \) for the source.
+
+Types are fixed over the repeated interaction; beliefs are updated from the public history \(h_t\).
+
+#### 1.2 Stage game
+
+At each period \(t = 1,2,\dots\):
+
+1. Nature: types \( (\theta_S, \theta_H) \) are given (fixed).  
+2. Source chooses report \( r_t \in R = \{T, SD, F, \varnothing\} \).  
+3. Handler observes message \(m_t\) (content, claimed stakes) induced by \(r_t\), not its truth.  
+4. Handler chooses action \( a_t \in A = \{A, Q, D, K\} \).  
+5. World outcome \(o_t \in O\) is realized (success/failure, collateral damage, scandal).  
+6. Both update beliefs \( \mu_{t+1}, \nu_{t+1} \) via Bayes where possible.
+
+#### 1.3 Payoffs
+
+Source per‑period utility:
+
+\[
+u_S(r_t, a_t, o_t; \theta_S, \theta_H) = \alpha(D)\,R_t(r_t, a_t, o_t) - \beta(D)\,C_t(r_t, a_t, o_t) + \gamma\,N_t(r_t, a_t)
+\]
+
+- \(R_t\): immediate reward (cash, leniency, protection).  
+- \(C_t\): expected future cost (being burned, prosecuted, killed).  
+- \(N_t\): non‑material benefits (status, revenge, ego).  
+- \(\alpha(D)\) increasing in desperation; \(\beta(D)\) decreasing in desperation.
+
+Handler per‑period utility:
+
+\[
+u_H(r_t, a_t, o_t; \theta_H, \theta_S) = \delta(P)\,G_t(a_t, o_t) - \lambda\,L_t(a_t, o_t) - \kappa\,K_t(a_t)
+\]
+
+- \(G_t\): operational gain (arrests, seizures, strategic insight).  
+- \(L_t\): losses (bad ops, scandals, wasted resources).  
+- \(K_t\): internal cost of screening/sanctioning.  
+- \(\delta(P)\) increasing in institutional pressure.
+
+Total utilities are discounted sums:
+
+\[
+U_i = \sum_{t=1}^{\infty} \rho_i^{t-1} u_i(\cdot), \quad i \in \{H,S\}
+\]
+
+with discount factors \(\rho_H, \rho_S \in (0,1)\).
+
+#### 1.4 Strategies and equilibrium
+
+- A **source strategy** is a mapping  
+  \[
+  \sigma_S: (\theta_S, h_t) \mapsto r_t \in R.
+  \]
+- A **handler strategy** is a mapping  
+  \[
+  \sigma_H: (\theta_H, h_t, m_t) \mapsto a_t \in A.
+  \]
+
+A **Perfect Bayesian Equilibrium (PBE)** is a pair \((\sigma_S^*, \sigma_H^*, \{\mu_t^*, \nu_t^*\})\) such that:
+
+1. Given beliefs, each player’s strategy maximizes expected discounted utility.  
+2. Beliefs are updated from strategies and Bayes’ rule wherever possible.
+
+---
+
+### 2. Law enforcement CI specialization
+
+Now instantiate the primitives for the CI context.
+
+#### 2.1 Environment
+
+- \(G_t\):  
+  - +1 for a valid arrest/seizure;  
+  - +g for a “big case” (multi‑defendant, large seizure).  
+- \(L_t\):  
+  - \(\ell_1\) for a failed operation;  
+  - \(\ell_2 \gg \ell_1\) if failure becomes public scandal (wrong‑door raid, wrongful conviction).  
+- \(R_t\):  
+  - Cash payment \(p_t\) and/or leniency credit \(c_t\).  
+- \(C_t\):  
+  - Probability of being burned or charged if fabrication is detected, multiplied by sanction severity.
+
+#### 2.2 Parameter regimes
+
+- **Stats‑driven regime:**  
+  - \(P\) high → \(\delta(P)\) large.  
+  - Tactical \(V\) moderate (lab tests, controlled buys), but narrative \(V\) low.  
+  - \(S_c\) weak (few consequences for bad CIs or credulous handlers).
+
+In this regime:
+
+- For low‑\(I\), high‑\(D\) sources, expected payoff of \(F\) dominates \(T\):  
+  \[
+  \mathbb{E}[u_S(F)] \approx \alpha(D)\,\mathbb{E}[R_t|F] - \beta(D)\,\mathbb{E}[C_t|F]
+  \]
+  with \(\alpha(D)\) large and \(\mathbb{E}[C_t|F]\) small if detection is rare.  
+- Handlers with high \(\delta(P)\) overweight \(G_t\) from “big stories,” so \(\sigma_H^*\) uses \(A\) too often on thin evidence.
+
+- **Professional CI regime:**  
+  - \(V\) high (mandatory corroboration, cross‑checks).  
+  - \(S_c\) strong (burn lists, internal discipline).  
+  - Reward schedule: \(R_t\) tied to **verified outcomes** and long‑term reliability index \(q_S\).
+
+Then:
+
+- Fabrication raises \(\mathbb{E}[C_t|F]\) sharply; repeated \(F\) quickly drives \(q_S \to 0\).  
+- For any \(\theta_S\) with non‑trivial horizon (\(\rho_S\) not tiny), best responses shift toward \(T\) or mild \(SD\).  
+- Handler’s optimal \(\sigma_H^*\) uses \(Q\) and \(D\) heavily; \(A\) is reserved for high‑posterior‑truth reports.
+
+---
+
+### 3. Intelligence / HUMINT specialization
+
+#### 3.1 Environment
+
+- \(G_t\):  
+  - Strategic value of correct insight (early warning, adversary capabilities).  
+- \(L_t\):  
+  - Strategic cost of acting on false intel (misallocation, escalation, policy failure).  
+- \(R_t\):  
+  - Stipend, safe‑haven, exfiltration promises, status.  
+- \(C_t\):  
+  - Risk of exposure, imprisonment, execution; risk of being dropped by the service.
+
+Distinctive features:
+
+- Adversary may **choose \(\theta_S\)** (controlled source, double agent).  
+- Verification \(V\) depends on access to other INTs and CI.  
+- Political \(P\) can spike around crises, increasing \(\delta(P)\) and biasing toward action.
+
+#### 3.2 Deception‑aware vs access‑driven regimes
+
+- **Access‑driven regime:**  
+  - Unique access source; leadership overvalues \(G_t\) from that channel.  
+  - Case officer becomes advocate; internal \(V\) effectively low for that source.  
+  - Sanctions \(S_c\) weak because admitting error is costly.
+
+Equilibrium:
+
+- A deceptive or opportunistic \(\theta_S\) can sustain \(F\)/\(SD\) for many periods.  
+- Handler’s \(\sigma_H\) uses \(A\) frequently; beliefs \(\mu_t\) are slow to adjust because negative signals are rationalized.
+
+- **Counter‑deception regime:**  
+  - Institutionalized CI review; red‑teaming; structured analytic techniques.  
+  - Each source is treated as a **hypothesis**; key judgments require multi‑INT support.  
+  - Internal incentives reward **disconfirmation** and detection of deception.
+
+Equilibrium:
+
+- For most \(\theta_S\), best response is to keep \(F\) low; repeated fabrication is quickly detected and punished.  
+- Adversary‑controlled sources still exist, but their impact is bounded by the verification architecture.
+
+---
+
+### 4. How desperation and institutional pressure move equilibria
+
+You can now state, explicitly:
+
+- **Comparative statics in \(D\):**  
+  - As \(D\) increases, \(\alpha(D)\) rises and \(\beta(D)\) falls → source strategies shift mass from \(T\) to \(SD\)/\(F\), holding \(\theta_H\) fixed.  
+  - This is the formal counterpart of “desperation compresses time horizons and makes fabrication rational.”
+
+- **Comparative statics in \(P\):**  
+  - As \(P\) increases, \(\delta(P)\) rises → handler strategies shift mass from \(Q/D\) to \(A\), especially for high‑stakes reports.  
+  - This amplifies the payoff to \(F\) and \(SD\) for sources, feeding back into more fabrication.
+
+- **Stability of high‑truth equilibrium:**  
+  - Requires \(V\) and \(S_c\) sufficiently high that, for most \(\theta_S\),  
+    \[
+    \mathbb{E}[U_S(T|\sigma_H^*)] \ge \mathbb{E}[U_S(F|\sigma_H^*)].
+    \]
+  - And institutional incentives such that handlers are not punished for **rejecting** or **downgrading** dramatic but weakly supported intel.
