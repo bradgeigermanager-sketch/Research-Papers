@@ -1,0 +1,110 @@
+### How the collapse of predictive exclusivity maps onto CIs/HUMINT
+
+Let’s anchor that lemma directly into your Informant–Handler Game and the CI/HUMINT world you’re modeling.
+
+---
+
+#### 1. No one actor owns future risk
+
+In CI/HUMINT environments:
+
+- **Handlers** form expectations about:
+  - whether a source will deliver,  
+  - whether a target will act,  
+  - whether a threat will materialize.
+
+- **Sources (CIs/CHIS)** form expectations about:
+  - how much protection they’ll get,  
+  - how much they can exploit the relationship,  
+  - how likely retaliation or exposure is.
+
+- **Other actors**—rival agencies, supervisors, prosecutors, offenders, media, foreign services—also form expectations about:
+  - future enforcement intensity,  
+  - future surveillance,  
+  - future risk of arrest,  
+  - future political or public reaction.
+
+Your lemma says:  
+no single actor controls that expectation field.
+
+Even if a handler believes “my forecast of risk is the one that matters,” other actors are simultaneously:
+
+- pricing risk differently,  
+- planning around different futures,  
+- and acting on those divergent expectations.
+
+---
+
+#### 2. Strategic informants and expectation competition
+
+For CIs/HUMINT, this has teeth:
+
+- A CI may try to **shape the handler’s expectations** (“this gang is about to escalate”, “this target is low‑risk”).  
+- But other sources, technical collection, rival agencies, and even offenders’ own behavior are **simultaneously shaping expectations** elsewhere.
+
+So:
+
+- The handler’s forecast \(\Pi_H(P)\) is **not** the only forecast.  
+- The CI’s internal forecast \(\Pi_S(P)\) is **not** the only forecast.  
+- Offenders’ forecasts \(\Pi_O(P)\) (about enforcement, betrayal, retaliation) are **not** controlled by the handler–CI dyad.
+
+Your lemma \(\ref{lemma:prediction}\) is basically saying:
+
+> In a multi‑actor CI/HUMINT environment, no one can monopolize how the future is mentally priced in.
+
+---
+
+#### 3. Consequences for your Informant–Handler Game
+
+In your game:
+
+- The handler’s strategy depends on **expected future utility** of trusting or distrusting the CI.  
+- The CI’s strategy depends on **expected future utility** of fabricating, shading, or telling the truth.
+
+But:
+
+- Supervisors may expect different payoffs from the same case.  
+- Other agencies may expect different threat trajectories.  
+- Offenders may expect different enforcement patterns and adjust behavior.  
+- Media/public may expect different scandal probabilities.
+
+So the “future” is not a single object—it’s a **contested expectation space**.
+
+That means:
+
+- A CI cannot safely assume that “if I make the handler believe X about the future, that’s the future that matters.”  
+- A handler cannot safely assume that “my risk forecast is the one that shapes behavior.”
+
+Your lemma formalizes that:
+
+\[
+\Pi_{X_f}(P) \text{ is never the unique or expectation-dominant prediction of } P
+\]
+
+once multiple actors with different information and incentives are in play.
+
+---
+
+#### 4. Why this matters for fabrication and distortion
+
+This ties directly back to your core theme—fabricated intelligence and distorted incentives:
+
+- If a CI fabricates to **shape expectations** (e.g., exaggerating threat to secure protection or resources), that fabrication enters a **multi‑actor expectation field**.  
+- Other actors’ forecasts may contradict, dilute, or override it.  
+- The CI’s manipulation of one handler’s expectations does not guarantee control over:
+  - prosecutorial expectations,  
+  - offender expectations,  
+  - media expectations,  
+  - other agencies’ expectations.
+
+So the rational CI, in your model, must recognize:
+
+- **Expectation manipulation is not exclusive.**  
+- Other actors are simultaneously predicting and planning.  
+- Fabrications that rely on owning the future narrative are structurally fragile.
+
+And the rational handler must recognize:
+
+- **Risk perception is not centrally controlled.**  
+- Their forecast is one of many.  
+- Overconfidence in their own expectations is itself a vulnerability.
