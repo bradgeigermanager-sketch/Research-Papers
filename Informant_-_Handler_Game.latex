@@ -1,0 +1,156 @@
+\section{Model: Informant--Handler Game}
+
+We model the interaction between a handler (law enforcement CI handler or intelligence case officer) and a human source (criminal informant or HUMINT asset) as a repeated Bayesian game with incomplete information and reputation.
+
+\subsection{Players, types, and beliefs}
+
+There are two players:
+\begin{itemize}
+  \item Handler $H$.
+  \item Source $S$.
+\end{itemize}
+
+The source has type
+
+
+\[
+  \theta_S = (I, M, D),
+\]
+
+
+where:
+\begin{itemize}
+  \item $I \in \{\text{high}, \text{medium}, \text{low}\}$ is the source's stock of genuine, actionable information.
+  \item $M \in \{\text{cooperative}, \text{opportunistic}, \text{hostile/deceptive}\}$ is the source's strategic orientation.
+  \item $D \in \{\text{low}, \text{moderate}, \text{acute}\}$ is the source's desperation level.
+\end{itemize}
+Only $S$ observes $\theta_S$; $H$ holds a prior $\mu_0(\theta_S)$.
+
+The handler has type
+
+
+\[
+  \theta_H = (V, P, S_c),
+\]
+
+
+where:
+\begin{itemize}
+  \item $V \in \{\text{low}, \text{medium}, \text{high}\}$ is verification capacity (surveillance, technical collection, analytic support).
+  \item $P \in \{\text{low}, \text{high}\}$ is institutional pressure for ``product'' (arrests, seizures, intelligence).
+  \item $S_c \in \{\text{weak}, \text{strong}\}$ is the credibility of sanctions for deception.
+\end{itemize}
+Only $H$ observes $\theta_H$; $S$ holds a prior $\nu_0(\theta_H)$ based on experience and local culture.
+
+\subsection{Stage game}
+
+Time is discrete, $t = 1,2,\dots$. In each period:
+
+\begin{enumerate}
+  \item Types $(\theta_S,\theta_H)$ are fixed and known only to their respective players.
+  \item The source chooses a report $r_t \in R = \{T, SD, F, \varnothing\}$:
+  \begin{itemize}
+    \item $T$: truthful report (within the limits of $I$).
+    \item $SD$: strategic distortion (truth plus spin).
+    \item $F$: fabrication (plausible but false).
+    \item $\varnothing$: silence/withholding.
+  \end{itemize}
+  \item The handler observes a message $m_t$ induced by $r_t$ (content, claimed stakes), but not its truth.
+  \item The handler chooses an action $a_t \in A = \{A, Q, D, K\}$:
+  \begin{itemize}
+    \item $A$: act and reward (operationalize, pay, grant leniency).
+    \item $Q$: probe (seek corroboration, delay).
+    \item $D$: discount (log but do not act; minimal reward).
+    \item $K$: sanction (cut off, prosecute, expose).
+  \end{itemize}
+  \item A world outcome $o_t \in O$ is realized (e.g.\ operational success/failure, collateral damage, scandal), which may partially reveal the truthfulness of $r_t$.
+  \item Beliefs $\mu_{t+1}$ and $\nu_{t+1}$ are updated from the public history $h_t$ using Bayes' rule wherever possible.
+\end{enumerate}
+
+\subsection{Per-period payoffs}
+
+The source's per-period utility is
+
+
+\[
+  u_S(r_t,a_t,o_t;\theta_S,\theta_H)
+  = \alpha(D)\,R_t(r_t,a_t,o_t)
+  - \beta(D)\,C_t(r_t,a_t,o_t)
+  + \gamma\,N_t(r_t,a_t),
+\]
+
+
+where:
+\begin{itemize}
+  \item $R_t$ is the immediate reward (cash, leniency, protection).
+  \item $C_t$ is the expected future cost (being burned, prosecuted, or killed).
+  \item $N_t$ captures non-material benefits (status, revenge, ego).
+  \item $\alpha(D)$ is increasing in desperation $D$ (raising the weight on immediate reward).
+  \item $\beta(D)$ is decreasing in $D$ (future costs are discounted under desperation).
+  \item $\gamma \ge 0$ is a constant weight on non-material benefits.
+\end{itemize}
+
+The handler's per-period utility is
+
+
+\[
+  u_H(r_t,a_t,o_t;\theta_H,\theta_S)
+  = \delta(P)\,G_t(a_t,o_t)
+  - \lambda\,L_t(a_t,o_t)
+  - \kappa\,K_t(a_t),
+\]
+
+
+where:
+\begin{itemize}
+  \item $G_t$ is the operational gain (arrests, seizures, strategic insight).
+  \item $L_t$ is the loss (failed operations, scandals, wasted resources).
+  \item $K_t$ is the internal cost of screening and sanctioning.
+  \item $\delta(P)$ is increasing in institutional pressure $P$ (overweighting visible gains).
+  \item $\lambda,\kappa > 0$ are cost parameters.
+\end{itemize}
+
+Total utilities are discounted sums:
+
+
+\[
+  U_i = \sum_{t=1}^{\infty} \rho_i^{t-1} u_i(r_t,a_t,o_t;\theta_S,\theta_H),
+  \quad i \in \{H,S\},
+\]
+
+
+with discount factors $\rho_H,\rho_S \in (0,1)$.
+
+\subsection{Strategies and equilibrium}
+
+A (behavioral) strategy for the source is a mapping
+
+
+\[
+  \sigma_S : (\theta_S,h_t) \mapsto r_t \in R,
+\]
+
+
+and for the handler
+
+
+\[
+  \sigma_H : (\theta_H,h_t,m_t) \mapsto a_t \in A.
+\]
+
+
+
+A \emph{Perfect Bayesian Equilibrium} (PBE) is a pair $(\sigma_S^*,\sigma_H^*)$ and belief system $\{\mu_t^*,\nu_t^*\}$ such that:
+\begin{enumerate}
+  \item Given beliefs, $\sigma_S^*$ and $\sigma_H^*$ maximize the respective players' expected discounted utilities.
+  \item Beliefs are updated from strategies and observed histories using Bayes' rule wherever possible.
+\end{enumerate}
+
+\subsection{Comparative statics}
+
+The model highlights two key comparative statics:
+\begin{itemize}
+  \item As desperation $D$ increases, $\alpha(D)$ rises and $\beta(D)$ falls, making fabrication $F$ and aggressive strategic distortion $SD$ more attractive relative to truthful reporting $T$, holding $\theta_H$ fixed.
+  \item As institutional pressure $P$ increases, $\delta(P)$ rises, making the handler more willing to act $A$ on thin evidence and less willing to probe $Q$ or discount $D$, thereby increasing the expected payoff to $F$ and $SD$ for the source.
+\end{itemize}
+High verification capacity $V$ and strong sanction credibility $S_c$ can sustain a ``high-truth'' equilibrium in which truthful reporting dominates fabrication for most source types.
