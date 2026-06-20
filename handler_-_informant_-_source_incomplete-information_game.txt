@@ -1,0 +1,188 @@
+### 1. Core game structure
+
+**Players:**  
+- **Handler:** law enforcement officer, case agent, or intelligence case officer.  
+- **Informant/Source:** criminal, asset, or recruited spy with private information and private pressures (desperation, debt, ego, ideology).
+
+**Stages (repeated game):**  
+1. **Type realization (private to informant):**  
+   - True‑intel, partial‑intel, or no‑intel.  
+   - Desperation level: low, moderate, acute (addiction, debt, flight).  
+2. **Signal choice (informant):**  
+   - **Truthful report** (accurate, verifiable).  
+   - **Strategic distortion** (mix of truth and spin).  
+   - **Fabrication** (plausible but false).  
+   - **Silence/withholding.**  
+3. **Screening and response (handler):**  
+   - **Accept and act** (operationalize, pay, grant leniency).  
+   - **Probe** (delay, demand corroboration, test).  
+   - **Discount** (log but don’t act).  
+   - **Sanction** (cut off, charge, expose).  
+4. **Outcome:**  
+   - Operational result (success, neutral, failure, scandal).  
+   - Update of beliefs about informant type and reliability.  
+   - Update of informant beliefs about handler’s gullibility, tolerance for deceit, and reward function.
+
+This is a **repeated, incomplete‑information game** with strong **reputation effects** on both sides.
+
+---
+
+### 2. Informant strategy space
+
+From the informant’s perspective, the game is about **converting private narrative into resources or protection** under constraints.
+
+**Key private variables:**
+
+- **Desperation \(D\):** increases marginal utility of immediate reward and discounts future punishment.  
+- **True information stock \(I\):** how much real, actionable intel they actually have.  
+- **Perceived handler verification strength \(V\):** how likely lies will be tested and punished.  
+- **Perceived handler hunger \(H\):** pressure for stats, wins, or “product.”
+
+**Best‑response logic (informant):**
+
+- When \(I\) high, \(D\) low, \(V\) high → **truthful or mildly spun reporting** dominates: reputation is valuable, long horizon.  
+- When \(I\) low, \(D\) high, \(H\) high, \(V\) low → **fabrication** becomes attractive: short horizon, handler is “thirsty,” verification weak.  
+- When \(I\) moderate, \(D\) moderate, \(V\) moderate → **strategic distortion**: mix truth with targeted lies (to harm rivals, steer operations).
+
+Desperation effectively **tilts the payoff function**:  
+- Immediate cash / leniency gets huge positive weight.  
+- Future sanctions (being burned, prosecuted, killed) are heavily discounted.
+
+---
+
+### 3. Handler strategy space
+
+The handler’s problem is a **screening and incentive‑design game** under institutional pressure.
+
+**Key handler variables:**
+
+- **Institutional pressure \(P\):** need for arrests, seizures, or “intelligence product.”  
+- **Verification capacity \(V\):** surveillance, technical collection, cross‑sources, analytic support.  
+- **Sanction credibility \(S\):** ability and willingness to punish deception.  
+- **Source portfolio \(N\):** number and diversity of informants/assets.
+
+**Handler choices:**
+
+1. **Contract design:**  
+   - Payment per tip vs per verified result.  
+   - Leniency contingent on **pattern** of reliability vs single big “home run.”  
+   - Use of **non‑monetary rewards** (status, access, ego‑stroking) to reduce cash‑driven fabrication.
+
+2. **Screening rules:**  
+   - Thresholds for acting on a tip (number of independent corroborations, technical confirmation).  
+   - Differential scrutiny based on **source history** (Bayesian updating of reliability).  
+   - Randomized “spot checks” and **sting‑tests** (feeding false info to see if it’s resold).
+
+3. **Sanction policy:**  
+   - Soft: quietly downgrade, stop paying, reduce access.  
+   - Hard: prosecution, exposure, or in intel context, **blacklisting across agencies**.
+
+**Best‑response logic (handler):**
+
+- High \(P\), low \(V\), low \(S\) → handler is tempted to **over‑accept** and under‑screen, inviting fabrication.  
+- High \(V\), credible \(S\), moderate \(P\) → handler can sustain a **high‑truth equilibrium**: informants learn that lies are detected and punished.  
+- Over‑harsh \(S\) with noisy \(V\) → risk of punishing honest but unlucky sources, which can collapse cooperation.
+
+---
+
+### 4. Equilibrium patterns in law enforcement vs intelligence
+
+#### 4.1 Law enforcement CI system
+
+**Structure:**
+
+- **Payoffs:** arrests, seizures, cleared cases, plea leverage.  
+- **Verification:** controlled buys, surveillance, warrants, lab tests.  
+- **Time horizon:** often **case‑bounded** (months–years), but informant may cycle across cases.
+
+**Typical equilibria:**
+
+- **“Stats‑driven lax screening” equilibrium:**  
+  - High \(P\) for numbers, limited analytic capacity.  
+  - Handlers overweight spectacular tips; informants learn that **dramatic narratives** get paid.  
+  - Result: more **fabricated conspiracies**, staged controlled buys, and weaponized false tips against rivals.
+
+- **“Professionalized CI management” equilibrium:**  
+  - Formal source files, reliability scoring, mandatory corroboration.  
+  - Payments tied to **verified outcomes**, not just information volume.  
+  - Fabrication becomes less profitable; informants with low \(I\) either exit or shift to low‑stakes lies.
+
+#### 4.2 Military / intelligence agency (spies, HUMINT)
+
+**Structure:**
+
+- **Payoffs:** strategic insight, early warning, access to denied areas, influence.  
+- **Verification:** multi‑INT fusion (SIGINT, IMINT, OSINT), long‑term pattern analysis.  
+- **Time horizon:** often **multi‑year or multi‑decade** relationships.
+
+**Distinctive features:**
+
+- **Higher stakes per error:** acting on bad intel can cause war, coups, or strategic failure.  
+- **More complex type space:** ideological, coerced, double/triple agents, deception operations.  
+- **Adversarial counter‑intelligence:** the “environment” is an active player trying to **feed you controlled sources**.
+
+**Typical equilibria:**
+
+- **“Access‑over‑rigor” equilibrium:**  
+  - Leadership overvalues unique access; case officers become **advocates** for their source.  
+  - Verification is politically or operationally constrained.  
+  - Result: long‑running **fabricators** or controlled agents (e.g., double agents) shape policy.
+
+- **“Counter‑deception‑aware” equilibrium:**  
+  - Strong CI culture, red‑teaming, and structured analytic techniques.  
+  - Sources are evaluated as **hypotheses**, not trusted persons.  
+  - Incentives: rewards for **internal skepticism** and disconfirming evidence, not just “scoops.”  
+  - Fabrication persists but is more likely to be **contained** and used as a signal about adversary intent.
+
+---
+
+### 5. Desperation and fabrication as a perturbation
+
+You can think of **desperation** as a shock that temporarily changes the informant’s utility function:
+
+\[
+U_{\text{informant}} = \alpha \cdot \text{ImmediateReward} - \beta \cdot \text{FutureSanction} + \gamma \cdot \text{NonmaterialBenefits}
+\]
+
+- In normal conditions: \(\alpha\) and \(\beta\) comparable; future matters.  
+- Under acute desperation: \(\alpha \uparrow\uparrow\), \(\beta \downarrow\) (future heavily discounted).  
+
+This pushes the informant into **risk‑seeking fabrication**, especially if:
+
+- They believe handler’s \(V\) is low or can be gamed.  
+- They observe other informants **getting away with** embellished or false intel.  
+- The handler’s environment rewards **speed and drama** over accuracy.
+
+On the handler side, desperation is often **unobservable**, but its effects are observable as:
+
+- Sudden increase in volume and drama of tips.  
+- Shift from granular, verifiable details to **grand narratives**.  
+- More frequent requests for **up‑front payment** or immediate legal favors.
+
+A rational handler in a repeated game should treat these as **state‑change signals** and temporarily:
+
+- Raise verification thresholds.  
+- Shift rewards from “big single tips” to **small, repeatedly verified contributions**.  
+- Increase **non‑cash support** (treatment, relocation, structured debt‑relief via programs) to reduce \(\alpha\).
+
+---
+
+### 6. Design levers to move the equilibrium
+
+If you wanted to **engineer** a safer equilibrium in both domains, the game‑theoretic levers are:
+
+- **Contract form:**  
+  - Pay for **verified, incremental truth**, not for spectacular, unverified claims.  
+  - Build in **delayed rewards** contingent on long‑term reliability.
+
+- **Belief updating and transparency (internally):**  
+  - Formal reliability scores shared across units/agencies.  
+  - Mandatory documentation of **failed tips** and their consequences.
+
+- **Institutional incentives:**  
+  - Reward handlers for **avoiding false positives**, not just for producing operations.  
+  - Create career credit for **disconfirming** or downgrading bad sources.
+
+- **CI and analytic integration:**  
+  - Treat every source as a potential **deception channel**; model adversary incentives.  
+  - Use structured analytic techniques (hypothesis testing, competing hypotheses) to reduce over‑reliance on any single informant.
