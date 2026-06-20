@@ -1,0 +1,158 @@
+### Expectation Graph for CI/HUMINT
+
+Here’s the third structural object to sit alongside your Observer and Interpretation Graphs—this one is about **how different CI/HUMINT actors project futures off the same event \(P\)**.
+
+---
+
+### 1. Core idea
+
+- **Observer Graph:** who sees \(P\).  
+- **Interpretation Graph:** what \(P\) *means* to each observer.  
+- **Expectation Graph:** what each actor thinks will happen *next* because of \(P\).
+
+Formally, each actor \(X\) attached to \(P\) carries a predictive map:
+\[
+\Pi_X(P) = g_X(P, I_X, \psi_X),
+\]
+and the Expectation Graph is the network of these \(\Pi_X(P)\) nodes and their interactions.
+
+---
+
+### 2. Node types
+
+**1. Event node \(P\)**  
+- Same central event as before: a case, operation, threat, or anomaly that triggers CI/HUMINT activity.
+
+**2. Actor nodes \(X\)** (CI/HUMINT‑specific)
+
+- **Handler \(H\)**  
+  - Expectations: case value, CI reliability, future risk, promotion/scandal risk.
+
+- **Confidential Informant / Source \(S\)**  
+  - Expectations: protection, payment, exposure risk, retaliation, long‑term leverage.
+
+- **Offender / Target \(O\)**  
+  - Expectations: enforcement intensity, betrayal risk, prison risk, violence risk.
+
+- **Rival agencies \(R_a\)** (other LE/intel units)  
+  - Expectations: jurisdictional conflict, credit, embarrassment, intelligence gain.
+
+- **Supervisors / Command \(C\)**  
+  - Expectations: political fallout, metrics, oversight, scandal probability.
+
+- **Prosecutors \(P_r\)**  
+  - Expectations: evidentiary strength, plea dynamics, trial risk, public reaction.
+
+- **Media / Public \(M\)**  
+  - Expectations: scandal likelihood, narrative payoff, outrage or apathy.
+
+You can include others (foreign services, oversight bodies) as additional \(X\) nodes.
+
+**3. Expectation nodes \(E_X\)**  
+
+For each actor \(X\), create a node:
+\[
+E_X = \Pi_X(P)
+\]
+This is **not** just “belief about \(P\)”—it’s the actor’s **forecast of future trajectories**:
+
+- “This CI will flip again.”  
+- “This case will blow up.”  
+- “This operation will stay quiet.”  
+- “This gang will escalate.”  
+- “This scandal will fade.”
+
+---
+
+### 3. Edge types
+
+**1. Information edges**  
+- \(P \rightarrow X\): actor \(X\) becomes aware of \(P\).  
+- \(X \rightarrow E_X\): actor \(X\) generates its expectation node.
+
+**2. Expectation‑influence edges**  
+- \(E_X \rightarrow E_Y\): \(X\)’s forecast influences \(Y\)’s forecast.  
+  - Handler’s expectations shape supervisor expectations.  
+  - Media expectations shape public and political expectations.  
+  - Rival agency expectations shape handler risk calculus.
+
+**3. Action feedback edges**  
+- \(E_X \rightarrow A_X\): expectations drive actions (e.g., handler’s forecast → how aggressively they run the CI).  
+- \(A_X \rightarrow P'\): actions change the future state (new event \(P'\) or updated state of \(P\)).  
+- \(P' \rightarrow E_Y\): new state updates others’ expectations.
+
+This closes the loop: **expectations → actions → new events → new expectations**.
+
+**4. Conflict / alignment edges between expectations**  
+- \(E_X \leftrightarrow E_Y\) with labels:
+  - “aligned” (similar futures)  
+  - “divergent” (different futures)  
+  - “adversarial” (one actor’s good outcome is another’s bad outcome)
+
+---
+
+### 4. Structural patterns
+
+**1. Expectation clusters**
+
+- **Institutional cluster:** \(H, C, P_r, R_a\) with partially aligned futures (case success, low scandal).  
+- **Criminal cluster:** \(S, O\) with futures around survival, profit, betrayal risk.  
+- **External cluster:** \(M\) and public, with futures around scandal, narrative payoff.
+
+Each cluster tends to internally reinforce expectations and externally clash.
+
+**2. Expectation fault lines**
+
+- Handler vs CI:  
+  - \(E_H\): “CI will stay loyal if managed.”  
+  - \(E_S\): “Handler will protect me even if I shade the truth.”
+
+- Handler vs Offender:  
+  - \(E_H\): “Target will eventually slip.”  
+  - \(E_O\): “Enforcement will stay fragmented; I can play them.”
+
+- Agency vs Agency:  
+  - \(E_{R_1}\): “We’ll own this case.”  
+  - \(E_{R_2}\): “They’ll screw it up; we’ll pick up the pieces.”
+
+**3. Dominant expectation node \(D_E\)** (optional)
+
+- A node representing the **currently dominant future narrative** (e.g., “this will become a scandal,” “this will quietly succeed”).  
+- Edges from \(E_X\) to \(D_E\) weighted by influence (media reach, institutional power, etc.).
+
+---
+
+### 5. Dynamics
+
+**1. Update process**
+
+- New information about \(P\) or about others’ actions updates \(I_X\).  
+- Each \(E_X\) may shift:
+  \[
+  E_X^{(t+1)} = g_X(P^{(t+1)}, I_X^{(t+1)}, \psi_X).
+  \]
+
+**2. Expectation cascades**
+
+- A shift in one influential \(E_X\) (e.g., media or a key supervisor) can trigger:
+  - rapid alignment (everyone suddenly “knows” this will be a scandal), or  
+  - rapid divergence (some double down, others hedge).
+
+**3. Adversarial expectation manipulation**
+
+- CIs, offenders, or even agencies may try to **shape others’ \(E_Y\)**:
+  - CI exaggerates threat to increase protection.  
+  - Handler downplays risk to avoid oversight.  
+  - Offender signals compliance to reduce enforcement expectations.
+
+But per your lemma: no one actor can **monopolize** the expectation field.
+
+---
+
+### 6. Layout sketch (parallel to your other graphs)
+
+- Center: \(P\).  
+- Inner ring: actor nodes \(X\) (H, S, O, R_a, C, P_r, M, etc.).  
+- Outer ring: expectation nodes \(E_X\), each connected to its actor.  
+- Cross‑edges between \(E_X\) nodes to show influence and conflict.  
+- Optional dominant expectation node \(D_E\) above, with incoming edges from \(E_X\).
