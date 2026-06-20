@@ -1,0 +1,122 @@
+### Lemma: Collapse of Concealment Exclusivity
+
+```latex
+\begin{lemma}[Collapse of Concealment Exclusivity]
+\label{lemma:concealment}
+Let $P$ be an event or fact in the multi-actor environment described in
+Theorem~\ref{thm:five_collapses}, and let $\mathcal{X}$ denote the set
+of actors (observers, interpreters, responders, forecasters, controllers).
+
+For each actor $X \in \mathcal{X}$, let
+\[
+\mathsf{Know}_X(P,t) \in \{0,1\}
+\]
+indicate whether $X$ knows (or has correctly inferred) $P$ by time $t$,
+and let $\mathsf{Reveal}_X(P,t) \in \{0,1\}$ indicate whether $X$ has
+taken an action by time $t$ that makes $P$ accessible to at least one
+additional actor (including institutions, media, or automated systems).
+
+Assume:
+\begin{itemize}
+  \item[(i)] At least two actors have non-zero probability of eventually
+  observing or inferring $P$ (directly or indirectly).
+  \item[(ii)] At least one actor has a non-zero probability of
+  $\mathsf{Reveal}_X(P,t) = 1$ conditional on knowing $P$.
+  \item[(iii)] The number of actors with potential access to $P$ grows
+  over time (through diffusion, inference, or institutional processes).
+\end{itemize}
+
+Let $\mathsf{Concealed}(P,t)$ denote the event that $P$ remains confined
+to its initial holder(s) and has not been revealed to any additional
+actor by time $t$. Then, under assumptions (i)–(iii),
+\[
+\lim_{t \to \infty}
+\Pr\big(\mathsf{Concealed}(P,t)\big) = 0.
+\]
+
+Equivalently, in a sufficiently populated multi-actor environment with
+diffusing access and non-zero reveal incentives, the probability that
+$P$ remains permanently concealed converges to zero. Concealment is a
+transient state, not a stable equilibrium.
+\end{lemma}
+```
+
+---
+
+### Control‑Concealment Graph  
+#### How concealment decays under multi‑actor pressure
+
+The Control‑Concealment Graph overlays **attempted control** with **concealment dynamics** to show why secrets erode over time in a multi‑actor field.
+
+#### 1. Node types
+
+- **Event/fact node \(P\):**  
+  The concealed item: an action, relationship, failure, fabrication, or operation.
+
+- **Actor nodes \(X\):**  
+  Handlers, CIs, offenders, rival agencies, supervisors, prosecutors, media, oversight, etc.
+
+- **Knowledge nodes \(K_X\):**  
+  For each actor \(X\),
+  \[
+  K_X = \text{“X knows or has correctly inferred } P\text{”}.
+  \]
+
+- **Concealment‑attempt nodes \(H_X\):**  
+  Actions by \(X\) intended to keep \(P\) hidden (withholding, classification, intimidation, compartmentation).
+
+- **Reveal‑attempt nodes \(R_X\):**  
+  Actions by \(X\) that increase the accessibility of \(P\) (leaks, testimony, disclosure, logging, investigative reporting).
+
+- **Exposure node \(E\):**  
+  The state in which \(P\) is accessible to a broad audience (institutional, public, or cross‑agency).
+
+#### 2. Edge types
+
+- **Knowledge edges:**
+  - \(P \rightarrow K_X\): \(X\) learns or infers \(P\).
+  - \(K_X \rightarrow H_X\): knowledge drives concealment attempts.
+  - \(K_X \rightarrow R_X\): knowledge drives reveal attempts.
+
+- **Concealment edges:**
+  - \(H_X \rightarrow P\): attempts to keep \(P\) confined (compartmentation, suppression).
+  - \(H_X \dashv R_Y\): concealment attempts interfere with others’ reveal attempts.
+
+- **Reveal edges:**
+  - \(R_X \rightarrow K_Y\): disclosure spreads knowledge to new actors.
+  - \(R_X \rightarrow E\): large or public reveal (media, court, oversight).
+
+- **Control edges:**
+  - \(C_X \rightarrow H_X\) and \(C_X \rightarrow R_X\):  
+    control strategies include both hiding and exposing, depending on incentives.
+
+#### 3. Structural patterns
+
+- **Concealment cluster:**  
+  Nodes \(H_X\) around \(P\), trying to keep knowledge localized.
+
+- **Reveal cluster:**  
+  Nodes \(R_X\) pushing toward \(E\), often from actors with misaligned incentives (disgruntled insiders, rival agencies, media, oversight).
+
+- **Diffusion pattern:**  
+  As more \(K_X\) nodes light up over time, the number of potential \(R_X\) nodes grows, increasing pressure toward \(E\).
+
+- **Decay of concealment:**  
+  The longer the time horizon and the larger \(|\mathcal{X}|\), the more paths exist from \(P\) to \(E\) via some sequence
+  \[
+  P \rightarrow K_X \rightarrow R_X \rightarrow E.
+  \]
+
+#### 4. Layout sketch
+
+- Center: \(P\).  
+- Inner ring: \(K_X\) nodes (who knows).  
+- One side: \(H_X\) nodes (who is trying to hide).  
+- Other side: \(R_X\) nodes (who is trying or incentivized to reveal).  
+- Top: exposure node \(E\).  
+- Edges:
+  - \(P \rightarrow K_X\), \(K_X \rightarrow H_X\) / \(R_X\),  
+  - \(R_X \rightarrow K_Y\), \(R_X \rightarrow E\),  
+  - \(H_X \dashv R_Y\) (interference).
+
+Visually, as more \(K_X\) nodes appear and more \(R_X\) nodes activate, the graph becomes increasingly connected to \(E\), embodying the lemma: **the probability of permanent concealment collapses over time in a multi‑actor system.**
