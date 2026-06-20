@@ -1,0 +1,28 @@
+\begin{tikzpicture}[>=stealth, level distance=1.8cm,
+  level 1/.style={sibling distance=4cm},
+  level 2/.style={sibling distance=2.2cm},
+  every node/.style={font=\small}
+]
+
+\node (N) {Nature}
+  child { node (S1) {$S$}
+    child { node (H1) {$H$}
+      child { node {$z_{T,A}$} edge from parent node[left] {$\Act$} }
+      child { node {$z_{T,Q}$} edge from parent node[right] {$\Probe$} }
+      child { node {$z_{T,D}$} edge from parent node[below left] {$\Discount$} }
+      child { node {$z_{T,K}$} edge from parent node[below right] {$\Sanction$} }
+      edge from parent node[left] {$\Truth$}
+    }
+    child { node (H2) {$H$}
+      child { node {$z_{F,A}$} edge from parent node[left] {$\Act$} }
+      child { node {$z_{F,Q}$} edge from parent node[right] {$\Probe$} }
+      child { node {$z_{F,D}$} edge from parent node[below left] {$\Discount$} }
+      child { node {$z_{F,K}$} edge from parent node[below right] {$\Sanction$} }
+      edge from parent node[right] {$\Fabricate$}
+    }
+  };
+
+\node[below=0.1cm of S1] {$S$ chooses report};
+\node[above=0.1cm of N] {$\theta_S,\theta_H$};
+
+\end{tikzpicture}
