@@ -1,0 +1,82 @@
+The Five Collapses Theorem
+### *A unified structural result for multi‑actor environments*
+
+```latex
+\begin{theorem}[The Five Collapses Theorem]
+\label{thm:five_collapses}
+Let $P$ be an event occurring in a multi-actor environment populated by
+observers, interpreters, responders, forecasters, and strategic actors
+$\mathcal{X} = \mathcal{O} \cup \mathcal{A}$, where each actor $X \in \mathcal{X}$
+possesses:
+
+\begin{itemize}
+  \item a non-trivial probability of observing $P$,
+  \item a heterogeneous interpretive map $f_X$,
+  \item a non-trivial action set $R_X$,
+  \item a predictive map $\Pi_X$ over future trajectories,
+  \item and a control-attempt map $C_X$ that pushes on the system trajectory.
+\end{itemize}
+
+Assume that at least two actors in $\mathcal{X}$ have non-zero
+probability of observation, heterogeneous interpretive maps, non-trivial
+action sets, divergent predictive maps, and distinct control attempts.
+
+Then, as the number of such actors increases, the following five
+probabilities all converge to zero:
+
+\begin{enumerate}
+  \item[(1)] \textbf{Observation Exclusivity:}
+  \[
+  \Pr\big(O_f \text{ is the sole observer of } P\big) \to 0.
+  \]
+
+  \item[(2)] \textbf{Interpretation Exclusivity:}
+  \[
+  \Pr\big(N_f \text{ is the uncontested interpretation of } P\big) \to 0.
+  \]
+
+  \item[(3)] \textbf{Response Exclusivity:}
+  \[
+  \Pr\big(A_f \text{ is the sole responder to } P\big) \to 0.
+  \]
+
+  \item[(4)] \textbf{Expectation Exclusivity:}
+  \[
+  \Pr\big(\Pi_{X_f}(P) \text{ is the dominant or unique forecast of } P\big) \to 0.
+  \]
+
+  \item[(5)] \textbf{Control Exclusivity:}
+  \[
+  \Pr\big(T = T_{X_f} \text{ (the trajectory intended by } X_f)\big) \to 0.
+  \]
+\end{enumerate}
+
+Therefore, in any sufficiently populated multi-actor environment with
+overlapping observation, heterogeneous interpretation, multiple
+responders, divergent expectations, and competing control attempts, no
+actor can monopolize any layer of the information-action cycle. The
+system trajectory $T$ is emergent, interactive, and beyond unilateral
+control.
+
+Equilibrium strategies must treat observation, interpretation, response,
+expectation, and control as shared, contested, and structurally
+non-exclusive.
+\end{theorem}
+```
+
+---
+
+## **Interpretive Summary (for your prose section)**
+
+The Five Collapses Theorem states that in any real-world CI/HUMINT or multi‑actor environment:
+
+- **Many see.**  
+- **Many interpret.**  
+- **Many act.**  
+- **Many predict.**  
+- **Many try to steer the future.**
+
+Because each layer is populated by multiple actors with different incentives, priors, and information sets, **no actor can monopolize any layer**.  
+The system trajectory is the emergent result of **all** actors’ pushes, not the intention of any one.
+
+This theorem is the mathematical backbone of your entire multi‑actor architecture.
