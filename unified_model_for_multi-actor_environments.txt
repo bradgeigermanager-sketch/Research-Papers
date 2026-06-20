@@ -1,0 +1,141 @@
+### Unified model for multi‑actor environments
+
+Here’s a single, coherent formal model that integrates **observation**, **interpretation**, and **response** into one multi‑actor framework, with a unified “collapse of exclusivity” result. You can drop this straight into your LaTeX paper as a new section.
+
+---
+
+#### 1. Environment and actors
+
+Let a problem or event be denoted by \(P\).
+
+There are three key role‑sets:
+
+- **Observers:** \(\mathcal{O} = \{O_1,\dots,O_n\}\)  
+- **Interpreters:** typically the same set, each observer also interprets  
+- **Responders:** \(\mathcal{A} = \{A_1,\dots,A_m\}\)
+
+In many applications, \(\mathcal{O}\) and \(\mathcal{A}\) overlap (e.g., an agency both observes and responds).
+
+Each observer \(O_i\) has:
+
+- an information set \(I_i\) (what it can see or infer about \(P\)),  
+- internal parameters \(\theta_i\) (priors, incentives, constraints),  
+- an interpretive map
+  \[
+  N_i = f_i(P, I_i, \theta_i),
+  \]
+  where \(N_i\) is the narrative/interpretation produced by \(O_i\).
+
+Each responder \(A_j\) has:
+
+- access to some subset of interpretations \(\{N_i\}\),  
+- an action set \(R_j\) (possible responses),  
+- a payoff function \(U_{A_j}(r_j, P, \{N_i\}, \phi_j)\) with internal parameters \(\phi_j\) (mandate, pressure, risk tolerance).
+
+---
+
+#### 2. Three layers: observation, interpretation, response
+
+1. **Observation layer**
+
+   For each \(O_i\), define an observation event:
+   \[
+   \mathsf{Obs}_i(P) = 1 \quad \text{if } O_i \text{ observes } P,\quad 0 \text{ otherwise}.
+   \]
+   Assume
+   \[
+   \Pr(\mathsf{Obs}_i(P) = 1) > 0
+   \]
+   for multiple \(i\), reflecting overlapping observation channels.
+
+2. **Interpretation layer**
+
+   Conditional on \(\mathsf{Obs}_i(P) = 1\), observer \(O_i\) generates
+   \[
+   N_i = f_i(P, I_i, \theta_i),
+   \]
+   with heterogeneity:
+   \[
+   \exists i \neq k \text{ such that } f_i \neq f_k.
+   \]
+
+3. **Response layer**
+
+   Each responder \(A_j\) chooses an action
+   \[
+   r_j \in R_j
+   \]
+   based on its accessible interpretations (its own and others’), e.g.
+   \[
+   r_j = \sigma_j\big(P, \{N_i : i \in \mathcal{I}_j\}, \phi_j\big),
+   \]
+   where \(\mathcal{I}_j\) is the set of interpretations available to \(A_j\).
+
+---
+
+#### 3. Unified collapse of exclusivity
+
+You can state the unified result as a single theorem that subsumes the three lemmas.
+
+```latex
+\begin{theorem}[Unified Collapse of Exclusivity in Multi-Actor Environments]
+\label{thm:unified_exclusivity}
+Let $P$ be an event occurring in an environment with a set of observers
+$\mathcal{O} = \{O_1,\dots,O_n\}$ and responders
+$\mathcal{A} = \{A_1,\dots,A_m\}$ as defined above.
+
+Assume:
+
+\begin{enumerate}
+  \item (Overlapping Observation) There exist at least two observers
+  $O_i, O_k \in \mathcal{O}$ such that
+  \[
+  \Pr(\mathsf{Obs}_i(P) = 1) > 0
+  \quad\text{and}\quad
+  \Pr(\mathsf{Obs}_k(P) = 1) > 0.
+  \]
+
+  \item (Heterogeneous Interpretation) There exist $i \neq k$ with
+  $f_i \neq f_k$, so that conditional on observation,
+  \[
+  \Pr(N_i \neq N_k \mid \mathsf{Obs}_i(P) = \mathsf{Obs}_k(P) = 1) > 0.
+  \]
+
+  \item (Multiple Responders) There exist at least two responders
+  $A_j, A_\ell \in \mathcal{A}$ with non-trivial action sets
+  $R_j, R_\ell$ and payoff functions that depend (directly or
+  indirectly) on $P$ and $\{N_i\}$.
+\end{enumerate}
+
+Then, in the limit as the number of observers and responders with
+non-zero observation probabilities and heterogeneous interpretive maps
+increases:
+
+\begin{enumerate}
+  \item[(a)] \textbf{No observational exclusivity:} The probability that
+  any single observer $O_f$ is the sole observer of $P$ converges to
+  zero.
+
+  \item[(b)] \textbf{No interpretive exclusivity:} The probability that
+  any single narrative $N_f$ remains uncontested converges to zero.
+
+  \item[(c)] \textbf{No response exclusivity:} The probability that any
+  single responder $A_f$ is the sole source of response to $P$
+  converges to zero.
+\end{enumerate}
+
+Consequently, any strategy by an actor that relies on (i) being the only
+observer of $P$, (ii) monopolizing the interpretation of $P$, or
+(iii) being the sole source of response to $P$ is structurally unstable
+in such multi-actor environments. Equilibrium strategies must treat
+observation, interpretation, and response as shared, contested, and
+interdependent rather than exclusive.
+\end{theorem}
+```
+
+---
+
+#### 4. How this plugs into your existing game
+
+- Your **Informant–Handler Game** sits inside this environment as one responder–observer pair \((S,H)\) embedded in a larger \((\mathcal{O},\mathcal{A})\) field.  
+- The three earlier lemmas (observation, interpretation, response) become corollaries of Theorem \(\ref{thm:unified_exclusivity}\) under appropriate restrictions (e.g., fixing one layer and varying another).  
