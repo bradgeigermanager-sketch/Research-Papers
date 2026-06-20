@@ -1,0 +1,186 @@
+### 1. Formalizing the repeated Bayesian game
+
+Let’s make the informal structure precise enough that you could drop it into a research paper or a technical appendix.
+
+#### 1.1 Players and types
+
+- **Players:**  
+  - **Handler \(H\)** (law enforcement CI handler or intelligence case officer).  
+  - **Source \(S\)** (criminal informant or HUMINT asset).
+
+- **Source types \( \theta_S \):**  
+  - **Information stock:** \(I \in \{\text{high}, \text{medium}, \text{low}\}\).  
+  - **Moral/strategic orientation:** \(M \in \{\text{cooperative}, \text{opportunistic}, \text{hostile/deceptive}\}\).  
+  - **Desperation:** \(D \in \{\text{low}, \text{moderate}, \text{acute}\}\).
+
+  So \( \theta_S = (I, M, D) \). Only \(S\) observes \( \theta_S \); \(H\) has a prior \( \mu_0(\theta_S) \).
+
+- **Handler types \( \theta_H \):**  
+  - **Verification capacity:** \(V \in \{\text{low}, \text{medium}, \text{high}\}\).  
+  - **Institutional pressure:** \(P \in \{\text{low}, \text{high}\}\).  
+  - **Sanction credibility:** \(S_c \in \{\text{weak}, \text{strong}\}\).
+
+  \( \theta_H = (V, P, S_c) \). In practice, \(S\) has a belief over \( \theta_H \) based on experience and local culture.
+
+#### 1.2 Stage game (one period)
+
+Each period \(t\) proceeds:
+
+1. **Nature:** draws \( \theta_S \) and \( \theta_H \).  
+2. **Source move:** \(S\) chooses a report strategy \(r_t \in \{T, SD, F, \varnothing\}\):  
+   - \(T\): truthful report (within limits of \(I\)).  
+   - \(SD\): strategic distortion (truth + spin).  
+   - \(F\): fabrication (plausible but false).  
+   - \(\varnothing\): silence/withholding.
+
+3. **Handler observation:** \(H\) observes only the message \(m_t\) (content, style, claimed stakes), not its truth.
+
+4. **Handler move:** \(H\) chooses \(a_t \in \{A, Q, D, K\}\):  
+   - \(A\): act and reward (operationalize, pay/leniency).  
+   - \(Q\): probe (seek corroboration, delay).  
+   - \(D\): discount (log but don’t act, minimal reward).  
+   - \(K\): sanction (cut off, prosecute, expose).
+
+5. **World resolution:**  
+   - If \(A\) or \(Q\) leads to an operation, the true state (whether the intel was accurate) is partially revealed via outcomes (success, failure, collateral damage, embarrassment).  
+   - Both players update beliefs:  
+     - \(H\): \( \mu_{t+1}(\theta_S | \text{history}) \).  
+     - \(S\): beliefs about \( \theta_H \) and about the mapping from \(r_t\) to payoffs.
+
+6. **Payoffs:**  
+   - \(u_H(r_t, a_t; \theta_H, \theta_S)\): function of operational success, career risk, resource cost.  
+   - \(u_S(r_t, a_t; \theta_S, \theta_H)\): function of immediate reward, future access, and sanction risk.
+
+The full interaction is a **repeated game** with public history \(h_t\) (messages, actions, observed outcomes) and private types.
+
+---
+
+### 2. Payoff structure and desperation
+
+We can write the source’s per‑period utility as:
+
+\[
+u_S = \alpha(D) \cdot R_t(r_t, a_t) - \beta(D) \cdot C_t(r_t, a_t) + \gamma \cdot N_t
+\]
+
+- \(R_t\): immediate reward (cash, leniency, protection).  
+- \(C_t\): expected future cost (being burned, prosecuted, killed).  
+- \(N_t\): non‑material benefits (status, ego, revenge on rivals).  
+- \(\alpha(D)\): increasing in desperation.  
+- \(\beta(D)\): decreasing in desperation (future is discounted).
+
+Under **acute desperation**, \( \alpha \gg \beta \), so:
+
+- Fabrication \(F\) becomes attractive whenever \(H\) is perceived as:  
+  - high \(P\) (hungry for product),  
+  - low \(V\) (weak verification),  
+  - or low \(S_c\) (sanctions rarely applied).
+
+For the handler, a simple payoff form:
+
+\[
+u_H = \delta(P) \cdot G_t(a_t, r_t) - \lambda \cdot L_t(a_t, r_t) - \kappa \cdot K_t(a_t)
+\]
+
+- \(G_t\): operational gain (arrests, seizures, strategic insight).  
+- \(L_t\): losses (bad ops, scandals, wasted resources).  
+- \(K_t\): internal cost of screening and sanctioning.  
+- \(\delta(P)\): increasing in institutional pressure (overweights visible gains).
+
+High \(P\) and low \(V\) push \(H\) toward **over‑accepting** and under‑screening, which in turn shifts \(S\)’s best response toward \(F\) and \(SD\).
+
+---
+
+### 3. Equilibrium sketches
+
+#### 3.1 “High‑truth” equilibrium
+
+Conditions:
+
+- \(V\) high, \(S_c\) strong, \(P\) moderate.  
+- Contracts: rewards tied to **verified outcomes** and **long‑term reliability**.  
+- Sanctions: credible and occasionally used.
+
+Equilibrium behavior:
+
+- Most types with \(I \ge \text{medium}\) and \(M \neq \text{hostile}\) choose \(T\) or mild \(SD\).  
+- Fabrication \(F\) is rare and quickly punished; fabricators exit or are removed.  
+- Handler uses \(Q\) and \(D\) frequently; \(A\) is reserved for well‑corroborated cases.
+
+This is the target for **professional CI management** and **mature HUMINT shops**.
+
+#### 3.2 “Fabrication‑prone” equilibrium
+
+Conditions:
+
+- \(P\) high, \(V\) low, \(S_c\) weak.  
+- Rewards: paid per tip or per “big story,” not per verified result.  
+- Sanctions: rarely enforced; handlers themselves are rewarded for volume.
+
+Equilibrium behavior:
+
+- Desperate, low‑\(I\) sources choose \(F\) or aggressive \(SD\).  
+- Handlers often choose \(A\) on thin evidence to meet metrics.  
+- System accumulates **false positives**, wasted ops, and in intel context, vulnerability to **deception operations**.
+
+This is the equilibrium your “Economics of Deceit” paper is essentially diagnosing.
+
+---
+
+### 4. Law enforcement vs intelligence instantiations
+
+#### 4.1 Law enforcement CI game
+
+- **State space:** local criminal markets, specific cases.  
+- **Verification tools:** controlled buys, surveillance, warrants, lab tests.  
+- **Time horizon:** case‑bounded but with repeated use of the same CI.
+
+Typical differences:
+
+- \(G_t\) is heavily tied to **arrest/seizure counts**; \(L_t\) often discounted unless there is a scandal.  
+- \(V\) can be high at the tactical level (lab tests, controlled buys) but low at the **narrative level** (claims about conspiracies, rival culpability).  
+- Desperation \(D\) is often driven by **addiction and debt**, making \(\alpha(D)\) very high.
+
+Result:  
+- Good at catching **fabricated drugs** (lab will fail), but vulnerable to **fabricated narratives** that redirect enforcement against rivals or innocents.
+
+#### 4.2 Intelligence / HUMINT game
+
+- **State space:** strategic intentions, military plans, political dynamics.  
+- **Verification tools:** multi‑INT fusion, long‑term pattern analysis, CI.  
+- **Time horizon:** multi‑year; sources can shape doctrine and policy.
+
+Differences:
+
+- \(G_t\) is about **strategic insight**; errors can be catastrophic but are often **hard to attribute**.  
+- \(V\) can be high in principle but is constrained by access, classification, and politics.  
+- \(M\) includes **double agents** and **controlled sources**; adversary actively manipulates \( \theta_S \).
+
+Result:  
+- High risk of **systematic fabrication** (or controlled deception) that persists because:  
+  - the source has unique access,  
+  - the case officer becomes an advocate,  
+  - and the institution overweights the value of that access.
+
+---
+
+### 5. Design levers as game‑theoretic interventions
+
+You can now frame policy or organizational reforms as **changes to game parameters**:
+
+- **Increase \(V\):**  
+  - Invest in analytic and technical verification; mandate multi‑source corroboration.  
+  - In intel: institutionalize red‑teaming and CI review of key sources.  
+  - In LE: require independent corroboration for major operations driven by CI tips.
+
+- **Strengthen \(S_c\):**  
+  - Clear, enforced consequences for fabrication (for both sources and handlers who ignore red flags).  
+  - Shared blacklists and reliability indices across units/agencies.
+
+- **Re‑shape \(P\):**  
+  - Reward **quality‑adjusted output** (e.g., verified cases, low error rates) rather than raw counts.  
+  - Give career credit for **calling out bad sources** and preventing bad ops.
+
+- **Modify the contract form:**  
+  - Shift from “pay per story” to “pay per verified contribution over time.”  
+  - Use non‑cash support (treatment, relocation, structured debt relief) to reduce \(\alpha(D)\) and lengthen the informant’s time horizon.
