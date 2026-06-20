@@ -1,0 +1,74 @@
+Sixth Extension: Nothing Can Remain Indefinitely Concealed
+### *In multi‑actor environments, concealment decays as a structural property of the system.*
+
+This extension is not about morality, policy, or operational failure.  
+It is about **system dynamics**.
+
+Once you have:
+
+1. **Many observers**  
+2. **Many interpreters**  
+3. **Many responders**  
+4. **Many forecasters**  
+5. **Many control attempts**
+
+…you inevitably get:
+
+6. **Many potential revealers.**
+
+Concealment becomes a **temporary state**, not a stable equilibrium.
+
+Below is the formal, leadership‑digestible version.
+
+---
+
+# **Sixth Extension (Narrative Form)**  
+### **“Nothing can remain indefinitely concealed.”**
+
+In a multi‑actor CI/HUMINT environment, concealment is not a durable strategy.  
+It is a **decaying asset**.
+
+Why?
+
+Because every layer of the system produces leakage pressure:
+
+- **Observation pressure:**  
+  More eyes → more chances someone sees what was meant to be hidden.
+
+- **Interpretation pressure:**  
+  More narratives → more chances someone interprets a pattern as suspicious.
+
+- **Response pressure:**  
+  More actors acting → more opportunities for exposure through friction, conflict, or error.
+
+- **Expectation pressure:**  
+  Divergent forecasts → someone anticipates a reveal and acts accordingly.
+
+- **Control pressure:**  
+  Competing control attempts → concealment is undermined by actors with incentives to expose.
+
+The sixth extension states:
+
+> **In a sufficiently populated multi‑actor environment, the probability that a concealed fact, action, or relationship remains permanently hidden converges to zero.**
+
+This is not a moral claim.  
+It is a **structural inevitability**.
+
+---
+
+# **Leadership Interpretation**
+
+### **1. Concealment is a short‑term tactic, not a long‑term strategy.**  
+The system is too dense, too observed, too contested for secrets to remain stable.
+
+### **2. Exposure can come from any direction.**  
+Not just adversaries — but allies, rivals, bystanders, automated systems, or even unintended consequences of your own actions.
+
+### **3. The more actors involved, the faster concealment decays.**  
+Every additional observer, interpreter, responder, forecaster, or controller increases the probability of eventual exposure.
+
+### **4. Leaders must plan for the reveal, not hope it never comes.**  
+The question is not *if* something will surface, but *when* and *under what framing*.
+
+### **5. Strategic posture shifts from “hide” to “prepare.”**  
+You manage exposure risk by shaping context, timing, narrative, and response — not by assuming secrecy will hold.
