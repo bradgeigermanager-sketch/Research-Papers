@@ -1,0 +1,41 @@
+### Fourth extension: Collapse of prediction/expectation exclusivity
+
+Here’s the next logical piece in the chain, written to match your existing lemmas and theorem.
+
+```latex
+\begin{lemma}[Collapse of Predictive Exclusivity]
+\label{lemma:prediction}
+Let $P$ be an event in the multi-actor environment described in
+Theorem~\ref{thm:unified_exclusivity}, with observers
+$\mathcal{O} = \{O_1,\dots,O_n\}$ and responders
+$\mathcal{A} = \{A_1,\dots,A_m\}$.
+
+For each actor $X \in \mathcal{O} \cup \mathcal{A}$, let
+$\Pi_X(P)$ denote $X$'s predictive map over outcomes or trajectories
+associated with $P$, defined on its information set $I_X$ and internal
+parameters $\psi_X$:
+\[
+\Pi_X(P) = g_X(P, I_X, \psi_X),
+\]
+where $g_X$ may differ across actors.
+
+Suppose a focal actor $X_f$ believes it can monopolize the prediction of
+$P$ (``predictive exclusivity''), in the sense that its forecast
+$\Pi_{X_f}(P)$ will uniquely shape expectations and planning. If there
+exists at least one additional actor $X_k \neq X_f$ with non-trivial
+information $I_k$ and a distinct predictive map $g_k \neq g_f$, then as
+the number of such actors increases,
+\[
+\lim_{|\mathcal{O}\cup\mathcal{A}|\to\infty}
+\Pr\big(\Pi_{X_f}(P) \text{ is the unique or expectation-dominant
+prediction of } P\big) = 0.
+\]
+
+Consequently, in multi-actor environments with overlapping observation,
+heterogeneous interpretation, and multiple decision-makers, any strategy
+that relies on exclusive control over expectations or forecasts about
+$P$ is structurally unstable. Equilibrium strategies must treat
+prediction as contested and endogenous to the broader system of actors,
+not as a private, unilateral asset.
+\end{lemma}
+```
