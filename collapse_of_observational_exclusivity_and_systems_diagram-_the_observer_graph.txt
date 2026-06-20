@@ -1,0 +1,98 @@
+### Lemma: Collapse of observational exclusivity
+
+Here’s the matching lemma, parallel to your “sole source of response” lemma, but on the **observation** side—ready to drop into your LaTeX model.
+
+```latex
+\begin{lemma}[Collapse of Observational Exclusivity in Multi-Actor Environments]
+\label{lemma:observation}
+Let an event or problem $P$ occur in an environment populated by a set
+of potential observers $\mathcal{O} = \{O_1, O_2, \dots, O_n\}$, where
+each $O_i$ has an independent, non-trivial observation channel
+(e.g.\ sensors, informants, media access, technical collection).
+
+Suppose a focal actor $O_f \in \mathcal{O}$ believes it is the sole
+observer of $P$ and conditions its strategy on this belief
+(``observational exclusivity''). If there exists at least one additional
+observer $O_k \neq O_f$ such that
+\[
+\Pr(O_k \text{ observes } P) > 0,
+\]
+then the assumption of observational exclusivity by $O_f$ is
+structurally unstable.
+
+In particular, as the number of independent observers $|\mathcal{O}|$
+with $\Pr(O_i \text{ observes } P) > 0$ increases, the probability that
+$O_f$'s private observation remains unique converges to zero, and the
+expected payoff to any strategy that relies on being the sole observer
+(e.g.\ unchallenged narrative control, undetected exploitation) strictly
+decreases.
+
+Consequently, in any multi-actor environment with overlapping
+observation channels, equilibrium strategies must treat observation as a
+shared condition rather than an exclusive asset.
+\end{lemma}
+```
+
+---
+
+### Systems diagram: the Observer Graph
+
+Below is a precise **diagram spec** you can turn into TikZ (or any graph tool) to represent the “Multiplicity of Eyes” idea.
+
+#### 1. Node types
+
+- **Event node \(P\):**  
+  - Single central node.  
+  - Label: `P` / “Event / Problem”.
+
+- **Observer nodes \(O_i\):**  
+  - Nodes arranged in a ring around \(P\).  
+  - Types (encode via shape or color if you like):  
+    - **State:** law enforcement, intel, regulators.  
+    - **Criminal:** gangs, cartels, adversaries.  
+    - **Private:** platforms, corporations, NGOs.  
+    - **Public/Media:** journalists, crowd, bystanders.  
+    - **Automated:** sensors, algorithms, OSINT scrapers.
+
+- **Secondary nodes (optional):**  
+  - **Narrative nodes \(N_i\):** each observer’s interpretation.  
+  - **Leak nodes \(L_i\):** channels where observation escapes (media, courts, social media, foreign services).
+
+#### 2. Edge semantics
+
+- **Observation edges:**  
+  - Directed edges \(P \rightarrow O_i\) or \(O_i \leftrightarrow P\).  
+  - Meaning: “\(O_i\) can observe \(P\) via some channel.”
+
+- **Interpretation edges:**  
+  - \(O_i \rightarrow N_i\).  
+  - Meaning: observer \(O_i\) generates its own narrative or analytic product.
+
+- **Cross‑observer edges:**  
+  - \(O_i \leftrightarrow O_j\).  
+  - Meaning:  
+    - information sharing,  
+    - competition,  
+    - mutual monitoring,  
+    - or adversarial inference.
+
+- **Leak / propagation edges:**  
+  - \(O_i \rightarrow L_k\), \(L_k \rightarrow O_j\).  
+  - Meaning: observation escapes the original observer’s control and reaches others.
+
+#### 3. TikZ-style layout sketch
+
+Conceptual layout you can implement:
+
+- Place \(P\) at the center: `(0,0)`.  
+- Place observers on a circle of radius `r`:
+
+  \[
+  O_i: (r \cos \theta_i,\ r \sin \theta_i),\quad \theta_i = \frac{2\pi i}{n}.
+  \]
+
+- Draw:
+
+  - arrows from \(P\) to each \(O_i\);  
+  - small narrative nodes \(N_i\) slightly offset from each \(O_i\);  
+  - a few cross‑edges between selected \(O_i\) to show interaction.
