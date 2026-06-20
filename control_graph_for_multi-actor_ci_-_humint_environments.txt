@@ -1,0 +1,151 @@
+### Control Graph for Multi‑Actor CI/HUMINT Environments
+
+Here’s the **Control Graph**, parallel to your Observer, Interpretation, and Expectation Graphs. This one encodes how **attempted control** over the system trajectory is distributed, contested, and ultimately non‑exclusive.
+
+---
+
+### 1. Core idea
+
+- **Observer Graph:** who sees \(P\).  
+- **Interpretation Graph:** what \(P\) means.  
+- **Expectation Graph:** what actors think will happen next.  
+- **Control Graph:** how actors *try* to steer what actually happens—and how those attempts collide.
+
+The Control Graph represents **attempted influence over the trajectory \(T\)** of the system after event \(P\).
+
+---
+
+### 2. Node types
+
+**1. Event / State nodes**
+
+- **Initial event \(P\):**  
+  The triggering case/operation/threat.
+
+- **Subsequent states \(P^{(1)}, P^{(2)}, \dots\):**  
+  Key waypoints in the evolving trajectory (e.g., arrest, leak, scandal, collapse, quiet resolution).
+
+**2. Actor nodes \(X\)**
+
+Same CI/HUMINT actors as before:
+
+- Handler \(H\)  
+- CI / Source \(S\)  
+- Offender / Target \(O\)  
+- Rival agencies \(R_a\)  
+- Supervisors / Command \(C\)  
+- Prosecutors \(P_r\)  
+- Media/Public \(M\)  
+- (Optionally) foreign services, oversight bodies, etc.
+
+**3. Control‑attempt nodes \(C_X\)**
+
+For each actor \(X\), define a node:
+
+\[
+C_X = \text{“Control attempt by } X \text{ over the trajectory of } P”,
+\]
+
+i.e., the **bundle of actions and strategies** intended to steer the system:
+
+- \(C_H\): case strategy, CI handling, narrative management.  
+- \(C_S\): information manipulation, threat signaling, self‑protection.  
+- \(C_O\): evasion, intimidation, counter‑moves.  
+- \(C_{R_a}\): jurisdictional grabs, parallel investigations.  
+- \(C_C\): resource allocation, oversight, intervention.  
+- \(C_{P_r}\): charging decisions, plea strategy.  
+- \(C_M\): framing, amplification, investigative reporting.
+
+**4. Trajectory node \(T\)**
+
+- A node representing the **realized system trajectory** (or a small set of trajectory nodes if you want to show branches).  
+- This is the emergent outcome of all control attempts.
+
+---
+
+### 3. Edge types
+
+**1. Control edges**
+
+- \(X \rightarrow C_X\):  
+  Actor \(X\) formulates a control attempt.
+
+- \(C_X \rightarrow P^{(k)}\) or \(C_X \rightarrow T\):  
+  Control attempt by \(X\) pushes on the trajectory (e.g., “run the CI this way,” “leak this,” “charge here,” “publish that”).
+
+**2. Interference edges between control attempts**
+
+- \(C_X \leftrightarrow C_Y\):  
+  Control attempts interact—cooperate, conflict, or neutralize.
+
+  Examples:
+
+  - Handler’s strategy vs rival agency’s strategy.  
+  - CI’s manipulation vs offender’s counter‑moves.  
+  - Prosecutor’s charging strategy vs supervisor’s risk‑aversion.  
+  - Media’s framing vs agency’s narrative management.
+
+You can label these edges:
+
+- “reinforces”  
+- “undermines”  
+- “blocks”  
+- “co‑opts”
+
+**3. Feedback edges from trajectory**
+
+- \(T \rightarrow X\):  
+  The realized trajectory feeds back into actors’ future control attempts (learning, blame, promotion, punishment).
+
+- \(T \rightarrow P^{\text{new}}\):  
+  The outcome becomes the new starting point for the next cycle.
+
+---
+
+### 4. Structural patterns
+
+**1. Control clusters**
+
+- **Institutional control cluster:**  
+  \(C_H, C_C, C_{R_a}, C_{P_r}\)  
+  Trying to steer the case toward “successful, low‑scandal resolution.”
+
+- **Criminal control cluster:**  
+  \(C_S, C_O\)  
+  Trying to steer toward “survival, profit, minimal exposure.”
+
+- **External control cluster:**  
+  \(C_M\) (and possibly foreign services, oversight)  
+  Trying to steer toward “narrative dominance, accountability, or disruption.”
+
+**2. Control fault lines**
+
+Where control attempts collide:
+
+- Handler vs CI  
+- Handler vs Offender  
+- Agency vs Agency  
+- Institution vs Media  
+- Domestic vs Foreign
+
+These are the **control fault lines**—places where no one gets what they wanted.
+
+**3. Emergent trajectory**
+
+- Multiple \(C_X\) nodes feed into \(T\).  
+- No single \(C_X\) has a monopoly.  
+- The realized trajectory is a **resultant vector** of many competing pushes.
+
+---
+
+### 5. Layout sketch
+
+- Center: initial event \(P\).  
+- To the right: a sequence of state nodes \(P^{(1)}, P^{(2)}, \dots, T\) (a horizontal timeline).  
+- Below/above the timeline: actor nodes \(X\).  
+- Between actors and timeline: control‑attempt nodes \(C_X\), with arrows:
+  - \(X \rightarrow C_X\)  
+  - \(C_X \rightarrow P^{(k)}\) or \(C_X \rightarrow T\)  
+- Cross‑edges between \(C_X\) nodes to show interference.
+
+This visually encodes the lemma: **no single control‑attempt node owns the trajectory**.
