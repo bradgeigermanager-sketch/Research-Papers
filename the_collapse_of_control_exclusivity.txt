@@ -1,0 +1,167 @@
+Fifth Extension: The Collapse of Control Exclusivity
+### *No actor controls the system trajectory in a multi‑actor environment*
+
+```latex
+\begin{lemma}[Collapse of Control Exclusivity]
+\label{lemma:control}
+Let $P$ be an event in the multi-actor environment described in
+Theorem~\ref{thm:unified_exclusivity}, with observers
+$\mathcal{O}$, interpreters $\mathcal{O}$, and responders
+$\mathcal{A}$.
+
+For each actor $X \in \mathcal{O} \cup \mathcal{A}$, let
+$r_X \in R_X$ denote its response and let the system trajectory
+$T$ be the (possibly stochastic) evolution of the environment after $P$,
+determined by the joint action profile
+\[
+\mathbf{r} = (r_X)_{X \in \mathcal{O} \cup \mathcal{A}}.
+\]
+
+Suppose a focal actor $X_f$ believes it can unilaterally determine the
+trajectory $T$ (``control exclusivity''). If there exists at least one
+additional actor $X_k \neq X_f$ with a non-trivial action set $R_k$ and
+a payoff function that depends on $P$ or $\{N_i\}$, then as the number
+of such actors increases,
+\[
+\lim_{|\mathcal{O}\cup\mathcal{A}|\to\infty}
+\Pr\big(T = T_{X_f} \text{ (the trajectory intended by } X_f)\big) = 0.
+\]
+
+Consequently, in multi-actor environments with overlapping observation,
+heterogeneous interpretation, multiple responders, and divergent
+expectations, no actor can monopolize the system trajectory. Equilibrium
+strategies must treat system evolution as emergent, interactive, and
+beyond unilateral control.
+\end{lemma}
+```
+
+---
+
+# **Interpretation: What this means in CI/HUMINT**
+
+This is the most important extension for your Informant–Handler Game.
+
+Once you accept:
+
+- **many actors observe**,  
+- **many actors interpret**,  
+- **many actors respond**,  
+- **many actors project futures**,  
+
+then the final step is unavoidable:
+
+> **No actor controls what happens next.**
+
+This is the collapse of **control exclusivity**.
+
+---
+
+## **1. Handlers do not control the trajectory**
+
+Handlers often believe:
+
+- “If I manage the CI correctly, the case will go where I want.”  
+- “If I shape the narrative, the operation will stay contained.”  
+- “If I anticipate the offender’s next move, I can steer the outcome.”
+
+But in reality:
+
+- rival agencies act,  
+- offenders adapt,  
+- supervisors intervene,  
+- prosecutors shift priorities,  
+- media reframes the story,  
+- public sentiment changes,  
+- political actors interfere.
+
+The handler’s intended trajectory \(T_{H}\) is only one trajectory among many.
+
+---
+
+## **2. CIs do not control the trajectory**
+
+CIs often believe:
+
+- “If I feed the handler the right story, I can steer the case.”  
+- “If I exaggerate risk, I’ll get more protection.”  
+- “If I shade the truth, I can manipulate the future.”
+
+But:
+
+- offenders react unpredictably,  
+- rival criminals interfere,  
+- other sources contradict them,  
+- agencies cross‑check,  
+- handlers reinterpret,  
+- prosecutors reframe,  
+- media leaks shift the environment.
+
+The CI’s intended trajectory \(T_{S}\) is not the system trajectory.
+
+---
+
+## **3. Offenders do not control the trajectory**
+
+Offenders believe:
+
+- “If I lie low, the heat will die down.”  
+- “If I intimidate the CI, the case collapses.”  
+- “If I move fast, I can outpace enforcement.”
+
+But:
+
+- enforcement adapts,  
+- other criminals exploit the vacuum,  
+- media attention spikes,  
+- agencies coordinate unexpectedly,  
+- political pressure shifts priorities.
+
+Their intended trajectory \(T_{O}\) collapses under multi‑actor interference.
+
+---
+
+## **4. Agencies do not control the trajectory**
+
+Agencies believe:
+
+- “We own this case.”  
+- “We control the narrative.”  
+- “We determine the outcome.”
+
+But:
+
+- rival agencies intervene,  
+- prosecutors override,  
+- media reframes,  
+- public sentiment shifts,  
+- political actors distort incentives,  
+- offenders adapt,  
+- CIs defect.
+
+The system trajectory is emergent, not owned.
+
+---
+
+# **5. Why this matters for your unified model**
+
+This fifth extension completes the architecture:
+
+1. **Observation exclusivity collapses**  
+   → many see.
+
+2. **Interpretation exclusivity collapses**  
+   → many mean.
+
+3. **Response exclusivity collapses**  
+   → many act.
+
+4. **Expectation exclusivity collapses**  
+   → many predict.
+
+5. **Control exclusivity collapses**  
+   → no one controls the trajectory.
+
+This is the full multi‑actor environment:  
+**a system where no actor can monopolize any layer of the information‑action cycle.**
+
+Your Informant–Handler Game becomes a *local interaction* inside a global, uncontrollable system.
