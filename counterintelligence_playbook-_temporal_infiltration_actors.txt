@@ -1,0 +1,289 @@
+Counterintelligence Playbook: Temporal Infiltration Actors (TIAs)
+
+Cross‑Temporal Security Directorate (CTSD)
+
+Edition 1.0 — Restricted Circulation
+
+---
+
+0. Mission Statement
+
+The purpose of this playbook is to provide a complete counterintelligence framework for identifying, analyzing, disrupting, and neutralizing Temporal Infiltration Actors (TIAs)—criminal entities who exploit time‑travel‑adjacent technologies to infiltrate societies, sanitize incoming information, and conceal evidence of their crimes from both local populations and advanced external jurisdictions.
+
+This playbook assumes:
+
+- TIAs possess information‑sanitization capabilities  
+- Host societies may be epistemically compromised  
+- External advanced civilizations maintain law‑enforcement and military oversight  
+- TIAs are strategically overconfident due to their own filters  
+
+---
+
+1. Threat Model
+
+1.1 TIA Operational Profile
+TIAs typically exhibit:
+
+- Identity masking (synthetic records, false lineage, fabricated credentials)  
+- Information sanitization (filtering, rewriting, suppressing external data)  
+- Temporal displacement signatures (behavioral, technological, cognitive)  
+- Criminal intent (extraction, manipulation, exploitation, destabilization)  
+
+1.2 TIA Strategic Weaknesses
+TIAs are vulnerable due to:
+
+- Self‑induced ignorance  
+- Overconfidence in their own filters  
+- Blindness to external oversight  
+- Inability to erase evidence stored across timelines  
+
+---
+
+2. Detection Framework
+
+This section outlines how to detect TIAs even when they control the information environment.
+
+---
+
+2.1 Behavioral Indicators
+
+2.1.1 Temporal Misalignment Behaviors
+TIAs often display:
+
+- Overly precise predictions  
+- Anachronistic knowledge gaps  
+- Avoidance of certain technologies or topics  
+- Inconsistent cultural fluency  
+
+2.1.2 Information Avoidance Patterns
+TIAs may:
+
+- Redirect conversations away from advanced civilizations  
+- Downplay external threats  
+- Mock or dismiss anomalous reports  
+- Exhibit agitation when confronted with unfiltered data  
+
+---
+
+2.2 Technical Indicators
+
+2.2.1 Chrono‑Epistemic Distortions
+Look for:
+
+- Missing data segments  
+- Implausible archival gaps  
+- Repeated “coincidental” data corruption  
+- Statistical anomalies in information flow  
+
+2.2.2 Temporal Signature Residue
+Even sanitized environments show:
+
+- Micro‑latency irregularities  
+- Non‑local correlation artifacts  
+- Entropy discontinuities in communication channels  
+
+---
+
+3. Counter‑Sanitization Operations
+
+TIAs rely on controlling the information environment. Counterintelligence must break the bubble.
+
+---
+
+3.1 Epistemic Injection Protocols
+Introduce information that:
+
+- Cannot be easily filtered  
+- Is redundantly sourced  
+- Is cross‑verified across timelines  
+- Forces TIAs to react  
+
+Examples:
+
+- Multi‑origin data packets  
+- Distributed eyewitness accounts  
+- Cross‑temporal forensic evidence  
+
+---
+
+3.2 Filter Saturation Tactics
+Overload TIA sanitization systems by:
+
+- Increasing data volume  
+- Increasing data diversity  
+- Introducing contradictory but verifiable information  
+
+This forces TIAs to either:
+
+- Expose their filtering mechanisms  
+- Allow unfiltered data through  
+
+Either outcome is exploitable.
+
+---
+
+3.3 Narrative Disruption
+TIAs depend on stable false narratives. Counterintelligence can:
+
+- Introduce alternative explanations  
+- Highlight inconsistencies  
+- Amplify eyewitness anomalies  
+- Reconstruct suppressed histories  
+
+---
+
+4. Engagement Protocols
+
+Once a TIA is identified, engagement must be controlled, non‑escalatory, and evidence‑preserving.
+
+---
+
+4.1 Containment Procedures
+Containment focuses on:
+
+- Preventing escape to another timeline  
+- Preventing destruction of evidence  
+- Preventing activation of sanitization failsafes  
+
+Containment zones must be:
+
+- Information‑sealed  
+- Chronologically stabilized  
+- Monitored for temporal leakage  
+
+---
+
+4.2 Interrogation Framework
+TIAs often believe:
+
+- No one knows who they are  
+- No one can touch them  
+- No evidence exists  
+
+Interrogation strategies exploit this by:
+
+- Presenting cross‑timeline evidence  
+- Demonstrating knowledge of their origin  
+- Revealing external military oversight  
+
+This breaks their psychological advantage.
+
+---
+
+4.3 Extradition Pathways
+TIAs may be subject to:
+
+- Multispecies jurisdiction  
+- Temporal criminal codes  
+- Interoperable extradition treaties  
+
+Evidence is stored redundantly across:
+
+- Multiple species  
+- Multiple timelines  
+- Multiple legal systems  
+
+TIAs cannot erase it.
+
+---
+
+5. Strategic Countermeasures
+
+---
+
+5.1 Epistemic Hardening of Host Societies
+Strengthen resistance to sanitization by:
+
+- Diversifying information sources  
+- Creating redundancy in archives  
+- Training institutions to detect anomalies  
+
+---
+
+5.2 Cross‑Timeline Intelligence Sharing
+Ensure that:
+
+- Warnings bypass TIA filters  
+- Evidence is mirrored across jurisdictions  
+- No single timeline can be compromised  
+
+---
+
+5.3 Predictive Modeling of TIA Behavior
+TIAs follow predictable patterns:
+
+- Initial caution  
+- Mid‑stage overconfidence  
+- Late‑stage reckless expansion  
+
+Predictive models allow:
+
+- Early detection  
+- Preemptive disruption  
+- Strategic containment  
+
+---
+
+6. Failure Modes and Red Flags
+
+---
+
+6.1 When TIAs Believe They Have Already Won
+This is the most dangerous phase. TIAs may:
+
+- Escalate criminal activity  
+- Attempt large‑scale manipulation  
+- Underestimate external response  
+
+This phase is also the easiest to detect.
+
+---
+
+6.2 When Host Societies Are Fully Sanitized
+Indicators include:
+
+- Absence of external references  
+- Implausible historical continuity  
+- Uniform dismissal of anomalies  
+- Cultural hostility to outside information  
+
+---
+
+7. Endgame Scenarios
+
+---
+
+7.1 Reintegration of Sanitized Societies
+After TIA removal, societies require:
+
+- Historical reconstruction  
+- Scientific re‑alignment  
+- Diplomatic re‑establishment  
+- Psychological stabilization  
+
+---
+
+7.2 Post‑TIA Monitoring
+Monitor for:
+
+- Residual filters  
+- Hidden collaborators  
+- Temporal leakage  
+- Re‑infiltration attempts  
+
+---
+
+8. Conclusion
+
+TIAs are dangerous not because of their technology, but because they engineer their own ignorance and impose it on others. Their sanitization systems create a false universe in which they appear invincible and the outside appears undefended.
+
+Counterintelligence must:
+
+- Break the bubble  
+- Restore epistemic integrity  
+- Expose external oversight  
+- Neutralize temporal escape routes  
+
+The paradox remains:
+
+> The more TIAs hide from the outside, the less they understand the outside’s ability to stop them.
