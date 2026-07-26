@@ -1,0 +1,26 @@
+Architecture of Shielded-Face Tetragonal Field Projections
+The configuration described involves generating structured, non-uniform electromagnetic fields by exploiting the specific crystallographic symmetry of tetragonal systems combined with boundary-condition engineering (alternating shields or partial masks).
+### 1. Crystallographic and Geometric Foundation
+ * **Tetragonal Symmetry Constraints:** A tetragonal crystal lattice possesses a square base (a = a) and a unique principal axis (c) that differs in length. This uniaxial structure inherently generates anisotropic responses to external electrical or magnetic polarization.
+ * **Face-Masking and Boundary Shifting:** By alternatively shielding or partially masking specific faces (such as the basal pinacoids or ditetragonal prism faces), standard boundary emission is intentionally disrupted. This forces flux leakage and directional fringing fields to exit only through unmasked apertures, establishing a localized phase gradient across the crystal face.
+### 2. Generation of "Tornado-Like" (Helical) Projections
+ * **Angular Momentum in Static Media:** When emission apertures are patterned asymmetrically, the emanating electromagnetic vector fields acquire a spatial twist, mimicking a localized orbital angular momentum (OAM) state.
+ * **Cyclical Dynamics:** By dynamically tuning the input excitation (via alternating current frequencies or variable DC bias across different crystal axes), the Poynting vector field lines transition from linear propagation into a rotating, helical vortex topology—effectively a localized, tornado-like electromagnetic projection.
+### 3. Intersection Mechanics and Mutual Influence
+ * **Field Superposition & Scattering:** When two such helical projections intersect in a designated spatial zone, their respective phase vectors interfere.
+ * **Perturbation Coupling:** Because the projections carry rotational momentum, their intersection creates a localized interference knot where energy density fluctuates according to the relative phase alignment (constructive or destructive chiral interference). Any localized anomaly within the intersection volume directly perturbs the rotational symmetry of the coupled fields.
+### 4. Dual Resistance Measurement Framework
+To quantify the conditions of the intersection zone, the system relies on comparing measurements taken across two distinct electromagnetic resistance sets:
+```
+[Crystal Array A] --(Helical Projection A)--+
+                                            |--> [Intersection Zone] --> [Condition Metrics]
+[Crystal Array B] --(Helical Projection B)--+          |
+                                                (Measured via Resistance Sets 1 & 2)
+
+```
+ 1. **Set 1: Complex Impedance / Reactive Resistance Probing (R + j\omega L)**
+   * Measures the reactive back-action and eddy current losses experienced by the driving circuits when the intersecting vortex fields encounter environmental boundaries or material presence.
+   * Changes in phase-lag between the source crystals provide high-resolution data on the permittivity and permeability profiles within the intersection volume.
+ 2. **Set 2: Non-Reciprocal Transfer Resistance (R_{12} \neq R_{21})**
+   * Exploits the chiral asymmetry of the masked tetragonal emitters. By switching the directional bias or evaluating cross-channel resistance matrix elements, the system isolates asymmetrical scattering parameters.
+   * This differentiates true structural/condition changes in the intersection zone from baseline symmetrical noise or thermal drift.
