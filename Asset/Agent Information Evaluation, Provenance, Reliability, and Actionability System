@@ -1,0 +1,654 @@
+Develop an Asset/Agent Information Evaluation, Provenance, Reliability, and Actionability System
+
+Design and implement a complete software system for evaluating information supplied by human or automated **assets, agents, sources, sensors, services, or other information-producing entities**.
+
+The system must determine, as independently as possible:
+
+1. What information was actually supplied.
+2. What the source claims to have observed or know.
+3. Whether the information is accurate, inaccurate, incomplete, ambiguous, or unresolved.
+4. Whether the source is historically reliable.
+5. Whether there are indications that the source itself is untrustworthy, compromised, conflicted, manipulated, deceptive, or acting contrary to the interests of the receiving organization.
+6. Whether the information is sufficiently reliable and sufficiently important to be **actionable**.
+7. What additional verification should occur before action.
+8. What happened to the information after it was received, including transformations, interpretations, decisions, and outcomes.
+9. Whether apparent corroboration is genuinely independent or merely a consequence of the same information propagating through the system.
+10. Whether technological or organizational feedback loops are causing false confidence in the source or its information.
+
+Do not assume that an entity designated as an "asset," "agent," "trusted source," "administrator," "sensor," or "authority" is inherently trustworthy.
+
+## Core conceptual distinction
+
+The system MUST separately evaluate:
+
+* source identity;
+* source capability;
+* source access to relevant information;
+* source reliability;
+* source integrity/trustworthiness;
+* source incentives and conflicts of interest;
+* source history;
+* individual claim accuracy;
+* evidence supporting the claim;
+* evidence contradicting the claim;
+* provenance;
+* independence of corroboration;
+* uncertainty;
+* consequences of error;
+* and actionability.
+
+Never use the following inference without independent justification:
+
+> "The source is trusted, therefore the claim is true."
+
+Likewise, do not infer:
+
+> "The claim was false, therefore the source intentionally lied."
+
+Distinguish at minimum:
+
+* innocent error;
+* measurement error;
+* incomplete information;
+* misunderstanding;
+* interpretation error;
+* negligence;
+* systematic bias;
+* conflict of interest;
+* compromised source;
+* manipulation;
+* deliberate deception.
+
+Intentional deception must require stronger evidence than mere inaccuracy.
+
+# 1. Develop the conceptual model
+
+Create a formal ontology/data model containing entities such as:
+
+* Source
+* Agent
+* Asset
+* Claim
+* Observation
+* Event
+* Evidence
+* Counterevidence
+* Record
+* Document
+* SensorReading
+* Communication
+* Transformation
+* ProcessingStep
+* Corroboration
+* Contradiction
+* Hypothesis
+* Evaluation
+* Decision
+* Action
+* Outcome
+* Reviewer
+* Organization
+* Authority
+* Incentive
+* ConflictOfInterest
+* AccessPrivilege
+* ReliabilityAssessment
+* IntegrityAssessment
+* UncertaintyAssessment
+* ProvenanceRecord
+* FeedbackLoop
+* Dependency
+* VerificationRequest
+
+Define relationships among these entities.
+
+Examples:
+
+Source → supplied → Claim
+
+Source → observed → Observation
+
+Claim → supported_by → Evidence
+
+Claim → contradicted_by → Counterevidence
+
+Claim → derived_from → Observation
+
+Record → transformed_by → ProcessingStep
+
+Evidence A → independently_corrobates → Claim
+
+Evidence B → depends_on → Evidence A
+
+Evaluation → evaluates → Claim
+
+Evaluation → assesses → Source
+
+Decision → based_on → Evaluation
+
+Action → produces → Outcome
+
+Outcome → provides_evidence_about → Claim
+
+Source → has_incentive → Incentive
+
+Source → has_conflict → ConflictOfInterest
+
+Source → has_access_to → InformationDomain
+
+Claim → has_actionability_status → ActionabilityAssessment
+
+# 2. Separate source evaluation from claim evaluation
+
+Implement separate scoring/evaluation models for:
+
+## Source reliability
+
+How frequently has the source historically supplied accurate information?
+
+Consider:
+
+* historical accuracy;
+* calibration;
+* consistency;
+* completeness;
+* timeliness;
+* domain expertise;
+* observation quality;
+* access to relevant information;
+* previous independently verified reports.
+
+## Source integrity/trustworthiness
+
+Does the source appear willing and able to provide information without deliberately misleading the recipient?
+
+Consider:
+
+* incentives;
+* conflicts of interest;
+* demonstrated deception;
+* manipulation;
+* concealment;
+* unauthorized influence;
+* compromised credentials or systems;
+* contradictory reporting;
+* attempts to prevent verification;
+* personal or organizational benefit from particular outcomes.
+
+## Claim reliability
+
+Evaluate the individual claim independently of the source's general reputation.
+
+A highly reliable source may produce an incorrect claim.
+
+An historically unreliable source may occasionally provide an accurate claim.
+
+Therefore:
+
+SourceReliability != ClaimTruth
+
+and:
+
+SourceIntegrity != ClaimTruth
+
+# 3. Evidence and provenance system
+
+Every claim must be traceable through a provenance graph.
+
+Track:
+
+OriginalSource
+→ Acquisition
+→ OriginalRecord
+→ Parsing
+→ Transformation
+→ Interpretation
+→ Claim
+→ Evaluation
+→ Decision
+→ Action
+→ Outcome
+
+Preserve timestamps, actors, software/process versions, transformations, and relevant metadata.
+
+The system should be able to answer:
+
+* Where did this information originate?
+* Who supplied it?
+* What did they actually observe?
+* What transformations occurred?
+* Who interpreted it?
+* Who evaluated it?
+* Who relied upon it?
+* What evidence supported it?
+* What evidence contradicted it?
+* What later happened?
+* Which conclusions depended upon it?
+
+# 4. Detect circular corroboration
+
+Build mechanisms to detect when apparently independent evidence actually derives from the same original source.
+
+For example:
+
+Source A → Claim → Report B → Database C → Analyst D
+
+must NOT automatically be treated as four independent confirmations.
+
+Represent dependency graphs and calculate effective independence.
+
+The interface should explicitly warn:
+
+> "Apparent corroboration may share a common upstream source."
+
+# 5. Detect feedback loops
+
+Identify systems where:
+
+Claim → Decision → Action → Changed Evidence Environment → Apparent Confirmation of Claim
+
+and similar structures.
+
+Examples include:
+
+* an agent reports that a system is functioning;
+* decision-makers act based on the report;
+* their actions alter the system;
+* subsequent measurements reflect those actions;
+* the measurements are then treated as independent confirmation of the original report.
+
+Flag such situations as potential **reflexive or self-confirming evidence loops**.
+
+# 6. Actionability framework
+
+Do not equate "probably true" with "safe to act upon."
+
+Calculate actionability using at least:
+
+* estimated probability of correctness;
+* consequence of being wrong;
+* reversibility of the proposed action;
+* urgency;
+* availability of independent verification;
+* cost of verification;
+* potential harm;
+* scope of impact;
+* confidence in provenance;
+* confidence in source integrity.
+
+Possible statuses:
+
+* ACTIONABLE
+* ACTIONABLE_WITH_SAFEGUARDS
+* VERIFY_BEFORE_ACTION
+* INSUFFICIENT_INFORMATION
+* NOT_ACTIONABLE
+* CONTRADICTED
+* HIGH-RISK_UNCERTAINTY
+
+Provide an explanation for every status.
+
+# 7. Uncertainty representation
+
+Do not force uncertain information into binary TRUE/FALSE classifications.
+
+Support:
+
+* confidence values;
+* probability ranges;
+* confidence intervals where appropriate;
+* competing hypotheses;
+* unknown values;
+* missing information;
+* contradictory evidence;
+* confidence in the evaluation itself.
+
+Represent the difference between:
+
+> "The claim is probably false"
+
+and:
+
+> "There is insufficient evidence to determine whether the claim is true."
+
+These are not equivalent.
+
+# 8. Source behavior analysis
+
+Create a longitudinal source history.
+
+Track:
+
+* previous claims;
+* subsequent verification;
+* corrections;
+* omissions;
+* contradictions;
+* incentives;
+* outcomes;
+* changes in behavior;
+* changes in access;
+* changes in organizational relationships.
+
+Detect patterns rather than making accusations from isolated events.
+
+Potential flags include:
+
+* repeated beneficial inaccuracies;
+* systematic omission;
+* selective reporting;
+* contradictory accounts;
+* unexplained changes;
+* claims exceeding demonstrated access;
+* attempts to prevent independent verification;
+* manipulation of evidence;
+* repeated self-confirming claims.
+
+Use neutral classifications such as:
+
+`ANOMALOUS`
+
+`REQUIRES_REVIEW`
+
+`POTENTIAL_CONFLICT`
+
+`POTENTIAL_MANIPULATION`
+
+`EVIDENCE_OF_DECEPTION`
+
+rather than automatically assigning malicious intent.
+
+# 9. Decision and counterfactual analysis
+
+For every consequential decision, preserve:
+
+* information available at decision time;
+* information unavailable at decision time;
+* source assessments at that time;
+* evidence supporting the decision;
+* evidence contradicting it;
+* assumptions;
+* uncertainty;
+* decision-maker;
+* action taken;
+* subsequent outcome.
+
+Do not use hindsight to falsely increase the confidence that should have existed at the time of the decision.
+
+Also support counterfactual questions:
+
+> "Would this decision have been made if source X's report had been unavailable?"
+
+> "Would the conclusion remain the same if the allegedly corroborating evidence derived from source X were removed?"
+
+> "What evidence independently supports this conclusion?"
+
+# 10. User interface
+
+Create a modern web interface containing at minimum:
+
+### Dashboard
+
+Show:
+
+* active claims;
+* unresolved claims;
+* high-risk claims;
+* source reliability;
+* source integrity warnings;
+* provenance gaps;
+* contradictory evidence;
+* feedback-loop warnings;
+* pending verification tasks.
+
+### Claim Detail View
+
+Display:
+
+* claim;
+* source;
+* observation;
+* evidence;
+* counterevidence;
+* confidence;
+* provenance;
+* dependencies;
+* source history;
+* actionability;
+* recommended verification;
+* decision history.
+
+### Source Profile
+
+Display:
+
+* historical accuracy;
+* claim history;
+* known conflicts;
+* demonstrated access;
+* reliability trends;
+* integrity assessments;
+* corrections;
+* contradictions;
+* verification history.
+
+Do NOT present a single "trust score" as though it were an objective fact.
+
+Instead show multiple dimensions and the evidence supporting each assessment.
+
+### Provenance Graph
+
+Provide an interactive graph showing:
+
+Source → Observation → Claim → Evidence → Evaluation → Decision → Action → Outcome
+
+Allow users to trace both forward and backward.
+
+### Evidence Independence View
+
+Visually distinguish:
+
+* genuinely independent evidence;
+* evidence sharing upstream sources;
+* derivative evidence;
+* contradictory evidence;
+* unknown dependencies.
+
+### Feedback Loop View
+
+Identify cycles such as:
+
+Claim → Action → Evidence → Claim
+
+and display the causal pathway.
+
+# 11. Explainability
+
+Every automated evaluation must answer:
+
+1. What conclusion did the system reach?
+2. Why?
+3. What evidence influenced it?
+4. What evidence contradicted it?
+5. What assumptions were made?
+6. What information is missing?
+7. How sensitive is the conclusion to those assumptions?
+8. What would change the conclusion?
+9. What should be independently verified?
+
+Never produce unexplained numerical scores.
+
+# 12. Security and governance
+
+Design the system so that no single source can silently establish its own credibility.
+
+Implement:
+
+* immutable or tamper-evident provenance records;
+* role-based access control;
+* audit logs;
+* independent reviewer roles;
+* separation of evidence collection and evaluation;
+* versioned assessments;
+* conflict-of-interest declarations;
+* correction mechanisms;
+* explicit uncertainty;
+* review requirements for high-consequence actions.
+
+The system should preserve historical assessments rather than silently overwriting them.
+
+# 13. Technology implementation
+
+Develop:
+
+1. A formal data schema.
+2. Database schema.
+3. API specification.
+4. Backend implementation.
+5. Evaluation engine.
+6. Provenance engine.
+7. Evidence-dependency engine.
+8. Feedback-loop detector.
+9. Source reliability/integrity evaluator.
+10. Actionability engine.
+11. Web interface.
+12. Automated tests.
+13. Example dataset.
+14. Documentation.
+15. Deployment instructions.
+
+Prefer an architecture that can initially run locally but can later scale to distributed deployments.
+
+Use open standards wherever practical.
+
+# 14. Recommended technical architecture
+
+Propose and justify appropriate technologies for:
+
+* relational storage;
+* graph storage;
+* event/provenance storage;
+* API;
+* authentication;
+* frontend;
+* visualization;
+* background processing;
+* statistical evaluation;
+* audit logging.
+
+If appropriate, use a combination of relational and graph representations rather than forcing every relationship into one database model.
+
+# 15. Example workflow
+
+Implement an example in which:
+
+Agent A reports:
+
+> "System X is operating normally."
+
+The system should:
+
+1. Record the exact claim.
+2. Record what Agent A actually observed.
+3. Determine whether Agent A had sufficient access to know.
+4. Retrieve historical source performance.
+5. identify incentives/conflicts.
+6. Find supporting evidence.
+7. Find contradictory evidence.
+8. identify whether supporting evidence is independent.
+9. inspect provenance.
+10. check for circular corroboration.
+11. check for feedback loops.
+12. calculate uncertainty.
+13. determine actionability.
+14. recommend additional verification if appropriate.
+15. preserve the eventual outcome.
+16. update the source's historical record without automatically rewriting prior evaluations.
+
+# 16. Important philosophical constraint
+
+The system is not intended to determine "who is good" or "who is bad."
+
+It is an **epistemic, provenance, reliability, integrity, and decision-support system**.
+
+Its purpose is to make it difficult for:
+
+* an unreliable source to appear infallible;
+* a deceptive source to manufacture credibility;
+* derivative evidence to masquerade as independent corroboration;
+* technological filtering to masquerade as absence of a problem;
+* organizational consensus to masquerade as independent verification;
+* downstream consequences to masquerade as confirmation of the original claim;
+* or uncertainty to be silently converted into certainty.
+
+# 17. Required deliverables
+
+Produce the project in stages:
+
+### Stage 1 — System specification
+
+Provide:
+
+* architecture;
+* ontology;
+* threat/failure model;
+* evaluation methodology;
+* data model;
+* decision model.
+
+### Stage 2 — Prototype
+
+Implement:
+
+* backend;
+* database;
+* provenance graph;
+* evaluation engine;
+* basic API;
+* basic UI.
+
+### Stage 3 — Demonstration
+
+Populate the system with synthetic data representing:
+
+* accurate reporting;
+* accidental misinformation;
+* incomplete reporting;
+* biased reporting;
+* deliberate deception;
+* compromised source;
+* circular corroboration;
+* feedback-loop-generated apparent confirmation.
+
+Demonstrate how the system distinguishes these cases.
+
+### Stage 4 — Testing
+
+Create automated tests for:
+
+* source/claim separation;
+* provenance;
+* evidence independence;
+* uncertainty;
+* deception indicators;
+* feedback-loop detection;
+* actionability;
+* auditability.
+
+### Stage 5 — Documentation
+
+Provide:
+
+* README;
+* architecture documentation;
+* API documentation;
+* database schema;
+* installation instructions;
+* user guide;
+* evaluation methodology;
+* limitations;
+* security considerations.
+
+When making design choices, explain the reasoning and identify assumptions.
+
+Do not invent real-world accusations about identifiable people or organizations. Use synthetic examples unless the user explicitly supplies evidence for a real-world case and the task is to analyze that evidence.
