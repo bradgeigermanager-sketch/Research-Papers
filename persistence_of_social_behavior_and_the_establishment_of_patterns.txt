@@ -1,0 +1,1640 @@
+Regularity, Institutionalization, and the Evolutionary Persistence of Social Behavior and The Establishment of Patterns
+
+ ## Abstract
+
+ Social organization depends fundamentally upon regularity. Wherever individuals interact repeatedly, recurrent patterns of behavior create expectations, and expectations create inferential structure: observers become able to anticipate what others will do, participants become able to coordinate their own conduct around those expectations, and departures from established patterns become informative. Over time, recurrent behavior may become formalized as policy, encoded as procedure, embedded in technology, reproduced through training, or internalized as culture. Yet formal rules are only one manifestation of a broader phenomenon. Informal conventions, habits, traditions, routines, norms, and culturally transmitted practices can perform many of the same coordinating functions without ever being formally articulated.
+
+ This paper develops an integrated theoretical account of these processes. It argues that social organizations tend toward patterned behavior because repetition produces coordination benefits, reduces uncertainty, lowers cognitive and transaction costs, facilitates learning, and makes collective action possible. Once patterns become sufficiently established, they acquire self-reinforcing properties: people expect others to follow them because others expect them to be followed. Organizations consequently develop both explicit policies and implicit behavioral regularities. Culture can be understood, in part, as the accumulated and socially transmitted structure of such regularities.
+
+ The paper further examines an evolutionary dimension of social behavior. New behaviors and practices continually arise through experimentation, error, innovation, necessity, imitation, environmental change, and deliberate intervention. Some disappear; others persist, spread, become institutionalized, and eventually generate new variation. In this sense, social systems exhibit processes analogous to variation, selection, retention, transmission, and cumulative modification. Organizational-routine research explicitly identifies variation and selective retention as mechanisms through which patterns of organizational action form, persist, and change.  Wiley Online Library+1  Social-norm research similarly describes norms as recurrent, self-enforcing patterns that can emerge and stabilize through coordination, sanction, imitation, signaling, and other mechanisms.  Annual Reviews+1
+
+ The paper proposes that regularity, inference, institutionalization, culture, and evolutionary persistence should therefore not be treated as isolated phenomena. They can be understood as interconnected stages or dimensions of a general process by which recurrent behavior becomes socially consequential. The framework also explains why deviations from established patterns can be analytically valuable without necessarily being harmful: deviation can indicate error, adaptation, innovation, necessity, organizational dysfunction, or intentional circumvention. The existence of a stable pattern creates the possibility of recognizing the deviation, but does not by itself determine its meaning.
+
+---
+
+ ## 1\. Introduction
+
+ Human social life is characterized by extraordinary regularity.
+
+ People generally use languages in recurring ways, organizations employ recognizable procedures, institutions reproduce familiar practices, occupations develop conventions, communities develop traditions, and individuals develop habits. Even highly complex social environments exhibit substantial patterned behavior.
+
+ This regularity is so pervasive that it is easy to overlook its analytical significance.
+
+ A person can make sense of another person's behavior partly because they know what people ordinarily do. An employee can perform a task partly because a workplace has established a procedure. A member of a community can navigate social interaction partly because certain behaviors are expected. An organization can coordinate activity among thousands of people partly because participants share assumptions about what will happen next.
+
+ Regularity therefore performs an epistemic function as well as a practical one.
+
+ It creates a basis for inference.
+
+ If behavior were completely unstructured and unpredictable, observing an action would provide relatively little information about what would happen next. Once behavior becomes patterned, however, the observation of one event changes expectations about subsequent events.
+
+ A general relationship can therefore be proposed:
+
+ > **Regularity creates inferential structure because repeated patterns allow observed behavior to serve as evidence about unobserved behavior, circumstances, expectations, and organizational states.**
+
+ This principle has implications far beyond prediction. Regularity permits coordination. Coordination encourages repetition. Repetition produces routines. Routines can become norms. Norms can become institutions. Institutions can shape future behavior. And the resulting environment can determine which behavioral variations persist.
+
+ The result is a recursive process:
+
+ **behavior → repetition → expectation → coordination → regularity → institutionalization → transmission → further behavior.**
+
+ This paper examines that process and its evolutionary implications.
+
+---
+
+ # 2\. Regularity as Inferential Structure
+
+ ## 2.1 From repetition to expectation
+
+ Consider a repeated social interaction.
+
+ If an employee submits a particular form and a supervisor routinely reviews it before approving the associated action, participants eventually cease treating the sequence as an entirely novel event.
+
+ The sequence becomes expected.
+
+ That expectation permits inference.
+
+ If the employee submits the form, the supervisor may anticipate receiving it. If the supervisor does not review it, the absence itself becomes informative. The deviation is detectable precisely because a regular pattern existed beforehand.
+
+ Thus:
+
+ $$
+\text{regularity} \rightarrow \text{expectation} \rightarrow \text{detectable deviation}.
+$$
+
+ The same structure exists at much larger scales.
+
+ A language depends on regularities between sounds, symbols, words, meanings, and grammatical constructions. A legal system depends upon regularized procedures. A market depends upon expectations concerning transactions. A military organization depends upon recurrent command structures. A scientific community depends upon established practices of observation, documentation, criticism, and replication.
+
+ Regularity consequently supplies a background model against which events can be interpreted.
+
+ ## 2.2 Regularity reduces uncertainty
+
+ A predictable pattern reduces the number of possibilities participants must consider.
+
+ If a workplace has no established method for accomplishing a task, every employee must repeatedly decide how to accomplish it. Once a routine develops, that decision problem becomes smaller.
+
+ The routine effectively compresses previous experience into a reusable behavioral pattern.
+
+ This does not mean the routine is always optimal. It means that it reduces the need to repeatedly reconstruct a solution.
+
+ Organizational-routine scholarship treats routines as important mechanisms through which organizations coordinate activity, learn, and develop capabilities. Research by Pentland, Feldman, Becker, and Liu, for example, models routine dynamics through variation and selective retention of patterns of action, connecting micro-level actions to organizational-level formation, inertia, change, and learning.
+
+ ## 2.3 Regularity makes anomalies visible
+
+ A completely random system has no meaningful baseline.
+
+ An anomaly becomes identifiable only relative to some expectation.
+
+ This produces a general epistemological relationship:
+
+ > **A pattern makes departures from the pattern observable.**
+
+ Process-mining research provides an especially explicit example. Conformance checking compares observed organizational behavior with prescribed processes or business rules and identifies deviations. Importantly, the literature recognizes that deviations may represent exceptional legitimate cases as well as errors or fraud.
+
+ Thus, the existence of a baseline does not predetermine the interpretation of a departure.
+
+ It merely makes the departure visible.
+
+---
+
+ # 3\. Why Social Systems Tend Toward Patterns
+
+ ## 3.1 Coordination
+
+ The first major force favoring regularity is coordination.
+
+ If people expect one another to behave in predictable ways, they can organize their own actions accordingly.
+
+ This creates a coordination advantage.
+
+ Suppose two workers independently perform a task. If each has a different conception of what the other will do, coordination becomes difficult. If both understand the same sequence, each can anticipate the other's behavior.
+
+ Social norms research describes norms in related terms: norms can function as self-enforcing patterns because individuals conform partly in expectation that others will also conform. Coordination, sanctions, signaling, and imitation can all contribute to persistence.
+
+ ## 3.2 Reduced cognitive cost
+
+ Patterns also reduce cognitive effort.
+
+ A person who repeatedly performs a task need not reconsider every possible method each time.
+
+ This produces a kind of behavioral compression:
+
+ $$
+\text{many possible choices} \rightarrow \text{recognized routine} \rightarrow \text{reduced decision burden}.
+$$
+
+ The benefit can become substantial as organizations grow more complex.
+
+ Large organizations cannot function if every employee independently reconstructs every process from first principles.
+
+ ## 3.3 Lower transaction costs
+
+ Regularity can also reduce the costs associated with coordination.
+
+ Participants need fewer explanations.
+
+ They can rely upon shared expectations.
+
+ They can construct compatible systems.
+
+ They can train newcomers.
+
+ They can build technologies around established workflows.
+
+ They can create documentation that assumes recurring sequences.
+
+ The resulting infrastructure further reinforces the pattern.
+
+---
+
+ # 4\. From Pattern to Policy
+
+ A recurrent behavioral pattern can exist without any formal policy.
+
+ However, repeated patterns create opportunities for formalization.
+
+ Suppose employees repeatedly discover that a particular sequence works:
+
+ > identify → verify → record → approve → complete.
+
+ Eventually someone may document the sequence.
+
+ The informal practice becomes a written procedure.
+
+ The organization may then train employees in it, build software around it, audit compliance with it, and require deviations to be justified.
+
+ The result is a feedback process:
+
+ $$
+\text{practice}
+\rightarrow
+\text{repetition}
+\rightarrow
+\text{recognition}
+\rightarrow
+\text{formalization}
+\rightarrow
+\text{reinforcement}.
+$$
+
+ Formal policy can therefore be understood partly as **institutionalized memory about preferred behavior**.
+
+ It does not follow that every policy originated informally. Some policies are imposed deliberately from the outset. Nevertheless, a substantial class of organizational rules can be understood as attempts to stabilize patterns that have proven useful, necessary, legitimate, or politically desirable.
+
+---
+
+ # 5\. Informal Policy and the Emergence of Unwritten Rules
+
+ Formal policy is only one layer of organization.
+
+ Organizations also develop unwritten rules.
+
+ An employee may know that:
+
+ > “This is how we actually do it.”
+
+ even when no document says so.
+
+ These informal rules can be extraordinarily powerful.
+
+ A newcomer may receive an official manual and then learn from experienced colleagues which procedures actually matter. Certain practices may be technically optional but socially expected. Others may be formally required but routinely bypassed.
+
+ This creates a distinction between:
+
+ - **prescribed behavior**;
+- **observed behavior**;
+- **expected behavior**;
+- **permitted behavior**;
+- **rewarded behavior**.
+
+ These categories need not coincide.
+
+ The divergence between them can itself become analytically significant.
+
+---
+
+ # 6\. Culture as Patterned Behavior
+
+ Culture is often treated as something abstract: beliefs, values, symbols, traditions, meanings, or identity.
+
+ Those dimensions are important, but culture also has an observable behavioral component.
+
+ Culture can be approached as a **socially transmitted structure of recurrent patterns**.
+
+ This includes:
+
+ - how people greet each other;
+- how authority is expressed;
+- how disagreement is handled;
+- how information moves;
+- what counts as appropriate conduct;
+- how newcomers are trained;
+- which practices are copied;
+- which deviations are tolerated;
+- and which behaviors are rewarded or sanctioned.
+
+ Research on cultural evolution explicitly defines culture in terms including socially learned and transmitted norms, attitudes, and patterns of behavior.
+
+ This makes culture closely related to organizational routine, although the concepts should not be collapsed.
+
+ A routine is usually concerned with recurrent organized activity.
+
+ A norm concerns expected or socially regulated behavior.
+
+ A tradition concerns transmission across time.
+
+ Culture encompasses a broader system of learned patterns, meanings, practices, expectations, and values.
+
+ Nevertheless, they overlap around a central phenomenon:
+
+ > **Behavior becomes socially structured when patterns are repeatedly learned, reproduced, and transmitted.**
+
+---
+
+ # 7\. The Self-Reinforcing Character of Social Patterns
+
+ One of the most important features of social patterns is that they can become self-reinforcing.
+
+ Consider a convention that initially exists for a relatively weak reason.
+
+ Once many people adopt it, however, abandoning it becomes more difficult because everyone has adapted to everyone else's behavior.
+
+ This produces a coordination feedback loop:
+
+ $$
+A \rightarrow \text{others expect A}
+$$
+
+ $$
+\text{others expect A} \rightarrow \text{people choose A}
+$$
+
+ $$
+\text{people choose A} \rightarrow \text{expectation of A strengthens}.
+$$
+
+ Social-norm research identifies precisely this type of self-reinforcement. Young describes social norms as patterns that persist partly because people expect conformity from others and prefer conformity under those expectations.
+
+ Experimental research also demonstrates that shared conventions can emerge spontaneously through local interaction, without centralized coordination or an explicit institution imposing the convention.
+
+ This is important because it shows that social order need not always be designed.
+
+ It can emerge.
+
+---
+
+ # 8\. Institutionalization
+
+ Once a pattern becomes sufficiently established, it can acquire institutional properties.
+
+ Institutionalization may involve:
+
+ - documentation;
+- formal authority;
+- training;
+- sanctions;
+- technological embedding;
+- physical infrastructure;
+- resource allocation;
+- legal recognition;
+- organizational memory.
+
+---
+
+ ## 1\. Introduction
+
+   This regularity is so pervasive that it is easy to overlook its analytical significance.
+
+ A person can make sense of another person's behavior partly because they know what people ordinarily do. An employee can perform a task partly because a workplace has established a procedure. A member of a community can navigate social interaction partly because certain behaviors are expected. An organization can coordinate activity among thousands of people partly because participants share assumptions about what will happen next.
+
+ Regularity therefore performs an epistemic function as well as a practical one.
+
+    > **Regularity creates inferential structure because repeated patterns allow observed behavior to serve as evidence about unobserved behavior, circumstances, expectations, and organizational states.**
+
+---
+
+ # 2\. Regularity as Inferential Structure
+
+ ## 2.1 From repetition to expectation
+
+ Consider a repeated social interaction.
+
+ If an employee submits a particular form and a supervisor routinely reviews it before approving the associated action, participants eventually cease treating the sequence as an entirely novel event.
+
+  That expectation permits inference.
+
+   $$
+\text{regularity} \rightarrow \text{expectation} \rightarrow \text{detectable deviation}.
+$$
+
+   Regularity consequently supplies a background model against which events can be interpreted.
+
+ ## 2.2 Regularity reduces uncertainty
+
+      ## 2.3 Regularity makes anomalies visible
+
+    > **A pattern makes departures from the pattern observable.**
+
+---
+
+ # 3\. Why Social Systems Tend Toward Patterns
+
+ ## 3.1 Coordination
+
+ The first major force favoring regularity is coordination.
+
+     ## 3.2 Reduced cognitive cost
+
+       ## 3.3 Lower transaction costs
+
+ Regularity can also reduce the costs associated with coordination.
+
+---
+
+ # 4\. From Pattern to Policy
+
+    > identify → verify → record → approve → complete.
+
+    The result is a feedback process:
+
+  Formal policy can therefore be understood partly as **institutionalized memory about preferred behavior**.
+
+ It does not follow that every policy originated informally. Some policies are imposed deliberately from the outset. Nevertheless, a substantial class of organizational rules can be understood as attempts to stabilize patterns that have proven useful, necessary, legitimate, or politically desirable.
+
+---
+
+ # 5\. Informal Policy and the Emergence of Unwritten Rules
+
+    > “This is how we actually do it.”
+
+    This creates a distinction between:
+
+ - **prescribed behavior**;
+- **observed behavior**;
+- **expected behavior**;
+- **permitted behavior**;
+- **rewarded behavior**.
+
+ These categories need not coincide.
+
+---
+
+ # 6\. Culture as Patterned Behavior
+
+    This includes:
+
+ - how people greet each other;
+- how authority is expressed;
+- how disagreement is handled;
+- how information moves;
+- what counts as appropriate conduct;
+- how newcomers are trained;
+- which practices are copied;
+- which deviations are tolerated;
+- and which behaviors are rewarded or sanctioned.
+
+  This makes culture closely related to organizational routine, although the concepts should not be collapsed.
+
+ The more layers reinforce a behavior, the more difficult it becomes to distinguish the original reason for the behavior from the mechanisms that now maintain it.
+
+ A procedure may begin because it solved a practical problem.
+
+ Decades later, people may follow it because:
+
+ - the manual says so;
+- the software expects it;
+- supervisors expect it;
+- everyone else does it;
+- deviation requires approval;
+- training teaches it;
+- auditing checks it;
+- and changing it would require substantial organizational effort.
+
+ The original causal explanation may become historically remote.
+
+ The pattern persists because it has accumulated **institutional support**.
+
+---
+
+ # 9\. The Evolutionary Dimension
+
+ The persistence of social patterns can be understood through an evolutionary analogy.
+
+ The basic cycle is:
+
+ $$
+\text{variation}
+\rightarrow
+\text{selection}
+\rightarrow
+\text{retention}
+\rightarrow
+\text{transmission}
+\rightarrow
+\text{new variation}.
+$$
+
+ This resembles biological evolution at an abstract level but should not be treated as identical to biological natural selection.
+
+ In organizational settings, variation can occur through:
+
+ - experimentation;
+- improvisation;
+- mistakes;
+- individual innovation;
+- managerial intervention;
+- environmental disruption;
+- personnel turnover;
+- imitation;
+- competition.
+
+ Some variations disappear.
+
+ Others are retained.
+
+ Pentland and colleagues explicitly model organizational routines through variation and selective retention, arguing that these processes help explain routine formation, inertia, endogenous change, and learning.  
+
+ Research on routine creation across organizational sites similarly identifies variation, selection, replication, and retention as mechanisms through which new organizational routines emerge and spread.  
+
+---
+
+ # 10\. “Survival of the Fittest” as a Social Analogy
+
+ The phrase “survival of the fittest” is potentially misleading if interpreted literally.
+
+ Social practices do not necessarily survive because they are objectively best.
+
+ They may survive because they are:
+
+ - easy to imitate;
+- already widespread;
+- compatible with existing institutions;
+- rewarded by authority;
+- socially prestigious;
+- cognitively simple;
+- resistant to criticism;
+- economically useful;
+- politically protected;
+- technologically embedded;
+- or simply historically entrenched.
+
+ Consequently, a better formulation is:
+
+ > **Social systems generate differential persistence among behavioral variants.**
+
+ Some practices have characteristics that make them more likely to be reproduced than alternatives.
+
+ Those characteristics constitute a kind of **social fitness**, but fitness must be defined relative to a particular environment.
+
+ A practice can be highly successful at spreading while being inefficient, harmful, or maladaptive under another criterion.
+
+---
+
+ # 11\. Fitness Is Multidimensional
+
+ A behavioral pattern may succeed along several different dimensions.
+
+ ### Functional fitness
+
+ Does it solve the task effectively?
+
+ ### Social fitness
+
+ Does it generate acceptance and conformity?
+
+ ### Institutional fitness
+
+ Does it fit existing rules and organizational structures?
+
+ ### Reproductive fitness
+
+ Is it easily taught, copied, or transmitted?
+
+ ### Political fitness
+
+ Does it benefit actors with sufficient power to preserve it?
+
+ ### Economic fitness
+
+ Does it generate or preserve resources?
+
+ ### Cognitive fitness
+
+ Is it easy to remember and reproduce?
+
+ ### Technological fitness
+
+ Does it fit the systems and infrastructure surrounding it?
+
+ These dimensions can conflict.
+
+ A highly efficient practice may fail because nobody knows how to implement it.
+
+ A socially popular practice may be technically inefficient.
+
+ A legally required practice may be operationally cumbersome.
+
+ A deeply embedded practice may survive despite alternatives being demonstrably better.
+
+ Thus:
+
+ $$
+\text{persistence} \neq \text{optimality}.
+$$
+
+ Persistence means that the mechanisms reproducing the practice are sufficiently strong to keep it present.
+
+---
+
+ # 12\. Positive Feedback and Path Dependence
+
+ Once a behavioral pattern becomes established, its existence can increase the probability of its own continuation.
+
+ This is positive feedback.
+
+ For example:
+
+ $$
+\text{practice}
+\rightarrow
+\text{training}
+\rightarrow
+\text{infrastructure}
+\rightarrow
+\text{expectations}
+\rightarrow
+\text{coordination}
+\rightarrow
+\text{more practice}.
+$$
+
+ The resulting system exhibits **path dependence**.
+
+ Earlier choices influence later possibilities.
+
+ A practice that was initially selected for relatively modest reasons can eventually become extremely difficult to replace because an entire organizational ecosystem has formed around it.
+
+ This helps explain institutional inertia.
+
+ It also explains why organizational change can be surprisingly difficult even when everyone agrees that an alternative would be better.
+
+ The organization is not merely changing a behavior.
+
+ It is changing the network of expectations, technologies, competencies, documents, incentives, and relationships that sustain the behavior.
+
+---
+
+ # 13\. Cultural Accumulation
+
+ Cultural evolution introduces another important mechanism: accumulation.
+
+ A practice can be modified rather than simply replaced.
+
+ Generation or cohort 1 develops A.
+
+ Cohort 2 modifies A into B.
+
+ Cohort 3 modifies B into C.
+
+ The resulting practice incorporates historical modifications.
+
+ Research on cumulative cultural evolution describes this “ratcheting” process as one in which socially transmitted modifications can accumulate, producing increasingly complex cultural products.
+
+ This means that contemporary behavior can contain traces of historical selection.
+
+ A procedure may look arbitrary to its current users while representing the accumulated outcome of numerous previous adaptations.
+
+---
+
+ # 14\. The Interaction Between Formal and Informal Evolution
+
+ Formal institutions and informal culture should not be treated as independent.
+
+ They can mutually reinforce one another.
+
+ For example:
+
+ **informal practice → formal policy**
+
+ and:
+
+ **formal policy → informal expectation**
+
+ can occur simultaneously.
+
+ Similarly:
+
+ **technology → behavior → policy → training → technology**
+
+ can form a reinforcing cycle.
+
+ The result is an ecology of behavior rather than a single causal chain.
+
+ An organization may therefore contain:
+
+ - formal rules;
+- informal norms;
+- technological constraints;
+- professional conventions;
+- historical traditions;
+- incentives;
+- sanctions;
+- habits;
+- and individual adaptations.
+
+ Each can influence the others.
+
+---
+
+ # 15\. Variation Is Necessary for Adaptation
+
+ If every participant always followed existing procedures perfectly, there would be very little opportunity for organizational change.
+
+ Variation is therefore not merely noise.
+
+ It is also the source of possible improvement.
+
+ Research on organizational adaptation emphasizes the interaction among selection, variety, and plasticity, noting that adaptation requires considering both stable behavioral templates and the variable expression of those templates.
+
+ A useful conceptual relationship is:
+
+ $$
+\text{stability} + \text{variation} = \text{adaptive possibility}.
+$$
+
+ Too little stability produces coordination problems.
+
+ Too little variation produces stagnation.
+
+ A functioning social system therefore needs both.
+
+---
+
+ # 16\. Deviance and Innovation Can Be Structurally Similar
+
+ This has an important consequence.
+
+ The initial observable form of:
+
+ > “someone is violating the normal procedure”
+
+ may be identical to:
+
+ > “someone has discovered a superior procedure.”
+
+ Both are deviations.
+
+ Only later can selection determine their trajectories.
+
+ If the new procedure improves outcomes, others may imitate it.
+
+ If it repeatedly fails, it may disappear.
+
+ If it violates important institutional constraints, it may be suppressed.
+
+ If it produces benefits but conflicts with existing authority, it may become the subject of organizational conflict.
+
+ Thus:
+
+ > **Innovation and deviance can share the same initial statistical signature: deviation from an established pattern.**
+
+ What differentiates them is subsequent interpretation, consequence, and social response.
+
+---
+
+ # 17\. Social Selection Does Not Require Conscious Selection
+
+ Another important point is that selection need not be deliberate.
+
+ No individual needs to decide:
+
+ > “This behavior shall now become our cultural norm.”
+
+ Instead, behaviors can spread because people repeatedly observe successful or prestigious examples and imitate them.
+
+ The spontaneous-emergence literature demonstrates that conventions can arise from local coordination without centralized direction.
+
+ This gives social systems a form of **distributed selection**.
+
+ At the same time, deliberate selection certainly occurs.
+
+ Organizations explicitly choose policies.
+
+ Governments enact laws.
+
+ Managers redesign workflows.
+
+ Communities deliberately preserve traditions.
+
+ Professional bodies establish standards.
+
+ Thus social evolution contains both:
+
+ **intentional selection**
+
+ and
+
+ **unintentional selection**.
+
+---
+
+ # 18\. Selection Through Social Learning
+
+ One major mechanism of behavioral persistence is social learning.
+
+ Individuals do not need to independently rediscover successful behavior.
+
+ They can copy others.
+
+ This dramatically changes the economics of behavioral variation.
+
+ An individual who invents a successful procedure may create a behavioral variant.
+
+ If others copy it, the variant spreads.
+
+ If it becomes sufficiently widespread, it may cease to be perceived as novel.
+
+ Eventually it becomes normal.
+
+ The sequence is:
+
+ $$
+\text{innovation}
+\rightarrow
+\text{imitation}
+\rightarrow
+\text{diffusion}
+\rightarrow
+\text{normalization}
+\rightarrow
+\text{institutionalization}.
+$$
+
+ Cultural-evolution research identifies social learning, conformist transmission, and payoff-biased transmission as important mechanisms affecting which behaviors persist.
+
+---
+
+ # 19\. Conformity as an Evolutionary Force
+
+ Conformity deserves particular attention.
+
+ Once a behavior becomes common, its prevalence itself can make it more likely to be copied.
+
+ This produces a feedback loop:
+
+ $$
+\text{common behavior}
+\rightarrow
+\text{perceived normality}
+\rightarrow
+\text{imitation}
+\rightarrow
+\text{greater prevalence}.
+$$
+
+ Conformity can therefore stabilize a behavior independently of its intrinsic quality.
+
+ This explains why social systems can maintain practices that nobody individually regards as especially valuable.
+
+ The practice persists because everyone expects everyone else to continue it.
+
+---
+
+ # 20\. Countervailing Forces: Innovation and Exploration
+
+ Conformity cannot be the whole story.
+
+ If everyone always copied existing behavior, novel solutions could not arise.
+
+ Organizations therefore require some degree of exploration.
+
+ This produces an exploitation–exploration tension:
+
+ **exploitation:** reproduce what already works;
+
+ **exploration:** generate or discover alternatives.
+
+ A healthy adaptive system may alternate between them.
+
+ During stable conditions, repetition can dominate.
+
+ During environmental disruption, the value of experimentation can increase.
+
+ Organizations may consequently become more tolerant of deviation when established procedures cease to work.
+
+ This can be interpreted as a change in the selection environment.
+
+---
+
+ # 21\. Environmental Change and Behavioral Fitness
+
+ A practice's fitness depends partly on its environment.
+
+ A procedure optimized for one environment may perform poorly after conditions change.
+
+ Thus:
+
+ $$
+\text{fitness of behavior} = f(\text{behavior}, \text{environment}).
+$$
+
+ A behavior does not possess a timeless intrinsic fitness independent of circumstances.
+
+ This is one reason institutional inertia can become maladaptive.
+
+ A procedure that was once highly effective may remain embedded after the conditions that favored it disappear.
+
+ The resulting mismatch can create pressure for variation.
+
+---
+
+ # 22\. Crisis as a Generator of Variation
+
+ Crisis is especially important because it can interrupt established patterns.
+
+ When normal procedures fail, actors improvise.
+
+ Improvisation creates variants.
+
+ Some variants work.
+
+ Successful variants may subsequently be incorporated into formal procedures.
+
+ Thus:
+
+ $$
+\text{crisis}
+\rightarrow
+\text{deviation}
+\rightarrow
+\text{experimentation}
+\rightarrow
+\text{selection}
+\rightarrow
+\text{new routine}.
+$$
+
+ This provides one pathway through which organizational learning occurs.
+
+ It also means that anomalous behavior can sometimes be the first observable sign of organizational adaptation.
+
+---
+
+ # 23\. The Inferential Value of Anomalies
+
+ The preceding argument returns us to the central concept of regularity.
+
+ Because stable patterns create expectations, deviations become informative.
+
+ An anomaly can indicate:
+
+ - environmental change;
+- individual error;
+- system failure;
+- organizational conflict;
+- innovation;
+- exceptional circumstance;
+- changing incentives;
+- cultural transition;
+- or deliberate circumvention.
+
+ Therefore:
+
+ > **Anomaly detection is not merely a method for finding mistakes. It is a method for detecting change.**
+
+ A stable behavioral pattern is analogous to a reference state.
+
+ A departure can reveal that the underlying conditions have changed.
+
+ This makes anomalous behavior particularly valuable for social research.
+
+---
+
+ # 24\. The Danger of Treating the Baseline as Normatively Correct
+
+ An important methodological warning follows.
+
+ If researchers equate:
+
+ $$
+\text{typical} = \text{good}
+$$
+
+ they risk confusing descriptive frequency with normative value.
+
+ The most common behavior may be:
+
+  $$
+A \rightarrow \text{others expect A}
+$$
+
+  $$
+\text{people choose A} \rightarrow \text{expectation of A strengthens}.
+$$
+
+    It can emerge.
+
+---
+
+ # 8\. Institutionalization
+
+ Once a pattern becomes sufficiently established, it can acquire institutional properties.
+
+ Institutionalization may involve:
+
+ - documentation;
+- formal authority;
+- training;
+- sanctions;
+- technological embedding;
+- physical infrastructure;
+- resource allocation;
+- legal recognition;
+- organizational memory.
+
+ The more layers reinforce a behavior, the more difficult it becomes to distinguish the original reason for the behavior from the mechanisms that now maintain it.
+
+  Decades later, people may follow it because:
+
+ - the manual says so;
+- the software expects it;
+- supervisors expect it;
+- everyone else does it;
+- deviation requires approval;
+- training teaches it;
+- auditing checks it;
+- and changing it would require substantial organizational effort.
+
+  The pattern persists because it has accumulated **institutional support**.
+
+---
+
+ # 9\. The Evolutionary Dimension
+
+  The basic cycle is:
+
+  This resembles biological evolution at an abstract level but should not be treated as identical to biological natural selection.
+
+  - experimentation;
+- improvisation;
+- mistakes;
+- individual innovation;
+- managerial intervention;
+- environmental disruption;
+- personnel turnover;
+- imitation;
+- competition.
+
+     - efficient;
+- inefficient;
+- harmful;
+- beneficial;
+- arbitrary;
+- historically contingent;
+- or merely entrenched.
+
+ Frequency tells us what happens.
+
+ It does not tell us what should happen.
+
+ This distinction is essential for organizational analysis.
+
+ An organization should be capable of asking:
+
+ > “Why is this normal?”
+
+ rather than merely:
+
+ > “How can we make everyone do what is normal?”
+
+---
+
+ # 25\. The Dual Nature of Institutionalization
+
+ Institutionalization therefore has both benefits and costs.
+
+ ### Benefits
+
+ Institutionalized patterns can:
+
+ - coordinate behavior;
+- preserve knowledge;
+- reduce uncertainty;
+- facilitate training;
+- increase reliability;
+- lower cognitive costs;
+- enable large-scale cooperation;
+- and preserve successful adaptations.
+
+ ### Costs
+
+ They can also:
+
+---
+
+ # 11\. Fitness Is Multidimensional
+
+ A behavioral pattern may succeed along several different dimensions.
+
+ ### Functional fitness
+
+  ### Social fitness
+
+ Does it generate acceptance and conformity?
+
+ ### Institutional fitness
+
+ Does it fit existing rules and organizational structures?
+
+ ### Reproductive fitness
+
+  ### Political fitness
+
+  ### Economic fitness
+
+  ### Cognitive fitness
+
+ Is it easy to remember and reproduce?
+
+ ### Technological fitness
+
+ Does it fit the systems and infrastructure surrounding it?
+
+ These dimensions can conflict.
+
+   A legally required practice may be operationally cumbersome.
+
+---
+
+ # 12\. Positive Feedback and Path Dependence
+
+        This helps explain institutional inertia.
+
+ It also explains why organizational change can be surprisingly difficult even when everyone agrees that an alternative would be better.
+
+---
+
+ # 13\. Cultural Accumulation
+
+   Generation or cohort 1 develops A.
+
+ Cohort 2 modifies A into B.
+
+---
+
+ # 14\. The Interaction Between Formal and Informal Evolution
+
+    **informal practice → formal policy**
+
+ and:
+
+        - formal rules;
+- informal norms;
+- technological constraints;
+- professional conventions;
+- historical traditions;
+- incentives;
+- sanctions;
+- habits;
+- and individual adaptations.
+
+ Each can influence the others.
+
+---
+
+ # 15\. Variation Is Necessary for Adaptation
+
+      - create rigidity;
+- preserve outdated practices;
+- suppress experimentation;
+- make deviations costly;
+- obscure historical reasons;
+- create unnecessary bureaucracy;
+- and reinforce practices that no longer fit their environment.
+
+ The same mechanism that produces organizational stability can therefore produce organizational inertia.
+
+---
+
+ # 26\. Culture as Both Memory and Selection Environment
+
+ Culture can be understood in two complementary ways.
+
+ First, culture is **memory**.
+
+ It preserves practices, stories, expectations, values, and techniques across individuals and generations.
+
+ Second, culture is a **selection environment**.
+
+ It determines which new behaviors are rewarded, copied, ignored, sanctioned, or incorporated.
+
+ Consequently:
+
+ $$
+\text{culture preserves the past}
+$$
+
+ while simultaneously:
+
+ $$
+\text{culture filters the future}.
+$$
+
+ This dual function may explain why cultural systems can change slowly while nevertheless undergoing continual micro-level variation.
+
+---
+
+ # 27\. The Recursive Structure of Social Evolution
+
+ The complete framework can now be represented as a recursive system:
+
+ $$
+\boxed{
+\text{Variation}
+\rightarrow
+\text{Selection}
+\rightarrow
+\text{Retention}
+\rightarrow
+\text{Transmission}
+\rightarrow
+\text{Regularity}
+\rightarrow
+\text{Expectation}
+\rightarrow
+\text{Coordination}
+\rightarrow
+\text{Institutionalization}
+\rightarrow
+\text{New Selection Environment}
+}
+$$
+
+ The final stage feeds back into the first.
+
+ Institutionalization changes the environment in which future variations occur.
+
+ Thus organizations do not merely select behaviors.
+
+ They **construct the conditions under which future behaviors will be selected**.
+
+ This is a deeper form of organizational evolution.
+
+---
+
+ # 28\. A Multilevel Model
+
+ The framework can also be understood across levels.
+
+ ### Individual level
+
+ Habits, choices, learning, imitation, experimentation.
+
+ ### Interpersonal level
+
+ Coordination, expectations, sanctions, imitation, reputation.
+
+ ### Group level
+
+ Norms, conventions, shared practices, informal rules.
+
+ ### Organizational level
+
+ Routines, SOPs, policies, technologies, structures.
+
+ ### Institutional level
+
+ Laws, professional standards, formal authorities, cultural traditions.
+
+ ### Population level
+
+ Diffusion, competition, cultural transmission, institutional competition.
+
+ Processes operate simultaneously across these levels.
+
+ An individual deviation may become a group practice.
+
+ A group practice may become an organizational routine.
+
+ An organizational routine may influence institutional standards.
+
+ An institutional standard may then constrain future individual behavior.
+
+ The system is therefore fundamentally recursive.
+
+---
+
+ # 29\. Implications for Organizational Analysis
+
+ This framework suggests that organizations should not be studied solely through their formal documents.
+
+ A complete analysis should compare:
+
+ 1. **what the organization says should happen;**
+2. **what usually happens;**
+3. **what people expect to happen;**
+4. **what people are actually rewarded for doing;**
+5. **what technology permits or requires;**
+6. **what deviations occur;**
+7. **which deviations are retained;**
+8. **which deviations disappear;**
+9. **how retained deviations become normalized.**
+
+ This can reveal the organization's **living institutional structure**, which may differ substantially from its formal structure.
+
+ Process mining is one methodological avenue for this analysis because event logs can be compared with normative process models to identify deviations and recurrent patterns.
+
+---
+
+ # 30\. Implications for Security and Anomaly Detection
+
+ The framework also has direct implications for security.
+
+ Security depends heavily upon expected patterns.
+
+ Authentication systems expect recognizable sequences.
+
+ Organizations expect authorized workflows.
+
+ Physical systems expect ordinary operating states.
+
+ Information systems expect particular interactions.
+
+ Consequently, security systems frequently identify deviations from established baselines.
+
+ But the theory developed here suggests that security analysis should distinguish among at least four possibilities:
+
+ $$
+\text{anomaly} =
+\begin{cases}
+\text{threat}\\
+\text{error}\\
+\text{exception}\\
+\text{adaptation}
+\end{cases}
+$$
+
+ The observation of an anomaly identifies an event deserving contextual interpretation.
+
+ It does not automatically identify its meaning.
+
+ This is consistent with process-conformance research, which explicitly recognizes that deviations can reflect exceptional legitimate cases as well as errors or fraud.
+---
+
+ # 31\. A Theory of Behavioral Persistence
+
+ The preceding discussion permits a more general proposition.
+
+ A behavioral pattern is more likely to persist when several reinforcing mechanisms operate simultaneously.
+
+ We can represent its persistence tendency conceptually as:
+
+ $$
+P \propto
+C \times R \times T \times S \times I
+$$
+
+ where:
+
+ # 16\. Deviance and Innovation Can Be Structurally Similar
+
+   > “someone is violating the normal procedure”
+
+  > “someone has discovered a superior procedure.”
+
+        > **Innovation and deviance can share the same initial statistical signature: deviation from an established pattern.**
+
+ What differentiates them is subsequent interpretation, consequence, and social response.
+
+---
+
+ # 17\. Social Selection Does Not Require Conscious Selection
+
+  No individual needs to decide:
+
+ > “This behavior shall now become our cultural norm.”
+
+  The spontaneous-emergence literature demonstrates that conventions can arise from local coordination without centralized direction.
+
+     Managers redesign workflows.
+
+ Communities deliberately preserve traditions.
+
+---
+
+ # 18\. Selection Through Social Learning
+
+     An individual who invents a successful procedure may create a behavioral variant.
+
+ If others copy it, the variant spreads.
+
+     Authentication systems expect recognizable sequences.
+
+ Organizations expect authorized workflows.
+
+---
+
+ # 31\. A Theory of Behavioral Persistence
+
+  - $C$ = coordination value;
+- $R$ = reproductive/transmission ease;
+- $T$ = technological compatibility;
+- $S$ = social reinforcement;
+- $I$ = institutional reinforcement.
+
+ This is not proposed as an empirical quantitative equation. It is a conceptual model illustrating that persistence can arise from multiple interacting mechanisms.
+
+ A behavior might have little intrinsic advantage but very strong institutional reinforcement.
+
+ Another might have substantial functional advantage but weak social transmission.
+
+ The observed prevalence of a behavior is therefore an outcome of multiple selection mechanisms.
+
+---
+
+ # 32\. Why Persistence Does Not Establish Origin
+
+ Another methodological consequence is that the present reason for a practice may differ from its historical origin.
+
+ A behavior might originally arise because:
+
+ $$
+X \rightarrow A
+$$
+
+ but eventually persist because:
+
+ $$
+A \rightarrow B \rightarrow C \rightarrow D.
+$$
+
+ By the time researchers observe the practice, its original causal mechanism may no longer matter.
+
+ This is particularly important for traditions.
+
+ A tradition may survive because people value it today even though the circumstances that originally produced it disappeared centuries ago.
+
+ Thus, explaining persistence requires distinguishing:
+
+ **origin**
+
+ from
+
+ **maintenance**.
+
+---
+
+ # 33\. Why Organizations Can Become Their Own Selection Environments
+
+ An especially important implication is that organizations can become environments that select for behaviors independently of their original functional value.
+
+ For example, an organization might reward:
+
+ - speed;
+- compliance;
+- documentation;
+- innovation;
+- risk avoidance;
+- political loyalty;
+- customer satisfaction;
+- cost reduction.
+
+ Those incentives change which behaviors persist.
+
+ A practice that performs poorly according to one criterion may thrive because it performs well according to another.
+
+ This means organizational evolution is not necessarily optimizing a single objective.
+
+ It is often the result of competing selection pressures.
+
+---
+
+ # 34\. Cultural Evolution and Institutional Coevolution
+
+ Culture and institutions can therefore coevolve.
+
+ Institutions shape behavior.
+
+ Behavior generates institutions.
+
+ Culture legitimizes institutions.
+
+ Institutions reinforce cultural expectations.
+
+ Technology modifies the feasible behavioral space.
+
+ Economic conditions alter incentives.
+
+ The resulting system changes the relative persistence of behavioral variants.
+
+ A simplified representation is:
+
+ $$
+\text{culture}
+\leftrightarrow
+\text{institutions}
+\leftrightarrow
+\text{behavior}
+\leftrightarrow
+\text{technology}
+\leftrightarrow
+\text{environment}.
+$$
+
+ Research on institutional and cultural evolution likewise emphasizes that change can arise both from deliberate action and from decentralized, uncoordinated actions by many actors pursuing local objectives.  
+
+---
+
+ # 35\. Implications for Organizational Change
+
+ If organizations are evolutionary systems of patterned behavior, then organizational change is not simply a matter of announcing a new policy.
+
+ A new policy must compete with existing patterns.
+
+ The existing pattern may have:
+
+---
+
+ # 32\. Why Persistence Does Not Establish Origin
+
+ Another methodological consequence is that the present reason for a practice may differ from its historical origin.
+
+ A behavior might originally arise because:
+
+ $$
+X \rightarrow A
+$$
+
+     A tradition may survive because people value it today even though the circumstances that originally produced it disappeared centuries ago.
+
+        For example, an organization might reward:
+
+ - speed;
+- compliance;
+- documentation;
+- innovation;
+- risk avoidance;
+- political loyalty;
+- customer satisfaction;
+- cost reduction.
+
+---
+
+ # 34\. Cultural Evolution and Institutional Coevolution
+
+          $$
+\text{culture}
+\leftrightarrow
+\text{institutions}
+\leftrightarrow
+\text{behavior}
+\leftrightarrow
+\text{technology}
+\leftrightarrow
+\text{environment}.
+$$
+
+---
+
+ # 35\. Implications for Organizational Change
+
+   The existing pattern may have:
+
+ - habit;
+- legitimacy;
+- technological support;
+- training;
+- social expectations;
+- informal sanctions;
+- and accumulated infrastructure.
+
+ Consequently, a new formal rule can coexist with an older behavioral equilibrium.
+
+ Successful change may require altering the **selection environment**, not merely declaring a new desired behavior.
+
+ That may involve:
+
+ - incentives;
+- training;
+- technology;
+- leadership;
+- monitoring;
+- social reinforcement;
+- removal of conflicting procedures;
+- and opportunities for experimentation.
+
+---
+
+ # 36\. The Importance of Controlled Deviance
+
+ A particularly important organizational capability may therefore be the ability to permit **bounded deviation**.
+
+ If deviation is always punished, innovation may disappear.
+
+ If deviation is completely unrestricted, coordination may deteriorate.
+
+ A resilient organization can instead establish circumstances under which deviation is:
+
+ - permitted;
+- documented;
+- evaluated;
+- learned from;
+- and either incorporated or discarded.
+
+ This turns anomaly into an organizational learning mechanism.
+
+ The organization effectively creates a controlled evolutionary process:
+
+ $$
+\text{stable routine}
+\rightarrow
+\text{variation}
+\rightarrow
+\text{evaluation}
+\rightarrow
+\text{retention or rejection}.
+$$
+
+ This is closely related to research describing organizational adaptation through variation, selection, and retention.  Wiley Online Library+1
+
+---
+
+ # 37\. Conclusion
+
+ Regularity is more than repetition.
+
+ It is a foundation for social inference, coordination, institutionalization, and cultural continuity.
+
+ When behavior becomes recurrent, it produces expectations. Expectations allow participants to coordinate. Coordination rewards predictable behavior. Repeated behavior becomes routine. Routines can become norms. Norms can become formal policy. Policies can become embedded in technologies, training, organizational structures, and legal institutions. These mechanisms then influence which future behavioral variants are likely to arise, spread, and persist.
+
+ Culture can be understood partly within this broader system as the accumulated, socially transmitted organization of patterns, meanings, expectations, and practices. Cultural-evolution research explicitly treats norms and behavioral patterns as transmissible phenomena whose persistence and transformation can be studied through processes such as social learning, conformity, payoff-biased transmission, and cumulative cultural evolution.
+
+ Organizational routines exhibit a related evolutionary structure. Research identifies variation and selective retention as mechanisms through which routines emerge, persist, change, and generate organizational capabilities.
+
+ The resulting theoretical picture is neither purely deterministic nor purely intentional.
+
+ Social order is simultaneously:
+
+ **constructed and emergent;**
+
+ **stable and variable;**
+
+ **formal and informal;**
+
+ **intentional and unintended;**
+
+ **conservative and adaptive.**
+
+ The concept of “survival of the fittest” is therefore most useful when translated into a more precise proposition: **behavioral patterns differ in their capacity to persist and reproduce under particular social, organizational, technological, and environmental conditions.**
+
+ Some survive because they work.
+
+ Some survive because people expect others to use them.
+
+ Some survive because institutions enforce them.
+
+ Some survive because they are easy to copy.
+
+ Some survive because they are technologically embedded.
+
+ Some survive because they benefit powerful actors.
+
+ Some survive because nobody has successfully displaced them.
+
+ And some survive because they have accumulated so many layers of supporting infrastructure that replacing them becomes more difficult than continuing them.
+
+ The central insight is therefore:
+
+ > **Regularity creates the conditions for inference; inference creates expectations; expectations facilitate coordination; coordination reinforces regularity; reinforced regularity produces norms, routines, and institutions; and those institutions create the selection environment within which future behaviors compete for persistence.**
+
+ This is a recursive process rather than a linear one.
+
+ A social organization does not merely _have_ patterns of behavior. Its patterns of behavior continually help construct the environment that determines which subsequent patterns are possible, intelligible, rewarded, copied, resisted, institutionalized, or forgotten.
+
+ From this perspective, the study of organizational behavior is not simply the study of what people do. It is the study of **how repeated action becomes structure, how structure becomes expectation, how expectation becomes culture and institution, and how those structures subsequently govern the evolutionary possibilities of future action**.
+
+ That perspective also clarifies the significance of anomalies. A deviation from an established pattern is not inherently evidence of failure or wrongdoing. It is evidence that the current instance differs from the established behavioral distribution. It may signal error, necessity, adaptation, innovation, environmental change, institutional conflict, or deliberate circumvention. The very existence of the baseline makes the deviation detectable; interpretation requires understanding the selection environment surrounding it.
+
+ Thus, one of the deepest consequences of regularity is paradoxical: **the stability of a social system is what makes its transformation observable**. Without regularity there would be little basis for identifying change. Without variation there would be little material from which new regularities could emerge.
+
+ Social systems therefore persist through a dynamic tension between **repetition and deviation, conformity and innovation, institutional memory and experimentation, stability and adaptation**.
+
+ That tension may be one of the fundamental mechanisms through which organized human behavior reproduces itself while remaining capable of change.
+
+ ## References and Selected Literature
+
+---
+
+ # 37\. Conclusion
+
+  - Feldman, M. S., Pentland, B. T., Becker, M. C., & Liu, P. (2012). _Dynamics of Organizational Routines: A Generative Model_. Journal of Management Studies, 49(8), 1484–1508.
+- Young, H. P. (2015). _The Evolution of Social Norms_. Annual Review of Economics, 7, 359–387.
+- Baronchelli, A., et al. (2015). _The spontaneous emergence of conventions: An experimental study of cultural evolution_. Proceedings of the National Academy of Sciences.
+- Denton, K. K., Ram, Y., & Feldman, M. W. (2023). _Conditions that favour cumulative cultural evolution_. Philosophical Transactions of the Royal Society B.
+- Levinthal, D. A., & Marino, A. (2015). _Three Facets of Organizational Adaptation: Selection, Variety, and Plasticity_. Organization Science, 26(3), 743–755.
+- Zollo and related organizational-routine research, as discussed in research on routine creation and replication across organizational sites, emphasizes variation, selection, replication, and retention.
+- Research on evolutionary approaches to institutions emphasizes both deliberate institutional change and decentralized transitions generated by many actors pursuing local objectives.
+- Research on process mining and conformance checking provides a methodological counterpart to the theoretical argument: observed organizational behavior can be compared with normative models to identify deviations, while contextual interpretation is required to distinguish legitimate exceptions from errors or other forms of nonconformance.
+
+ :::
