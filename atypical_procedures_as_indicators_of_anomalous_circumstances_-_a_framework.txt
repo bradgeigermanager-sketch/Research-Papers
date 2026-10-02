@@ -1,0 +1,762 @@
+Atypical Procedures as Indicators of Anomalous Circumstance: A Framework for Interpreting Deviations from Established Organizational Practice
+
+Premise: A sufficiently established normative or empirical baseline makes deviation itself an informative event. The deviation may indicate a benign exception, adaptation, error, innovation, emergency, or misconduct; determining which requires contextual analysis.
+
+ ### Abstract
+
+ Organizations operate through recurring procedures, routines, conventions, and standard operating procedures (SOPs). These patterns provide both practical guidance and an implicit behavioral baseline against which individual process executions can be compared. When an established procedure is replaced by an atypical procedure, the resulting departure may constitute an anomalous circumstance even when the departure produces no immediately observable adverse outcome. This paper develops a conceptual framework for understanding such deviations.
+
+ The central argument is that **procedural atypicality is evidentially significant without being intrinsically evaluative**. A deviation from an established method may indicate error, adaptation, necessity, innovation, authorized exception, organizational dysfunction, or intentional circumvention. Consequently, anomaly detection should distinguish the observation of deviation from conclusions concerning intent, legitimacy, or outcome. Contemporary process-mining research formalizes a closely related idea through _conformance checking_: actual process executions are compared with predefined or discovered process models to identify deviations. Research also emphasizes that deviations require contextual and explainable interpretation rather than automatic classification as wrongdoing.
+
+ The paper proposes a distinction among **typicality, intentionality, justification, and consequence**, and argues that the most useful analytical question is not whether an atypical procedure is “bad,” but what the deviation reveals about the circumstances under which the process was executed.
+
+---
+
+ ## 1\. Introduction
+
+ Human organizations rarely perform recurring activities from scratch each time. They develop procedures, forms, workflows, conventions, habits, technical configurations, professional expectations, and institutional traditions. These mechanisms reduce uncertainty and coordinate activity.
+
+ A routine therefore does more than prescribe behavior. It establishes an **expectation about behavior**.
+
+ If a process ordinarily follows:
+
+ > A → B → C → D
+
+ then an observed instance such as:
+
+ > A → B → E → D
+
+ is not necessarily wrong. Nevertheless, it is analytically different from the baseline.
+
+ This distinction is foundational.
+
+ Atypicality is not equivalent to misconduct. Nor is conformity equivalent to correctness. Research in process mining explicitly recognizes this problem: conformance checking compares observed behavior against a process model, but the model itself need not represent the optimal process, and deviations can arise for many reasons.
+
+ Accordingly, the fundamental proposition examined here is:
+
+ > **When a sufficiently established procedure exists, the selection or occurrence of an alternative procedure can constitute evidence of an anomalous circumstance, even when the alternative is legitimate, beneficial, accidental, or otherwise harmless.**
+
+ This proposition concerns **anomaly as a descriptive property**, rather than anomaly as a moral or legal judgment.
+
+---
+
+ ## 2\. Procedure Creates a Behavioral Baseline
+
+ A procedure can be formal or informal.
+
+ Formal examples include:
+
+ - SOPs;
+- regulations;
+- checklists;
+- workflow definitions;
+- authorization requirements;
+- technical protocols.
+
+ Informal examples include:
+
+ - organizational customs;
+- professional conventions;
+- habitual sequences;
+- established traditions;
+- tacit expectations;
+- recurrent workarounds.
+
+ Both can establish expectations.
+
+ The important characteristic is not necessarily whether a rule is written down, but whether there is sufficient evidence that **one mode of behavior is substantially more typical than alternatives**.
+
+ This produces a baseline:
+
+ $$
+B = \text{expected or established pattern of behavior}
+$$
+
+ and an observation:
+
+ $$
+O = \text{actual observed behavior}.
+$$
+
+ A deviation exists where:
+
+ $$
+O \neq B.
+$$
+
+ Contemporary process-mining literature formalizes essentially this relationship through conformance checking: actual process executions are compared with predefined process models to identify departures from expected behavior.
+
+ The important qualification is that a baseline can be imperfect. A procedure may be outdated, inefficient, unnecessarily restrictive, or simply poorly designed. Consequently:
+
+ > **Deviation from the baseline establishes difference from the baseline, not inferiority to the baseline.**
+
+---
+
+ ## 3\. Why a Deviation Can Be Informative
+
+ Atypicality becomes particularly informative when the normal process is strongly established.
+
+ Consider three hypothetical environments.
+
+ ### Environment A: Weakly constrained
+
+ Ten different methods are routinely used.
+
+ Choosing one method rather than another conveys little information.
+
+ ### Environment B: Moderately standardized
+
+ One method predominates, but several alternatives are regularly used.
+
+ A departure is noteworthy but not particularly surprising.
+
+ ### Environment C: Highly standardized
+
+ One procedure is consistently used, personnel are trained to use it, the necessary infrastructure exists, and alternatives are uncommon.
+
+ A departure from that procedure becomes substantially more informative.
+
+ This does **not** mean the deviation is necessarily intentional. It means that the observation is less readily explained as ordinary variation.
+
+ The distinction resembles statistical anomaly detection: an observation can be unusual relative to a distribution without the analyst knowing why it occurred.
+
+ Recent research on business-process anomaly detection similarly treats deviations in control flow, timing, resource use, and other attributes as potentially informative anomalies.
+
+---
+
+ ## 4\. The Counterfactual Logic of Procedural Deviation
+
+ The intuition behind your question can be expressed counterfactually.
+
+ Suppose:
+
+ 1. Procedure **P** is the established method.
+2. Procedure **Q** is atypical.
+3. The actor had the ordinary opportunity to use **P**.
+4. **Q** was nevertheless used.
+
+ Then the observation raises the question:
+
+ > **What circumstance explains the substitution of Q for P?**
+
+ The important inference is not:
+
+ > “Q was used, therefore the actor had bad intentions.”
+
+ Rather:
+
+ > “Q was used, therefore something distinguishes this instance from ordinary instances, and identifying that distinction may explain the departure.”
+
+ That distinction may be extraordinarily mundane.
+
+ For example:
+
+ - the normal equipment malfunctioned;
+- a deadline changed;
+- a supervisor authorized an exception;
+- the normal procedure was temporarily unavailable;
+- a novel circumstance arose;
+- the actor made an error;
+- the actor experimented with an improvement;
+- the actor misunderstood the procedure;
+- or the actor intentionally circumvented it.
+
+ Thus the **deviation is evidence of a question**, not necessarily evidence of its answer.
+
+---
+
+ ## 5\. Intentionality Is Not the Same as Malicious Intent
+
+ This distinction is particularly important.
+
+ Four concepts should be separated:
+
+ | Concept | Question |
+| --- | --- |
+| **Atypicality** | Did the behavior differ from the baseline? |
+| **Intentionality** | Was the departure deliberately selected? |
+| **Justification** | Was there an acceptable reason or authorization? |
+| **Motive** | What ultimately motivated the departure? |
+
+They are logically distinct.
+
+ A person may intentionally select an atypical procedure because the normal procedure is temporarily impossible.
+
+ An accidental deviation can nevertheless produce serious consequences.
+
+ A justified deviation can be highly unusual.
+
+ And a deliberate deviation can have either benevolent or harmful motives.
+
+ Consequently, an analytical system that collapses all four concepts into a single category called “anomaly” risks substantial interpretive error.
+
+ Recent work on explainable conformance checking makes a related point: detecting a deviation is insufficient; contextual explanations are needed to understand unexpected behavioral patterns.
+
+---
+
+ ## 6\. The Significance of Effort and Procedural Friction
+
+ The argument becomes stronger where deviating from the normal procedure requires **additional effort, selection, or construction**.
+
+ Suppose an organization has a button that automatically executes the normal procedure. An employee accidentally clicks a neighboring button. That is a deviation, but it requires little inference about deliberate choice.
+
+ Now suppose the employee must:
+
+ 1. leave the ordinary workflow;
+2. locate an alternative mechanism;
+3. select a different process;
+4. provide different inputs;
+5. and complete several additional steps.
+
+ The deviation may then contain more evidence of an intervening choice.
+
+ But even here, one must distinguish **effort from motive**.
+
+ Additional effort may reflect:
+
+ - necessity;
+- troubleshooting;
+- innovation;
+- accommodation;
+- urgency;
+- experimentation;
+- or circumvention.
+
+ The proper inference is therefore something like:
+
+ > **The unusual process appears to have required additional intervention and is therefore potentially informative about the circumstances of the case.**
+
+ It is not:
+
+ > **The additional intervention demonstrates improper intent.**
+
+---
+
+ ## 7\. Legitimate Deviations Are Themselves Organizationally Significant
+
+ One of the most important consequences of this framework is that **good deviations are still deviations**.
+
+ A firefighter may depart from a standard sequence because conditions make the ordinary sequence unsafe.
+
+ A physician may depart from a clinical protocol because an individual patient's circumstances require a different approach.
+
+ An engineer may bypass an ordinary workflow to prevent equipment damage.
+
+ An administrator may use an emergency procedure because ordinary authorization channels are unavailable.
+
+ These are not failures of the concept of procedural conformity. They demonstrate why conformity must be interpreted contextually.
+
+ Indeed, repeated legitimate deviations can reveal that the supposedly “normal” procedure does not adequately represent actual operating conditions.
+
+ Research on organizational routines has similarly identified cases in which unusual routines can simultaneously create problems for some participants while producing sensible or effective outcomes for others.  
+
+ Thus, anomaly detection can serve not only **security and compliance**, but also **organizational learning**.
+
+---
+
+ ## 8\. The Baseline Can Be Wrong
+
+ A particularly important methodological problem is assuming:
+
+ > normal = correct.
+
+ That proposition does not follow.
+
+ A process can become routine because:
+
+ - it was historically useful;
+- everyone was trained in it;
+- software was built around it;
+- nobody has questioned it;
+- changing it is difficult;
+- or institutional inertia perpetuates it.
+
+ Consequently, a deviation can sometimes represent an improvement.
+
+ Process-mining literature explicitly recognizes this limitation: conventional conformance analysis identifies deviations from routine execution, but routine execution is not necessarily optimal execution.
+
+ This creates a productive feedback loop:
+
+ **baseline → deviation → investigation → explanation → evaluation → possible revision of baseline**
+
+ rather than:
+
+ **baseline → deviation → punishment.**
+
+---
+
+ ## 9\. Deviations Can Reveal Hidden Circumstances
+
+ Atypical behavior can therefore function as an **indicator variable**.
+
+ Suppose an organization observes:
+
+ > 99% of cases use P\
+>  1% use Q.
+
+ The 1% doesn't automatically represent misconduct. But it provides a potentially useful population for investigation.
+
+ The organization might discover that the Q cases correspond to:
+
+---
+
+ ## 6\. The Significance of Effort and Procedural Friction
+
+  Suppose an organization has a button that automatically executes the normal procedure. An employee accidentally clicks a neighboring button. That is a deviation, but it requires little inference about deliberate choice.
+
+ Now suppose the employee must:
+
+ 1. leave the ordinary workflow;
+2. locate an alternative mechanism;
+3. select a different process;
+4. provide different inputs;
+5. and complete several additional steps.
+
+  But even here, one must distinguish **effort from motive**.
+
+ Additional effort may reflect:
+
+ - necessity;
+- troubleshooting;
+- innovation;
+- accommodation;
+- urgency;
+- experimentation;
+- or circumvention.
+
+---
+
+ ## 8\. The Baseline Can Be Wrong
+
+  > normal = correct.
+
+  A process can become routine because:
+
+ - emergencies;
+- unusual customers;
+- system failures;
+- particular environmental conditions;
+- exceptional authorizations;
+- particular personnel;
+- training problems;
+- or attempts to circumvent controls.
+
+ The deviation therefore acts as a **signal about latent circumstances**.
+
+ This is one reason modern process analytics increasingly looks beyond individual anomalous events toward patterns of deviations and contextual explanation. Recent research distinguishes event-level anomalies from more complex trace-level anomalies spanning multiple events and requiring broader context.
+
+---
+
+ ## 10\. From Individual Deviation to Organizational Knowledge
+
+ Repeated deviations can be particularly informative.
+
+ Suppose an organization repeatedly observes:
+
+ > P → Q → R
+
+ when the formal procedure says:
+
+ > P → S → R.
+
+ There are several possible interpretations.
+
+ ### Interpretation A: Noncompliance
+
+ Personnel are routinely disregarding the established process.
+
+ ### Interpretation B: Hidden necessity
+
+ The official procedure does not accommodate an ordinary real-world circumstance.
+
+ ### Interpretation C: Superior practice
+
+ Personnel have discovered that the alternative is more effective.
+
+ ### Interpretation D: Control circumvention
+
+ The alternative is systematically being used to evade a safeguard.
+
+ ### Interpretation E: Poorly specified baseline
+
+ The organization has incorrectly characterized the “normal” process.
+
+ These interpretations have radically different implications despite producing the same initial observation: **the process differs from the model**.
+
+ This is why contemporary anomaly-detection research emphasizes explainability and context rather than merely flagging deviations.
+
+---
+
+ ## 11\. The Relationship to Security
+
+ This framework has direct relevance to security.
+
+ Security procedures frequently depend on predictable sequences:
+
+---
+
+ ## 10\. From Individual Deviation to Organizational Knowledge
+
+  Suppose an organization repeatedly observes:
+
+ > P → Q → R
+
+ when the formal procedure says:
+
+ > P → S → R.
+
+ There are several possible interpretations.
+
+ ### Interpretation A: Noncompliance
+
+ Personnel are routinely disregarding the established process.
+
+ ### Interpretation B: Hidden necessity
+
+ The official procedure does not accommodate an ordinary real-world circumstance.
+
+ ### Interpretation C: Superior practice
+
+  ### Interpretation D: Control circumvention
+
+ The alternative is systematically being used to evade a safeguard.
+
+ ### Interpretation E: Poorly specified baseline
+
+  These interpretations have radically different implications despite producing the same initial observation: **the process differs from the model**.
+
+---
+
+ ## 11\. The Relationship to Security
+
+ This framework has direct relevance to security.
+
+ - authentication;
+- authorization;
+- access;
+- verification;
+- recording;
+- review;
+- escalation.
+
+ A departure from those sequences can sometimes indicate a security problem.
+
+ But it can also indicate that security personnel are responding to an unusual threat.
+
+ Thus:
+
+ > **Anomalous security behavior can be evidence of either a threat or a response to a threat.**
+
+ That is why security analysis should not simply ask:
+
+ > “Did the procedure differ?”
+
+ It should ask:
+
+ > “What circumstances made the procedure differ?”
+
+ and:
+
+ > “Did the deviation introduce or mitigate risk?”
+
+ Those questions preserve the possibility that the atypical procedure was itself the security-preserving action.
+
+---
+
+ ## 12\. The Relationship to Accountability
+
+ The same framework helps explain why organizations often expect deviations to be documented or justified.
+
+ If an SOP establishes the normal control, departing from it can create an accountability question:
+
+ > **Who decided that the normal control was inappropriate in this instance, and why?**
+
+ This is not necessarily punitive.
+
+ It serves several functions:
+
+ - reconstructing events;
+- understanding exceptions;
+- distinguishing error from intentional action;
+- evaluating risk;
+- improving procedures;
+- identifying recurring problems;
+- and protecting both the organization and the personnel involved.
+
+ An authorized exception therefore has a fundamentally different evidentiary character from an unexplained deviation.
+
+ The relevant chain becomes:
+
+ **deviation → explanation → authorization/justification → contextual evaluation.**
+
+---
+
+ ## 13\. A Taxonomy of Atypical Procedures
+
+ A useful research framework would classify deviations along several independent dimensions.
+
+ ### Dimension 1: Frequency
+
+ - common;
+- uncommon;
+- rare;
+- unique.
+
+ ### Dimension 2: Procedural distance
+
+ How substantially does the alternative differ from the established method?
+
+ A minor substitution may have little significance. A completely different workflow may be highly informative.
+
+ ### Dimension 3: Effort
+
+ How much additional action is necessary to produce the deviation?
+
+ ### Dimension 4: Constraint
+
+ How strongly does the environment normally constrain personnel to the standard method?
+
+ ### Dimension 5: Authorization
+
+ Was the deviation:
+
+ - explicitly authorized;
+- implicitly permitted;
+- conditionally allowed;
+- retrospectively accepted;
+- or unauthorized?
+
+ ### Dimension 6: Explanation
+
+ Is there a documented or otherwise credible explanation?
+
+ ### Dimension 7: Consequence
+
+ Did the deviation:
+
+ - improve the outcome;
+- worsen it;
+- have no material effect;
+- or change the type of risk involved?
+
+ ### Dimension 8: Recurrence
+
+ Is this an isolated event or a repeated pattern?
+
+ This multidimensional approach is superior to simply labeling behavior “normal” or “abnormal.”
+
+---
+
+ ## 14\. A Formal Conceptual Model
+
+ We can express the basic concept as:
+
+ $$
+A = f(D, C, E, I, J, R)
+$$
+
+ where:
+
+ - $D$ = degree of deviation from the baseline;
+- $C$ = strength of the baseline constraint;
+- $E$ = effort required to deviate;
+- $I$ = evidence concerning intentionality;
+- $J$ = justification or authorization;
+- $R$ = resulting consequences.
+
+ The important point is that **anomaly is not a direct function of bad intent**.
+
+ A highly anomalous event might have:
+
+ $$
+D \uparrow,\quad C \uparrow,\quad E \uparrow
+$$
+
+ while simultaneously having:
+
+ $$
+J = \text{legitimate exception}.
+$$
+
+ It would still be anomalous in the descriptive sense.
+
+ This is consistent with process-mining research, where deviations can be identified computationally while interpretation requires additional information. Modern approaches specifically investigate control-flow anomalies, noisy data, explainability, and contextual interpretation.
+
+---
+
+ ## 15\. A Critical Limitation: The “Normal” Process Is Not Always Observable
+
+ One methodological difficulty is determining what actually counts as normal.
+
+ An SOP might say one thing while personnel routinely do another.
+
+ Therefore, there may be several competing baselines:
+
+ **prescribed baseline** — what the organization says should happen;
+
+ **empirical baseline** — what usually happens;
+
+ **authorized baseline** — what is formally permitted;
+
+ **functional baseline** — what reliably achieves the intended objective.
+
+ These can diverge.
+
+ For example:
+
+ > SOP: A → B → C\
+>  Actual practice: A → C\
+>  Emergency practice: A → D → C
+
+ A naïve anomaly detector might classify both A→C and A→D→C identically. A contextual analysis could discover that A→C is an entrenched but technically nonconforming practice, while A→D→C is an authorized emergency procedure.
+
+ Thus, **anomaly detection is only as good as its conception of normality**.
+
+---
+
+ ## 16\. Implications for Research and Investigation
+
+ The framework suggests a disciplined investigative sequence:
+
+ 1. **Establish the baseline.**
+2. **Determine how strongly the baseline is established.**
+3. **Identify the precise deviation.**
+4. **Determine whether the deviation was accidental or selected.**
+5. **Identify available explanations.**
+6. **Determine whether an exception or authorization existed.**
+7. **Examine consequences.**
+8. **Compare similar cases.**
+9. **Determine whether the deviation is isolated or patterned.**
+10. **Only then consider questions of motive or misconduct.**
+
+ This ordering is valuable because it prevents the analyst from beginning with an assumption about intent.
+
+ The first conclusion may simply be:
+
+ > **“This instance differs materially from the established process.”**
+
+ That can be a strong conclusion even when the reason remains unknown.
+
+---
+
+ ## 17\. Broader Theoretical Significance
+
+ The concept extends beyond organizations.
+
+ The same reasoning can apply to:
+
+ - transportation systems;
+- computer systems;
+- manufacturing;
+- medicine;
+- scientific experimentation;
+- law enforcement;
+- emergency management;
+- infrastructure;
+- individual behavior;
+- ecological systems;
+- and historical analysis.
+
+ Whenever there is a sufficiently stable pattern, a departure from that pattern can be treated as information.
+
+ The deeper principle is:
+
+ > **Regularity creates inferential structure.**
+
+ Once a system behaves predictably, deviations become observable against that predictability.
+
+ But there is an equally important second principle:
+
+ > **Deviation creates a question, not an answer.**
+
+ The deviation tells us that something differs. It does not, by itself, tell us whether the difference is beneficial, harmful, accidental, necessary, intentional, authorized, or malicious.
+
+---
+
+ ## 18\. Conclusion
+
+ ### Dimension 2: Procedural distance
+
+   ### Dimension 3: Effort
+
+  ### Dimension 4: Constraint
+
+  ### Dimension 5: Authorization
+
+ Was the deviation:
+
+ - explicitly authorized;
+- implicitly permitted;
+- conditionally allowed;
+- retrospectively accepted;
+- or unauthorized?
+
+ ### Dimension 6: Explanation
+
+  ### Dimension 7: Consequence
+
+ Did the deviation:
+
+ - improve the outcome;
+- worsen it;
+- have no material effect;
+- or change the type of risk involved?
+
+ ### Dimension 8: Recurrence
+
+---
+
+ ## 14\. A Formal Conceptual Model
+
+ We can express the basic concept as:
+
+ $$
+A = f(D, C, E, I, J, R)
+$$
+
+ where:
+
+ - $D$ = degree of deviation from the baseline;
+- $C$ = strength of the baseline constraint;
+- $E$ = effort required to deviate;
+- $I$ = evidence concerning intentionality;
+- $J$ = justification or authorization;
+- $R$ = resulting consequences.
+
+   $$
+D \uparrow,\quad C \uparrow,\quad E \uparrow
+$$
+
+   It would still be anomalous in the descriptive sense.
+
+---
+
+ ## 15\. A Critical Limitation: The “Normal” Process Is Not Always Observable
+
+  An SOP might say one thing while personnel routinely do another.
+
+ The proposition that **atypical procedures indicate anomalous circumstances** is well supported as a conceptual and analytical framework, and it has a close analogue in established research on process mining and conformance checking. Organizations routinely compare observed behavior with expected process models precisely because deviations can contain useful information about failures, inefficiencies, compliance issues, system conditions, or unusual circumstances.
+
+ The most defensible formulation, however, is deliberately narrower than the claim that unusual procedures indicate bad conduct:
+
+ > **Where an established procedure provides a strong behavioral baseline, a material departure from that procedure is evidence that the instance differs from ordinary conditions and therefore warrants contextual explanation.**
+
+ The explanation may reveal **necessity, innovation, adaptation, accident, authorization, organizational dysfunction, or deliberate circumvention**.
+
+ This produces an important conceptual separation:
+
+ **Atypical ≠ intentional**
+
+ **Intentional ≠ improper**
+
+ **Improper ≠ malicious**
+
+ **Malicious ≠ consequential**
+
+ and, importantly,
+
+ **conforming ≠ optimal.**
+
+ That separation is what allows anomaly analysis to be useful without becoming prejudicial. The anomaly is the **starting point of inquiry**, not its conclusion.
+
+ A particularly promising research direction would therefore be to study **“deviation as evidence of latent circumstance”**: treating unusual procedural choices as observable signals from which the analyst attempts to reconstruct otherwise unobserved conditions, while explicitly modeling uncertainty about intent and justification. That would connect organizational routine theory, process mining, anomaly detection, human factors, security analysis, and institutional accountability in a fairly coherent research program.
