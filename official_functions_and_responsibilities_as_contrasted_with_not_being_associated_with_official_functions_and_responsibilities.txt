@@ -1,0 +1,348 @@
+Official functions and responsibilities can relate to being attached to official locations, offices, or residences, depending on the context.
+
+For example:
+
+ - **Official office:** A person may have responsibilities associated with conducting government or institutional business at a designated office.
+- **Official residence:** A residence may be provided or designated because the occupant has official duties connected to the position, including hosting official visitors or performing representational functions.
+- **Official location:** Certain duties may be tied to a particular facility or site where the person is expected to perform their role.
+- **Attached to an office/residence:** This can mean the person, position, staff, security arrangements, or functions are formally associated with that location—not necessarily that the person permanently lives or works there.
+
+Some official functions and responsibilities that are not tied or attached to particular official locations, offices, or residences exist and in those circumstances, the responsibilities would be understood as belonging to the office, position, or person by virtue of their official status, rather than because they are physically or administratively connected to a particular place.
+
+For example:
+
+ - A duty may follow the **officeholder wherever they perform it**.
+- An official function may occur at a **temporary, private, public, or unspecified location**.
+- A responsibility may concern **actions, decisions, or authority**, rather than maintenance or use of an official premises.
+- An official residence or office could be merely a **location from which duties are sometimes performed**, rather than the source or defining feature of those duties.
+
+ So the conceptual contrast would be:
+
+ Location-attached:
+
+ > The official function/responsibility is connected to a designated office, residence, facility, or place.
+
+ Status/role-attached:
+
+ > The function/responsibility arises from the person's position or official authority, regardless of where it is performed.
+
+For not being tied to official functions, then the relevant idea would be that something is personal, private, unofficial, or unrelated to the person's governmental/institutional duties.
+
+ So the distinction could be framed as:
+
+ - **Tied to official functions:** connected to duties performed because of one's official position or authority.
+- **Not tied to official functions:** undertaken in a personal or private capacity, even if the person happens to hold an official position.
+- **Mixed:** an activity may have both official and personal aspects, depending on its purpose and circumstances.
+
+For example, an official's use of a government residence for an official reception would be connected to an official function. Using the same residence for a purely personal activity would not necessarily be.
+
+A useful way to structure it is as two affirmative, non-exclusive sets of indicators—one asking whether the circumstances support “in connection with official functions,” and the other asking whether they support “not in connection with official functions.” The sets should be applied independently rather than treating one as merely the absence of the other.
+
+ ## Set A — Indicators supporting “in connection with official functions”
+
+ A circumstance would tend toward this category when one or more of these metrics are affirmatively present:
+
+ 1. **Official-purpose metric** — The activity exists to perform, facilitate, or advance an official duty or function.
+2. **Authority metric** — The activity is undertaken by virtue of powers, duties, or authority attached to the person's official position.
+3. **Institutional metric** — An official institution, agency, office, or governmental body is directly involved in or responsible for the activity.
+4. **Representational metric** — The person is acting in an official or representative capacity rather than solely as a private individual.
+5. **Government-business metric** — The activity concerns official business, decisions, communications, meetings, ceremonies, or other governmental/institutional matters.
+6. **Assignment metric** — The activity is required, authorized, directed, or reasonably expected as part of the person's official responsibilities.
+7. **Official-resource metric** — Official personnel, facilities, equipment, funds, communications systems, transportation, or other governmental resources are being used _for the activity_.
+8. **Location-function nexus** — An official office, residence, facility, or other designated location is being used because of its official purpose.
+9. **Continuity-of-duty metric** — The activity directly enables the person to remain available for, perform, or discharge official responsibilities.
+10. **Documentary metric** — Official records, schedules, directives, protocols, or other contemporaneous evidence characterize the activity as official.
+
+ The important point is that **physical presence at an official location would be only one possible metric**, not necessarily the controlling one.
+
+ ## Set B — Indicators supporting “not in connection with official functions”
+
+ Here the question is affirmatively whether the circumstances demonstrate a **private, personal, or otherwise non-official character**:
+
+ 1. **Personal-purpose metric** — The activity is undertaken for an individual's personal benefit, recreation, convenience, family affairs, or other private purpose.
+2. **Private-capacity metric** — The person is acting as a private individual rather than exercising or representing the official position.
+3. **Independent-purpose metric** — The activity would have occurred for substantially the same reason even if the person did not hold the official position.
+4. **No-official-duty metric** — The activity does not perform, facilitate, advance, or satisfy an official responsibility.
+5. **No-authority metric** — The activity does not involve the exercise or invocation of official authority.
+6. **Private-resource metric** — Personal rather than official resources are being used, where that distinction is relevant.
+7. **Private-relationship metric** — The participants and purpose are personal rather than governmental or institutional.
+8. **No-representational metric** — The person is not purporting to speak, act, host, meet, or appear on behalf of the office or institution.
+9. **Location-independence metric** — The activity's character does not change merely because it occurs at an official office, residence, or facility.
+10. **Contemporaneous-characterization metric** — Records or surrounding circumstances characterize the activity as personal, private, or otherwise outside official business.
+
+ ## The key distinction
+
+ It would not be rational to make the analysis:
+
+ > Official location = official function
+ > Non-official location = non-official function
+
+ That is too geographically dependent.
+
+ Instead, use two separate questions:
+
+ > **A. What affirmative facts connect the activity to an official function?**
+
+ and
+
+ > **B. What affirmative facts connect the activity to a private/non-official function?**
+
+An activity could therefore score strongly on both sets, producing a genuine mixed-purpose situation. For example, an official reception at an official residence might simultaneously involve an official function and personal elements. The legal consequence of that overlap would depend on the particular statute, regulation, case law, or other legal provision.
+It might also be appropriate or rational to separate the metrics into purpose, authority, function, location, resources, participants, and evidence rather than simply counting how many indicators are present. The number of indicators alone shouldn't be treated as a legal test unless the governing law actually establishes such a test.
+
+The same two-set framework can be applied to people, but the object being evaluated changes from “what activity is this?” to “in what capacity is this person acting?”
+
+ ## Set A — Indicators that a person is acting “in connection with official functions”
+
+ Evaluate the person's **role and conduct**, rather than simply their title.
+
+ 1. **Position metric** — The person is acting pursuant to responsibilities attached to an official position.
+2. **Authority metric** — They exercise, communicate, or facilitate authority belonging to that position.
+3. **Duty metric** — Their conduct performs or advances a recognized official responsibility.
+4. **Representational metric** — They are representing an office, agency, institution, or governmental body.
+5. **Assignment metric** — They are acting pursuant to an official assignment, instruction, appointment, or authorization.
+6. **Official-business metric** — Their conduct concerns substantive official business.
+7. **Institutional-resource metric** — They are acting through official personnel, facilities, communications, funds, or other institutional resources.
+8. **Official-capacity metric** — They present themselves, or are treated by the relevant circumstances, as acting in their official capacity.
+9. **Functional-necessity metric** — Their participation is reasonably necessary or directly connected to carrying out an official function.
+10. **Official-record metric** — Contemporary records identify the person's involvement as part of official business.
+
+ ## Set B — Indicators that a person is “not in connection with official functions”
+
+ Again, these should be affirmative indicators, rather than simply the absence of Set A factors.
+
+ 1. **Private-capacity metric** — The person is acting as a private individual.
+2. **Personal-purpose metric** — Their purpose is personal, familial, recreational, social, or otherwise private.
+3. **Independent-of-office metric** — The conduct is independent of the person's official position.
+4. **No-authority metric** — They are not exercising or invoking official authority.
+5. **No-representational metric** — They are not speaking or acting on behalf of the office or institution.
+6. **Private-relationship metric** — Their relationship with the other participants is personal rather than institutional.
+7. **Private-resource metric** — The activity is conducted using personal rather than official resources, where relevant.
+8. **Private-location metric** — The circumstances involve a genuinely private setting or event, although location alone should not be decisive.
+9. **Personal-benefit metric** — The immediate purpose or benefit is personal rather than institutional.
+10. **Contemporaneous-private-characterization metric** — Records or surrounding circumstances characterize the person's conduct as private or unofficial.
+
+ ## A particularly useful distinction
+
+ For people, I'd add a **capacity axis**:
+
+| Question | Official side | Private/non-official side |
+| --- | --- | --- |
+| **Who is acting?** | Officeholder/official in official capacity | Individual in private capacity |
+| **Why are they acting?** | To perform/advance official business | For a personal/private purpose |
+| **What authority is involved?** | Official authority | No official authority |
+| **Whose interests are being served?** | Institutional/public/official function | Personal/private interests |
+| **Whose resources are involved?** | Official resources | Private resources |
+| **What are they representing?** | Office/institution | Themselves or private associates |
+| **What is the evidence?** | Official records/assignment/protocol | Personal records/context |
+
+The important conceptual point is that the same person can fall into either set at different times—or even have a mixed capacity during one episode. Being an official does not make everything that person does an “official function,” just as doing something privately does not erase the fact that the person holds an official position.
+
+In some circumstances, especially less-than immediately clear ones, structured person-by-person assessment matrices, with columns for fact, evidence, Set A indicator, Set B indicator, strength, and unresolved ambiguity, can be helpful for organizing considerations towards or against any particular determination.
+
+For location, I would use the same two-sided approach, but distinguish the character of the location from what is happening there. A place can be officially designated without everything occurring there being an official function.
+
+ ## Set A — Indicators that a location is connected with official functions
+
+1. **Official-designation metric** — The location is formally designated as an office, official residence, government facility, diplomatic premises, or other official site.
+2. **Functional-use metric** — The location is actually used to perform official duties or conduct official business.
+3. **Institutional-control metric** — An official institution owns, leases, controls, administers, or formally manages the premises.
+4. **Access-control metric** — Access is regulated because the location serves an official function.
+5. **Official-staff metric** — Personnel assigned to official duties routinely work there.
+6. **Official-resource metric** — Governmental or institutional resources are maintained or deployed there for official purposes.
+7. **Representational metric** — The location is used for official meetings, ceremonies, receptions, hosting, or representation.
+8. **Security metric** — Security or protective arrangements exist specifically because of the location's official character.
+9. **Continuity metric** — The location facilitates the continuity or availability of official functions.
+10. **Documentary metric** — Laws, regulations, orders, records, protocols, or other authoritative documents identify the location as having an official function.
+
+ ## Set B — Indicators that a location is _not_ connected with official functions
+
+ 1. **Private-character metric** — The location is fundamentally personal or private.
+2. **Private-control metric** — It is controlled by an individual or private entity rather than an official institution.
+3. **Non-official-use metric** — Its use is unrelated to carrying out official responsibilities.
+4. **Personal-purpose metric** — The relevant activity at the location is personal, familial, recreational, or otherwise private.
+5. **No-official-resource metric** — Official resources are not being used in connection with the relevant activity.
+6. **No-representational metric** — The location is not being used to represent an office or institution.
+7. **Location-independence metric** — The official function could occur elsewhere and the location has no particular official significance.
+8. **Temporary/private-visit metric** — An official happens to be present there without transforming the location into an official site.
+9. **Private-access metric** — Access is governed principally by private rather than institutional considerations.
+10. **Documentary metric** — Available authoritative records characterize the location as private or otherwise outside the relevant official function.
+
+ ## The crucial distinction
+
+ I would actually divide **“location” into three separate questions**:
+
+ ### 1\. Is the place itself officially designated?
+
+ This asks:
+
+ > **What is the legal/institutional status of the premises?**
+
+ An official residence, government office, or diplomatic premises might answer “yes.”
+
+ ### 2\. Is the place being used for an official function?
+
+ This asks:
+
+ > **What is happening at the location?**
+
+ A private conversation can occur inside an official office without necessarily becoming official business. Conversely, an official function can occur at a location that is ordinarily private.
+
+ ### 3\. Is the person's presence there connected with an official function?
+
+ This asks:
+
+ > **Why is this particular person at this particular location?**
+
+ That is a different inquiry again.
+
+ So you could have:
+
+ | Location | Activity | Person's capacity | Relationship to official function |
+| --- | --- | --- | --- |
+| Official | Official | Official | Strong connection |
+| Official | Private | Private | Potentially not connected |
+| Private | Official | Official | Potentially connected |
+| Private | Private | Private | Generally not connected |
+| Official | Mixed | Mixed | Requires contextual analysis |
+| Private | Mixed | Mixed | Requires contextual analysis |
+
+That last distinction is especially important if you're trying to construct a *egal test. The fact that a person is at an official residence or office should generally be treated as evidence about context, rather than automatically establishing that whatever the person is doing is “in connection with official functions.” Likewise, being somewhere private should not automatically establish the contrary.
+
+If you're adding seriousness of purpose or intention to the framework, I'd treat it as a separate dimension from location, person, and function. The central question becomes:
+
+ > What was the apparent purpose or intention of the conduct, and how closely did that purpose relate to an official function?
+
+Because seriousness by itself doesn't establish an official connection, it's useful to divide the inquiry into affirmative indicators toward an official purpose and affirmative indicators toward a non-official purpose.
+
+## Set A — Indicators of serious purpose connected with an official function
+
+1. **Official-objective metric** — The apparent objective is accomplishing, facilitating, protecting, or advancing an official responsibility.
+2. **Duty-oriented metric** — The conduct is directed toward fulfilling an identified duty rather than merely occurring during the person's tenure or presence in office.
+3. **Consequence metric** — The matter has substantive consequences for governmental, institutional, diplomatic, regulatory, or other official business.
+4. **Preparation metric** — The conduct is preparation for a recognized official act, meeting, decision, communication, ceremony, or responsibility.
+5. **Decision-making metric** — The purpose involves making, implementing, communicating, or facilitating an official decision.
+6. **Continuity metric** — The purpose is maintaining the functioning, availability, security, or continuity of an official office or responsibility.
+7. **Authorization metric** — The conduct was undertaken because it was officially authorized, directed, assigned, or expected.
+8. **Institutional-benefit metric** — The principal intended benefit is to the institution, office, public function, or other official interest.
+9. **Foreseeable-official-effect metric** — The actor reasonably understood that the conduct would have a meaningful effect on an official function.
+10. **Contemporaneous-intention metric** — Documents, communications, schedules, instructions, or other contemporaneous evidence indicate an official purpose.
+
+## Set B — Indicators of serious purpose _not_ connected with an official function
+
+ These don't necessarily mean the matter was trivial. A **serious private purpose** can be completely unrelated to an official function.
+
+1. **Personal-objective metric** — The principal purpose concerns personal, familial, financial, social, or other private interests.
+2. **Independent-purpose metric** — The purpose exists independently of the person's official position.
+3. **Private-consequence metric** — The anticipated consequences principally concern private rather than official affairs.
+4. **Personal-benefit metric** — The intended benefit primarily accrues to the person or private associates.
+5. **Non-official decision metric** — The decision or action concerns a private matter rather than official business.
+6. **No-duty metric** — The conduct does not fulfill, facilitate, or advance an identified official responsibility.
+7. **No-authority metric** — Official authority is not being exercised or relied upon.
+8. **Private-intention evidence** — Contemporaneous communications or other evidence affirmatively indicate a private purpose.
+9. **Substitution metric** — The same purpose could reasonably have been pursued regardless of the person's official position.
+10. **Official-function disconnect** — There is no identifiable causal or functional link between the purpose and an official responsibility.
+
+ ## A useful refinement: seriousness ≠ officialness
+
+ I'd be careful not to equate these:
+
+ > **Serious purpose → official purpose**
+
+ That inference isn't necessarily valid.
+
+ For example, consider three hypothetical purposes:
+
+ - **Very serious + official:** resolving an urgent governmental matter.
+- **Very serious + private:** handling a family emergency.
+- **Trivial + official:** attending a brief ceremonial obligation.
+
+ Thus, **seriousness** and **official connection** are separate variables.
+
+ You could represent them as:
+
+ | Dimension | Question |
+| --- | --- |
+| **Seriousness** | How substantial or consequential is the purpose? |
+| **Intention** | What was the person actually trying to accomplish? |
+| **Official nexus** | How does that purpose relate to an official function? |
+| **Authority** | Was official authority being exercised or relied upon? |
+| **Capacity** | Was the person acting officially or privately? |
+| **Location** | Does the place have an official connection? |
+| **Evidence** | What contemporaneous facts establish the purpose? |
+
+### The strongest formulation
+
+If you're ultimately trying to decide whether something falls **“in connection with official functions,”** I would make **purpose/intention a nexus test rather than a seriousness test**:
+
+> **The more directly the intended purpose of the conduct is to perform, facilitate, advance, protect, or enable an identified official function, the stronger the connection to that official function.**
+
+And conversely:
+
+> The more independently the intended purpose arises from personal or private objectives, without performing, facilitating, advancing, protecting, or enabling an identified official function, the stronger the case that it is not connected with an official function.
+
+That formulation also prevents location, status, seriousness, or proximity alone from becoming dispositive.
+
+Unseriousness of purpose can be treated as its own affirmative dimension, but it is important to distinguish lack of seriousness from lack of connection to an official function. Something can be unserious yet still be an official function—for example, a lighthearted ceremonial or representational activity.
+
+## Set A — Indicators of an unserious purpose that nevertheless remains connected to an official function
+
+1. **Ceremonial metric** — The activity is light, social, symbolic, or recreational in character but serves a recognized official or representational purpose.
+2. **Protocol metric** — The activity follows an official protocol, tradition, ceremony, or institutional practice despite having little substantive content.
+3. **Representational metric** — The purpose is principally to maintain relationships, demonstrate courtesy, or represent the office.
+4. **Morale metric** — A social or recreational activity is organized to fulfill an institutional morale, cohesion, or relationship-building function.
+5. **Hospitality metric** — Informal or convivial conduct forms part of an official hosting or diplomatic function.
+6. **Symbolic-purpose metric** — The immediate activity may appear trivial, but its intended symbolic or institutional purpose is official.
+7. **Institutional-context metric** — The activity occurs as part of an identifiable official event or function.
+8. **Role-based metric** — The person's participation is expected because of their official position.
+9. **Official-objective metric** — Despite its informal character, there is an identifiable official objective behind it.
+10. **Contemporaneous-evidence metric** — Records or circumstances demonstrate that the apparently unserious activity was undertaken for an official purpose.
+
+## Set B — Indicators of unseriousness that also point away from an official function
+
+Here the combination becomes more significant: **the purpose is unserious _and_ there is no identifiable official nexus.**
+
+1. **No identifiable objective** — There is no discernible official purpose behind the activity.
+2. **Purely recreational metric** — The activity exists principally for amusement, leisure, or entertainment.
+3. **Personal-social metric** — The purpose is simply socializing among friends, family, or acquaintances.
+4. **Spontaneity metric** — The activity arose casually rather than from an official responsibility or purpose.
+5. **Incidental-presence metric** — The person happens to be present, but their presence serves no official objective.
+6. **No-duty metric** — Nothing about the activity performs or advances an official responsibility.
+7. **No-authority metric** — Official authority is neither exercised nor relevant.
+8. **No-representational metric** — The person is not representing the office or institution.
+9. **Personal-benefit metric** — The principal purpose is personal enjoyment or convenience.
+10. **Official-disconnect metric** — There is no meaningful causal, functional, or intentional connection to an identifiable official function.
+
+ ## A particularly important distinction
+
+ I'd separate three concepts:
+
+ **1\. Unseriousness**
+
+ > _How substantial, consequential, or solemn is the purpose?_
+
+ **2\. Official nexus**
+
+ > _Does the purpose relate to an official function?_
+
+ **3\. Incidental character**
+
+ > _Is the activity merely incidental to an official circumstance without itself serving an official purpose?_
+
+ Those can produce different combinations:
+
+ | Purpose | Official nexus | Example in abstract terms |
+| --- | --- | --- |
+| Serious | Strong | Official decision-making |
+| Serious | Weak/none | Personal legal or family matter |
+| Unserious | Strong | Official ceremonial/social function |
+| Unserious | Weak/none | Private recreation |
+| Mixed | Mixed | Informal interaction containing both official and personal purposes |
+
+So, if your ultimate inquiry is **“in connection with official functions” versus “not in connection with official functions,”** I would not use _unseriousness_ as a proxy for the latter.
+
+ A stronger analytical formulation is:
+
+ > Unseriousness is evidence concerning the nature and purpose of the conduct; it becomes evidence against an official-function connection only when the lack of seriousness is accompanied by an absence of an identifiable official purpose, duty, authority, representational role, or functional nexus.
+
+That gives you a much cleaner framework because it prevents an informal, humorous, recreational, or socially oriented official function from being automatically classified as non-official merely because it isn't serious in tone.
