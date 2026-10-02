@@ -1,0 +1,678 @@
+A useful way to operationalize your framework is to treat mismatch with reality or history as a detection problem, rather than asking merely whether an analysis “sounds reasonable.”
+
+Here are practical rules of thumb.
+
+ ## Rules of thumb for detecting reality–analysis mismatch
+
+ 1. **Check the premises before checking the conclusion.**\
+    If the conclusion depends on several factual claims, verify those claims independently. A logically consistent analysis can still be wrong if its premises are wrong.
+2. **Ask, “What would have to be true for this plan to work?”**\
+    Turn the plan into explicit assumptions. Then test each assumption against current evidence or historical records.
+3. **Separate facts, inferences, assumptions, and predictions.**\
+    Treat these as different categories:
+     A warning sign is when an assumption gradually gets referred to as though it were a fact.
+   - **Fact:** independently documented.
+   - **Inference:** conclusion drawn from facts.
+   - **Assumption:** accepted for purposes of analysis but not established.
+   - **Prediction:** claim about a future or uncertain state.
+4. **Look for claims that have lost their provenance.**\
+    Ask: _Where did this fact come from? When was it established? Has it changed?_\
+    Information without an identifiable source, date, or evidentiary basis deserves additional scrutiny.
+5. **Check dates aggressively.**\
+    A surprisingly large number of planning failures come from information that was once correct but is no longer current. Ask:
+   - Was this true at the relevant time?
+   - Is it still true?
+   - Was the source published before or after the event?
+   - Is the analysis accidentally using future knowledge when reconstructing a historical decision?
+6. **Compare predictions with what actually happened.**\
+    For historical or completed decisions, perform a simple countercheck:\
+
+   $$
+   \text{stated expectation} \quad vs. \quad \text{observed outcome}.
+   $$
+   \
+    Repeated divergence is evidence that the underlying model or assumptions need examination.
+7. **Search for disconfirming evidence, not just supporting evidence.**\
+    Instead of asking _“Can I find evidence for this?”_, ask:
+    > “What evidence would make this analysis wrong?”
+    Failure to identify plausible disconfirming evidence is itself a useful warning signal.
+8. **Check whether excluded alternatives were actually considered.**\
+    A plan can look comprehensive while having been generated from a prematurely narrowed choice set. Ask:
+    > “What plausible alternative explanations, plans, or historical interpretations were excluded, and why?”
+9. **Watch for circular verification.**\
+    If the same model, dataset, source family, or assumptions generated both the original conclusion and its “validation,” the validation may not be independent.
+    $$
+   A \rightarrow C \rightarrow \text{validation of } C
+   $$
+    is much weaker than:
+    $$
+   A \rightarrow C
+      \qquad
+      B_{\text{independent}} \rightarrow \text{validation}.
+   $$
+10. **Look for unusually smooth narratives.**\
+     Real historical and operational situations often contain contradictions, uncertainty, abandoned alternatives, unexpected events, and incomplete information. An account in which every fact neatly supports one conclusion deserves examination.
+11. **Ask what information would have been available at the time.**\
+     Historical analysis can become distorted through hindsight. Distinguish:\
+
+    $$
+    \text{what was knowable then}
+    $$
+    \
+     from\
+
+    $$
+    \text{what we know now}.
+    $$
+12. **Check whether the plan is using its own consequences as evidence.**\
+     If a system recommends an action, the action changes the environment, and the resulting state is then treated as confirmation of the recommendation, there is a potential feedback problem.
+     $$
+    \text{prediction}\rightarrow\text{action}\rightarrow\text{changed reality}
+    $$
+     The resulting observation is not necessarily independent evidence.
+13. **Look for claims that remain unchanged despite contradictory evidence.**\
+     A robust analysis should specify what evidence would cause revision. If new evidence repeatedly gets classified as irrelevant without a principled reason, the analysis may have become self-sealing.
+14. **Check quantitative claims against independent quantities.**\
+     Totals, dates, rates, populations, capacities, timelines, and resource requirements should often be independently calculable. Basic arithmetic or dimensional inconsistencies can expose much deeper planning errors.
+15. **Test dependencies rather than individual steps.**\
+     A plan may contain individually plausible steps while having an impossible dependency structure:\
+
+    $$
+    A \rightarrow B \rightarrow C
+    $$
+    \
+     where B cannot actually occur before C, for example.
+16. **Look for missing prerequisites.**\
+     Ask:
+     > “What must already exist for this step to happen?”
+     Then recursively check those prerequisites. This is particularly useful for LLM-generated plans.
+17. **Distinguish linguistic confidence from evidentiary confidence.**\
+     A detailed explanation, citation-like language, numerical precision, or confident prose is not evidence that the underlying proposition is true.
+18. **Check whether different sources are genuinely independent.**\
+     Ten websites repeating the same underlying claim may represent one source rather than ten independent confirmations.
+19. **Track information decay.**\
+     Store important claims with:
+      This makes it possible to identify stale information before it enters a new plan.
+    - source,
+    - timestamp,
+    - relevant jurisdiction/context,
+    - confidence,
+    - conditions under which the claim becomes obsolete.
+20. **Ask what would happen if the central assumption were false.**\
+     A particularly useful test is:
+     > “If our most important assumption is wrong, which parts of this plan fail?”
+     Plans that have no contingency for their highest-impact assumptions are especially fragile.
+
+ ## A compact diagnostic
+
+ For an existing analysis or plan, I would use six questions:
+
+ | Question | Warning sign |
+| --- | --- |
+| **Is it true?** | Unverified factual premises |
+| **Was it true at the relevant time?** | Stale or anachronistic information |
+| **How do we know?** | Missing or circular provenance |
+| **What could falsify it?** | No identifiable disconfirming evidence |
+| **What depends on it?** | Large downstream dependency |
+| **What happened after it was acted upon?** | Feedback being mistaken for independent confirmation |
+
+This produces a useful distinction between **information integrity** and **plan integrity**.
+
+ ### Information integrity
+
+ $$
+\text{Source}
+\rightarrow
+\text{claim}
+\rightarrow
+\text{verification}
+\rightarrow
+\text{current/historical validity}
+$$
+
+ ### Plan integrity
+
+ $$
+\text{validated facts}
+\rightarrow
+\text{assumptions}
+\rightarrow
+\text{constraints}
+\rightarrow
+\text{plan}
+\rightarrow
+\text{execution}
+$$
+
+ A system can pass one and fail the other. For example, all the factual inputs can be accurate while the resulting plan violates an operational constraint.
+
+ ## An especially useful rule for AI-assisted systems
+
+ I would add one overarching rule to your paper:
+
+ > **The more consequential a claim becomes downstream, the less acceptable it is for that claim to depend solely on an upstream AI-generated assertion.**
+
+ In other words, verification requirements should increase with **dependency and consequence**, not merely with how uncertain the model appears.
+
+ That gives you a practical principle:
+
+ $$
+\text{Required verification}
+\propto
+\text{consequence}
+\times
+\text{dependency}
+\times
+\text{irreversibility}.
+$$
+
+This is particularly relevant to your “epistemic bottleneck” concept: the most important claims are precisely those that should have the **greatest independence of verification**, because an error there can propagate through the greatest portion of the system.
+
+Counterfactual data introduces a somewhat different problem. The issue is not necessarily that the information is inaccurate. 
+It may be internally accurate _within the hypothetical world_, while being mistakenly treated as evidence about the actual world.
+
+A useful distinction is:
+
+ $$
+\text{counterfactual validity} \neq \text{empirical validity}.
+$$
+
+ For example, “If event X had not occurred, outcome Y would probably have followed” can be a perfectly legitimate counterfactual claim. The problem arises when that proposition subsequently gets stored, retrieved, planned around, or acted upon as though **X did not occur and Y actually happened**.
+
+ ## Rules of thumb for detecting counterfactual–reality confusion
+
+ 1. **Label the ontological status of every important claim.**
+    A useful taxonomy is:
+     A major warning sign is movement between categories without an explicit transition.
+    $$
+   \text{counterfactual}
+      \not\Rightarrow
+      \text{historical fact}
+   $$
+   - **Observed:** directly established to have occurred.
+   - **Recorded:** documented by a source.
+   - **Inferred:** derived from observed information.
+   - **Counterfactual:** describes what might have happened under different conditions.
+   - **Simulated:** generated by a model under specified assumptions.
+   - **Projected:** expected future state.
+   - **Hypothetical:** deliberately constructed scenario.
+2. **Ask, “Did this happen, or did the analysis say it would have happened?”**
+    This is perhaps the simplest diagnostic.
+    Compare:
+    > “Under scenario X, the model estimates that outcome Y would occur.”
+    with:
+    > “Outcome Y occurred.”
+    The second statement does not follow from the first.
+3. **Preserve the counterfactual condition.**
+    A counterfactual proposition normally has a condition:
+    $$
+   X \text{ had been different}
+      \rightarrow
+      Y \text{ might have occurred}.
+   $$
+    If the condition disappears during storage or summarization, the proposition can become dangerously misleading:
+    $$
+   Y \text{ might have occurred}
+      \rightarrow
+      Y \text{ occurred}.
+   $$
+    This is especially relevant to LLM-generated summaries, because compression can remove precisely the qualifiers that preserve the distinction.
+4. **Store the world-state alongside the claim.**
+    Instead of storing:
+    > “Plan B would have prevented the failure.”
+    store something closer to:
+    > “Counterfactual claim: assuming conditions C1–C4, analysis estimated that Plan B would have reduced probability of failure.”
+    The assumptions are part of the information.
+5. **Ask whether the proposition has an actual-world referent.**
+    For every consequential claim:
+    > “What observation in the actual world would correspond to this statement?”
+    If there is no such observation because the claim concerns an unrealized alternative, it should not be treated as an observation.
+6. **Do not use unrealized outcomes as ordinary historical evidence.**
+    Suppose:
+    $$
+   A \rightarrow B
+   $$
+    actually happened.
+    A model says:
+    $$
+   \neg A \rightarrow C.
+   $$
+    C is not historical evidence about what actually happened after A. It is evidence about a hypothesized alternative trajectory.
+    This distinction becomes especially important in historical reconstruction.
+7. **Watch for counterfactual contamination of training or retrieval data.**
+    A dataset may contain statements such as:
+     These can be legitimate analytical records. But if they enter a corpus without their scenario labels, a retrieval system can later surface them as though they described actual events.
+    This creates a form of **semantic data contamination without factual falsity**.
+   - “Had the policy been implemented, unemployment would have fallen.”
+   - “If the attack had occurred, the response would have been X.”
+   - “Under Scenario B, demand reaches 20% higher.”
+8. **Check whether the counterfactual was ever executed.**
+    This is particularly important for planning.
+    $$
+   \text{proposed plan}
+      \rightarrow
+      \text{simulated outcome}
+   $$
+    does not establish:
+    $$
+   \text{proposed plan}
+      \rightarrow
+      \text{actual outcome}.
+   $$
+    If the plan was never implemented, its predicted outcome remains unvalidated.
+9. **Separate counterfactual prediction from counterfactual explanation.**
+    These are different claims.
+    **Counterfactual prediction:**
+    > “If X had occurred, Y would probably have occurred.”
+    **Counterfactual explanation:**
+    > “Because X did not occur, the absence of Y can be explained by X.”
+    The second is substantially stronger and requires additional assumptions.
+10. **Look for “counterfactual drift.”**
+
+ This could be a useful term for your paper.
+
+ A proposition can move through a system:
+
+ $$
+H
+   \rightarrow
+   H_{\text{simulated}}
+   \rightarrow
+   H_{\text{summarized}}
+   \rightarrow
+   H_{\text{stored}}
+   \rightarrow
+   H_{\text{retrieved}}
+   \rightarrow
+   H_{\text{planned}}
+$$
+
+ while progressively losing the label that it was hypothetical.
+
+ By the end, the system may be acting on a proposition whose **epistemic status has silently changed** even though none of the underlying words are technically false.
+
+ ## The particularly important distinction: false data versus fictional-world data
+
+ This gives you an interesting extension of your original framework.
+
+ With inaccurate information:
+
+ $$
+\text{false representation of actual world}
+\rightarrow
+\text{bad planning}.
+$$
+
+ With counterfactual contamination:
+
+ $$
+\text{accurate representation of hypothetical world}
+\rightarrow
+\text{mistaken representation of actual world}
+\rightarrow
+\text{bad planning}.
+$$
+
+ The latter is more subtle because a fact-checker may not find anything obviously false in the source.
+
+ The statement may be perfectly accurate **conditional on the counterfactual assumptions**.
+
+ The failure is a failure of **world-state attribution**.
+
+ ## Counterfactuals can also create feedback loops
+
+ This becomes particularly interesting in your cascading-error framework.
+
+ Imagine:
+
+ $$
+C_0
+\rightarrow
+\text{counterfactual model}
+\rightarrow
+\text{plan}
+\rightarrow
+\text{action}
+\rightarrow
+C_1.
+$$
+
+ The system initially models an alternative world. It then acts based on that model, thereby changing the actual world.
+
+ Now the distinction between:
+
+ - what was predicted,
+- what was assumed,
+- what actually occurred,
+- and what occurred because of the prediction
+
+ becomes extremely important.
+
+ You could call this **counterfactual-to-operational conversion**.
+
+ The dangerous transition is:
+
+ $$
+\boxed{
+\text{“If X, then Y”}
+\rightarrow
+\text{“Y is the expected state”}
+\rightarrow
+\text{“Act as though Y is the state”}
+}
+$$
+
+ The final step converts a hypothetical proposition into an operational premise.
+
+ ## A useful audit question
+
+ For any piece of information entering an AI-assisted planning system, ask:
+
+ > **“What world does this statement describe?”**
+
+ Then classify it as:
+
+ $$
+W \in
+\{
+W_{\text{actual}},
+W_{\text{historical}},
+W_{\text{counterfactual}},
+W_{\text{simulated}},
+W_{\text{projected}},
+W_{\text{hypothetical}}
+\}.
+$$
+
+ The system should preserve that world-state designation whenever the information is stored, retrieved, summarized, or used for planning.
+
+ This is analogous to **data provenance**, but it adds another dimension:
+
+ $$
+\text{provenance}
++
+\text{world-state provenance}.
+$$
+
+ In other words, don't just ask **“Where did this information come from?”**
+
+ Also ask:
+
+ > **“Which world was this information true about?”**
+
+That distinction could substantially strengthen your paper, because it broadens the problem from _inaccurate information_ to epistemic-state corruption: the system may possess information that is locally valid, but associate it with the wrong possible world, time, scenario, or state of affairs.
+
+Incomplete data is arguably a distinct failure mode from both inaccurate data and counterfactual data.
+The information available to the system can be entirely accurate, while the resulting analysis is still misleading because important portions of the relevant state are absent.
+
+The key distinction is:
+
+ $$
+\text{accurate subset of information}
+\neq
+\text{accurate representation of the situation}.
+$$
+
+ In your framework, this is especially important because incompleteness can be **structural**: the missing information may systematically favor one interpretation or plan.
+
+ ## Rules of thumb for detecting incomplete-data mismatch
+
+ 1. **Ask “What is missing?” before asking “Is what we have correct?”**
+    Conventional verification asks whether the available facts are accurate.
+    For incomplete-data problems, the more important question is:
+    > What relevant facts are not represented here?
+    An analysis can pass every factual accuracy check and still fail this test.
+2. **Define the universe of relevant information.**
+    Let:
+    $$
+   X_R = \text{relevant information}
+   $$
+    and:
+    $$
+   X_A = \text{available information}.
+   $$
+    Then:
+    $$
+   X_A \subset X_R
+   $$
+    represents an information gap.
+    The important question becomes not merely how accurate $X_A$ is, but whether the missing portion $X_R-X_A$ could materially change the conclusion.
+3. **Look for asymmetric missingness.**
+    Missing data is particularly dangerous when it is not random.
+    For example, suppose information is systematically missing about:
+     The remaining dataset can be completely accurate while producing a systematically distorted picture.
+   - unsuccessful alternatives;
+   - negative outcomes;
+   - dissenting assessments;
+   - failed experiments;
+   - resource constraints;
+   - adverse cases;
+   - affected populations;
+   - historical exceptions.
+4. **Ask whether the missing information is decision-relevant.**
+    Not every missing fact matters.
+    A useful question is:
+    > “What missing information, if discovered, could change the decision?”
+    This distinguishes ordinary incompleteness from **decision-critical incompleteness**.
+5. **Test the conclusion against plausible missing information.**
+    Instead of asking:
+    > “Does the available evidence support the conclusion?”
+    ask:
+    > “Could a reasonable amount of currently missing evidence reverse, weaken, or substantially qualify the conclusion?”
+    If yes, the conclusion should probably be conditional rather than categorical.
+6. **Distinguish absence of evidence from evidence of absence.**
+    This is one of the most important rules:
+    $$
+   \neg\text{observed}(X)
+      \neq
+      \neg X.
+   $$
+    If a database contains no record of an event, that does not necessarily establish that the event did not occur.
+    Likewise:
+    > “No risk was identified”
+    does not necessarily mean:
+    > “No risk exists.”
+7. **Check coverage, not just correctness.**
+    You can think of information quality as having at least two dimensions:
+    $$
+   Q = f(\text{accuracy},\text{coverage}).
+   $$
+    An information source can have extremely high accuracy but poor coverage.
+    This is particularly important for retrieval systems, where the model may confidently synthesize only the documents that happened to be retrieved.
+8. **Ask what determines what gets observed.**
+    This is crucial when missingness is systematic.
+    Ask:
+    > Who collected the information?
+    > What did they choose to measure?
+    > What did they have access to?
+    > What was excluded?
+    > What could not be observed?
+    Missingness itself can contain information about the process that generated the dataset.
+9. **Check for survivorship bias.**
+    If the dataset contains only successful cases, surviving entities, completed projects, responding participants, or published studies, the missing cases may be precisely the cases needed to understand failure.
+    A planning system that learns only from visible successes can generate systematically optimistic plans without containing a single false datum.
+10. **Check for selection effects.**
+     Ask whether the information entering the system is conditional on some prior process:
+     $$
+    X \mid S
+    $$
+     where $S$ represents selection into the dataset.
+     If so, conclusions about the selected sample may not apply to the broader population.
+11. **Look for denominator problems.**
+     Incomplete data can make rates appear meaningful when the denominator is unknown.
+     For example:
+     $$
+    \frac{\text{observed failures}}
+             {\text{observed cases}}
+    $$
+     may not represent:
+     $$
+    \frac{\text{all failures}}
+             {\text{all relevant cases}}.
+    $$
+     A model can perform perfectly correct arithmetic on an inappropriate denominator.
+12. **Check temporal coverage.**
+     Information can be incomplete because an important period is missing.
+     Ask:
+      This matters particularly for historical analysis.
+    - Are earlier conditions represented?
+    - Are later developments represented?
+    - Is there a gap around the event being analyzed?
+    - Are we extrapolating from a short observation window?
+13. **Check geographic, demographic, or organizational coverage.**
+     A dataset can be comprehensive in one dimension and incomplete in another.
+     For example:
+     $$
+    \text{complete records for A}
+        \neq
+        \text{representative records of A+B+C}.
+    $$
+     Claims about the whole system should therefore be checked against the population actually represented.
+14. **Look for missing negative cases.**
+     This deserves special attention in AI-generated analysis.
+     A model may retrieve many documents explaining why something worked but fail to retrieve:
+      The resulting synthesis can be factually accurate while systematically optimistic.
+    - failed attempts;
+    - abandoned projects;
+    - contradictory evidence;
+    - unsuccessful interventions;
+    - warnings that proved correct.
+15. **Ask what information the model would need to change its mind.**
+     This is a powerful diagnostic:
+     > “What additional information would cause you to choose a different plan?”
+     If the answer is “nothing,” the analysis may have become insensitive to missing information.
+16. **Distinguish unknown from unlikely.**
+     Incomplete data often creates unjustified probability judgments.
+     These are different:
+     $$
+    P(X)\text{ is low}
+    $$
+     and:
+     $$
+    P(X)\text{ is unknown}.
+    $$
+     Lack of evidence may justify uncertainty rather than a low probability.
+17. **Track missingness through the planning chain.**
+     Missing information can become more dangerous as it propagates:
+     $$
+    \text{missing data}
+        \rightarrow
+        \text{unstated assumption}
+        \rightarrow
+        \text{model inference}
+        \rightarrow
+        \text{plan}
+        \rightarrow
+        \text{action}.
+    $$
+     By the planning stage, nobody may remember that the original premise was simply unknown.
+
+ ## The particularly dangerous phenomenon: assumption substitution
+
+ I think this is a useful addition to your paper.
+
+ When data is missing, a system often cannot stop reasoning. It fills the gap with something.
+
+ That something might be:
+
+ - an assumption;
+- a default;
+- a prior;
+- an extrapolation;
+- a learned pattern;
+- a user-supplied belief;
+- or an LLM-generated inference.
+
+ So the transition can be:
+
+ $$
+\boxed{
+\text{missing information}
+\rightarrow
+\text{implicit assumption}
+\rightarrow
+\text{treated as premise}
+}
+$$
+
+ This is different from hallucination.
+
+ The model doesn't necessarily invent a false fact and present it as true. It may simply **fail to preserve the distinction between “unknown” and “assumed for purposes of analysis.”**
+
+ That distinction can disappear during planning.
+
+ ## Incomplete data can interact with your counterfactual problem
+
+ These two failure modes can combine:
+
+ $$
+\text{incomplete actual data}
+\rightarrow
+\text{counterfactual assumptions}
+\rightarrow
+\text{simulated outcome}
+\rightarrow
+\text{operational plan}.
+$$
+
+ For example, if the actual historical record is incomplete, a model may fill the gaps with a hypothetical reconstruction. If that reconstruction is subsequently stored without its hypothetical status, future systems may treat the reconstruction as historical evidence.
+
+ So you can get:
+
+ $$
+\text{missing reality}
+\rightarrow
+\text{constructed possibility}
+\rightarrow
+\text{stored representation}
+\rightarrow
+\text{mistaken reality}.
+$$
+
+ That's a particularly interesting form of **epistemic laundering**: uncertainty or absence gets transformed into a seemingly concrete informational object as it moves through the system.
+
+ ## A three-way distinction for your framework
+
+ I would therefore distinguish three different data failures:
+
+ | Condition | Core problem | Typical transformation |
+| --- | --- | --- |
+| **Inaccurate data** | What is represented is wrong | False → accepted as true |
+| **Counterfactual data** | What is represented belongs to another possible world | Hypothetical → treated as actual |
+| **Incomplete data** | Relevant reality is not represented | Unknown → implicitly assumed |
+
+And they can interact:
+
+ $$
+\boxed{
+\text{inaccurate}
++
+\text{counterfactual}
++
+\text{incomplete}
+\rightarrow
+\text{compound epistemic distortion}
+}
+$$
+
+ ## One overarching test
+
+ For your proposed system, I would formulate a general diagnostic around **three questions**:
+
+ > **Is the information true?**
+
+ > **Is it about the actual world being analyzed?**
+
+ > **Is enough of the relevant world represented to justify the conclusion?**
+
+ Those correspond roughly to:
+
+ $$
+\begin{aligned}
+&\text{Accuracy} &&\rightarrow&& \text{Is it true?}\\
+&\text{World-state} &&\rightarrow&& \text{Which world/time/scenario does it describe?}\\
+&\text{Coverage} &&\rightarrow&& \text{What relevant reality is missing?}
+\end{aligned}
+$$
+
+ That gives you a broader framework than simply “hallucination” or “inaccurate information.” The deeper issue becomes **whether the information state used by the planning system is an adequate representation of the world to which the plan will actually be applied**.
