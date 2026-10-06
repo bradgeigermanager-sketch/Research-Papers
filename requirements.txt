@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pytesseract
+opencv-python
+Pillow
+numpy
+pyproj
+simplekml
+mgrs
+openlocationcode
+requests
