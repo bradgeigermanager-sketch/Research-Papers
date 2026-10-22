@@ -1,0 +1,591 @@
+Technical White Paper
+Risks, Adverse Effects, and Governance Considerations Associated With Deploying Technological Effects Against Cohesive Energy Signatures to Classify Individuals as Criminals, Trespassers, or Non-Sentient Entities or Attack or Restrain Them as Such
+
+Document classification: Technical risk and impact assessment
+Scope: Effects arising from the deployment of a cohesive representation of an individual's body, brain, memories, and associated personal characteristics
+Analytical premise: The effects under consideration are assumed to be deployable for purposes of this analysis. Their technical feasibility is outside the scope of this paper.
+
+Executive Summary
+
+This white paper examines the potential risks, adverse effects, and consequential considerations associated with deploying effects that act upon, interact with, represent, or otherwise engage with a cohesive energy signature of an individual. For purposes of this analysis, that signature is treated as a unified representation of the person's body, brain, memories, and associated characteristics, rather than as an isolated signal or conventional identification marker.
+
+The focus is the deployment of effects that classify, characterize, or treat an individual as a criminal, trespasser, or non-sentient entity. The analysis considers the consequences of such effects for bodily integrity, neurological function, memory, identity, cognition, agency, legal standing, social treatment, and the individual's ability to contest or recover from an imposed designation.
+
+The central concern is that an effect directed at a cohesive representation of a person may have implications extending beyond a narrow classification. If the representation is treated as encompassing multiple interdependent aspects of the individual, a deployed effect could potentially influence how the person is identified, interpreted, treated, or understood across physical, cognitive, autobiographical, and social contexts.
+
+Under this analytical premise, the risks are not limited to whether a classification is accurate. They also include the possibility that the deployment alters, constrains, disrupts, or adversely influences the very characteristics used to identify the individual or justify the deployment.
+
+The principal risks examined are:
+
+Bodily integrity and physiological effects: Potential interference with bodily functioning, physical safety, or the individual's ability to maintain ordinary activities.
+Neurological and cognitive effects: Potential effects on cognition, perception, attention, judgment, awareness, and decision-making.
+Memory and autobiographical continuity: Potential disruption of memory access, recall, personal history, or the individual's ability to understand and communicate their own experiences.
+Identity and agency: Potential effects on self-understanding, autonomy, intentional action, and the ability to resist or contest an imposed classification.
+Criminal and trespass designations: Potential consequences of using a deployed effect to impose, reinforce, or operationalize a claim about criminality or unauthorized presence.
+Non-sentience designations: The particular danger of treating a person as incapable of subjective experience or as undeserving of ordinary safeguards.
+Persistence and cascading effects: The possibility that consequences extend beyond the original deployment, propagate across contexts, or become difficult to reverse.
+Safety, accountability, and recovery: The need for independent assessment, defined limits, monitoring, effective remedies, and safeguards against misuse.
+
+The central conclusion is that an effect deployed against a cohesive representation of an individual must be assessed in terms of its full range of potential consequences for the person, rather than solely in terms of the classification it is intended to communicate or enforce.
+
+The deployment of such an effect should not, by itself, be treated as proof of criminality, trespass, diminished consciousness, diminished personhood, or authorization to interfere with the individual's body, brain, memories, or autonomy.
+
+1. Purpose and Scope
+1.1 Purpose
+
+The purpose of this paper is to identify and evaluate the potential adverse effects and associated considerations arising when a cohesive representation of a person—including the person's body, brain, memories, and related characteristics—is subjected to an effect that claims, assigns, reinforces, or operationalizes one or more of the following classifications:
+
+Criminal or suspected criminal.
+Trespasser or unauthorized presence.
+Non-sentient entity or an entity treated as lacking subjective experience.
+
+The paper addresses the effects and their consequences, rather than attempting to define the underlying representation or explain how the effects are generated.
+
+1.2 Scope of analysis
+
+The analysis considers the individual as an integrated subject whose physical, cognitive, autobiographical, and behavioral characteristics may be interrelated.
+
+It therefore examines not only direct effects but also indirect consequences arising when an effect influences one aspect of the individual and that influence has repercussions for other aspects.
+
+For example, a hypothetical effect that changes how an individual's memories are accessed could have consequences for communication, self-understanding, decision-making, and the individual's ability to provide an account of events. Similarly, an effect that changes how a person is classified by others could affect access to services, freedom of movement, and the person's ability to challenge the classification.
+
+These are distinct pathways of potential harm. Neither requires the assumption that every component of the person is affected simultaneously.
+
+1.3 Analytical assumptions
+
+For the purposes of this paper:
+
+The effects under consideration are assumed to be deployable.
+The representation is treated as cohesively associated with the individual's body, brain, memories, and related characteristics.
+The effects may be intended to influence classification, identification, treatment, or subsequent actions toward the individual.
+The physical mechanism and technical feasibility are outside the scope of this assessment.
+The existence of a deployed effect does not establish the truth of the classification associated with it.
+The analysis does not presume that any particular effect has actually been deployed against any particular individual.
+
+The assessment distinguishes between a possible effect, a resulting harm, and the evidence required to establish that the harm occurred in a particular case.
+
+2. Principal Risk: Effects Extending Across an Integrated Individual
+
+The defining consideration in this analysis is the potential breadth of consequences when an effect is directed at a representation associated with multiple aspects of the same individual.
+
+A narrow classification system may be intended to communicate a proposition such as “criminal,” “trespasser,” or “non-sentient.” However, if the deployment also interacts with characteristics associated with the person's body, brain, memories, or behavior, the resulting risk assessment must account for consequences beyond the original proposition.
+
+2.1 Cross-domain effects
+
+Potential consequences may arise across several interconnected domains:
+
+Domain	Potentially affected interests	Principal concern
+Body	Physical integrity, health, ordinary functioning	Bodily harm or interference
+Brain and cognition	Attention, perception, judgment, awareness	Impaired or altered cognitive functioning
+Memory	Recall, autobiographical continuity, access to personal experiences	Disrupted recollection or unreliable self-report
+Identity	Self-understanding, personal continuity, recognition by others	Distortion or loss of confidence in personal identity
+Agency	Choice, intention, autonomy, ability to object	Reduced capacity to resist or contest an effect
+Social standing	Reputation, relationships, access, institutional treatment	Stigmatization and exclusion
+Legal position	Rights, due process, access to remedies	Unjustified restrictions or adverse determinations
+Long-term functioning	Recovery, continuity, future opportunities	Persistent or cumulative harm
+
+This framework does not assert that all these outcomes would occur. It identifies the domains that should be considered when evaluating the deployment and its consequences.
+
+2.2 Effects versus intended purpose
+
+The stated purpose of an effect cannot be treated as a complete description of its consequences.
+
+An effect intended to impose a classification may also create secondary risks if it changes how the individual functions, how others respond to the individual, or how subsequent decisions are made.
+
+Accordingly, the scope of evaluation should include:
+
+The intended effect.
+Foreseeable direct consequences.
+Secondary effects arising from changes in the individual's functioning or treatment.
+Interactions with other deployed effects.
+Consequences that persist after the original deployment ends.
+Consequences that are difficult to detect, attribute, or reverse.
+2.3 Cohesive representation and the attribution problem
+
+When multiple personal characteristics are associated within a single representation, an additional concern is whether an effect directed at that representation can be accurately limited to its intended purpose.
+
+A responsible assessment must establish whether the deployment is confined to a particular function or whether its consequences extend to other aspects of the person.
+
+Without that distinction, a narrowly described operation could be evaluated too narrowly, leaving substantial collateral effects unexamined.
+
+3. Effects on Bodily Integrity and Physiological Function
+3.1 Bodily integrity
+
+Where an effect is associated with an individual's body, the assessment should consider any potential consequences for physical integrity, physiological stability, ordinary functioning, and the ability to undertake routine activities.
+
+Relevant risk questions include:
+
+Could the effect produce physical discomfort, injury, impairment, or other adverse bodily consequences?
+Could it interfere with ordinary movement, coordination, communication, or self-care?
+Could it create a risk of injury through secondary consequences, such as confusion, impaired judgment, or involuntary reactions?
+Could the effects continue after the original deployment?
+Could multiple deployments compound the consequences?
+
+The answers would depend on the actual effect and the circumstances of deployment. They should be established through appropriate assessment rather than inferred from the intended classification.
+
+3.2 Indirect physiological consequences
+
+Even where an effect is intended primarily to influence classification or treatment, the circumstances surrounding its deployment may create secondary physical risks.
+
+For example, an individual subjected to a stigmatizing designation may encounter confrontation, denial of assistance, restricted movement, or inappropriate intervention by others.
+
+The resulting harm may arise from the actions prompted by the designation rather than from a direct physical effect. Both pathways belong in the overall risk assessment.
+
+3.3 Safeguards
+
+Relevant safeguards include:
+
+Assessment of foreseeable physical consequences.
+Limits on the severity and duration of effects.
+Monitoring for adverse outcomes where monitoring is appropriate and lawful.
+Procedures for stopping or withdrawing an effect.
+Access to independent medical assessment when physical harm is suspected.
+Investigation of delayed or cumulative consequences.
+
+A deployment should not be considered safe solely because its intended purpose is informational, classificatory, or non-punitive.
+
+4. Effects on the Brain and Cognitive Function
+4.1 Cognitive integrity
+
+The brain supports numerous interrelated functions, including perception, attention, memory, language, reasoning, emotional processing, and decision-making.
+
+If an effect is capable of influencing characteristics associated with brain function, its assessment should consider whether the deployment could affect any of these functions, directly or indirectly.
+
+Potential adverse outcomes to evaluate include:
+
+Changes in attention or concentration.
+Disturbances in perception or interpretation.
+Impaired judgment or decision-making.
+Difficulties with communication.
+Alterations in awareness or responsiveness.
+Reduced ability to understand instructions or assess circumstances.
+Difficulty recognizing, describing, or reporting adverse effects.
+
+These are potential assessment categories, not claims that any particular deployment produces these outcomes.
+
+4.2 Cognitive impairment and classification feedback
+
+A particularly important risk arises if the effects of a deployment are subsequently interpreted as evidence supporting the original classification.
+
+Consider a hypothetical sequence:
+
+An effect is deployed in association with a designation of criminality or non-sentience.
+The individual experiences an adverse cognitive or behavioral consequence.
+Observers interpret that consequence as suspicious, abnormal, or indicative of the designation.
+The resulting observations are used to justify continuing the designation or deploying further effects.
+
+This sequence can produce a self-reinforcing classification process. The consequences of the deployment may be mistaken for independent evidence that the deployment was justified.
+
+A similar problem arises when distress, confusion, reduced responsiveness, or difficulty communicating is interpreted as evidence of non-sentience.
+
+4.3 Decision-making capacity and autonomy
+
+Any assessment of cognitive effects should distinguish between an individual's ability to communicate, the individual's ability to make a particular decision, and the individual's underlying moral or legal status.
+
+A difficulty in communication does not establish a lack of consciousness. An impairment in one cognitive function does not establish a global absence of agency.
+
+Where a person appears unable to understand or respond, the appropriate response should be based on the circumstances and a proportionate assessment, not on an assumption that the person has become a different category of entity.
+
+4.4 Safeguards
+
+Appropriate controls may include independent assessment of cognitive effects, restrictions on repeated deployment, evaluation of cumulative exposure, and procedures ensuring that potentially deployment-induced changes are not automatically treated as proof of the original classification.
+
+5. Effects on Memory and Autobiographical Continuity
+5.1 Memory as a component of personal continuity
+
+Memory is relevant to an individual's ability to recall experiences, communicate personal history, make decisions informed by prior events, maintain relationships, and provide accounts of events.
+
+Where a deployed effect is associated with the individual's memories or their representation, the risk assessment should consider possible changes in access to, recall of, or confidence in autobiographical information.
+
+Potential adverse outcomes to evaluate include:
+
+Difficulty recalling particular events.
+Inconsistent or incomplete recollection.
+Reduced confidence in previously recalled information.
+Difficulty communicating personal experiences.
+Distress associated with uncertainty about one's own recollections.
+Impairment in the ability to document or report events.
+Difficulties distinguishing independent recollection from information received afterward.
+
+The existence, nature, and cause of any such outcome would require independent evidence.
+
+5.2 Consequences for evidentiary reliability
+
+Memory-related effects are especially significant when a designation concerns criminality or trespass, because the individual may need to describe events, demonstrate authorization, identify witnesses, or challenge an allegation.
+
+If a deployment affects the person's ability to communicate an account, a decision-maker could incorrectly interpret inconsistencies or omissions as evidence of dishonesty or guilt.
+
+This creates a risk of evidentiary distortion: the circumstances surrounding the deployment may impair the individual's ability to contest the designation, while that impaired ability is then used to reinforce the designation.
+
+5.3 Distinguishing memory effects from factual findings
+
+A person's inability to recall an event does not establish that the event did not occur. Inconsistent recollection does not, by itself, establish deception. Conversely, a person's confident recollection does not automatically establish the factual accuracy of every detail.
+
+Where memory-related effects are suspected, decision-makers should distinguish the individual's account from independently corroborated evidence and should not treat the deployment's classification as a substitute for proper investigation.
+
+5.4 Safeguards
+
+Relevant safeguards include:
+
+Preserving contemporaneous records where lawful and appropriate.
+Avoiding unnecessary repeated questioning that could compound distress or confusion.
+Obtaining independent evidence where available.
+Providing accessible means for the individual to report concerns.
+Avoiding adverse inferences solely from communication or recall difficulties.
+Ensuring that any suspected effect on memory is assessed independently of the authority responsible for the designation.
+6. Effects on Identity, Agency, and Personal Autonomy
+6.1 Identity-related consequences
+
+The association of a classification with a cohesive representation of a person may affect not only how others identify the person but also how the person understands their own circumstances.
+
+Potential risks include persistent stigmatization, uncertainty about the basis of a designation, reduced confidence in one's ability to explain events, and difficulty obtaining recognition of a corrected or withdrawn classification.
+
+These risks can be amplified when the designation is difficult to inspect or contest.
+
+6.2 Agency and resistance
+
+A deployment may create additional concerns if its effects interfere with the individual's ability to object, communicate, seek assistance, or exercise ordinary choices.
+
+The assessment should distinguish between:
+
+A person disagreeing with a classification.
+A person being unable to communicate disagreement effectively.
+A person being unable to act on a stated preference.
+A person being treated by others as though their preferences no longer matter.
+
+These are different conditions and should not be conflated.
+
+6.3 Coercive effects
+
+A classification can become coercive when it is used to compel compliance, prevent access to assistance, deter lawful conduct, or make resistance appear to confirm the classification.
+
+For example, if a person is designated a trespasser and then prevented from entering a location where they are authorized to be, their attempts to resolve the exclusion may be misinterpreted as further evidence of misconduct.
+
+The resulting process may be circular rather than evidentiary.
+
+6.4 Safeguards
+
+The deployment framework should preserve the individual's ability to express objections, obtain independent review, seek assistance, and challenge the basis for the classification.
+
+An inability or failure to comply with an imposed designation should not automatically be interpreted as evidence that the designation is correct.
+
+7. Effects Associated With Criminal Designations
+7.1 Criminal classification as an imposed consequence
+
+An effect that represents or treats a person as a criminal can influence how the individual is perceived, approached, monitored, or restricted.
+
+The primary risk is that the designation becomes a substitute for evidence and proper legal process.
+
+The effect may be treated by observers as a determination of guilt even where no independent finding has been made.
+
+7.2 Potential direct and indirect consequences
+
+The assessment should examine whether the designation could contribute to:
+
+Unjustified suspicion or surveillance.
+Denial of access to services, facilities, or opportunities.
+Reputational damage.
+Increased likelihood of confrontation.
+Inappropriate detention or restraint.
+Adverse decisions based on derivative or unverified records.
+Difficulty obtaining a fair hearing or meaningful remedy.
+
+The likelihood and severity of these outcomes depend on how the designation is used and what actions it triggers.
+
+7.3 Interaction with bodily, cognitive, and memory effects
+
+Where the deployment is associated with multiple aspects of the individual, the criminal designation may have consequences beyond reputation or legal status.
+
+If the deployment is also associated with changes in the individual's behavior, communication, or recall, those changes could be misinterpreted as corroboration of criminality.
+
+Accordingly, an investigation must distinguish any adverse effects of the deployment from independently established evidence of the alleged conduct.
+
+7.4 Required safeguards
+
+A criminal designation should not be treated as proof of guilt merely because it is generated, displayed, transmitted, or otherwise associated with the individual.
+
+Any consequential action should rest on an appropriate factual and legal basis, with applicable evidentiary standards, procedural protections, and mechanisms for independent review.
+
+8. Effects Associated With Trespass Designations
+8.1 Unauthorized-presence classification
+
+A trespass designation can influence whether an individual is permitted to enter, remain in, or return to a location.
+
+The relevant risk is that the deployment may be treated as conclusively establishing unauthorized presence without adequate consideration of the person's actual rights or circumstances.
+
+Depending on the context, relevant factors may include ownership, tenancy, permission, employment, public access, notice, emergency circumstances, and applicable legal protections.
+
+8.2 Potential consequences
+
+Potential harms include:
+
+Unjustified exclusion from a location.
+Denial of access to essential services or assistance.
+Confrontation with security personnel or members of the public.
+Restrictions on movement.
+Reputational harm arising from assumptions of unlawful conduct.
+Repeated exclusion based on a persistent or outdated designation.
+8.3 Classification persistence
+
+A designation that remains in effect after authorization changes or an error is identified can continue to produce adverse consequences.
+
+For this reason, the deployment should be assessed for duration, context sensitivity, revocability, and the possibility that the designation will be used in settings beyond its original purpose.
+
+8.4 Required safeguards
+
+A trespass designation should be evaluated against the actual access conditions and applicable rights. It should not independently establish unlawful presence or authorize disproportionate intervention.
+
+Where the underlying authorization is disputed, the system should preserve a meaningful path for review and correction.
+
+9. Effects Associated With Non-Sentience Designations
+9.1 Why this classification requires heightened scrutiny
+
+A non-sentience designation differs materially from a criminal or trespass classification.
+
+Criminality and trespass concern alleged conduct or legal status. Sentience concerns whether an entity is capable of subjective experience. A designation of non-sentience may consequently affect whether others believe the individual can experience pain, distress, fear, or other forms of suffering.
+
+If such a designation is used to diminish concern for the individual, it can have consequences extending into bodily safety, cognitive integrity, autonomy, and the provision of care.
+
+9.2 Sentience must not be conflated with behavior
+
+Unusual behavior, reduced responsiveness, difficulty communicating, memory difficulties, or an imposed classification do not, by themselves, establish an absence of subjective experience.
+
+Nor are sentience, intelligence, communication ability, agency, and legal personhood interchangeable concepts.
+
+The absence of a familiar response cannot automatically be treated as evidence that no experience is occurring.
+
+9.3 The self-reinforcing non-sentience hazard
+
+A particularly serious scenario arises when a designation is used to justify an effect that then produces or contributes to behavior interpreted as evidence of non-sentience.
+
+For example:
+
+An individual is designated as non-sentient.
+Others consequently discount the individual's expressions, objections, or distress.
+The individual receives less assistance or is subjected to different treatment.
+Any resulting communication difficulties or changes in behavior are interpreted as confirming the original designation.
+
+This is a circular justification mechanism, not independent confirmation.
+
+9.4 Moral and legal consequences
+
+A non-sentience designation must not be used as a self-authorizing basis for disregarding potential suffering, eliminating safeguards, or treating a human individual as though their welfare has no significance.
+
+Any proposal to alter an individual's treatment based on a claim about sentience requires independent justification and must remain subject to applicable legal protections.
+
+9.5 Safeguards
+
+The appropriate safeguards include:
+
+Preserving basic protections irrespective of the designation.
+Avoiding assumptions about the absence of suffering.
+Independent evaluation of relevant evidence.
+Prohibiting the use of the designation as sole justification for harmful or coercive treatment.
+Ensuring that reduced responsiveness or communication difficulties trigger appropriate assessment rather than automatic exclusion from consideration.
+10. Persistence, Cumulative Exposure, and Cascading Consequences
+10.1 Persistence
+
+The duration of an effect is a central risk variable.
+
+A temporary effect with limited consequences presents a different risk profile from one that persists, recurs, or continues to influence how the individual is classified and treated after the original circumstances have changed.
+
+The assessment should therefore consider:
+
+Onset and duration.
+Conditions under which the effect ends.
+Whether consequences remain after the effect is withdrawn.
+Whether multiple deployments produce cumulative consequences.
+Whether the effect or its designation is propagated to other contexts.
+Whether the individual can obtain confirmation that the effect has ended or been corrected.
+10.2 Cascading consequences
+
+A deployment can initiate a chain of events in which later decisions rely on earlier outcomes without independently verifying their basis.
+
+A hypothetical sequence is:
+
+Deployment → change in classification or treatment → adverse consequences for the individual → observations shaped by those consequences → additional decisions based on the observations.
+
+This process may amplify an initial error. It can also make the consequences increasingly difficult to reverse because each subsequent decision appears to provide further support for the original designation.
+
+10.3 Multiple effects
+
+If multiple effects are deployed against the same individual, the risks should not be evaluated only in isolation.
+
+The assessment should consider the possibility of interactions, cumulative burdens, conflicting classifications, and the difficulty of identifying which deployment contributed to a particular outcome.
+
+Where effects overlap, a system-level assessment is necessary to account for combined consequences.
+
+10.4 Recovery and reversibility
+
+Revoking a designation does not necessarily undo consequences that have already occurred.
+
+A complete recovery framework should consider physical and psychological impacts, corrected records, restoration of access, reassessment of prior decisions, and remediation of reputational or institutional harm where appropriate.
+
+The possibility of reversing the initial effect should not be mistaken for proof that all resulting harm is reversible.
+
+11. Security, Authorization, and Misuse
+11.1 Unauthorized deployment
+
+The ability to deploy an effect that influences how a person is classified or treated creates a risk of misuse where authority, access, and oversight are inadequate.
+
+Potential scenarios include retaliatory classification, improper exclusion, coercive treatment, unauthorized propagation, and use of a designation to circumvent ordinary procedures.
+
+These scenarios are illustrative risk cases rather than claims of actual deployment.
+
+11.2 Misattribution
+
+A further risk arises when a designation or resulting consequence is incorrectly attributed to a particular source, authority, or event.
+
+The assessment should distinguish between the existence of an effect, its origin, its association with the individual, and the validity of any conclusion drawn from it.
+
+Evidence that a deployment occurred does not independently establish who authorized it, why it occurred, or whether its consequences were justified.
+
+11.3 Accountability
+
+The governance framework should identify:
+
+Who may authorize deployment.
+What evidence and criteria are required.
+Who is responsible for monitoring outcomes.
+Who can suspend or revoke an effect.
+Who investigates alleged misuse.
+Who provides remedies when harm occurs.
+
+An arrangement in which one party controls deployment, interpretation, review, and correction without independent oversight creates a substantial conflict of interest.
+
+12. Assessment Methodology
+12.1 Evaluation dimensions
+
+Each proposed deployment should be evaluated against the following dimensions.
+
+Severity: The magnitude of potential harm to bodily integrity, cognition, memory, autonomy, rights, or social standing.
+
+Likelihood: The probability of an adverse outcome under the actual operating conditions.
+
+Exposure: The number of individuals, contexts, or decisions potentially affected.
+
+Detectability: The likelihood that an adverse outcome will be recognized and correctly attributed.
+
+Persistence: The duration of the effect and the time for which its consequences may continue.
+
+Reversibility: The extent to which the effect and its consequences can be stopped, corrected, or remedied.
+
+Attribution confidence: The quality of the evidence linking the observed outcome to the deployment.
+
+Controllability: The ability to limit the effect, prevent unauthorized use, and respond promptly to emerging harm.
+
+12.2 Illustrative risk register
+
+The following table is a qualitative screening tool, not a measured assessment of a specific technology.
+
+Risk scenario	Potential severity	Priority control
+Bodily harm or physiological disruption	High to critical	Safety assessment and termination procedures
+Adverse cognitive effects	High to critical	Independent assessment and safeguards
+Memory-related impairment	High	Independent evidence and protection against adverse inferences
+Loss of effective agency or ability to object	High to critical	Contestability and independent oversight
+False criminal designation	High	Evidentiary review and due process
+False trespass designation	Moderate to high	Context-sensitive access verification
+Non-sentience designation used to justify harmful treatment	Critical	Preservation of basic protections
+Persistent or cumulative effects	High to critical	Duration limits, monitoring, and recovery procedures
+Unauthorized deployment	High to critical	Authorization controls and independent audit
+Cascading adverse decisions	High	Provenance tracking and review of downstream consequences
+
+The ratings should be revised when reliable evidence about the implementation and operating environment becomes available.
+
+12.3 Evidence required for an incident assessment
+
+Where an adverse event is alleged, the assessment should distinguish:
+
+What effect was reportedly deployed.
+What consequences were observed.
+When the consequences began and how they developed.
+What evidence supports a causal connection.
+What alternative explanations were considered.
+Whether the designation itself influenced the observations or subsequent treatment.
+What immediate and longer-term remedies are appropriate.
+
+This approach allows the consequences to be investigated seriously without presuming causation before the evidence has been evaluated.
+
+13. Recommended Safeguards
+13.1 Comprehensive impact assessment
+
+Assess effects across bodily, cognitive, memory-related, identity, agency, and social domains. Do not limit the evaluation to the stated purpose of the deployment.
+
+13.2 Independent authorization
+
+Require a legitimate, documented basis for deployment, with additional scrutiny where the effect could affect bodily integrity, cognition, personal autonomy, or access to essential services.
+
+13.3 Limits on scope and duration
+
+Define the permissible purpose, operating conditions, duration, and consequences of each deployment. Prevent a narrowly justified effect from becoming an unrestricted or persistent classification.
+
+13.4 Separation of effects from conclusions
+
+Do not treat the existence of an effect or a resulting behavioral change as proof that the associated criminal, trespass, or non-sentience designation is correct.
+
+13.5 Independent monitoring and review
+
+Establish procedures for assessing adverse outcomes, investigating complaints, suspending deployment when warranted, and reviewing the original basis for the designation.
+
+13.6 Protection of memory and evidentiary integrity
+
+Where memory or communication difficulties are suspected, avoid treating those difficulties as automatic evidence of deception, criminality, or non-sentience. Preserve independent records and corroborating evidence where appropriate.
+
+13.7 Non-derogation of basic protections
+
+Do not permit a designation to serve as the sole basis for withdrawing basic safeguards, disregarding possible suffering, or authorizing otherwise impermissible treatment.
+
+13.8 Revocation and remediation
+
+Provide mechanisms to stop or revoke effects where possible, correct associated classifications, notify relevant recipients, review consequential decisions, and address resulting harm.
+
+13.9 Independent accountability
+
+Ensure that the authority responsible for deployment is not the sole authority responsible for deciding whether the deployment was justified or whether a resulting harm warrants remedy.
+
+13.10 Periodic reassessment
+
+Review the deployment framework whenever new evidence, adverse incidents, changes in intended use, or changes in the consequences of deployment become apparent.
+
+14. Deployment Decision Criteria
+
+A proposed deployment should be assessed against the following questions before it is permitted to influence the treatment of an individual.
+
+Purpose: What specific outcome is the effect intended to produce?
+Scope: Which aspects of the individual's functioning or status could be affected?
+Evidence: What independent evidence supports the underlying designation?
+Authority: Who has legitimate authority to initiate the effect?
+Safety: What bodily, cognitive, memory-related, and autonomy-related harms are reasonably foreseeable?
+Persistence: How long might the effect and its consequences continue?
+Interaction: Could the effect interact with other effects or trigger cascading decisions?
+Contestability: Can the individual challenge the designation and obtain independent review?
+Reversibility: Can the effect be stopped and its consequences meaningfully remedied?
+Proportionality: Are the anticipated consequences justified by the legitimate objective?
+Non-sentience safeguards: Could the designation cause others to disregard possible suffering or withdraw essential protections?
+Alternatives: Could the objective be achieved through a less harmful and more readily contestable approach?
+
+A failure to establish adequate safeguards should result in additional evaluation, restriction, redesign, or non-deployment, particularly where the possible consequences include serious bodily harm, interference with cognitive functioning, or denial of basic protections.
+
+15. Limitations
+
+This paper is a conceptual risk assessment. It does not establish that a particular energy-associated representation or effect exists, nor does it establish that any identified adverse outcome has occurred in a specific case.
+
+The assumed deployability of the effects is an analytical premise, not evidence of their actual implementation or performance.
+
+Likewise, the identification of a possible harm does not establish that a particular deployment caused it. Case-specific conclusions require evidence concerning the deployment, the observed outcome, relevant timing, alternative explanations, and the strength of any causal relationship.
+
+These limitations do not eliminate the need for safeguards. They define the distinction between identifying risks that warrant evaluation and making factual findings about a particular event.
+
+16. Conclusion
+
+The deployment of effects associated with a cohesive representation of an individual's body, brain, memories, and related characteristics requires a broader assessment than one focused exclusively on the intended classification.
+
+Where the effect is associated with a designation of criminality, trespass, or non-sentience, the principal concern is not merely that the classification may be incorrect. It is that the deployment and the decisions it triggers may have consequences for the individual's physical integrity, cognitive functioning, autobiographical continuity, autonomy, social standing, and access to legal or practical remedies.
+
+These domains may interact. An adverse consequence in one domain may affect the individual's ability to function in another, while the resulting behavior may be misinterpreted as confirmation of the original designation. This creates a risk of circular justification, compounding harm, and persistent adverse treatment.
+
+The designation of non-sentience warrants particular caution because it may be used to discount the possibility of subjective experience or suffering. No such designation should be treated as self-validating authority to disregard an individual's welfare or withdraw basic protections.
+
+A responsible assessment must therefore consider the entire deployment pathway: the effect itself, the consequences for the individual, the interpretation of those consequences, the actions taken by third parties, and the mechanisms available to stop, challenge, or remedy the resulting harm.
+
+Final determination: Where an effect is deployed in association with a cohesive representation of a person, the relevant unit of risk assessment is the individual and the full range of reasonably foreseeable consequences of the deployment—not merely the classification the effect is intended to impose. Technical capability, classification, factual validity, legitimate authority, and permissible consequences must remain distinct. No deployment should be treated as justified solely because it can be performed or because its resulting designation is presented as authoritative.
