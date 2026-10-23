@@ -1,0 +1,26 @@
+The primary U.S. legal framework governing posse comitatus restrictions and authorized military deployments for law enforcement or agent support is anchored in ‌18 U.S.C. § 1385 (the Posse Comitatus Act)‌, paired with a set of explicit congressional exceptions and supplementary statutes that define when federal military forces can legally be used to execute domestic civilian laws:
+
+🚫 The Posse Comitatus Act (18 U.S.C. § 1385)
+
+This is the foundational federal law that establishes the default ban on using federal active-duty military as a civilian law enforcement posse:
+
+Core text & scope‌: It explicitly criminalizes any willful use of the U.S. Army, Navy, Marine Corps, Air Force, or Space Force to execute domestic civilian laws, unless the deployment is expressly authorized by the U.S. Constitution or an act of Congress. Violations carry fines under Title 18 and a maximum of ‌2 years of federal imprisonment‌ .
+Key clarifications‌: The law does not apply to state-controlled National Guard forces operating under state governor authority (not federalized), and it does not restrict military personnel from performing purely military-specific functions unrelated to civilian law enforcement. It was most recently amended in 2021 to formally add the U.S. Space Force to the list of covered service branches .
+⚖️ Explicit Congressional Exceptions to Posse Comitatus Restrictions
+
+These statutes are the only legally valid carve-outs that permit federal military forces to engage in domestic law enforcement or agent support activities:
+
+10 U.S.C. § 2567 (Military Support to Civilian Law Enforcement Agencies)‌: This is the primary routine exception. It allows the Department of Defense to share military intelligence, equipment, surveillance assets, and trained personnel with federal law enforcement agencies (including the FBI, DEA, and DHS) for counter-terrorism, counter-narcotics, and border security operations, as long as military members do not directly perform arrests, searches, or seizure of evidence in a civilian law enforcement capacity.
+10 U.S.C. § 2564 (National Defense Emergency Support)‌: Permits the military to provide emergency assistance to federal law enforcement during chemical, biological, radiological, or nuclear (CBRN) threat incidents, including deploying specialized military response teams to contain and mitigate weapons of mass destruction attacks on U.S. soil.
+The Insurrection Act (10 U.S.C. § 251 et seq.)‌: The most sweeping exception. It grants the President explicit statutory authority to deploy federal active-duty military forces to any U.S. state or territory to suppress insurrections, domestic violence, or unlawful combinations of people that make it impossible for local civilian authorities to enforce federal laws or protect individual civil rights. This is the only statute that allows federal troops to directly perform full civilian law enforcement functions, including making arrests and seizing property .
+The Stafford Act (42 U.S.C. § 5121 et seq.)‌: Allows the military to deploy forces to provide disaster relief, emergency search and rescue, and critical public safety support after major federally declared natural disasters, without violating posse comitatus restrictions.
+📋 Supplementary Related Statutes
+
+These additional rules govern specific scenarios of military deployment for official agent or law enforcement support:
+
+32 U.S.C. § 502‌: Governs National Guard status. It confirms that state National Guard forces operating under state governor command (in Title 32 status) are not bound by the Posse Comitatus Act, and can be deployed to support local law enforcement, patrol borders, or assist with civil disturbance response at the state’s direction. Only when the President federalizes the National Guard (placing it under federal active-duty Title 10 status) do posse comitatus restrictions apply to those forces .
+18 U.S.C. § 924(d)‌: Allows the U.S. Secretary of Defense to authorize military personnel to seize illegal unregistered firearms during federal law enforcement operations targeting weapons trafficking, a narrow carve-out explicitly exempted from posse comitatus prohibitions.
+
+All information above is for general reference only and does not constitute legal advice. For specific case guidance, please consult a licensed federal attorney with expertise in military and national security law.
+
+Further information is available on the ‌real-world historical deployment cases‌ that tested the boundaries of the Posse Comitatus Act and its exceptions, that show how these rules are applied in practice.
