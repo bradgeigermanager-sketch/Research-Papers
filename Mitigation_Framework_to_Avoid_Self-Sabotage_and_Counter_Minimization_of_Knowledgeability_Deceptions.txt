@@ -1,0 +1,18 @@
+🛡️ Mitigation Framework to Avoid Self-Sabotage & Counter This Deception
+
+This 4-layer framework eliminates the self-inflicted harm from the bad actor's "low-skill" disguise, while maintaining strict, non-discriminatory information security that never plays into their manipulation.
+
+Universal, Role-Based Access (No Individual Exceptions)‌
+Ditch arbitrary, person-specific information restrictions entirely. Tie all access to technical documentation, systems, and sensitive data strictly to formal job roles, not your personal assumptions about someone's skill level. Every single person in the same role gets exactly the same set of permissions — no one gets singled out for extra restrictions, and no one gets unearned access. This stops you from creating awkward, performative knowledge barriers that hamper your own team's workflow.
+
+Behavior-Focused Monitoring, Not Skill Profiling‌
+Stop wasting time guessing who is "technically skilled enough" to trust. Instead, deploy uniform, low-friction activity logging for every user on your systems: flag anomalous actions like unusual file downloads, off-hours lateral system movement, or repeated attempts to access resources outside their role scope. Tools like ‌Microsoft Prompt Shields‌ integrated with enterprise defense platforms can automatically spot these suspicious behaviors without needing to judge anyone's perceived technical ability . This catches the hidden skilled bad actor, while never slowing down your legitimate team members.
+
+Normalize Full, Transparent Technical Onboarding for All‌
+Never hold back standard technical training, documentation, or onboarding resources from any team member to "hide knowledge from a suspected low-skill bad actor." This creates crippling knowledge silos that hurt your own operations far more than it restricts the adversary. Instead, make all role-appropriate technical materials freely available to everyone in the relevant team — the bad actor already has this knowledge, and your legitimate staff will only become more effective with full access.
+
+Neutral, Evidence-Driven Threat Reviews‌
+Schedule regular, structured threat assessment meetings that ban subjective statements like "this person doesn't have the skill to pull off an attack." Every threat evaluation must be rooted in concrete, logged behavioral evidence, not assumptions about someone's apparent technical familiarity. This breaks the false collective complacency the bad actor relies on, and ensures no one gets written off as a "harmless novice" without hard proof.
+
+This approach completely neutralizes the bad actor's core tactic: they can perform as an unskilled novice all they want, but your team will never voluntarily sabotage your own information sharing, security, or efficiency to play along with their disguise.
+
