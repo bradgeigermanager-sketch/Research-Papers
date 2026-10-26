@@ -1,0 +1,339 @@
+# Paradigms of proxy control through inserted or internally present assets
+
+Proxy control can be analyzed as a spectrum of arrangements in which one actor attempts to influence another organization, community, institution, or political entity through people or structures that operate within, or appear to belong to, the target.
+
+The central analytical question is not simply whether an outside actor has people inside an organization. It is whether, and to what extent, those people or institutional relationships enable the outside actor to shape the target's decisions, resources, information, or autonomy.
+
+This framework applies to political interference, organized crime, institutional corruption, corporate espionage, coercive organizations, and foreign influence. The same outward behavior can have very different explanations, so these paradigms should be treated as analytical models rather than presumptions that a covert network exists.
+
+## 1. The basic dimensions of proxy control
+
+## A multidimensional model
+
+These dimensions are independent: a case may combine several of them.
+
+A. How the intermediary becomes involved
+
+* Inserted: introduced or recruited with an external objective in mind.
+
+* Pre-existing: already a member, employee, official, contractor, or associate.
+
+* Opportunistic: independently present and later becomes aligned with an external actor.
+
+  B. The relationship with the principal
+
+* Directed: receives instructions or operates under another actor's authority.
+
+* Incentivized: responds to money, access, status, protection, or other benefits.
+
+* Coerced: acts under threats, blackmail, or other pressure.
+
+* Aligned: shares objectives without necessarily being controlled.
+
+  C. The degree of influence achieved
+
+* Informational: obtains or filters information.
+
+* Procedural: influences how decisions are considered or processed.
+
+* Resource-based: affects money, staffing, access, or infrastructure.
+
+* Decision-making: influences substantive outcomes.
+
+* Systemic: helps shape the institution's broader priorities, incentives, and constraints.
+
+The distinctions matter because a person can provide information without controlling decisions, influence one decision without capturing an institution, or participate in a coordinated effort without being subordinate to its organizers.
+
+## 2. Major paradigms of proxy control
+
+### Paradigm 1: The deliberately inserted representative
+
+An external principal places or recruits a person to occupy a position within a target organization, with the expectation that the person will advance the principal's interests.
+
+The person might be an employee, intermediary, adviser, elected representative, contractor, or organizational officer. The role itself may be entirely legitimate; the relevant question is whether an undisclosed relationship creates a conflict between the person's apparent responsibilities and actual obligations.
+
+Potential objectives
+
+* Obtain information that would otherwise be unavailable.
+
+* Influence institutional priorities or decisions.
+
+* Represent an external interest while appearing to act independently.
+
+* Create a channel through which the principal can communicate with the target.
+
+Key limitation: Being recruited by an outside party does not necessarily confer influence. The inserted person may lack authority, be discovered, be resisted by colleagues, or fail to deliver the intended result.
+
+Evidence relevant to assessment: Verified recruitment arrangements, communications establishing the relationship, financial records, documented instructions, and conduct corroborated by independent sources.
+
+### Paradigm 2: The pre-existing insider
+
+Here, the intermediary was already part of the target organization before any relevant external relationship developed.
+
+This paradigm is particularly important because it does not require an organization to introduce new personnel. Existing members may already possess institutional knowledge, relationships, professional credentials, or legitimate access.
+
+Possible subtypes include:
+
+* Voluntary alignment: The insider independently agrees with the external actor's objectives.
+
+* Financial or material inducement: The insider acts in return for benefits.
+
+* Coercive alignment: The insider is pressured or threatened.
+
+* Conflicted loyalty: Personal, professional, family, commercial, or political interests influence the insider's conduct.
+
+* Retrospective recruitment: An existing insider begins assisting an external actor after joining the organization for unrelated reasons.
+
+The key analytical issue is the distinction between access and control. An insider's ability to view information or participate in meetings does not prove that the insider can determine outcomes, much less that an outside actor directs them.
+
+### Paradigm 3: The compromised decision-maker
+
+This model focuses on a person who holds meaningful decision-making authority rather than simply organizational access.
+
+An official, manager, judge, executive, regulator, or other decision-maker may misuse their position to benefit a private interest, criminal network, political sponsor, or other external party.
+
+The alleged compromise might involve bribery, extortion, undisclosed financial relationships, conflicts of interest, or deliberate misuse of official authority.
+
+The degree of influence depends on the position's actual powers. A compromised person may be able to affect a single transaction, a set of cases, a hiring decision, or a wider policy area.
+
+The central question is whether the decision-maker's conduct can be linked to an improper relationship or motive through reliable evidence. An unpopular decision, procedural error, or favorable outcome for a particular party is not sufficient on its own.
+
+### Paradigm 4: The institutional gatekeeper
+
+This paradigm concerns people who control access to a process rather than the final decision itself.
+
+Examples of gatekeeping functions include:
+
+* Deciding which applications or complaints receive attention.
+
+* Determining which records are supplied to a decision-maker.
+
+* Administering access to facilities, information, or services.
+
+* Referring matters for investigation or review.
+
+* Controlling scheduling, routing, or administrative processing.
+
+A gatekeeper may exercise substantial practical influence even when they lack formal authority to decide the underlying issue.
+
+The potential result is procedural control without formal command. A matter can be delayed, deprived of relevant information, or directed into an inappropriate process without the intermediary possessing the power to issue the final decision.
+
+However, backlogs, inadequate resources, lawful discretion, and ordinary administrative errors can produce similar outcomes. Evaluation requires comparing actual procedures, documented responsibilities, case histories, and treatment of comparable matters.
+
+### Paradigm 5: The information-control intermediary
+
+This model centers on control over what one organization knows about another, or what decision-makers within the target know about a particular matter.
+
+An intermediary may influence the selection, accuracy, timing, interpretation, or distribution of information. In an institutional setting, this can affect decisions even when the intermediary has no formal authority over them.
+
+Relevant forms include:
+
+* Selective disclosure of records.
+
+* Misrepresentation of the provenance or reliability of information.
+
+* Suppression of relevant contrary evidence.
+
+* Conflicting or misleading accounts supplied to different decision-makers.
+
+* Undisclosed alteration or incomplete preservation of records.
+
+Information manipulation is not necessarily evidence of proxy control. To establish the external relationship, an investigation must separately substantiate the alleged manipulation and the connection to the purported beneficiary.
+
+A sound audit examines original records, access logs, timestamps, document versions, transmission histories, and independent corroboration. It also distinguishes intentional alteration from technical failures or ordinary recordkeeping deficiencies.
+
+### Paradigm 6: The resource-dependency intermediary
+
+In this model, the target organization depends on a person, business, donor, contractor, lender, service provider, or external sponsor for something important.
+
+The dependency may involve financing, employment, technology, essential services, facilities, specialized expertise, or access to a market.
+
+Influence arises because the dependent organization faces costs if the relationship deteriorates. The sponsor may have leverage even without giving explicit instructions.
+
+There is an important distinction between ordinary dependency and coercive control:
+
+* Ordinary dependency: The relationship is disclosed, contractual, and subject to normal safeguards.
+
+* Conflicted dependency: The relationship creates incentives that may distort decisions.
+
+* Coercive dependency: A party exploits the dependency to compel conduct.
+
+* Captured dependency: The institution's decisions become persistently subordinate to a particular external interest.
+
+Evidence of a dependency establishes a potential source of leverage, not proof that leverage has been exercised. The assessment should examine contractual rights, alternative suppliers, concentration of resources, governance safeguards, and documented attempts to condition support on particular decisions.
+
+### Paradigm 7: The network of mutually reinforcing insiders
+
+Rather than relying on one person, an external interest may become connected to several people across different parts of an organization or across multiple organizations.
+
+The relevant structure is a network of relationships, which may include formal affiliations, financial links, shared business interests, communications, reciprocal favors, or documented coordination.
+
+Such a network can produce outcomes that no individual member could achieve alone. For example, different participants may have separate responsibilities for reviewing information, authorizing expenditure, administering procedures, and supervising performance.
+
+But a network of connected people is not automatically a control network. Professional associations, family relationships, shared opinions, and routine cooperation are common in legitimate organizations.
+
+A rigorous assessment distinguishes three levels:
+
+1. Connectivity: The individuals have a demonstrable relationship.
+
+2. Coordination: Evidence shows that they cooperated toward a particular objective.
+
+3. External direction: Evidence establishes that their coordinated conduct was directed, financed, or otherwise controlled by an external principal.
+
+Each level requires evidence beyond the previous one.
+
+### Paradigm 8: Institutional capture
+
+Institutional capture occurs when a decision-making body or its processes become substantially oriented toward a narrow interest rather than the institution's legitimate purpose or broader public responsibilities.
+
+Capture can arise through a variety of mechanisms: conflicts of interest, revolving-door relationships, regulatory dependence, concentrated funding, favoritism, compromised oversight, or persistent exclusion of competing interests.
+
+It does not necessarily require a secret organization, inserted agents, or a single controlling individual. It may develop incrementally through ordinary-looking decisions and incentives.
+
+The distinguishing feature is a persistent structural distortion of institutional priorities or accountability, not merely one favorable decision.
+
+Useful indicators to investigate include:
+
+* Repeated exceptions to normal rules that disproportionately benefit one interest.
+
+* Oversight arrangements that fail to identify or correct documented conflicts.
+
+* Systematic disparities in how comparable cases are treated.
+
+* Decision records that omit material competing interests or relevant evidence.
+
+* Persistent divergence between an institution's stated mandate and its documented decisions.
+
+Each indicator has alternative explanations. A credible finding of capture requires a documented pattern, consideration of legitimate reasons, and evidence linking the pattern to the relevant interests.
+
+### Paradigm 9: Proxy organizations and nominal independence
+
+In this model, the intermediary is an organization rather than an individual. It may be a business, association, advocacy group, local administration, nonprofit entity, or political organization.
+
+The intermediary may retain its own personnel, public identity, and operational procedures while advancing the interests of an outside sponsor.
+
+Relationships range from transparent and legitimate partnerships to concealed sponsorship or substantial external direction. A shared objective alone does not establish a principal-agent relationship.
+
+The most important questions concern:
+
+* Who provides the intermediary's resources?
+
+* Who has authority to appoint or remove its leaders?
+
+* Who makes material decisions?
+
+* Are sponsorship and conflicts of interest disclosed?
+
+* Can the intermediary reject the sponsor's wishes without disproportionate consequences?
+
+* Is there evidence of actual direction, rather than simply mutual benefit?
+
+An organization may be financially dependent but retain substantial autonomy; conversely, a formally independent organization may be subject to considerable external control.
+
+### Paradigm 10: Coercive or territorial proxy governance
+
+This is the paradigm most closely resembling an attempt to exercise state-like authority over a community or neighboring group.
+
+An external actor or criminal network may seek influence over local disputes, commerce, public services, security arrangements, organizational leadership, or access to resources. Local intermediaries may help administer this influence, whether through voluntary cooperation, dependency, corruption, or coercion.
+
+This arrangement can resemble governance because it affects people's practical options and behavior. Yet it does not necessarily confer legal sovereignty, recognized jurisdiction, or complete control over the territory.
+
+A useful distinction is between:
+
+* Influence: The actor can affect some decisions.
+
+* De facto authority: The actor's decisions are regularly treated as practically binding.
+
+* Institutional dominance: The actor substantially constrains alternative decision-makers.
+
+* Territorial control: The actor can consistently enforce its authority across a defined area.
+
+* State-like governance: The actor performs or appropriates a broader range of governing functions.
+
+These are analytical distinctions, not a universally accepted legal classification. Real-world arrangements can be partial, contested, and unstable.
+
+## 3. How the paradigms can combine
+
+In practice, the paradigms need not occur separately. Several can reinforce one another, creating a larger pattern of influence.
+
+## Illustrative institutional scenario
+
+Hypothetical example; not a claim about any real organization.
+
+1. Existing dependency
+
+An institution relies on an external provider for an important service.
+
+2. Internal conflicts of interest
+
+One or more decision-makers have undisclosed interests connected to the provider.
+
+3. Procedural influence
+
+Documented decisions begin to favor the provider, and ordinary review mechanisms fail to address relevant conflicts.
+
+4. Possible institutional capture
+
+If a sustained, causally connected pattern is established, the institution may be found to have become substantially oriented toward the provider's interests.
+
+The sequence illustrates one possible hypothesis. Dependency does not necessarily lead to corruption or capture, and each proposed connection must be established independently.
+
+This example demonstrates why investigating a potential control relationship requires more than identifying individual insiders. The institutional arrangements, incentives, actual conduct, and mechanisms of accountability also matter.
+
+## 4. A further distinction: control of people versus control of systems
+
+A proxy-control analysis becomes more precise when it distinguishes between the intermediary and the system through which influence operates.
+
+| Control target          | What the alleged influence concerns                      | What to examine                                                              |
+| ----------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Individual              | A person's decisions or conduct                          | Instructions, incentives, coercion, conflicts of interest                    |
+| Relationship            | How two parties cooperate or exchange resources          | Contracts, communications, payments, disclosure                              |
+| Procedure               | How a decision or investigation is processed             | Rules, audit trails, comparable cases, documented exceptions                 |
+| Institution             | The organization's priorities and governance             | Oversight, leadership decisions, repeated patterns                           |
+| Information environment | What decision-makers or communities are told             | Provenance, completeness, corroboration, record integrity                    |
+| Resource system         | Access to funding, infrastructure, or essential services | Dependencies, alternatives, contractual authority                            |
+| Territory or community  | Practical authority over local affairs                   | Enforcement patterns, autonomy, public administration, competing authorities |
+
+This prevents a common analytical error: treating evidence of one person's misconduct as proof that an entire institution or territory is controlled by the same actor.
+
+It also allows the reverse possibility to be examined. An institution can become systematically distorted by incentives and dependencies even when no single person has comprehensive control.
+
+## 5. How to evaluate a suspected proxy-control arrangement
+
+A defensible investigation should separate evidence into distinct categories.
+
+Relationship evidence
+
+Establish whether the alleged principal and intermediary actually have a relevant connection. Distinguish verified financial, organizational, contractual, and communications records from speculation about affiliation.
+
+Direction and coordination evidence
+
+Determine whether the parties merely share interests, coordinate voluntarily, or operate under demonstrable external direction. These are different findings.
+
+Conduct and outcome evidence
+
+Identify specific decisions, transactions, omissions, or procedural irregularities. Record what happened without assuming that the suspected explanation is already proven.
+
+Independent verification
+
+Preserve original records, establish provenance, corroborate material claims, consider innocent explanations, and use independent review where appropriate.
+
+A useful working classification for each allegation is:
+
+* Established fact: supported by reliable, verifiable evidence.
+
+* Supported inference: a conclusion reasonably drawn from established facts, while remaining open to alternatives.
+
+* Unresolved hypothesis: plausible but insufficiently substantiated.
+
+* Contradicted claim: inconsistent with reliable evidence currently available.
+
+* Unknown: insufficient information to assess.
+
+These labels should apply to individual claims rather than entire people or organizations.
+
+## 6. The central principle
+
+The most useful general model is that proxy control is not a single technique. It is a family of potential relationships involving access, incentives, authority, dependency, information, coordination, and enforcement.
+
+An inserted individual, a compromised insider, a conflicted gatekeeper, a network of cooperating officials, and an externally dependent institution represent materially different situations. They may ove
