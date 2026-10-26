@@ -1,3 +1,5 @@
+"Since you work at this factory, I expect you to question everything going on it it, and everything planned to, because you want it to turn out for the best, and I want you to question everything I say and that you see that I do, because I work here, too."
+
 # OCR + EXIF Coordinate Parser
 
 The system now processes **both visible coordinates in an image and coordinate
