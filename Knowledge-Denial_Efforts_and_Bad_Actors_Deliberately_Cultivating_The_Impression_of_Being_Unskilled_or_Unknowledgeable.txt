@@ -19,4 +19,4 @@ It lets them operate completely invisibly: while your team is busy tying itself 
 
 This tactic is a perfect complement to classic manipulation frameworks like ‌DARVO‌ (Deny, Attack, Reverse Victim and Offender) — it turns your own defensive instincts against you, without the bad actor ever having to launch a single active exploit .
 
-Need me to walk through a simple ‌mitigation framework‌ that lets you avoid this self-sabotage, while still maintaining proper information security without playing into the bad actor's deception?
+Next: A simple ‌mitigation framework‌ that lets you avoid this self-sabotage, while still maintaining proper information security without playing into the bad actor's deception-
