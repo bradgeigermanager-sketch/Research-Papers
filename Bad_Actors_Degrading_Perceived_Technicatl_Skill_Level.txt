@@ -1,0 +1,19 @@
+Bad actors do not universally want to be underestimated for technical familiarity at all times and in every scenario — it is a highly situational tactic, not a universal, permanent goal. It delivers major operational advantages in most long-term infiltration scenarios, but there are specific, targeted cases where being seen as technically skilled is far more valuable to them.
+
+Scenarios where being underestimated is their top priority
+
+This is their default preference for most stealth, long-duration operations:
+
+Embedded insider/APT infiltration‌: When they are hiding inside an organization as a regular employee, contractor, or low-profile participant, appearing technically unskilled lets them avoid high-risk access restrictions, skip targeted security audits, and extend their dwell time for months or years without triggering alerts. This is a core tactic in classic social engineering frameworks like those detailed in The Art of Deception .
+Low-and-slow data exfiltration‌: If their goal is to quietly siphon off sensitive technical information without being caught, a reputation for being technically clumsy lets them write off small anomalous system behaviors as innocent user errors, rather than malicious activity.
+Avoiding defensive escalation‌: When targeting a security-conscious team, being seen as a low-skill, unthreatening actor makes defenders deprioritize threat-hunting efforts against them, leaving critical gaps in monitoring that they can exploit freely.
+Key scenarios where they actively avoid being underestimated
+
+There are clear cases where being perceived as technically skilled directly serves their goals:
+
+Extortion and ransomware operations‌: To pressure victims into paying, they want to be seen as highly technically capable — they will deliberately leak proof of their deep system access, advanced exploit skills, and ability to cause irreversible damage to convince victims their demands are credible.
+Recruitment and credibility-building in criminal communities‌: On underground forums, darknet marketplaces, or within malicious hacking groups, overstating their technical skill (rather than hiding it) lets them attract collaborators, sell their exploit tools for higher prices, and gain access to exclusive, high-value criminal networks.
+High-stakes social engineering pretexting‌: When posing as an IT support technician, senior system administrator, or third-party technical vendor, they need to be perceived as technically competent to trick regular staff into handing over credentials or granting privileged system access.
+Deterring retaliation‌: For actors targeting high-profile organizations, signaling advanced technical capabilities (such as demonstrating zero-day exploit knowledge) can make the target hesitate to launch aggressive counter-operations against them.
+
+In practice, most sophisticated bad actors dynamically toggle their perceived technical skill level: they perform as unskilled to fly under the radar during infiltration, then selectively reveal their true technical capabilities only at the exact moment it delivers them maximum operational or financial gain.
