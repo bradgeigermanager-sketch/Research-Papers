@@ -1,0 +1,932 @@
+Institutional DARVO, Reputational Scandal, and the Potential Concealment of Criminal Conduct: A Criminological Analysis of Law Enforcement, Victim Advocacy, Organizational Silence, and Institutional Betrayal
+
+Research paper
+
+Discipline: Criminology, criminal justice, organizational sociology, and victimology
+
+Research design: Integrative theoretical literature review and proposed conceptual framework
+
+Date: October 2026
+
+Abstract
+
+Institutional responses to allegations of criminal misconduct present significant challenges for criminology, particularly when the institutions implicated in a complaint also possess the authority, resources, or professional relationships necessary to influence its investigation and public interpretation. This paper examines a proposed intersection of law-enforcement misconduct, Deny–Attack–Reverse Victim and Offender (DARVO), reputational scandal, organizational silence, institutional betrayal, and the potential involvement of crime-victim support organizations in the suppression or mischaracterization of allegations. It develops an integrative framework connecting interpersonal defensive responses with organizational processes, interorganizational relationships, reputational management, and failures of accountability.
+
+Drawing on scholarship concerning DARVO, institutional betrayal, procedural justice, police legitimacy, and police whistleblowing, the paper distinguishes established concepts from the broader hypothesis that these mechanisms may interact within a coordinated or emergent pattern of institutional protection. Particular attention is given to the possibility that public controversy can redirect attention from the underlying alleged conduct toward the credibility, behavior, or perceived dangerousness of the complainant, while third-party advocacy organizations may become involved through legitimate assistance, misunderstanding, institutional dependence, or deliberate participation. The paper emphasizes that these possibilities are analytically distinct and cannot be inferred solely from temporal sequence, interpersonal conflict, or organizational association.
+
+The proposed model identifies potential mechanisms, observable indicators, alternative explanations, ethical considerations, and avenues for empirical investigation. A mixed-methods research design is outlined using documentary analysis, comparative case studies, process tracing, interviews, and organizational network analysis. The paper concludes that credible accountability requires independent investigative channels, transparent decision-making, protected reporting, careful evidence preservation, and safeguards for both complainants and individuals or organizations accused of misconduct. The central contribution is a framework for investigating how institutional authority, reputational incentives, and victim-support structures might interact to impede accountability without presuming that any particular allegation or coordinated scheme has been established.
+
+Keywords: DARVO; police misconduct; institutional betrayal; institutional corruption; organizational silence; victim advocacy; secondary victimization; reputational management; obstruction of justice; whistleblowing; procedural justice; criminology.
+
+1. Introduction
+1.1 Background and problem statement
+
+The legitimacy of criminal justice institutions depends not only on their formal authority to investigate and prevent crime but also on their willingness to subject their own conduct to scrutiny. Police organizations occupy a distinctive position within the institutional structure of society: they exercise coercive authority, collect evidence, exercise substantial discretion, and frequently serve as the initial point of contact for individuals reporting victimization. These functions create an important asymmetry between members of the public and the institutions responsible for responding to their complaints.
+
+Where allegations concern the conduct of an ordinary private individual, the investigative institution may be organizationally separate from the alleged offender. Where allegations concern a law-enforcement officer, a police agency, or an individual with institutional connections, that separation may become less straightforward. Conflicts of interest, organizational loyalty, reputational concerns, and dependence on internal reporting procedures may affect how allegations are received and investigated.
+
+Research on institutional betrayal provides a useful foundation for examining such circumstances. Smith and Freyd (2014) describe institutional betrayal as harmful institutional action or inaction by an organization on which individuals depend for safety, support, or the fulfillment of important responsibilities. Their framework highlights how institutions can compound an initial harmful experience through inadequate responses, disregard, or failures to provide expected protection.
+
+Criminology offers complementary perspectives through research on police integrity, organizational misconduct, institutional legitimacy, whistleblowing, and the conditions under which organizational members remain silent about wrongdoing. A systematic review by Vere Taylor et al. (2024), examining 118 papers on police whistleblowing, identified recurring barriers and facilitators involving knowledge of rules, anticipated consequences, interpersonal relationships, responsibility, and police culture. These findings suggest that misconduct reporting is not simply a matter of individual courage or ethical awareness; it is also shaped by organizational structures and social relationships.
+
+A further conceptual dimension concerns DARVO, an acronym for Deny, Attack, and Reverse Victim and Offender. The term describes a response pattern in which an individual confronted with alleged wrongdoing denies or minimizes the allegation, attacks the accuser, and presents themselves as the victim of the accusation or confrontation. Research by Harsey, Zurbriggen, and Freyd (2017) examined DARVO in the context of perpetrator responses to victim confrontation and its relationship to victim self-blame.
+
+The present paper asks whether, and under what circumstances, DARVO-like responses might interact with institutional authority, public controversy, and victim-support organizations in ways that weaken accountability for alleged criminal conduct.
+
+The question is important, but it must be formulated carefully. DARVO was developed primarily in the study of interpersonal responses to allegations of abuse. Its extension to institutional and interorganizational processes is a theoretical proposition requiring further empirical testing. Similarly, the existence of institutional betrayal or organizational silence does not establish that a criminal offense occurred, that a complainant is necessarily correct, or that several organizations coordinated their actions.
+
+The objective is therefore not to establish the existence of a particular conspiracy or misconduct event. It is to develop a criminological framework for examining a potentially consequential configuration of institutional behavior, identifying what evidence would support or weaken competing explanations.
+
+1.2 Research problem
+
+The central research problem concerns the relationship between four processes:
+
+An allegation of criminal misconduct involving a person or institution possessing professional, social, or organizational authority.
+Responses that may deny the allegation, challenge the complainant's credibility, or reverse the apparent allocation of victimhood and responsibility.
+Public controversy that may redirect attention from the underlying conduct toward reputational damage, institutional defensiveness, or the complainant's perceived behavior.
+The involvement of victim-support organizations or associated third parties whose actions may facilitate accountability, inadvertently obstruct it, or, in some circumstances, contribute knowingly to concealment.
+
+These processes may occur independently. Their occurrence in a particular sequence does not demonstrate that they were coordinated or motivated by a common objective. The research problem is to determine when their interaction can be substantiated, how it may operate, and what organizational conditions make harmful outcomes more likely.
+
+1.3 Research questions
+
+The paper addresses the following questions:
+
+RQ1. How can DARVO be conceptually extended from interpersonal interactions to institutional responses to allegations of criminal misconduct?
+
+RQ2. Under what organizational conditions might police culture, conflicts of interest, or institutional self-protection discourage reporting, investigation, or accountability?
+
+RQ3. How might public controversy and reputational management redirect attention from alleged underlying conduct to the complainant, the complaint process, or the institution's perceived victimization?
+
+RQ4. Under what circumstances might crime-victim support organizations become intermediaries in institutional conflict, and how can legitimate advocacy be distinguished from conduct that improperly suppresses complaints?
+
+RQ5. What documentary, testimonial, organizational, and procedural evidence would be necessary to assess whether institutional conduct reflects ordinary disagreement, negligence, defensive reputation management, institutional betrayal, or deliberate criminal concealment?
+
+RQ6. Which accountability mechanisms are most appropriate for reducing the risk of institutional retaliation, conflicts of interest, and secondary victimization while preserving due process?
+
+1.4 Scope and contribution
+
+The paper makes three contributions.
+
+First, it integrates concepts from criminology, victimology, organizational sociology, and psychological research into a single analytical framework.
+
+Second, it distinguishes individual-level defensive behavior from institutional practices and coordinated interorganizational conduct, reducing the risk of treating superficially similar events as equivalent.
+
+Third, it proposes a research design capable of examining the central hypothesis empirically, including explicit criteria for disconfirmation and alternative explanations.
+
+The resulting framework is intended to be useful for academic researchers, independent oversight bodies, victim advocates, investigators, and practitioners concerned with institutional accountability.
+
+2. Conceptual and theoretical foundations
+2.1 DARVO as an analytical construct
+
+DARVO describes a pattern of responses associated with allegations of harmful conduct. The three components are analytically distinguishable but may occur together.
+
+Denial involves rejecting the allegation, minimizing the conduct, contesting its interpretation, or disputing the complainant's account.
+
+Attack involves challenging the complainant's credibility, character, motives, competence, or behavior. Such challenges may be relevant to the evidence, irrelevant to the underlying allegation, or employed in ways that intimidate or stigmatize.
+
+Reversal of victim and offender involves presenting the accused person as the principal victim of the accusation, confrontation, or subsequent investigation, while depicting the complainant as the aggressor or source of harm.
+
+The existence of any one component does not establish the complete pattern. Denial may be appropriate when an allegation is false. Challenging a witness's credibility may be legitimate within an investigation or adversarial legal proceeding. An accused individual may genuinely experience reputational or personal harm from an inaccurate allegation. The analytical significance lies in the pattern, context, function, and evidentiary basis of the responses.
+
+Harsey et al. (2017) investigated DARVO in relation to victim confrontation and self-blame. Their work provides a foundation for examining the potential consequences of such responses, but it does not independently establish that DARVO functions identically within police agencies, public institutions, or networks of victim-support organizations.
+
+A criminological extension therefore requires additional conceptual development.
+
+At the institutional level, denial may take the form of categorical organizational rejection, minimization of complaints, or the repeated characterization of an incident as isolated despite contrary evidence. Attacks may occur through official statements, disciplinary measures, informal reputational campaigns, or allegations concerning the complainant's conduct. Reversal may occur when an institution presents itself primarily as the injured party, emphasizing disruption, reputational damage, resource burdens, or alleged harassment while giving comparatively little attention to the underlying complaint.
+
+These examples are possible manifestations rather than universal indicators. Institutional denial, criticism, or claims of harm should be assessed in context and against the documentary record.
+
+A key theoretical question is whether the DARVO construct retains explanatory validity when the relevant actor is an organization rather than an individual. Organizations do not possess psychological states in the same manner as individuals. Their actions result from decisions made by identifiable people operating within formal roles, informal norms, procedures, and incentive structures. Institutional DARVO should therefore be understood as a proposed description of observable organizational response patterns, not as a diagnosis of a collective personality.
+
+2.2 Institutional betrayal
+
+Smith and Freyd (2014) conceptualize institutional betrayal as harm arising when institutions on which people depend act in ways that violate expectations of protection, support, or responsibility. Earlier work by Smith and Freyd (2013) examined institutional betrayal in relation to the exacerbation of sexual trauma.
+
+This framework is relevant to criminal justice because individuals reporting crime may rely on police, prosecutors, courts, employers, educational institutions, or specialist support organizations to provide protection and a fair response.
+
+Institutional betrayal may involve active conduct, such as retaliation or intimidation, but it can also arise through omissions, including failures to respond appropriately, prevent foreseeable harm, or provide promised support.
+
+Four dimensions are particularly relevant to the present analysis:
+
+Expectation and dependency: The complainant reasonably expects an institution to fulfill a protective or procedural responsibility.
+Institutional response: The organization acts, fails to act, or responds in a manner inconsistent with that responsibility.
+Consequences: The response produces or contributes to additional harm, exclusion, loss of trust, or impaired access to justice.
+Accountability: The institution either acknowledges and addresses the failure or compounds it through further denial, defensiveness, or obstruction.
+
+Institutional betrayal should not be equated automatically with criminal conduct. An institution may fail through negligence, inadequate training, poor communication, resource constraints, or defective procedures without deliberately seeking to protect an offender. Conversely, evidence of intentional retaliation, falsification, or suppression may warrant a more serious legal and organizational analysis.
+
+The distinction between institutional failure and deliberate concealment is central to a defensible criminological account.
+
+2.3 Procedural justice and police legitimacy
+
+Procedural justice theory examines how people evaluate authorities according to the fairness of their decision-making processes and interpersonal treatment. Tyler (2017) reviews the relationship between procedural justice and police legitimacy, emphasizing the relevance of fair treatment, neutrality, dignity, and trustworthy motives.
+
+Research on victims' experiences with criminal justice professionals also suggests that institutional encounters can affect well-being. Barkworth and Murphy (2016), studying 171 crime victims, examined how procedural justice in police interactions relates to the impact of system contact on victims' quality of life.
+
+These perspectives help explain why complaint handling is consequential even when the final legal outcome remains uncertain. People may evaluate an institution not only by whether it reaches a particular conclusion but also by whether it considers evidence, explains decisions, treats participants respectfully, and provides meaningful opportunities to be heard.
+
+Procedural fairness does not mean that every complaint must be substantiated, that every complainant must be believed without examination, or that every accused individual must be treated as culpable. It requires a fair process for evaluating the evidence and communicating the reasons for decisions.
+
+The literature also contains important qualifications. Schaap and Saarikkomäki (2022) argue that conventional accounts of procedural justice can understate structural inequalities and the complexity of police–citizen conflicts. A complete analysis must therefore examine not only whether procedures appear formally fair but also who has the practical capacity to invoke them, contest decisions, obtain records, and access independent review.
+
+2.4 Organizational silence and police integrity
+
+Organizational silence refers to circumstances in which employees withhold information, concerns, or dissent that might be relevant to organizational learning or accountability. Silence may result from fear, loyalty, uncertainty, anticipated futility, managerial pressure, or the belief that speaking out will produce unacceptable personal consequences.
+
+Within policing, the concept intersects with occupational solidarity and the so-called code of silence. The latter refers to informal expectations that officers should not disclose or report colleagues' misconduct.
+
+Vere Taylor et al. (2024) reviewed 118 papers on police whistleblowing and identified five broad themes affecting reporting decisions: knowledge and rules, consequences, interpersonal relations, responsibility, and police culture and group relations. The review also identified limitations in the literature, including reliance on survey methods and comparatively limited evidence about the effectiveness of proposed interventions.
+
+These findings have two implications.
+
+First, organizational silence cannot be reduced to a lack of moral concern among individual officers. Reporting decisions are shaped by expected retaliation, social belonging, confidence in investigative procedures, and the anticipated consequences of disclosure.
+
+Second, organizational silence can arise without explicit orders to conceal misconduct. Shared assumptions about loyalty, professional reputation, or the likely futility of reporting may generate similar outcomes through decentralized decisions.
+
+A rigorous investigation must therefore distinguish between explicit coordination, managerial direction, tacit organizational norms, and independent choices by people who face similar incentives.
+
+2.5 Institutional corruption and conflicts of interest
+
+Institutional corruption is a broader concept than individual criminality. It concerns circumstances in which institutional processes, dependencies, incentives, or relationships undermine the institution's proper purpose or impartial operation.
+
+For the present paper, the relevant mechanisms include:
+
+Conflicts of interest in the assignment or supervision of an investigation.
+Dependence on colleagues or professional networks that may discourage independent scrutiny.
+Incentives to protect organizational reputation.
+Informal pressure to resolve complaints internally.
+Failures to disclose material information.
+Inadequate separation between those implicated in a complaint and those responsible for assessing it.
+
+These mechanisms may create conditions favorable to concealment, but they are not equivalent to proof of a criminal conspiracy.
+
+An agency can make a decision that benefits itself without every participant sharing a common motive. Institutional arrangements may produce biased outcomes even when individual decision-makers believe they are acting reasonably. Conversely, evidence of deliberate coordination requires more than showing that multiple decisions had similar consequences.
+
+The relevant analytical distinction is between an institution's failure to fulfill its public purpose, the misconduct of particular individuals, and a legally cognizable agreement or course of conduct.
+
+2.6 Reputational management and public scandal
+
+Institutions have legitimate reasons to protect confidential information, correct false claims, prevent unnecessary disclosure of sensitive material, and communicate with the public during investigations. Reputational management becomes analytically problematic when it displaces the institution's substantive responsibilities or impairs the fair assessment of allegations.
+
+Public controversy may generate a shift in the object of attention. Instead of examining what occurred, observers may become focused on whether the complainant is credible, whether public criticism is justified, whether the institution is being persecuted, or whether the complaint has caused excessive disruption.
+
+This shift can be examined through theories of framing, agenda-setting, stigma, and organizational crisis management. However, the existence of a shift in public attention does not itself prove that anyone deliberately engineered a scandal.
+
+The term induced scandal should be reserved for a hypothesis about purposeful conduct that can be investigated through evidence of timing, communication, decision-making, and intent. Researchers should avoid inferring purpose solely from the fact that a controversy emerged after a complaint.
+
+A more precise distinction is between:
+
+Spontaneous controversy: Public attention develops through independent reporting, social interaction, or genuine disagreement.
+Defensive controversy management: An institution responds to criticism in ways that emphasize reputational harm.
+Strategically amplified controversy: Identifiable actors deliberately intensify or redirect public conflict.
+Coordinated retaliatory conduct: Evidence indicates that actors worked together to disadvantage a complainant or interfere with a legitimate process.
+Criminal obstruction or concealment: Specific conduct satisfies the relevant legal elements of an offense under the applicable jurisdiction.
+
+These categories are not necessarily sequential, mutually exclusive, or progressively more common. They represent different hypotheses that require different levels and kinds of evidence.
+
+3. Integrative theoretical framework
+3.1 From individual response to institutional pattern
+
+The central theoretical proposition is that defensive responses to allegations may interact with organizational incentives and institutional relationships to affect accountability.
+
+This proposition can be expressed through four analytical levels.
+
+Level 1: Interpersonal response. An individual denies alleged misconduct, challenges the complainant, or presents themselves as the victim of the accusation.
+
+Level 2: Organizational response. Managers or colleagues determine how the complaint is recorded, investigated, communicated, or escalated. Formal procedures and informal group norms may either reinforce or constrain defensive behavior.
+
+Level 3: Interorganizational response. External agencies, advocacy organizations, professional associations, service providers, or public officials become involved. Their participation may be independent, cooperative, conflicted, or influenced by incomplete information.
+
+Level 4: Public and legal consequences. Media coverage, community responses, regulatory scrutiny, or litigation influence the environment in which the allegation is evaluated.
+
+These levels may interact, but evidence at one level does not automatically establish conduct at another. An individual making a counteraccusation does not demonstrate an institutional strategy. An organization issuing a defensive statement does not establish coordination with a third party. Several institutions reaching similar conclusions do not prove collusion.
+
+The framework therefore treats coordination as an empirical question rather than an assumption.
+
+3.2 Proposed institutional accountability displacement model
+
+This paper proposes the term Institutional Accountability Displacement Model (IADM) as an organizing framework for future research. The model is a conceptual synthesis, not an established or validated criminological theory.
+
+It describes the possibility that attention and resources may move away from investigating alleged underlying conduct and toward managing the consequences of the allegation.
+
+The model contains six possible mechanisms:
+
+Complaint emergence: A report or disclosure creates a demand for institutional action.
+Defensive response: Relevant actors deny, minimize, counteraccuse, or emphasize the harms caused by the allegation.
+Procedural control: Decisions about investigative independence, evidence access, referrals, and communication influence the complaint's trajectory.
+Reputational displacement: Public or organizational attention shifts toward the controversy and its perceived consequences.
+Intermediary involvement: Third parties become involved in supporting the complainant, managing the dispute, communicating institutional positions, or facilitating access to services.
+Accountability outcome: The matter receives independent and proportionate scrutiny, remains unresolved, or is inadequately examined.
+
+The model does not assume that each mechanism occurs in every case. It also allows for interruptions: an independent review, a protected disclosure, or a transparent decision may prevent a defensive response from becoming an enduring institutional pattern.
+
+3.3 Causal pathways and feedback loops
+
+Several pathways merit investigation.
+
+A defensive response may influence how colleagues interpret the complaint. Those interpretations may affect the assignment of investigative responsibilities or the willingness of witnesses to cooperate. Public controversy may then increase organizational pressure to defend earlier decisions, creating a feedback loop in which reversal becomes more difficult.
+
+Alternatively, the process may move in the opposite direction. New evidence may prompt an organization to reconsider an initial position, correct inaccurate statements, and refer the matter for independent investigation.
+
+A third possibility is that apparently coordinated outcomes emerge without coordination. Multiple actors may share similar reputational incentives or rely on the same incomplete information. Their actions may converge even though no common plan exists.
+
+These possibilities demonstrate why process tracing and careful chronology are essential. Researchers must establish not only what happened, but also when decision-makers acquired relevant information, which alternatives were available, and whether later decisions depended on earlier actions.
+
+3.4 A conceptual causal diagram
+
+The proposed relationships can be represented as follows:
+
+<CodeBlock language="mermaid" editable>
+flowchart TD
+A[Allegation or disclosure] --> B[Institutional intake and triage]
+B --> C{Nature of response}
+C --> D[Independent and evidence-based review]
+C --> E[Defensive or dismissive response]
+E --> F[Credibility conflict or counteraccusations]
+E --> G[Reputational pressure]
+F --> H[Possible intermediary involvement]
+G --> H
+H --> I{Nature of intermediary conduct}
+I --> J[Independent advocacy and referral]
+I --> K[Unintentional reinforcement of institutional narrative]
+I --> L[Potential deliberate suppression]
+D --> M[Accountability outcome]
+J --> M
+K --> N[Potential procedural disadvantage]
+L --> N
+N --> O[Independent oversight or unresolved complaint]
+M --> P[Public trust and institutional learning]
+O --> P
+</CodeBlock>
+
+The diagram is a set of hypotheses, not a claim that these pathways have been empirically demonstrated as a unified causal process. It also emphasizes that intermediary involvement can be constructive, neutral, harmful through error, or deliberately improper.
+
+3.5 Institutional incentives and the problem of collective intent
+
+One of the most important analytical questions is whether an apparent pattern reflects coordinated action or the cumulative effect of institutional incentives.
+
+For example, an agency may seek to avoid embarrassment, a supervisor may want to avoid criticism for an earlier decision, a support organization may fear losing access to institutional referrals, and an individual may wish to avoid reputational damage. Each actor may independently choose a course of action that reduces scrutiny.
+
+Such a configuration may produce an outcome resembling deliberate concealment without proving that a coordinated scheme exists.
+
+Alternatively, communications, instructions, or agreements may demonstrate that identifiable actors knowingly acted together. That would support a different explanation requiring direct examination of the relevant evidence.
+
+The IADM therefore distinguishes three forms of convergence:
+
+Structural convergence: Similar outcomes arise from shared incentives or institutional arrangements.
+Normative convergence: Participants share informal beliefs about loyalty, reputation, or the perceived undesirability of disclosure.
+Coordinated convergence: Actors communicate or agree on actions intended to produce a particular outcome.
+
+These categories may overlap, but they should not be treated as interchangeable.
+
+4. Crime-victim support organizations as intermediaries
+4.1 Institutional role and ethical obligations
+
+Crime-victim support organizations occupy an important position between affected individuals and formal criminal justice institutions. Depending on their mandate, they may provide crisis intervention, emotional support, practical assistance, referrals, advocacy, and information about legal processes.
+
+Their involvement can improve access to justice by helping people understand procedures and navigate unfamiliar systems. They may also provide a degree of independence from the police or other agencies.
+
+However, the existence of a supportive organizational mission does not guarantee that every decision made by an organization will be beneficial or impartial. Like other organizations, support services operate under resource constraints, confidentiality obligations, funding arrangements, professional standards, and relationships with external institutions.
+
+These factors can create tensions without establishing improper conduct.
+
+For example, an organization may prioritize confidentiality while an investigator seeks information relevant to a case. A support worker may discourage a public statement because it could expose a client to harassment or interfere with legal proceedings. An organization may refer a complainant to another service because it lacks the expertise or resources to assist.
+
+Such actions should not automatically be interpreted as attempts to suppress evidence or protect an alleged offender.
+
+The central question is whether the organization acts consistently with its actual obligations, the affected person's informed choices, applicable confidentiality rules, and legitimate accountability requirements.
+
+4.2 Four possible intermediary roles
+
+For analytical purposes, third-party involvement can be divided into four categories.
+
+Independent advocate. The organization assists the complainant, provides accurate information, respects confidentiality, and supports access to appropriate reporting and review mechanisms.
+
+Misled intermediary. The organization acts on incomplete, inaccurate, or one-sided information. Its conduct may disadvantage a complainant without deliberate intent to conceal misconduct.
+
+Institutionally dependent intermediary. The organization faces relationships or incentives that may influence its judgment, such as dependence on referrals, contracts, funding, or access. These relationships warrant scrutiny but do not by themselves prove bias or complicity.
+
+Knowing participant in improper suppression. Evidence indicates that individuals within the organization knowingly engaged in conduct intended to suppress a legitimate complaint, conceal material information, or improperly interfere with accountability.
+
+The fourth category requires the strongest evidentiary basis. It should not be inferred from a referral, meeting, shared statement, or professional relationship alone.
+
+It is also important to avoid treating the organization as a single actor. Senior managers, frontline staff, volunteers, board members, and external contractors may possess different information and exercise different levels of authority.
+
+4.3 Victim protection versus institutional protection
+
+A central tension concerns the distinction between protecting a victim and protecting an institution from scrutiny.
+
+Legitimate victim protection may include preserving confidentiality, limiting unnecessary exposure, preventing harassment, explaining the risks of public disclosure, and respecting an individual's decision about whether to participate in a particular process.
+
+Institutional protection, in the problematic sense considered here, occurs when organizational interests take precedence over applicable duties, evidence integrity, or the affected person's rights.
+
+The same outward behavior can have different meanings depending on context. Advising a complainant not to publish identifying information may be a reasonable safeguarding measure. Advising the complainant to abandon a lawful complaint solely to prevent institutional embarrassment would raise a different set of concerns.
+
+Researchers should therefore investigate the purpose, context, authority, and consequences of the conduct rather than judging it solely by its appearance.
+
+4.4 The possibility of secondary victimization
+
+Secondary victimization refers broadly to additional harm experienced through responses to an initial victimization or disclosure. It may arise from disbelief, humiliating treatment, repeated unnecessary retelling, stigmatization, procedural delay, or inadequate institutional support.
+
+Barkworth and Murphy (2016) examine the relevance of procedural justice to crime victims' experiences of criminal justice contact. Smith and Freyd's (2013, 2014) work provides a complementary account of how institutional responses can compound harm.
+
+Where a complainant experiences both an alleged underlying offense and an inadequate institutional response, the two processes should be analyzed separately but in relation to each other.
+
+The first concerns the alleged original conduct. The second concerns how institutions responded to the report. Evidence supporting one does not automatically establish the other.
+
+A person may experience genuine institutional mistreatment even if an underlying criminal allegation is ultimately unsubstantiated. Conversely, an underlying offense may be established even if some institutional responses to the complaint were procedurally appropriate.
+
+Maintaining this distinction protects both the integrity of criminal investigation and the analytical value of victimology.
+
+5. Public scandal, narrative conflict, and reputational displacement
+5.1 The transformation of a complaint into a public controversy
+
+An allegation may become a public controversy when it attracts media attention, generates conflicting statements, or becomes the subject of wider community debate.
+
+Public attention can be beneficial. It may expose institutional failures, encourage witnesses to come forward, or prompt independent scrutiny where internal mechanisms have failed.
+
+Publicity can also create risks. It may expose complainants to harassment, compromise privacy, encourage speculation, affect witness recollections, or lead observers to reach conclusions before evidence has been tested.
+
+The criminological issue is therefore not whether publicity is inherently good or bad. It is how public communication affects the ability to assess the underlying conduct fairly.
+
+5.2 Reputational displacement
+
+This paper uses reputational displacement to describe a proposed process in which discussion of an allegation becomes increasingly focused on the consequences of the allegation rather than the evidence concerning the underlying conduct.
+
+Possible indicators include:
+
+Repeated emphasis on the institution's reputational injury without corresponding examination of the complaint.
+Public discussion centered on the complainant's personality or behavior rather than the evidence.
+Organizational communications that present a complaint primarily as a threat to institutional stability.
+Delays or procedural decisions explained through reputational concerns rather than transparent evidentiary considerations.
+Inconsistent treatment of comparable complaints depending on their reputational consequences.
+
+None of these indicators is conclusive in isolation. A public statement about reputational harm may be reasonable if the institution is responding to demonstrably false information. A complainant's conduct may be relevant to a specific factual question. Delay may reflect genuine investigative complexity.
+
+The strength of the inference depends on the complete record, including what information was available to decision-makers, how they explained their actions, and whether alternative explanations fit the evidence.
+
+5.3 Manufactured controversy as a testable hypothesis
+
+The possibility that a controversy is deliberately induced requires a more demanding analysis than simply observing that a scandal followed a complaint.
+
+Researchers should identify the alleged initiating actions, their authors, their chronology, and their relationship to the underlying matter. They should determine whether the relevant actors possessed information inconsistent with their public statements and whether records demonstrate purposeful coordination.
+
+Useful evidence may include authenticated communications, meeting records, decision logs, public statements, contemporaneous notes, and testimony from people with direct knowledge.
+
+The analysis should also examine whether the same outcome can be explained by ordinary crisis communication, mistaken beliefs, conflicting legal advice, media dynamics, or independently held views.
+
+Where the evidence supports a deliberate effort to provoke a public conflict, the next question is what the actors intended to accomplish. Even then, the intent to damage a person's reputation is not necessarily identical to the intent to conceal a crime.
+
+These are separate propositions and require separate evidence.
+
+5.4 Counteraccusations and the reversal of victimhood
+
+Counteraccusations can serve legitimate purposes. A person falsely accused of wrongdoing may reasonably defend themselves, seek correction of inaccurate claims, or report actual harassment.
+
+The analytical concern arises when counteraccusations systematically substitute for substantive examination of the original allegation, especially where institutional authority affects the parties' relative ability to speak, obtain records, or access investigative resources.
+
+A rigorous analysis should examine whether the counteraccusation is independently supported, whether it concerns the same events or different conduct, and whether it is being used to avoid rather than resolve the original factual questions.
+
+It is equally important to prevent the reverse error: the existence of a counteraccusation does not establish DARVO, retaliation, or bad faith. Its evidentiary significance depends on the content and context.
+
+6. Potential criminal-law implications
+6.1 Distinguishing ethical failures from criminal offenses
+
+The phrase concealing crime can refer to several different situations, including organizational secrecy, inadequate investigation, failure to report, destruction of evidence, intentional deception, or conduct that legally constitutes obstruction of justice.
+
+These situations are not legally equivalent.
+
+A criminal offense generally requires proof of specified elements under the applicable jurisdiction. Those elements may concern conduct, knowledge, intent, causation, official status, or the relationship between an act and an investigation.
+
+Accordingly, the following concepts should be distinguished:
+
+Institutional failure: A process or service does not perform as expected.
+Professional misconduct: A person violates applicable professional or employment standards.
+Administrative obstruction: An action improperly impedes an organizational or regulatory process.
+Potential criminal obstruction: Conduct may satisfy the elements of a criminal offense concerning interference with justice or an investigation.
+Conspiracy or coordinated wrongdoing: Evidence may establish an agreement or coordinated course of conduct meeting the relevant legal requirements.
+
+These categories can overlap, but none automatically entails another.
+
+6.2 Potentially relevant forms of conduct
+
+Depending on jurisdiction and the facts, the following areas of law may warrant examination:
+
+Obstruction of justice. Potentially relevant where a person intentionally interferes with a proceeding, investigation, or other protected process in a manner prohibited by law.
+
+Evidence tampering or destruction. Potentially relevant where material is altered, destroyed, concealed, or falsified with the mental state required by the applicable statute.
+
+Witness intimidation or retaliation. Potentially relevant where threats, coercion, or prohibited retaliatory actions are directed toward witnesses, complainants, or protected disclosures.
+
+Misuse of public office or official authority. Potentially relevant where a public official uses their position in a manner that satisfies the requirements of a specific criminal or administrative prohibition.
+
+Conspiracy or aiding and abetting. Potentially relevant where evidence establishes the required agreement, assistance, intent, or other elements defined by the jurisdiction.
+
+Defamation or unlawful disclosure. Potentially relevant to public accusations and information handling, although these issues are distinct from proving that an underlying crime was concealed.
+
+This list is illustrative rather than an assessment of any particular conduct. The precise offenses, available remedies, reporting duties, privileges, and evidentiary requirements vary considerably.
+
+6.3 Failure to investigate and the limits of criminal inference
+
+A deficient investigation may reflect negligence, incompetence, inadequate resources, bias, a misunderstanding of the evidence, or deliberate interference. These explanations should not be conflated.
+
+A failure to investigate becomes evidence of intentional concealment only when the relevant circumstances support that inference. Particularly important questions include whether officials knew of material evidence, had authority to act, departed from ordinary procedures without adequate explanation, made inaccurate representations, or acted in response to improper pressure.
+
+A pattern of unexplained departures from procedure may justify independent review. It does not, by itself, establish criminal intent.
+
+The legal analysis must remain tied to the elements of a specific offense rather than relying on broad labels such as corruption, conspiracy, or cover-up.
+
+6.4 Civil rights and accountability
+
+In the United States, certain forms of misconduct by state or local officials may raise civil-rights questions under federal or state law. However, the existence of a deficient investigation or an unfair interaction does not automatically establish a constitutional violation or create a private cause of action.
+
+Similarly, administrative oversight, professional discipline, civil liability, and criminal prosecution involve different standards and procedures.
+
+A comprehensive research program should therefore examine the interaction among criminal law, administrative law, employment protections, civil-rights law, records-access rules, and applicable victim-rights provisions without assuming that all remedies are available in every case.
+
+7. Methodology for empirical investigation
+7.1 Research design
+
+Because the proposed phenomenon spans individual behavior, organizational procedures, interorganizational relationships, and public communication, a mixed-methods design would be appropriate.
+
+The present paper is an integrative theoretical review and does not report original fieldwork, a newly collected dataset, or a systematic review conducted under a preregistered protocol.
+
+The empirical program proposed here would combine:
+
+Comparative case studies.
+Documentary and discourse analysis.
+Process tracing.
+Semi-structured interviews.
+Organizational network analysis.
+Where feasible, quantitative analysis of complaint outcomes and investigative procedures.
+
+The aim would be to test whether the proposed mechanisms are observable, how frequently they occur in relevant settings, and whether they explain outcomes better than competing accounts.
+
+7.2 Case selection
+
+Cases should be selected according to transparent criteria rather than solely because they appear to confirm the model.
+
+A comparative sample could include:
+
+Cases involving substantiated police misconduct and documented institutional failures.
+Cases involving complaints that were not substantiated after independent review.
+Cases in which initial institutional decisions were reversed following new evidence.
+Cases involving public controversy but no evidence of deliberate suppression.
+Cases involving victim-support organizations with different funding, governance, and referral arrangements.
+Cases in which institutional criticism resulted in demonstrable procedural reform.
+
+Including negative and contrasting cases is essential. Without them, the research risks selecting only incidents that fit the proposed framework and overstating its explanatory power.
+
+Where possible, cases should be matched on institutional type, seriousness of allegation, availability of evidence, and jurisdiction.
+
+7.3 Documentary analysis
+
+Relevant documents may include:
+
+Original complaints and contemporaneous records.
+Incident reports and investigative decision logs.
+Policies governing complaint intake and escalation.
+Correspondence among relevant decision-makers.
+Records of referrals to external agencies.
+Public statements and corrections.
+Disciplinary or oversight findings.
+Court records and legally accessible disclosure materials.
+Records describing conflicts of interest or recusal decisions.
+Organizational policies governing confidentiality, advocacy, and mandatory reporting.
+
+The evidentiary value of each document depends on authenticity, provenance, completeness, context, and whether the author had direct knowledge of the matter.
+
+Researchers should distinguish contemporaneous records from retrospective accounts and official findings from untested allegations.
+
+7.4 Process tracing
+
+Process tracing is especially useful when the research question concerns whether one action influenced a subsequent decision.
+
+For each case, researchers should construct a chronology that records:
+
+When the allegation was first communicated.
+Who received it and what information was available.
+Which investigative or referral decisions followed.
+When public statements were made.
+When external organizations became involved.
+Whether evidence was preserved, disclosed, or disputed.
+When independent review was requested or initiated.
+Whether decision-makers changed their positions after receiving new information.
+
+The analysis should identify the evidence that would be expected under each competing explanation.
+
+For example, a hypothesis of deliberate suppression may predict communications demonstrating knowledge of relevant evidence alongside intentional efforts to prevent its consideration. A hypothesis of administrative failure may instead predict inconsistent procedures, incomplete records, or mistaken assumptions without evidence of a common plan.
+
+These are probabilistic expectations, not universal signatures. The absence of a particular document does not prove that conduct did not occur, particularly where recordkeeping is incomplete.
+
+7.5 Interviews
+
+Semi-structured interviews could be conducted with former or current officers, complainants, advocates, investigators, oversight personnel, legal practitioners, and organizational administrators.
+
+Questions should focus on observable experiences and decision-making processes rather than requiring participants to adopt the researcher's preferred interpretation.
+
+For example:
+
+What reporting procedures were available?
+Who made the relevant decisions?
+What explanations were given at the time?
+What concerns did participants raise?
+What records existed?
+How were conflicts of interest managed?
+Did participants perceive retaliation or pressure, and what specific events informed that perception?
+What alternative explanations were considered?
+
+Interview accounts should be compared with documentary records where possible. Differences between accounts should be analyzed rather than automatically resolved in favor of either the complainant or the institution.
+
+7.6 Measuring the principal constructs
+
+The proposed framework requires operational definitions that can be applied consistently across cases.
+
+Construct	Proposed indicators	Important limitation
+DARVO-like response	Observable denial, personal attack, and reversal of victimhood in a defined interaction	Does not independently establish guilt or intent
+Institutional betrayal	Documented failures of expected protection, support, or responsible procedure	May arise without criminal intent
+Organizational silence	Withholding or non-reporting of relevant concerns despite knowledge and a reasonable opportunity to report	Silence may have multiple explanations
+Reputational displacement	Demonstrable shift in organizational or public attention away from substantive allegations	Attention shifts do not prove deliberate strategy
+Intermediary dependence	Documented financial, referral, governance, or access relationships	Dependence alone does not establish bias
+Deliberate concealment	Evidence of knowledge, purposeful conduct, and a connection to suppression of material information	Legal significance depends on the applicable rules
+Retaliation	Adverse conduct temporally and substantively linked to protected or legitimate reporting	Temporal association alone is insufficient
+
+Coding should be conducted by more than one researcher where feasible, with disagreements documented and reliability assessed using suitable methods.
+
+Researchers should also avoid treating the mere presence of DARVO terminology in a document as evidence that DARVO occurred. The construct should be measured from the underlying behavior, not from the labels applied by participants.
+
+7.7 Data analysis
+
+Qualitative analysis could use a combination of deductive coding, based on the theoretical framework, and inductive coding, allowing new explanations to emerge from the data.
+
+Quantitative analysis could examine relationships among institutional characteristics, complaint handling, review outcomes, and documented procedural deviations. Where sample size and data quality permit, multilevel models could account for cases nested within agencies or jurisdictions.
+
+Selection bias would require particular attention. Publicly controversial cases are more likely to generate extensive documentation than ordinary cases, while substantiated misconduct may be more visible than unresolved complaints. The resulting sample may not represent the overall frequency of the phenomenon.
+
+The study should therefore report its sampling strategy, missing data, coding rules, uncertainty, and limitations explicitly.
+
+8. Propositions and hypotheses for future testing
+
+The following propositions are derived from the integrative framework. They are hypotheses for research, not established empirical findings.
+
+Proposition 1: Institutional dependence and reporting barriers
+
+Organizations with weakly independent complaint mechanisms may exhibit greater barriers to reporting misconduct where relevant decision-makers have personal or professional relationships with the individuals implicated.
+
+Test: Compare complaint pathways, conflict-of-interest procedures, and outcomes across agencies with differing degrees of investigative independence.
+
+Proposition 2: Reputational incentives and accountability displacement
+
+Where organizational leaders face strong incentives to protect institutional reputation, responses to allegations may devote greater attention to public relations and complainant conduct relative to substantive evidentiary review.
+
+Test: Analyze the timing and content of communications alongside investigative decisions and documentary evidence.
+
+Proposition 3: Retaliation risk and organizational silence
+
+Perceived risks of retaliation may reduce willingness to report misconduct, particularly where internal reporting channels are controlled by the same hierarchy implicated in the complaint.
+
+Test: Combine anonymous employee surveys, interviews, and administrative records concerning reporting and subsequent employment outcomes.
+
+Proposition 4: Intermediary dependence and advocacy independence
+
+Financial, referral, or governance dependence may influence the perceived or actual independence of victim-support organizations, but the relationship may vary according to safeguards, transparency, and organizational culture.
+
+Test: Compare governance arrangements, funding structures, referral practices, and documented advocacy decisions while controlling for organizational size and service mandate.
+
+Proposition 5: Procedural transparency and accountability
+
+Transparent documentation of complaint handling, reasons for decisions, and conflict-of-interest management may make it easier to detect procedural deviations and challenge unsupported explanations.
+
+Test: Examine whether greater documentation and independent review are associated with fewer unexplained procedural irregularities or more consistent decision-making.
+
+Proposition 6: Independent oversight and institutional correction
+
+Independent review may increase the likelihood that errors or conflicts of interest are identified and corrected, although its effectiveness may depend on investigative powers, access to evidence, and implementation of recommendations.
+
+Test: Compare oversight findings, agency compliance, and subsequent complaint outcomes across different review arrangements.
+
+Proposition 7: Public controversy and evidentiary displacement
+
+High levels of public controversy may increase the proportion of public and institutional communications devoted to reputational conflict, but the effect on investigative quality is likely to depend on institutional safeguards and the underlying evidence.
+
+Test: Compare communication patterns with investigative timelines and independently assessed procedural quality.
+
+Proposition 8: Coordination versus structural convergence
+
+Cases that appear to involve multiple cooperating institutions may arise either from deliberate coordination or from common incentives, information dependence, and shared organizational norms.
+
+Test: Examine direct communications, decision sequences, independent information sources, and counterfactual explanations to distinguish these mechanisms.
+
+Proposition 9: Evidence-based correction and institutional legitimacy
+
+Organizations that acknowledge demonstrable procedural failures and implement corrective measures may be better positioned to restore confidence than organizations that maintain unsupported or inconsistent accounts.
+
+Test: Use longitudinal measures of public trust, complaint handling, policy implementation, and subsequent misconduct reporting.
+
+This proposition should be treated as an empirical question rather than an assumed outcome; public trust may also depend on broader institutional, social, and political factors.
+
+9. Evidence standards and competing explanations
+9.1 Avoiding confirmation bias
+
+The proposed framework creates a particular risk of confirmation bias because many ordinary institutional behaviors can be interpreted as fitting the model after the fact.
+
+A denial may be treated as evidence of DARVO, a referral as evidence of coordination, a public statement as evidence of scandal induction, and a delayed investigation as evidence of concealment. If every possible outcome is interpreted as confirming the hypothesis, the framework becomes unfalsifiable.
+
+A credible research program must specify in advance what would count as supporting evidence, what would count against the hypothesis, and what remains ambiguous.
+
+The framework should also distinguish the existence of a pattern from the explanation of that pattern. Even where several events are documented, the inference that they resulted from a shared purpose requires additional evidence.
+
+9.2 Competing hypotheses
+
+At least six explanations should be considered when assessing an alleged pattern of institutional concealment.
+
+H1: Deliberate coordinated suppression. Identifiable actors knowingly coordinate conduct to prevent legitimate scrutiny of alleged wrongdoing.
+
+H2: Institutional self-protection without a common plan. Actors independently prioritize reputation, organizational continuity, or personal standing, producing a collectively harmful outcome.
+
+H3: Administrative incompetence or procedural failure. The outcome results primarily from inadequate training, fragmented responsibility, poor recordkeeping, or insufficient resources.
+
+H4: Good-faith disagreement about evidence. Participants interpret the available information differently, and their decisions reflect genuine disagreement rather than an intent to suppress.
+
+H5: Legitimate confidentiality and safeguarding. Restrictions on disclosure or participation are intended to protect privacy, safety, or the integrity of a lawful investigation.
+
+H6: Mixed motives and changing interpretations. Some decisions are appropriate, others are mistaken or defensive, and participants revise their views as additional evidence emerges.
+
+These explanations may coexist. An institution may initially make a reasonable decision and subsequently defend it for reputational reasons. An organization may be misled by one participant while another acts improperly. A failure to investigate may arise from both structural weaknesses and individual misconduct.
+
+The purpose of comparative analysis is not to select the most dramatic explanation but to determine which account best fits the complete evidence.
+
+9.3 Evidentiary hierarchy
+
+For empirical research, evidence can be evaluated according to its relevance and reliability rather than placed into a rigid hierarchy that ignores context.
+
+Potentially strong evidence includes authenticated contemporaneous communications, original records, independently corroborated testimony, documented changes to evidence, and formal findings based on disclosed procedures.
+
+Potentially useful but more limited evidence includes retrospective recollections, uncorroborated accounts, media reporting based on unnamed sources, and interpretations of behavior without direct knowledge of the underlying decision.
+
+Evidence should be assessed in terms of:
+
+Authenticity and provenance.
+Temporal proximity to the event.
+Directness of the author's knowledge.
+Independent corroboration.
+Completeness and contextual integrity.
+Consistency with alternative explanations.
+The possibility of bias, mistake, or selective disclosure.
+
+Official documents are not automatically accurate, and personal testimony is not automatically unreliable. The source's relationship to the event and the available corroboration matter more than a categorical preference for one source type.
+
+9.4 Distinguishing motive from consequence
+
+A further methodological issue is the difference between an action's effect and its intended purpose.
+
+An organizational statement may damage a complainant's reputation without having been issued for that purpose. A decision may delay an investigation because of administrative constraints rather than a desire to conceal evidence. Conversely, an apparently routine action may be part of an intentional effort to interfere with accountability.
+
+Researchers should therefore assess consequences and motives separately.
+
+Where motive cannot be established, the paper should describe the documented conduct and its effects without assigning an unsupported purpose.
+
+10. Ethical and practical implications
+10.1 Protection of complainants and witnesses
+
+Research on institutional misconduct may involve participants who fear retaliation, reputational harm, employment consequences, or exposure of sensitive personal information.
+
+Ethical safeguards should include informed consent, confidentiality protections, secure handling of records, appropriate anonymization, and clear explanations of the limits of confidentiality. Researchers should avoid unnecessary collection of identifying information and should assess the risks of publishing detailed chronologies that could inadvertently identify participants.
+
+Where participants describe current threats or immediate danger, appropriate safeguarding and referral procedures may be necessary.
+
+10.2 Fairness to accused persons and organizations
+
+The protection of complainants does not eliminate the need for fairness toward individuals and organizations accused of misconduct.
+
+Researchers should provide opportunities to correct material factual errors when appropriate, distinguish allegations from findings, and avoid publishing unsupported assertions of criminality.
+
+This is especially important when discussing concepts such as conspiracy, corruption, or deliberate concealment, which may carry serious legal and reputational consequences.
+
+Academic rigor requires the same standards of evidence whether the subject is a public institution, a private individual, an advocacy organization, or a complainant.
+
+10.3 Confidentiality and evidence preservation
+
+Confidentiality may be essential to protect victims, witnesses, and the integrity of investigations. At the same time, confidentiality should not be treated as a universal justification for withholding information from every lawful oversight process.
+
+The relevant questions concern who is entitled to receive particular information, for what purpose, under which legal or professional rules, and with what safeguards.
+
+Researchers and investigators should preserve original records, document the provenance of materials, avoid altering source files, and distinguish contemporaneous documents from later summaries or interpretations.
+
+They should not encourage unauthorized access to private systems, unlawful disclosure, or interference with an active investigation.
+
+10.4 Avoiding retaliatory institutional practices
+
+Institutions should establish clear policies prohibiting unlawful retaliation against individuals who make good-faith complaints or protected disclosures.
+
+Such policies are most credible when accompanied by independent reporting channels, clear escalation procedures, documented conflict-of-interest rules, and meaningful review of allegations concerning senior personnel.
+
+Training may be useful, but it is unlikely to be sufficient where reporting mechanisms are structurally dependent on the people whose conduct is being questioned.
+
+10.5 Independent oversight
+
+Independent oversight is particularly relevant where an agency's impartiality may reasonably be questioned.
+
+Depending on the jurisdiction and the nature of the allegation, suitable mechanisms may include external investigative bodies, inspectors general, civilian oversight authorities, professional regulators, prosecutors, courts, or other legally authorized review bodies.
+
+The appropriate mechanism depends on the alleged conduct and applicable law. No single body will necessarily have jurisdiction over every issue.
+
+The key design principle is separation between the subject of a complaint and the authority responsible for determining its merits.
+
+11. Institutional reforms and policy recommendations
+11.1 Independent complaint pathways
+
+Organizations should ensure that complaints concerning senior officials, investigators, or persons with significant institutional influence can be referred to an independent authority.
+
+Independence should be assessed substantively rather than merely by organizational title. Relevant factors include control over staffing, access to evidence, authority to compel cooperation, budgetary autonomy, and the ability to publish findings or refer matters for prosecution.
+
+11.2 Documented decision-making
+
+Complaint-handling systems should record significant decisions, the information considered, reasons for closure or referral, and the identity or role of the decision-maker.
+
+Documentation supports later review and can protect both complainants and officials by clarifying what was known at the time.
+
+Records should be created and retained in accordance with applicable law, privacy requirements, retention schedules, and legitimate investigative needs.
+
+11.3 Conflict-of-interest safeguards
+
+Investigators and decision-makers should disclose relevant conflicts of interest and recuse themselves where required by law or policy.
+
+External review should be available where a conflict cannot be resolved through ordinary internal procedures.
+
+A documented relationship should not automatically disqualify every participant, but undisclosed conflicts and unexplained departures from established safeguards warrant scrutiny.
+
+11.4 Protected reporting and whistleblower support
+
+Reporting mechanisms should be accessible, understandable, and capable of receiving concerns outside the immediate supervisory hierarchy.
+
+Organizations should explain the protections available, the limits of confidentiality, the procedures for investigating retaliation, and the avenues for external reporting.
+
+The review by Vere Taylor et al. (2024) suggests that the barriers to police whistleblowing extend beyond knowledge of rules and include consequences, interpersonal relationships, responsibility, and group culture. Reforms should therefore address organizational incentives and the practical risks of reporting, not merely instruct employees to act ethically.
+
+11.5 Clear separation of advocacy and investigative functions
+
+Victim-support organizations should clearly explain whether they are providing emotional support, legal information, formal representation, investigative assistance, or another service.
+
+They should maintain appropriate boundaries, disclose relevant conflicts, protect confidentiality, and avoid representing themselves as independent investigators where they lack the necessary mandate.
+
+Where an organization has a significant relationship with an institution implicated in a complaint, transparent conflict-management procedures can help preserve confidence in its work.
+
+Such safeguards should protect the organization's independence without presuming that funding or referral relationships necessarily compromise it.
+
+11.6 Proportionate public communication
+
+Institutions should adopt communication policies that prioritize factual accuracy, appropriate confidentiality, and procedural fairness.
+
+Public statements should distinguish confirmed facts from allegations, avoid unnecessary disclosure of personal information, and correct demonstrably inaccurate statements when appropriate.
+
+Where an investigation remains open, organizations should explain the process and its limitations without implying a conclusion that has not been reached.
+
+11.7 Independent review of procedural failure
+
+A finding that an allegation was not substantiated does not necessarily establish that the complaint-handling process was adequate. Conversely, a finding that the process was defective does not necessarily establish the underlying allegation.
+
+Institutions should permit these questions to be examined separately where appropriate.
+
+An independent review can assess whether relevant evidence was considered, procedures were followed, conflicts were managed, and decisions were adequately reasoned.
+
+11.8 Organizational learning and corrective action
+
+Accountability should include more than individual discipline. Where a review identifies structural weaknesses, institutions should consider changes to reporting channels, supervision, training, records management, conflict-of-interest policies, and oversight.
+
+Corrective action should be documented and evaluated over time. An organization that publishes recommendations but does not monitor their implementation may fail to address the conditions that produced the original problem.
+
+12. Limitations
+
+Several limitations constrain the conclusions that can be drawn from the present framework.
+
+First, the paper is conceptual and does not present original empirical findings. It cannot establish the frequency of the proposed pattern or determine whether its components commonly occur together.
+
+Second, the available literature is uneven. Research on interpersonal DARVO, institutional betrayal, police whistleblowing, and procedural justice addresses related but nonidentical questions. Integrating these bodies of scholarship generates useful hypotheses, but it does not establish that the combined model has been validated.
+
+Third, the proposed Institutional Accountability Displacement Model is newly formulated for this paper. Its constructs, boundaries, measurement properties, and explanatory value require empirical assessment.
+
+Fourth, public cases may provide more information than confidential or unresolved matters, creating selection bias. The absence of public documentation should not automatically be interpreted as evidence that an event did not occur, while a large volume of publicity should not be treated as evidence of wrongdoing.
+
+Fifth, institutional structures and legal requirements vary across jurisdictions. Findings concerning one police system or victim-support model may not generalize to others.
+
+Sixth, establishing intent is difficult. Documents and testimony may reveal actions and stated reasons without fully resolving the motivations of every participant. The paper therefore treats motive as a question requiring evidence rather than an inference from outcomes alone.
+
+Finally, the analysis must remain attentive to the possibility of false or mistaken allegations, genuine disagreements about evidence, legitimate confidentiality requirements, and institutional decisions made in good faith. These alternatives do not negate the importance of investigating potential misconduct; they are necessary conditions of credible research.
+
+13. Directions for future research
+
+Future research should proceed in several stages.
+
+13.1 Construct validation
+
+Researchers should develop operational measures for institutional DARVO-like responses, reputational displacement, and intermediary involvement.
+
+Such measures should be tested against existing constructs to determine whether they capture genuinely distinct phenomena or merely rename aspects of institutional betrayal, organizational silence, or crisis communication.
+
+Inter-rater reliability, construct validity, and discriminant validity would be particularly important.
+
+13.2 Comparative case studies
+
+Researchers should compare cases with different outcomes, including substantiated misconduct, unsubstantiated allegations, procedural failures, and instances in which institutions corrected their own mistakes.
+
+The inclusion of disconfirming cases would help determine the conditions under which the proposed framework is explanatory and where it does not apply.
+
+13.3 Organizational network analysis
+
+Where lawful access to reliable data exists, network analysis could examine documented communications, referral relationships, reporting pathways, and decision-making connections.
+
+The purpose should be to understand how information and authority move between actors, not to infer wrongdoing simply because people know or communicate with one another.
+
+Network proximity does not establish shared intent. Stronger conclusions require evidence about the content, timing, and purpose of relevant interactions.
+
+13.4 Longitudinal studies
+
+Longitudinal designs could examine how institutions respond over time to complaints, oversight findings, and public controversy.
+
+These studies could distinguish immediate defensive reactions from sustained patterns of organizational silence and determine whether independent review leads to durable changes in practice.
+
+13.5 Victim-support governance
+
+Research should investigate how funding arrangements, referral systems, professional standards, confidentiality obligations, and governance structures affect the independence and effectiveness of victim-support organizations.
+
+Comparative work should also identify conditions under which collaboration between advocacy services and law enforcement improves access to justice rather than creating conflicts of interest.
+
+13.6 Intervention evaluation
+
+Policy reforms should be evaluated empirically rather than assumed effective.
+
+Possible interventions include independent complaint intake, protected external reporting, conflict-of-interest disclosure, standardized decision records, independent case review, and organizational culture initiatives.
+
+Outcomes could include reporting rates, substantiation rates, time to resolution, documented procedural deviations, retaliation complaints, implementation of corrective actions, and affected persons' experiences of fairness.
+
+Each outcome requires careful interpretation. For example, an increase in complaints may indicate more misconduct, but it may also reflect improved access to reporting or greater confidence in the system.
+
+14. Discussion
+
+The central question of this paper is whether interpersonal defensive responses, institutional incentives, public controversy, and third-party involvement can combine to weaken accountability for alleged criminal conduct.
+
+The existing literature provides relevant foundations, but not a single established theory demonstrating that these elements constitute a unified process.
+
+DARVO offers a framework for examining particular responses to allegations. Institutional betrayal explains how organizations may compound harm when they fail to meet reasonable expectations of protection. Research on police whistleblowing identifies the organizational and interpersonal barriers that may prevent misconduct from being reported. Procedural justice research explains why fair and transparent processes matter to legitimacy and the experience of people who interact with criminal justice institutions.
+
+The proposed contribution is to bring these perspectives into conversation while preserving their conceptual distinctions.
+
+A particularly important insight concerns the relationship between institutional incentives and collective outcomes. Accountability may be weakened through explicit coordination, but it may also be undermined by independent actors responding to similar pressures. This distinction matters because the remedies differ.
+
+Where deliberate interference is established, individual accountability and lawful investigation may be necessary. Where organizational incentives produce silence without a common plan, structural reforms may be more effective. Where failures arise from poor training or unclear responsibilities, procedural improvements may be appropriate. Where institutions act on inaccurate information, correction and independent reassessment may be needed.
+
+The involvement of victim-support organizations adds another layer of complexity. Such organizations may protect complainants from isolation and help them navigate justice systems. They may also operate within institutional environments that create competing demands. A responsible analysis must therefore investigate their actual conduct rather than presuming either their independence or their complicity.
+
+Public controversy is similarly ambiguous. It may expose wrongdoing, distract from evidence, intensify conflict, or reflect competing accounts of a genuinely disputed event. Its significance depends on how it develops, who influences it, and whether it impairs or improves independent scrutiny.
+
+Finally, the framework highlights the importance of evidentiary discipline. A pattern that appears coherent in retrospect may reflect selection bias, incomplete information, or the human tendency to infer common purpose from related events. Academic inquiry must remain open to both confirmation and disconfirmation.
+
+The most defensible approach is to examine the original allegation, the institutional response, the role of third parties, and any suspected efforts at concealment as related but separately testable questions.
+
+15. Conclusion
+
+This paper has developed an integrative criminological framework for examining the potential interaction of law-enforcement misconduct, DARVO-like responses, reputational controversy, institutional betrayal, organizational silence, victim advocacy, and the concealment of criminal conduct.
+
+The analysis suggests several important research priorities.
+
+First, the extension of DARVO to institutional settings should be treated as a testable conceptual development rather than an established equivalence between interpersonal behavior and organizational action.
+
+Second, failures of accountability must be examined at multiple levels, including individual decisions, organizational norms, formal procedures, interorganizational dependencies, and public communication.
+
+Third, the participation of crime-victim support organizations should be evaluated according to their documented actions, mandates, relationships, and knowledge. Their association with a dispute does not establish complicity, just as their stated advocacy mission does not guarantee independence in every circumstance.
+
+Fourth, the distinction between institutional failure and deliberate criminal concealment must remain central. Negligence, bias, reputational defensiveness, retaliation, obstruction, and conspiracy are different concepts with different evidentiary and legal requirements.
+
+Fifth, credible accountability depends on independent investigative mechanisms, accurate recordkeeping, protected reporting, transparent decision-making, conflict-of-interest safeguards, and meaningful review of procedural failures.
+
+The proposed Institutional Accountability Displacement Model offers a preliminary framework for future empirical work. Its value will depend on whether researchers can define its constructs reliably, identify observable mechanisms, compare competing explanations, and establish when the proposed relationships are present or absent.
+
+The broader criminological significance lies in understanding how institutions respond when allegations threaten their authority or reputation. Institutions can protect their legitimacy by addressing credible concerns transparently, correcting mistakes, and permitting independent scrutiny. When institutional interests displace those responsibilities, the resulting harm may extend beyond an individual complaint to public trust, organizational integrity, and confidence in the justice system.
+
+A rigorous research agenda must therefore investigate the possibility of institutional concealment without assuming it, protect complainants without abandoning due process, and evaluate institutional conduct through evidence rather than through the force of competing narratives.
+
+References
+
+Barkworth, J. M., & Murphy, K. (2016). System contact and procedural justice policing: Improving quality of life outcomes for victims of crime. International Review of Victimology, 22(2), 105–122. https://doi.org/10.1177/0269758015627044
+
+Harsey, S. J., Zurbriggen, E. L., & Freyd, J. J. (2017). Perpetrator responses to victim confrontation: DARVO and victim self-blame. Journal of Aggression, Maltreatment & Trauma, 26(6), 644–663. https://doi.org/10.1080/10926771.2017.1320777
+
+Schaap, D., & Saarikkomäki, E. (2022). Rethinking police procedural justice. Theoretical Criminology. https://doi.org/10.1177/13624806211056680
+
+Smith, C. P., & Freyd, J. J. (2013). Dangerous safe havens: Institutional betrayal exacerbates sexual trauma. Journal of Traumatic Stress, 26(1), 119–124. https://doi.org/10.1002/jts.21778
+
+Smith, C. P., & Freyd, J. J. (2014). Institutional betrayal. American Psychologist, 69(6), 575–587. https://doi.org/10.1037/a0037564
+
+Tyler, T. R. (2017). Procedural justice and policing: A rush to judgment? Annual Review of Law and Social Science, 13, 29–53. https://doi.org/10.1146/annurev-lawsocsci-110316-113318
+
+Vere Taylor, O. E., Philpot, R., Fitton, O., Walkington, Z., & Levine, M. (2024). Police whistleblowing: A systematic review of the likelihood (and the barriers and facilitators) of the willingness of police officers to report the misconduct of fellow officers. Journal of Criminal Justice, 91, Article 102170. https://doi.org/10.1016/j.jcrimjus.2024.102170
+
+Additional recommended reading
+
+Bolger, P. C., & Walters, G. D. (2019). The relationship between police procedural justice, police legitimacy, and people's willingness to cooperate with law enforcement: A meta-analysis. Journal of Criminal Justice, 60, 93–99. https://doi.org/10.1016/j.jcrimjus.2019.01.001
+
+Mazerolle, L., Bennett, S., Davis, J., Sargeant, E., & Manning, M. (2013). Procedural justice and police legitimacy: A systematic review of the research evidence. Journal of Experimental Criminology, 9(3), 245–274.
+
+Source and scope note: This paper synthesizes established concepts from the cited literature and proposes a new framework for empirical investigation. It is not a completed systematic review, does not report original empirical findings, and does not establish that the combined pattern occurs in any particular case. Before submission to an academic journal or university, the references, full-text sources, citation details, and any required literature-search methodology should be independently verified and the manuscript adapted to the institution's requirements.
