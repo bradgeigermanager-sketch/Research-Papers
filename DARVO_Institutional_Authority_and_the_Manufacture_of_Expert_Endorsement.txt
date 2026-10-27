@@ -1,0 +1,804 @@
+DARVO, Institutional Authority, and the Manufacture of Expert Endorsement: Examining the Potential Use of Influential Intermediaries in Policy Manipulation
+A Criminological and Socio-Legal Analysis of Institutional Legitimacy, Epistemic Authority, and Accountability
+
+Article type: Theoretical research paper and interdisciplinary literature review
+Disciplinary fields: Criminology, criminal justice, sociology of organizations, socio-legal studies, social psychology, and public policy
+Research status: Conceptual paper with a proposed empirical research design
+Date: October 2026
+
+Abstract
+
+Institutional authority occupies a central position in contemporary criminal justice. Law-enforcement organizations possess legally delegated powers, specialized operational knowledge, and substantial symbolic authority, while policymakers and the public frequently rely on purported experts to interpret complex social problems and evaluate proposed interventions. These relationships can support effective governance and evidence-informed policymaking. They may also create vulnerabilities when institutional credibility substitutes for independent verification, when public prominence is mistaken for relevant expertise, or when allegations of institutional wrongdoing are answered through strategies that redirect scrutiny toward complainants.
+
+This paper develops a theoretical framework for examining the potential interaction of Deny, Attack, and Reverse Victim and Offender (DARVO), institutional authority, expert intermediation, implied endorsement, and policy influence in law-enforcement and criminal justice settings. Drawing on betrayal trauma theory, research on institutional betrayal, procedural justice, organizational legitimacy, epistemic authority, policy advice, and the sociology of knowledge, the paper distinguishes legitimate expert participation from the possible strategic use of influential intermediaries to legitimize predetermined policy positions. It conceptualizes manufactured expert endorsement as an analytical category encompassing the misleading representation of expertise, consensus, independence, or approval in ways that may influence policy deliberation.
+
+The paper proposes a multilevel model linking organizational incentives, intermediary selection, credibility transfer, policy framing, responses to criticism, and institutional outcomes. It also develops propositions concerning credential relevance, endorsement ambiguity, network concentration, accountability avoidance, and the conditions under which public scrutiny may be redirected from substantive allegations toward the perceived character or legitimacy of complainants. A proposed mixed-methods research design combines process tracing, documentary analysis, citation-network analysis, textual comparison, interviews, and comparative case studies. The paper emphasizes that DARVO is not proof of misconduct, that institutional benefit does not establish intent, and that expert influence does not necessarily indicate manipulation. Its central contribution is a framework for identifying and testing possible mechanisms of institutional influence while preserving evidentiary rigor, procedural fairness, and the distinction between demonstrated conduct and inferred motive.
+
+Keywords: DARVO; criminology; institutional betrayal; police legitimacy; epistemic authority; expert influence; manufactured consensus; policy manipulation; organizational accountability; procedural justice; law enforcement; institutional trust.
+
+1. Introduction
+
+The legitimacy of criminal justice institutions depends on more than their formal legal powers or capacity to enforce the law. It also depends on how authority is exercised, how decisions are justified, what evidence supports those decisions, and whether affected individuals have meaningful opportunities to challenge institutional conduct. Police organizations operate within complex relationships involving legislatures, executive agencies, courts, researchers, professional associations, advocacy organizations, media institutions, and members of the public. These relationships facilitate the exchange of expertise and information, but they also create opportunities for strategic framing and unequal influence.
+
+A recurring problem in the sociology of authority is that the appearance of credibility can become detached from the evidentiary basis that should justify it. A person may possess substantial public visibility without specialized knowledge of a particular subject. An organization may enjoy a strong reputation while making claims that have not been independently verified. A policy may be described as expert-supported even though the cited experts disagree, have not endorsed the specific proposal, or have not examined the relevant evidence. None of these circumstances alone establishes deliberate manipulation. Collectively, however, they identify important questions for criminological investigation.
+
+These questions become especially consequential when institutional actors face allegations of misconduct, unlawful conduct, procedural unfairness, or the misuse of authority. The institution's response may influence not only the immediate dispute but also the public's understanding of the allegation, the credibility of the complainant, the perceived legitimacy of oversight, and the subsequent development of policy.
+
+One potentially relevant analytical concept is DARVO: Deny, Attack, and Reverse Victim and Offender. Freyd (1997) introduced the concept in connection with violations of power and betrayal trauma. Subsequent research has investigated how such responses may affect perceptions of complainant and perpetrator credibility (Harsey & Freyd, 2020). Although the concept originated in research on interpersonal abuse, its components raise questions about how comparable forms of denial, counterattack, and role reversal might appear in organizational or institutional disputes.
+
+A second relevant body of scholarship concerns institutional betrayal. Smith and Freyd (2014) describe how institutions upon which individuals depend for protection, safety, or support can compound harm through their responses to misconduct or through failures to provide appropriate protection. In criminal justice settings, the analogous research problem concerns whether institutional procedures designed to investigate or remedy alleged wrongdoing instead create additional barriers to accountability.
+
+A third body of literature examines police legitimacy and procedural justice. Research suggests that public assessments of policing are influenced not only by perceived effectiveness but also by fairness, neutrality, respectful treatment, and the apparent trustworthiness of institutional motives (Tyler, 2017; Chan et al., 2025). Consequently, the way an agency communicates about its actions may be relevant to legitimacy, although public-relations success should not be confused with actual procedural fairness.
+
+This paper brings these literatures into conversation with scholarship on expert influence in policymaking. Christensen (2023) identifies several approaches for examining expert influence, including process tracing, analysis of policy preferences, textual reuse, and citation analysis. Such methods provide a basis for investigating whether particular individuals or organizations influence policy decisions, how their arguments are incorporated, and whether references to expertise substantively inform decisions or function primarily as symbolic validation.
+
+The paper's central research question is:
+
+Under what conditions, and through what observable mechanisms, might law-enforcement institutions or associated policy networks use influential intermediaries and implied expert endorsement to legitimize predetermined policy positions, while responding to criticism in ways that resemble DARVO?
+
+This question is deliberately conditional. It does not presume that law-enforcement agencies routinely engage in such conduct, that prominent commentators are generally unqualified, or that defensive institutional communication necessarily constitutes DARVO. Instead, it establishes an investigable framework for distinguishing legitimate institutional advocacy from misleading representations of expertise and potentially retaliatory responses to accountability efforts.
+
+The paper makes five contributions.
+
+First, it develops a conceptual connection between interpersonal DARVO research and institutional responses to allegations of wrongdoing, while acknowledging the limitations of extending an interpersonal construct to organizations.
+
+Second, it identifies manufactured expert endorsement as a proposed analytical construct that can be operationalized through evidence concerning qualifications, consent, disclosure, source attribution, and the representation of consensus.
+
+Third, it examines how institutional authority and intermediary credibility may interact in criminal justice policymaking.
+
+Fourth, it proposes an empirical framework for distinguishing influence, strategic framing, misleading endorsement, and demonstrable manipulation.
+
+Finally, it identifies institutional safeguards that may reduce the risk of credibility being substituted for evidence in criminal justice decision-making.
+
+2. Scope, Definitions, and Analytical Boundaries
+
+The terms used in this paper are related but not interchangeable. Their separation is necessary to avoid turning a research framework into an assumption of wrongdoing.
+
+2.1 DARVO
+
+DARVO refers to a response pattern involving three analytically distinguishable elements:
+
+Deny: Rejecting, minimizing, or disputing the allegation or the significance of the alleged conduct.
+Attack: Challenging the credibility, motives, character, or legitimacy of the person making the allegation.
+Reverse Victim and Offender: Reframing the accused party as the principal victim and the complainant as the principal aggressor or wrongdoer.
+
+The concept is useful as a framework for examining the structure of a response, not as an independent determination that the original allegation is true. Denial may be justified when an allegation is inaccurate. Criticism of a complainant may be relevant when supported by evidence. An institution may genuinely experience unfair treatment. The presence of one component, or even superficially similar language, therefore does not establish the complete pattern or its strategic purpose.
+
+The distinction is particularly important in criminal justice, where institutions and individuals have legitimate interests in responding to false accusations and correcting inaccurate information. A sound analysis must evaluate the response alongside the underlying evidence.
+
+2.2 Institutional authority
+
+Institutional authority refers to the socially and legally recognized capacity of an organization or its representatives to make decisions, establish rules, exercise delegated powers, and influence conduct.
+
+In law enforcement, authority is supported by statutory powers, professional specialization, organizational hierarchy, access to information, and the capacity to initiate or participate in coercive legal processes. These resources may create substantial asymmetries between institutional representatives and members of the public.
+
+Authority does not automatically establish the truth of a factual claim. Legal competence to exercise a power, technical competence to assess a particular problem, and moral legitimacy to exercise discretion are separate questions.
+
+2.3 Expert authority and intermediary influence
+
+Expert authority derives from specialized knowledge, relevant experience, methodological competence, or demonstrated ability to evaluate evidence within a particular domain. Intermediaries are individuals or organizations that connect knowledge producers, decision-makers, institutions, and publics.
+
+Intermediaries may include consultants, researchers, professional associations, former officials, commentators, advisory-board members, nonprofit organizations, and community representatives.
+
+Their participation is not inherently problematic. Intermediaries can make technical evidence accessible, identify practical constraints, and improve public deliberation. The analytical issue is whether their contributions are represented accurately and evaluated according to relevant standards.
+
+2.4 Manufactured expert endorsement
+
+This paper uses manufactured expert endorsement as a proposed analytical construct, rather than an established diagnosis of any particular institution.
+
+It refers to a situation in which the representation of expert support is deliberately or materially misleading because it inaccurately conveys one or more of the following:
+
+That a person possesses relevant expertise when the claim exceeds their demonstrated qualifications.
+That an expert has endorsed a particular policy when the expert has not done so.
+That multiple sources constitute independent agreement when their claims derive from a common source.
+That a policy rests on a settled scientific or professional consensus when the underlying evidence is contested or insufficient.
+That an expert's institutional affiliation establishes independent validation despite relevant conflicts of interest or undisclosed relationships.
+
+The term should not be applied merely because an expert is controversial, has unconventional qualifications, or supports a policy with which the researcher disagrees. Its application requires evidence of a discrepancy between the representation of endorsement and the underlying facts. Claims of deliberate manufacture require additional evidence concerning knowledge, intent, or coordinated conduct.
+
+2.5 Policy manipulation
+
+Policy manipulation is used here to describe a proposed category of conduct in which information, authority, or procedural arrangements are used deceptively or materially misleadingly to distort policy deliberation or obscure the evidentiary basis of a decision.
+
+It is distinct from ordinary persuasion, lobbying, political advocacy, selective prioritization, or disagreement over policy. Democratic policymaking necessarily involves competing interpretations of evidence and values. The relevant threshold is not that someone attempts to influence a decision, but that the means of influence materially misrepresent facts, expertise, endorsement, or the deliberative process.
+
+These definitions establish the paper's principal methodological rule: influence is not proof of manipulation, resemblance is not proof of DARVO, and institutional advantage is not proof of intent.
+
+3. Literature Review
+3.1 DARVO and the social organization of blame
+
+Freyd's (1997) work on power violations and betrayal trauma provides the conceptual foundation for understanding DARVO. The framework draws attention to responses in which an allegation of wrongdoing is met not only with denial but also with attacks on the complainant and a reversal of perceived victimhood.
+
+Harsey, Zurbriggen, and Freyd (2017) investigated responses to confrontation and reported associations between exposure to DARVO and increased self-blame among people confronting alleged wrongdoing. Harsey and Freyd (2020) subsequently examined how DARVO-related responses influence perceptions of perpetrator and victim credibility. Their experimental findings suggest that exposure to these response patterns can affect credibility judgments, while also indicating that education about DARVO may alter some of those effects.
+
+These findings are relevant to institutional research because organizations communicate through representatives, documents, public statements, legal submissions, and coordinated administrative processes. A response that shifts attention from the underlying conduct toward the supposed defects of a complainant could influence how observers evaluate the dispute.
+
+However, the empirical limits must be acknowledged. Research on interpersonal confrontation cannot simply be treated as direct evidence about law-enforcement agencies, bureaucratic organizations, or policy networks. Institutional conduct involves multiple actors, distributed responsibilities, formal procedures, and potentially legitimate legal constraints. The extension of DARVO to such settings should therefore be treated as a theoretical proposition requiring independent validation.
+
+The most defensible approach is to identify observable communicative components and investigate their sequence, context, and effects. For example, a study might examine whether an agency's response to an allegation simultaneously denies the alleged conduct, attacks the complainant's credibility, and portrays the agency as the principal victim of the dispute. The analysis would then assess whether the response addresses the substantive evidence, whether the counterclaims are substantiated, and whether the framing materially changes the public or administrative treatment of the allegation.
+
+A crucial distinction is that a DARVO-like communication pattern can be described without concluding that the original allegation has been proven. Conversely, the existence of a substantiated allegation does not establish that every subsequent institutional response is intentionally manipulative.
+
+3.2 Institutional betrayal and organizational protection
+
+Institutional betrayal research examines harms associated with institutions that fail to prevent, respond appropriately to, or acknowledge misconduct affecting people who depend on them. Smith and Freyd (2014) synthesize psychological research on how institutional action and inaction can contribute to adverse experiences.
+
+The concept is especially relevant where an organization has overlapping responsibilities: it may be responsible for the conduct under investigation, control relevant records, participate in the investigation, and communicate the official account of events.
+
+This creates a potential conflict between institutional self-protection and independent accountability. An agency may have legitimate reasons to protect confidential information, correct inaccurate allegations, or preserve the integrity of an investigation. At the same time, it may face reputational, financial, or organizational incentives to minimize findings of wrongdoing.
+
+The existence of such incentives is not proof of improper conduct. It identifies an organizational context in which independent review and transparent procedures become important.
+
+In criminological terms, institutional betrayal can be investigated through the relationship between formal accountability mechanisms and actual institutional behavior. Relevant questions include whether complaints are investigated independently, whether complainants experience retaliation, whether findings are disclosed accurately, whether policy reforms follow substantiated findings, and whether the institution acknowledges harms that have been demonstrated.
+
+Institutional betrayal and DARVO are conceptually related but distinct. Institutional betrayal concerns the harmful conduct or failure of an institution toward people who depend on it. DARVO concerns a particular response pattern involving denial, attack, and role reversal. An institution might betray public trust without displaying DARVO, and a communication pattern resembling DARVO does not by itself establish institutional betrayal.
+
+3.3 Police legitimacy and procedural justice
+
+Police legitimacy is a central concern in contemporary criminology. It involves judgments about whether police authority is appropriate, justified, and deserving of public acceptance. Tyler (2017) argues that procedural justice offers a significant framework for understanding legitimacy, including the importance of fairness in the exercise of authority.
+
+Procedural justice generally emphasizes opportunities for voice, neutrality, respectful treatment, and trustworthy motives. These principles have implications for institutional responses to complaints as well as for street-level police encounters.
+
+A meta-analysis by Chan, Bradford, and Stott (2025), synthesizing 123 studies involving 200,966 participants, found significant associations between procedural justice, social identity, and police legitimacy. The authors also reported variation across studies and contexts, underscoring the importance of avoiding simplistic causal interpretations.
+
+This research provides a useful distinction between legitimacy as perceived by the public and legitimacy grounded in fair institutional practice. Public confidence may be influenced by communication, reputation, and social identity, but a favorable public perception does not independently demonstrate that an investigation was impartial or a policy was evidence-based.
+
+Likewise, public criticism does not necessarily indicate illegitimacy. Institutions may be criticized despite following fair procedures, while unfair practices may remain publicly accepted.
+
+A criminological analysis of expert endorsement should therefore examine both institutional perceptions and institutional processes. It should ask whether experts have relevant qualifications, whether evidence is disclosed and evaluated fairly, whether contrary findings are considered, and whether affected communities have meaningful opportunities to challenge decisions.
+
+Huq, Jackson, and Trinkner (2017) further broaden the analysis of legitimacy by considering features of policing that include respect for legal boundaries, surveillance, and the distribution of policing resources. Their work supports an understanding of legitimacy that extends beyond visible encounters to less observable institutional practices.
+
+3.4 Epistemic authority and the credibility of knowledge
+
+Epistemic authority is the authority attributed to a person or institution because it is regarded as possessing knowledge. In complex policy domains, decision-makers cannot independently reproduce every technical analysis on which they rely. They must evaluate evidence partly through the qualifications, reputations, methods, and institutional affiliations of those who produce it.
+
+This dependence makes expertise indispensable. It also makes the representation of expertise a potential site of influence.
+
+Three dimensions should be distinguished.
+
+First, substantive competence. Does the individual possess knowledge relevant to the particular claim? A distinguished practitioner may have extensive experience in one area but limited competence in another.
+
+Second, methodological reliability. Are the conclusions supported by transparent methods, appropriate data, reproducible analyses where applicable, and acknowledgment of uncertainty?
+
+Third, institutional independence. Are the person's relationships, financial interests, organizational commitments, and potential conflicts disclosed sufficiently for decision-makers to evaluate the contribution?
+
+These dimensions may diverge. An individual can be highly qualified but financially interested in a particular outcome. A researcher can be independent but lack relevant expertise. A practitioner can have valuable operational experience without possessing the methodological training needed to establish a broad causal claim.
+
+The analytical objective is therefore not to classify people simplistically as qualified or unqualified. It is to assess the fit between a specific claim and the evidence and competence supporting it.
+
+3.5 Expert influence in policymaking
+
+Expert influence is not directly observable merely from the presence of experts in a policy process. Christensen (2023) identifies process tracing, surveys of attributed influence, preference-attainment analysis, textual reuse analysis, and citation analysis as methods for investigating the influence of experts on policy decisions.
+
+This methodological literature is particularly important for the present paper. A policy document may cite a research report without being substantively influenced by it. A recommendation may appear in a final policy because multiple sources independently reached similar conclusions. Conversely, an expert may exert substantial influence through meetings, informal advice, or changes in how decision-makers define a problem without leaving an obvious documentary trail.
+
+Christensen and van den Bekerom's 2026 research on citation-network analysis further illustrates how policy advice can be studied through relationships among advisory documents, including the durability, breadth, and brokerage of influence.
+
+These approaches offer a way to investigate whether a purported expert's contributions shaped policy and through what channels. They also discourage an overly simplistic inference that a citation, meeting, or public association proves deliberate manipulation.
+
+Policy scholarship distinguishes several possible uses of knowledge. Evidence may be used to solve a substantive problem, to support an existing political position, to confer legitimacy on a decision, or to shape how an issue is understood over time. Symbolic or strategic use of expertise may be consequential without necessarily involving false claims.
+
+The key research question is whether a policy's presentation accurately represents the evidence on which it relies and whether the actual decision-making process is consistent with claims of independent, evidence-informed deliberation.
+
+3.6 Institutional incentives and organizational self-protection
+
+Organizations are not unitary actors. Their behavior emerges from the interactions of senior leadership, operational personnel, legal advisers, communications staff, oversight bodies, professional norms, and external stakeholders.
+
+A response that appears defensive may result from several different mechanisms:
+
+A genuine belief that an allegation is inaccurate.
+Concern about legal exposure or confidentiality.
+Organizational routines that prioritize reputation and risk management.
+Disagreement between departments about the meaning of the evidence.
+Political pressure to justify an existing policy.
+Deliberate efforts by particular actors to deflect accountability.
+
+These explanations may produce similar public statements but have different implications for responsibility and reform.
+
+Organizational research should therefore avoid inferring a single motive from the final public communication. It should examine the sequence of decisions, internal disagreements where documented, incentives facing relevant actors, and the institutional procedures through which a response was authorized.
+
+The distinction between structural incentives and individual intent is especially important. An organization may generate misleading impressions through routine practices without any single person directing a coordinated deception. Alternatively, documented communications may establish that particular actors knowingly presented an endorsement inaccurately. Those are different empirical findings and should be reported differently.
+
+4. Theoretical Framework
+
+This paper proposes a multilevel framework integrating four theoretical dimensions: institutional legitimacy, epistemic authority, organizational incentives, and accountability responses.
+
+4.1 Institutional legitimacy as a resource
+
+Institutions possess accumulated reputational resources. Professional standing, historical performance, legal status, public trust, and recognized technical competence can influence how their claims are received.
+
+This legitimacy can reduce the cost of obtaining attention and acceptance. A statement from an established institution may receive more consideration than an equivalent statement from an unknown source.
+
+The same mechanism can create a vulnerability when institutional reputation is treated as a substitute for examining a specific claim. The relevant theoretical proposition is not that authority is inherently deceptive, but that authority can influence the threshold of scrutiny applied to information.
+
+4.2 Credibility transfer through intermediaries
+
+Intermediaries may connect institutional claims with audiences that would otherwise be skeptical, inaccessible, or difficult to reach. Their influence may derive from technical knowledge, community relationships, professional reputation, public visibility, or perceived independence.
+
+Credibility transfer occurs when the reputation of one actor affects the perceived credibility of another actor or a policy associated with them.
+
+Such transfer can be beneficial. An independent specialist may accurately explain a complex proposal, and a trusted community representative may help public officials understand local concerns.
+
+It becomes problematic when the association itself is misleading—for example, when participation in a meeting is presented as endorsement, a general statement of support is represented as approval of specific policy provisions, or the independence of an intermediary is inaccurately described.
+
+The relevant unit of analysis is therefore the relationship among the original claim, the intermediary's actual position, the institution's representation of that position, and the audience's resulting interpretation.
+
+4.3 The proposed role of manufactured endorsement
+
+Manufactured endorsement can be conceptualized as a discrepancy between actual support and represented support.
+
+Let:
+
+𝐸
+𝑎
+ denote actual expert support for a specified proposition.
+𝐸
+𝑟
+ denote the support represented to policymakers or the public.
+𝐷
+ denote the discrepancy between actual and represented support.
+𝐼
+ denote the demonstrated influence of that representation on a decision.
+
+The basic discrepancy can be expressed conceptually as:
+
+𝐷
+=
+𝐸
+𝑟
+−
+𝐸
+𝑎
+
+This expression is illustrative, not a validated measurement scale. Expert support is multidimensional and cannot generally be reduced to a single numerical value without a carefully specified operationalization.
+
+A material discrepancy may arise from misquotation, an inaccurate claim of endorsement, selective omission of relevant qualifications, or a false implication of consensus. The existence of a discrepancy does not by itself demonstrate intent. Deliberate manufacture requires additional evidence that relevant actors knew, or in an appropriate evidentiary framework can be shown to have known, that the representation was misleading.
+
+The next question is whether the discrepancy influenced the policy process. Even a misleading statement may have had no discernible effect on a decision. Conversely, a policy may be influenced by an inaccurate claim without the researcher being able to establish which actor originated the error.
+
+This distinction yields three separate empirical questions:
+
+Was the representation of expertise or endorsement inaccurate?
+Was the inaccuracy knowing, reckless, coordinated, or otherwise attributable to identifiable conduct?
+Did the representation affect the policy process or its outcome?
+
+These questions should be answered independently rather than collapsed into a single judgment.
+
+4.4 DARVO-like responses as an accountability mechanism
+
+The paper proposes that DARVO may be relevant to institutional disputes where the response to a challenge changes the subject of public attention.
+
+The hypothesized sequence is:
+
+An individual or organization raises a specific allegation.
+The institution responds by disputing the allegation.
+The response shifts toward the critic's motives, competence, character, or legitimacy.
+The institution presents itself as the party suffering the principal harm.
+Public or administrative attention shifts from the original allegation toward the conflict over the complainant's credibility.
+
+This sequence is a research model, not an assumed description of law-enforcement behavior.
+
+The analytical question is whether the response substantively addresses the allegation and whether the counteraccusations are supported by evidence. A response can be vigorous without being DARVO. It can also include a legitimate correction alongside a potentially retaliatory or misleading personal attack.
+
+For that reason, researchers should code each component separately, establish the chronology of events, and assess whether the communication's framing materially changes the treatment of the original issue.
+
+4.5 A proposed integrated model
+
+The following model summarizes the hypothesized relationships.
+
+Organizational and political context
+Institutional incentives, existing policy commitments, reputational concerns, and access to decision-makers
+
+↓
+
+Intermediary participation
+Selection of experts or influential figures, communication of technical claims, and formation of advisory relationships
+
+↓
+
+Representation of credibility
+Qualification claims, source attribution, endorsement statements, disclosure of interests, and representations of consensus
+
+↓
+
+Policy translation
+Incorporation into official reports, training standards, regulations, funding decisions, operational guidance, or legislation
+
+↓
+
+Response to scrutiny
+Evidence-based clarification, ordinary institutional defense, or a potentially DARVO-like shift toward attacking critics and reversing victimhood
+
+↓
+
+Institutional outcomes
+Policy adoption or rejection, public understanding, accountability, legitimacy, and opportunities for correction
+
+The model permits feedback. Public criticism may lead to new disclosures, independent review, or policy revision. It may also lead an organization to intensify its communications strategy. Which pathway occurs is an empirical question.
+
+5. The Selection of Influential Intermediaries
+
+The selection of an intermediary should not be equated with targeting in the sense of a deliberate manipulation strategy. Institutions legitimately recruit people whose expertise, experience, or public standing helps them understand and communicate complex issues.
+
+Nevertheless, the selection process warrants investigation when the stated reason for participation differs materially from the individual's actual qualifications or role.
+
+5.1 Visibility and competence
+
+Public visibility is an imperfect indicator of expertise. An individual may be widely recognized because of professional accomplishments, media exposure, political activity, personal experience, or association with a prominent institution.
+
+Visibility can increase the likelihood that a statement will be heard, repeated, or cited. It does not independently establish whether the statement is accurate.
+
+A systematic assessment should distinguish:
+
+Subject-matter expertise.
+Relevant professional experience.
+Research and methodological competence.
+Communication skill.
+Access to decision-makers.
+Public prominence.
+Organizational independence.
+
+These characteristics may overlap, but they are not interchangeable.
+
+5.2 The problem of domain mismatch
+
+Domain mismatch occurs when a person's genuine qualifications do not adequately support the specific claim being made.
+
+For example, operational experience in law enforcement may provide important insight into implementation challenges. It does not automatically establish that a particular intervention reduces crime, is constitutionally permissible, or produces equitable outcomes. Those questions may require additional legal, statistical, social-scientific, or community-based evidence.
+
+Likewise, academic expertise in criminology does not automatically confer expertise in every area of policing, and lived experience can contribute valuable knowledge without necessarily establishing population-level causal conclusions.
+
+The appropriate standard is proportionality: the strength and scope of a claim should be commensurate with the available evidence and the individual's relevant competence.
+
+5.3 Conflicts of interest and independence
+
+Intermediaries may have employment relationships, consulting contracts, organizational affiliations, financial interests, or prior commitments relevant to a policy proposal.
+
+Such relationships do not automatically invalidate their contributions. They may provide useful practical experience or explain why a particular individual has been consulted.
+
+The concern arises when a material relationship is concealed or when an interested source is presented as independent without adequate disclosure.
+
+A robust investigation would compare public descriptions of an expert's role with appointment records, disclosure statements, contracts where lawfully available, published affiliations, and the individual's own account of the engagement.
+
+5.4 Implied endorsement
+
+An endorsement is a specific form of support. It should not be inferred solely from proximity, participation, or silence.
+
+An individual may attend a consultation without endorsing the final policy. A report may quote an expert's general observation while omitting the expert's reservations about a proposed application. A professional organization may support a policy objective while opposing particular implementation provisions.
+
+These distinctions matter because public descriptions often compress complex positions into simplified statements of support.
+
+Research should therefore examine the original statement, its context, the exact proposition being endorsed, and the subsequent representation of that statement. Where possible, the analysis should distinguish explicit endorsement, qualified support, general agreement, participation without endorsement, and misattributed endorsement.
+
+6. Policy Manipulation and the Construction of Consensus
+6.1 The difference between consensus and repetition
+
+Independent agreement among qualified specialists is different from repeated circulation of the same claim through interconnected sources.
+
+A policy argument may appear widely supported because several reports cite one another, because multiple organizations repeat a common source, or because a small network of actors occupies prominent positions in advisory processes.
+
+Such patterns are not inherently improper. Interconnected research communities often share sources because those sources are influential or methodologically important.
+
+The research question is whether apparent agreement reflects genuinely independent evaluation, a shared evidentiary foundation, or the repetition of an assertion that has not been independently tested.
+
+Citation-network analysis can help map these relationships. It cannot, by itself, establish deception or determine the validity of the underlying claim.
+
+6.2 Symbolic and strategic uses of expertise
+
+Expertise may serve different purposes in policymaking. Decision-makers may seek information to resolve uncertainty, but they may also cite experts to demonstrate that a proposal has received professional attention or to support an already preferred course of action.
+
+The latter possibility does not automatically constitute manipulation. Policymakers routinely advocate for policies, and expert evidence can legitimately support decisions that were already under consideration.
+
+The analytical issue is whether the use of expertise is transparent and substantively connected to the decision. For example, a policy document may invoke an expert report while ignoring its limitations or presenting a recommendation as stronger than the report warrants.
+
+A careful study should compare the source's actual conclusions with the claims made in the policy document. It should also investigate whether contrary evidence was considered and whether the final decision accurately communicates remaining uncertainty.
+
+6.3 The policy feedback effect
+
+Once a claim enters an official document, it may be repeated in training materials, legislative hearings, grant applications, media statements, or subsequent reports. Repetition can increase the claim's institutional visibility and make it appear established.
+
+This process may occur without deliberate coordination. Documents often reuse language for efficiency and consistency. However, the resulting accumulation of citations and institutional references can obscure the original source or make an unsupported claim difficult to dislodge.
+
+Textual reuse analysis and source tracing can establish how a particular statement entered a documentary record and how it changed as it circulated.
+
+The relevant distinction is between the diffusion of a defensible finding and the diffusion of a materially distorted claim. The former can improve policymaking; the latter can degrade it.
+
+6.4 Why policy adoption does not establish manipulation
+
+A policy that benefits a particular organization may still be justified by evidence. A decision that follows an expert's recommendation may reflect sound judgment rather than improper influence. A policy may also be adopted for normative, legal, fiscal, or operational reasons that are independent of the cited expert.
+
+Causal inference therefore requires more than identifying a sequence in which an influential person comments on an issue and a policy is subsequently adopted.
+
+Researchers should establish what decision-makers believed before receiving the advice, what information they received, how they responded, which alternatives were considered, and whether the recommendation demonstrably altered the decision.
+
+Where these links cannot be established, conclusions should remain limited to documented association, opportunity for influence, or correspondence between recommendations and outcomes.
+
+7. DARVO, Criticism, and the Redirection of Accountability
+7.1 The original allegation as the unit of analysis
+
+The most important methodological safeguard is to retain the original allegation as a distinct object of investigation.
+
+When a complaint is followed by public disagreement, the dispute can become dominated by competing accounts of the complainant's motives or the institution's reputation. The original question may become obscured by arguments about tone, loyalty, professionalism, or political affiliation.
+
+Some of these issues may be relevant. For example, a conflict of interest or demonstrably false statement can affect the weight assigned to testimony. But a complainant's perceived hostility does not independently establish that the allegation is false.
+
+An evidence-centered analysis should maintain separate records of the original claim, the institution's response, any counterallegations, and the evidence supporting each.
+
+7.2 Distinguishing legitimate defense from DARVO
+
+The presence of denial, criticism, or institutional self-description is insufficient to establish DARVO. The components must be assessed in context.
+
+A useful coding framework would ask:
+
+Does the response directly address the substantive allegation?
+Does it deny or minimize conduct that is independently documented?
+Does it introduce personal attacks that are irrelevant to the allegation?
+Does it portray the institution as the principal victim without adequately addressing the original claim?
+Are the institution's counterclaims supported by independent evidence?
+Does the response result in a material shift in how the allegation is discussed or investigated?
+
+The final question concerns effect, not necessarily intent. A response may redirect attention even when its author does not consciously intend to do so. Intent should be investigated separately through documentary evidence, reliable testimony, and the broader sequence of conduct.
+
+7.3 Counteraccusations and reputational asymmetry
+
+In institutional disputes, a public organization may have greater access to communications staff, legal representation, official records, and established media channels than an individual complainant. This asymmetry can affect the visibility and perceived credibility of competing accounts.
+
+The existence of asymmetry does not determine which account is correct. It does, however, create a researchable question about whether procedural protections are adequate when a complaint concerns the conduct of the institution responsible for receiving or investigating it.
+
+Relevant outcomes include whether the complainant can submit evidence, obtain a reasoned response, access applicable review procedures, and challenge the institution's account through an independent process.
+
+7.4 The risk of conceptual overreach
+
+DARVO can become analytically unhelpful if it is applied to every disagreement or every allegation of institutional defensiveness.
+
+A theory that classifies all contrary evidence as denial, all criticism as attack, and all institutional self-defense as role reversal becomes unfalsifiable. Such a framework cannot reliably distinguish misconduct from legitimate disagreement.
+
+To remain useful, the construct must permit disconfirmation. Researchers should identify what evidence would count against the DARVO interpretation, including a well-supported correction of a false allegation, a proportionate response focused on relevant evidence, or an independently substantiated counterclaim.
+
+The framework should therefore function as a set of questions to test, not a conclusion to impose.
+
+8. Implications for Criminology
+8.1 Organizational criminology
+
+Organizational criminology examines misconduct, rule violations, and accountability within organizations. The present framework extends that interest to the processes through which organizations justify their conduct and influence the interpretation of disputed events.
+
+The relevant unit of analysis may be an individual decision, a communications strategy, an interorganizational network, a policy-development process, or a pattern of responses across multiple complaints.
+
+The framework can help researchers investigate how formal rules interact with organizational incentives and how institutional explanations are produced, circulated, and challenged.
+
+8.2 State authority and the exercise of discretion
+
+Law enforcement exercises powers that can significantly affect liberty, privacy, safety, and access to justice. Consequently, claims made in support of policing policies deserve scrutiny proportional to the consequences of those policies.
+
+Where an agency advocates expanded surveillance, new enforcement powers, altered use-of-force rules, predictive systems, or changes to accountability procedures, the public interest extends beyond whether an expert has expressed support. It includes the quality of the evidence, the scope of the authority requested, the distribution of potential harms, and the availability of independent review.
+
+This is not an argument against institutional expertise. It is an argument for matching the strength of institutional claims to the strength of the evidence and ensuring that consequential decisions remain contestable.
+
+8.3 Institutional legitimacy and public trust
+
+Trust in law enforcement is not simply a communications outcome. It is influenced by experiences, perceptions of fairness, institutional performance, and beliefs about whether authority is exercised within appropriate boundaries.
+
+An institution that communicates persuasively but fails to address substantiated misconduct may obtain short-term reputational benefits without resolving the underlying legitimacy problem. Conversely, an institution that acknowledges errors and implements verifiable reforms may initially face criticism while strengthening its accountability over time.
+
+These possibilities should be investigated empirically rather than assumed. Longitudinal research could examine whether transparent corrections, independent reviews, and demonstrable reforms are associated with changes in public confidence.
+
+8.4 Epistemic inequality
+
+Institutional actors and prominent intermediaries often possess greater opportunities to define which claims receive attention and which sources are regarded as credible.
+
+The resulting inequality may affect not only whose views are heard but also which kinds of knowledge are treated as authoritative. Professional expertise, administrative data, community experience, and affected individuals' testimony provide different forms of information. Each has strengths and limitations.
+
+A sound policy process should not automatically privilege any one category. Instead, it should explain how different sources were assessed and how conflicting evidence was resolved.
+
+8.5 Institutional betrayal and the chilling of complaints
+
+If people reasonably anticipate retaliation, reputational attack, or dismissal when raising concerns, they may become less willing to report misconduct or participate in oversight.
+
+The potential consequences include incomplete information, reduced organizational learning, weaker complaint systems, and diminished public confidence.
+
+These outcomes should not be inferred from the existence of a contentious dispute. They can be investigated through complainant surveys, administrative records, longitudinal interviews, and comparisons of reporting patterns before and after procedural reforms.
+
+9. Research Propositions
+
+The following propositions translate the theoretical framework into testable claims. They are hypotheses for future research, not established findings.
+
+Proposition 1: Credential–claim mismatch. The greater the discrepancy between an intermediary's relevant expertise and the scope of the claims attributed to that intermediary, the greater the risk that an audience will receive a misleading impression of the evidentiary basis for a policy.
+
+This proposition would require measurement of relevant qualifications, the specific claims made, and the manner in which the audience understands the individual's expertise.
+
+Proposition 2: Endorsement ambiguity. When an institution represents general participation or qualified support as explicit endorsement, audiences may overestimate the degree of expert agreement with the policy.
+
+This proposition could be tested through controlled experiments using alternative descriptions of the same expert's actual position.
+
+Proposition 3: Source concentration. When apparently independent policy sources rely heavily on a common underlying source, the perceived breadth of agreement may exceed the actual independence of the supporting evidence.
+
+Citation-network analysis and source genealogy could identify such patterns, while experiments or surveys could test their effects on perceptions of consensus.
+
+Proposition 4: Accountability displacement. In institutional disputes, responses that focus disproportionately on a complainant's character or motives rather than the substantive allegation may be associated with reduced attention to the original issue.
+
+This proposition would require content analysis combined with audience-response measures or longitudinal observation of public and administrative discussion.
+
+Proposition 5: Institutional incentive interaction. Reputational or organizational pressures may be associated with defensive communication, but the relationship between these pressures and misleading representations will depend on oversight, internal accountability, and disclosure requirements.
+
+This proposition predicts variation across institutions rather than a universal tendency toward manipulation.
+
+Proposition 6: Transparency and correction. Clear disclosures of qualifications, conflicts of interest, endorsement scope, and evidentiary uncertainty may reduce the likelihood that audiences mistake institutional association for independent validation.
+
+The proposition could be tested experimentally and through comparative evaluation of real-world disclosure reforms.
+
+Proposition 7: Independent oversight. Independent review and accessible correction procedures may improve the capacity to detect inaccurate claims and distinguish legitimate institutional defense from accountability-avoidance practices.
+
+Evaluation would require comparative data on error detection, complaint resolution, policy revision, and institutional trust.
+
+Proposition 8: Intent–outcome divergence. Misleading impressions may arise without deliberate coordination, while deliberate efforts to misrepresent endorsement may occur without demonstrably changing a final policy decision.
+
+This proposition emphasizes the need to assess accuracy, intent, and policy influence as separate dimensions.
+
+Together, these propositions allow researchers to investigate the framework without presupposing that the hypothesized mechanism operates in every case.
+
+10. Proposed Methodology
+10.1 Research design
+
+A comparative, mixed-methods design is proposed. It would examine documented criminal justice policy processes in which expert advice, institutional claims, public criticism, and accountability procedures can be reconstructed from reliable records.
+
+The study would combine:
+
+Comparative case studies.
+Process tracing.
+Qualitative document analysis.
+Textual reuse and citation-network analysis.
+Semi-structured interviews, where feasible.
+Surveys or experiments assessing public interpretation of expertise and endorsement.
+
+The purpose would be to determine whether the proposed mechanisms can be identified reliably, how frequently they occur in the selected cases, and under what conditions they are associated with policy outcomes.
+
+10.2 Case selection
+
+Cases should be selected using transparent criteria rather than solely because they appear to confirm the theory.
+
+A suitable sample might include criminal justice policies involving changes to surveillance, use of force, investigative methods, data-driven enforcement, disciplinary procedures, or independent oversight.
+
+Cases should vary in outcome and context. The sample should include policies that were adopted, rejected, revised, and referred for additional review. It should also include cases in which allegations of misleading endorsement were not substantiated.
+
+This negative-case strategy is essential. Without it, researchers risk selecting only disputes in which the proposed mechanism appears plausible and overlooking alternative explanations.
+
+10.3 Data sources
+
+Potential sources include:
+
+Original policy proposals and successive drafts.
+Legislative hearings and committee records.
+Public advisory reports and meeting minutes.
+Published expert opinions and relevant underlying research.
+Agency statements, press releases, and official correspondence.
+Public records obtained through applicable disclosure laws.
+Court judgments and publicly available administrative findings.
+Conflict-of-interest and advisory-board disclosures.
+Official corrections, retractions, and responses from named experts.
+Interviews with participants, subject to informed consent and appropriate protections.
+Publicly available media coverage, used alongside primary records rather than as a substitute for them.
+
+The study should document the provenance, date, completeness, and reliability of each source. A public statement should not be treated as an independently verified fact merely because it appears on an official website.
+
+10.4 Operationalizing the central constructs
+
+The principal constructs should be coded separately.
+
+Construct	Proposed indicators	Important limitation
+Relevant expertise	Qualifications, subject-specific experience, research record, methodological competence	Formal credentials alone do not determine competence
+Endorsement accuracy	Correspondence between the original statement and subsequent representations	Ambiguous statements require contextual interpretation
+Independence	Disclosed relationships, funding, affiliations, conflicts of interest	A relationship does not automatically invalidate expertise
+Consensus representation	Number and independence of underlying sources, treatment of dissent, evidentiary agreement	Repeated sources may reflect legitimate scholarly convergence
+DARVO-like response	Separately coded denial, personal attack, and role-reversal framing	Similar language does not establish motive or underlying guilt
+Policy influence	Draft changes, citations, meeting records, decision-maker testimony, process-tracing evidence	Temporal sequence alone does not establish causation
+Accountability outcome	Independent review, correction, substantiated findings, policy changes, complaint resolution	Different outcomes may reflect different legal and procedural constraints
+
+A coding manual should provide explicit definitions, inclusion and exclusion criteria, and examples. Multiple independent coders should evaluate a sample of records, with inter-rater reliability assessed using an appropriate statistic. Disagreements should be documented and resolved through a predefined process.
+
+10.5 Process tracing
+
+Process tracing would reconstruct the development of a selected policy from its initial formulation to the final decision.
+
+The analysis would establish:
+
+The original policy problem and the available evidence.
+The positions of relevant experts and decision-makers before key consultations.
+The timing and nature of intermediary involvement.
+How advice was represented in subsequent communications and documents.
+Whether decision-makers changed their positions or incorporated specific recommendations.
+Whether alternative evidence was considered.
+Whether later scrutiny resulted in correction, revision, or continued reliance on the disputed claims.
+
+Strong evidence of influence would include contemporaneous records showing that decision-makers relied on a specific recommendation when altering a draft or choosing between alternatives. Evidence of deliberate misrepresentation would require a separate inquiry into what the relevant actors knew and how the representation was produced.
+
+10.6 Textual and citation-network analysis
+
+Textual analysis could compare advisory reports, public statements, internal policy drafts where lawfully obtained, and final decisions.
+
+Automated text comparison can identify reused phrases and changes in wording. Researchers should then manually examine relevant passages to determine whether reuse reflects substantive borrowing, common terminology, rejection of an earlier proposal, or routine administrative language.
+
+Citation-network analysis could identify which sources are cited by policy documents, which sources cite one another, and whether a small number of documents serve as central intermediaries in the network.
+
+Network centrality would be treated as a measure of structural position, not as proof of expertise, manipulation, or culpability. Researchers should also trace claims back to original data or studies to determine whether multiple citations represent genuinely independent evidence.
+
+10.7 Interviews and survey research
+
+Where feasible, semi-structured interviews could explore how participants understood their roles, how expert qualifications were assessed, how endorsement statements were approved, and how conflicting evidence was handled.
+
+Interview testimony should be corroborated where possible. Participants may misremember events, misunderstand other actors' motives, or offer self-protective accounts.
+
+Survey experiments could investigate how the same policy claim is evaluated when attributed to different types of sources—for example, a subject-matter specialist, a prominent public commentator, a law-enforcement official, or an independent review body.
+
+Such experiments could test whether public prominence, institutional affiliation, disclosure of conflicts, and explicit statements of endorsement affect perceived credibility. They would not establish whether a particular real-world actor deliberately manipulated a policy process.
+
+10.8 Alternative explanations and causal inference
+
+The analysis should consider competing explanations for the same observed pattern.
+
+These include ordinary policy disagreement, good-faith institutional defense, legal confidentiality, incomplete records, bureaucratic fragmentation, genuine expert consensus, political pressure, and independent reasons for adopting a policy.
+
+Researchers should specify what evidence would support each explanation and what findings would weaken the preferred interpretation.
+
+Where feasible, comparative cases, temporal evidence, and process-tracing tests should be used to evaluate causal claims. Statistical associations should not be reported as causal effects unless the research design supports that inference.
+
+10.9 Ethics and legal safeguards
+
+Research involving allegations against identifiable people or institutions requires particular care.
+
+The study should distinguish allegations from substantiated findings, avoid unnecessary disclosure of sensitive information, respect applicable privacy and records-access laws, and give relevant parties a fair opportunity to respond when publishing serious claims.
+
+Researchers should not infer criminal intent from reputation, association, or ambiguous communication. Nor should they treat a person as unqualified solely because they lack a particular credential when relevant experience or alternative evidence may be pertinent.
+
+The research should be designed to withstand scrutiny from both critics and supporters of the institutions being studied.
+
+11. Limitations
+
+The proposed framework has several limitations.
+
+First, DARVO was developed in a context different from institutional policymaking. Its extension to organizations requires conceptual clarification and empirical validation. Institutional statements may be produced by several people, and the relationship between a communication and an organization's internal intentions may be difficult to establish.
+
+Second, manufactured expert endorsement is a proposed analytical construct. It requires further development, reliable coding rules, and evidence of discriminant validity. It should not be treated as an established clinical, legal, or criminological diagnosis.
+
+Third, documentary records are incomplete. Informal meetings, verbal advice, private correspondence, and unrecorded decision-making may not be available. Public documents can reveal the official account of a process without fully revealing how decisions were made.
+
+Fourth, expertise is multidimensional. Differences in credentials or professional background do not automatically establish incompetence, and disagreement among specialists does not necessarily imply that one party is misleading the public.
+
+Fifth, influence is difficult to measure. Policy decisions are usually shaped by multiple factors, and correspondence between an expert recommendation and a final decision does not establish that the expert caused the outcome.
+
+Sixth, public perceptions of legitimacy are not equivalent to objective institutional performance. Research should distinguish attitudes, observed practices, legal compliance, and substantiated findings.
+
+Finally, case selection and researcher expectations may create confirmation bias. The use of negative cases, independent coding, transparent operational definitions, and explicit disconfirmation criteria is therefore essential.
+
+12. Institutional Safeguards and Policy Implications
+
+The proposed framework identifies several safeguards that could improve the transparency and accountability of criminal justice policymaking without presuming that any particular institution has engaged in misconduct.
+
+12.1 Qualification and role transparency
+
+Organizations should clearly describe the relevant qualifications and roles of individuals consulted on consequential policy decisions. Where expertise is disputed, the institution should explain why the person's experience or methods are relevant to the specific question.
+
+This approach is more useful than relying on vague titles or generalized claims of authority.
+
+12.2 Explicit endorsement verification
+
+Institutions should distinguish consultation, participation, general agreement, qualified support, and explicit endorsement. Where an individual's position is represented publicly, the representation should accurately reflect the scope and limitations of the person's statement.
+
+Material inaccuracies should be corrected through the same channels in which the original representation appeared.
+
+12.3 Conflict-of-interest disclosure
+
+Advisory processes should provide proportionate disclosure of relevant funding, employment, consulting relationships, organizational affiliations, and other material interests.
+
+Disclosure does not require excluding every person with a professional or financial connection to the subject. It allows decision-makers and the public to evaluate the contribution with appropriate context.
+
+12.4 Evidence provenance and policy traceability
+
+Policy documents should identify the evidence supporting major empirical claims and distinguish research findings from assumptions, operational judgments, and value-based choices.
+
+Where feasible, institutions should preserve records showing how major recommendations were evaluated, which alternatives were considered, and why the final decision differed from or adopted the advice received.
+
+Such records improve auditability and make it easier to identify whether a claim was misunderstood, inaccurately represented, or deliberately distorted.
+
+12.5 Independent complaint review
+
+Where an institution is implicated in the conduct under investigation, independent review mechanisms can reduce conflicts of interest and improve confidence in the process.
+
+The appropriate form of review will vary with jurisdiction and the seriousness of the allegation. It may include independent investigators, inspectors general, civilian oversight bodies, courts, external auditors, or other legally authorized mechanisms.
+
+Independence should be assessed substantively, including appointment procedures, access to records, investigative authority, reporting arrangements, and protection from improper interference.
+
+12.6 Protection against retaliation
+
+Institutions should provide clear procedures for reporting suspected misconduct, evaluating complaints, protecting confidential information, and investigating allegations of retaliation.
+
+A person should not be presumed correct simply because they report wrongdoing. Equally, a complaint should not be dismissed solely because it is uncomfortable for the organization or its leadership.
+
+Fair procedures require evidence-based assessment and meaningful opportunities for review.
+
+12.7 Correction and institutional learning
+
+Organizations should establish mechanisms for correcting inaccurate public claims, reviewing failures, documenting remedial actions, and evaluating whether policy changes address identified problems.
+
+A correction should identify what was inaccurate, what evidence supports the revision, and whether related policy decisions require reconsideration.
+
+The purpose is not merely to protect institutional reputation. It is to ensure that decisions remain responsive to evidence.
+
+12.8 Evaluation of outcomes
+
+Safeguards should be evaluated using observable outcomes rather than the existence of formal policies alone.
+
+Potential measures include the time required to correct inaccurate statements, the proportion of complaints receiving independent review, the transparency of advisory appointments, the frequency of documented policy revisions, and public assessments of procedural fairness.
+
+Evaluation should also examine unintended consequences, including excessive administrative burden, chilling effects on legitimate expert participation, or the misuse of complaint procedures to suppress good-faith disagreement.
+
+13. Discussion
+
+The proposed framework places institutional authority and expert endorsement within a broader criminological account of how power is justified, challenged, and reproduced.
+
+Law-enforcement organizations require specialized knowledge and public cooperation. Expert intermediaries can improve the quality of decisions by translating research into practice and communicating institutional needs. At the same time, the dependence of policymaking on credibility creates a vulnerability when claims of expertise or consensus are not accurately represented.
+
+The central issue is not the existence of influence. Influence is an ordinary feature of policy formation. Nor is it the mere presence of reputational incentives, since organizations routinely have legitimate reasons to explain and defend their work. The issue is whether information and authority are represented accurately, whether decision-makers can evaluate the underlying evidence, and whether allegations of misconduct receive fair and independent consideration.
+
+DARVO provides one possible lens for examining the communicative dimension of accountability disputes. Its usefulness lies in drawing attention to a response that may combine denial, attacks on the complainant, and a reversal of perceived victimhood. Its limitations are equally important: a similar sequence of statements does not prove that the allegation is true, that the institution acted with deceptive intent, or that the response altered the policy process.
+
+The concept of manufactured expert endorsement directs attention toward a different mechanism: the relationship between actual expertise or support and the way that expertise or support is presented. A prominent intermediary may provide legitimate validation, but prominence alone does not establish relevant competence. An expert's participation may be accurately reported, but participation should not be transformed into endorsement. Multiple citations may demonstrate broad agreement, but their independence and evidentiary foundations must be examined.
+
+These mechanisms may interact. An inaccurate representation of endorsement could support a policy proposal; criticism of that representation could then provoke a response focused on the critic rather than the evidence. If this sequence were documented, it would warrant investigation into the accuracy of the endorsement, the role of the intermediary, the response to criticism, and the influence on the final decision. It would not automatically establish a coordinated strategy or prove that all participants shared a common intent.
+
+The most important implication is methodological. Criminological research should reconstruct the process through which authority becomes accepted, contested, and translated into policy. It should investigate how institutional statements relate to underlying evidence, how intermediaries are selected and represented, how allegations are addressed, and what happens when errors are identified.
+
+This approach avoids two symmetrical mistakes: assuming that institutions and experts are inherently trustworthy, and assuming that institutional disagreement or defensive communication necessarily demonstrates manipulation. Both assumptions substitute general impressions for case-specific evidence.
+
+A rigorous analysis should instead establish a chain of observable relationships among claims, sources, representations, decisions, and outcomes. Where the evidence supports a finding of misleading endorsement or retaliatory conduct, the conclusion should identify the relevant actors, documents, chronology, and limitations. Where the evidence is incomplete, the uncertainty should remain explicit.
+
+14. Conclusion
+
+This paper has developed a conceptual framework for examining the potential intersection of DARVO, institutional authority, expert intermediation, implied endorsement, and policy influence in law-enforcement and criminal justice settings.
+
+The framework identifies several distinct but potentially interacting processes: the use of institutional reputation as a source of credibility; the selection of influential intermediaries; the representation of expertise and endorsement; the incorporation of claims into policy documents and decisions; and the handling of criticism or allegations of wrongdoing.
+
+It proposes manufactured expert endorsement as a research construct for identifying discrepancies between actual support and represented support. It also identifies DARVO-like communication as a potential mechanism through which an accountability dispute may shift from the original allegation toward the complainant's credibility or the institution's claimed victimhood.
+
+Neither construct should be treated as proof of misconduct. Their value depends on precise definitions, independent evidence, and methods that permit competing explanations to be evaluated.
+
+The proposed research design combines comparative case studies, process tracing, document analysis, textual reuse, citation-network analysis, and interviews or experiments where appropriate. This approach can help distinguish genuine expert influence from misleading representations, ordinary institutional defense from accountability displacement, and observable policy effects from inferred motives.
+
+The broader criminological implication is that legitimate authority requires more than public acceptance or association with respected experts. It requires defensible procedures, accurate representations of evidence, meaningful opportunities for challenge, and mechanisms through which errors and misconduct can be independently examined.
+
+When expertise is accurately represented and institutional claims remain open to scrutiny, intermediaries can strengthen policy deliberation. When credibility is substituted for evidence, or when accountability is displaced by unsupported attacks on those raising concerns, the integrity of the process may be compromised. Establishing whether such failures have occurred requires careful empirical investigation rather than assumption.
+
+The central research imperative is therefore straightforward: examine the evidence supporting institutional claims, trace the pathways through which expert authority influences policy, and evaluate responses to criticism without presuming either institutional innocence or institutional manipulation.
+
+References
+
+Chan, A., Bradford, B., & Stott, C. (2025). A systematic review and meta-analysis of procedural justice and legitimacy in policing: The effect of social identity and social contexts. Journal of Experimental Criminology, 21, 349–406. https://doi.org/10.1007/s11292-023-09595-5
+
+Christensen, J. (2023). Studying expert influence: A methodological agenda. West European Politics, 46(3), 600–613. https://doi.org/10.1080/01402382.2022.2086387
+
+Christensen, J., & van den Bekerom, P. (2026). Unpacking the influence of policy advice using citation network analysis. Public Administration Review, 86(2), 430–444. https://doi.org/10.1111/puar.70014
+
+Freyd, J. J. (1997). Violations of power, adaptive blindness, and betrayal trauma theory. Feminism & Psychology, 7(1), 22–32. https://doi.org/10.1177/0959353597071004
+
+Harsey, S., & Freyd, J. J. (2020). Deny, attack, and reverse victim and offender (DARVO): What is the influence on perceived perpetrator and victim credibility? Journal of Aggression, Maltreatment & Trauma, 29(8), 897–916. https://doi.org/10.1080/10926771.2020.1774695
+
+Harsey, S., Zurbriggen, E. L., & Freyd, J. J. (2017). Perpetrator responses to victim confrontation: DARVO and victim self-blame. Journal of Aggression, Maltreatment & Trauma, 26(6), 644–663. https://doi.org/10.1080/10926771.2017.1320777
+
+Huq, A. Z., Jackson, J., & Trinkner, R. (2017). Legitimating practices: Revisiting the predicates of police legitimacy. The British Journal of Criminology, 57(5), 1101–1122. https://doi.org/10.1093/bjc/azw037
+
+Smith, C. P., & Freyd, J. J. (2014). Institutional betrayal. American Psychologist, 69(6), 575–584. https://doi.org/10.1037/a0037564
+
+Tyler, T. R. (2017). Procedural justice and policing: A rush to judgment? Annual Review of Law and Social Science, 13, 29–53. https://doi.org/10.1146/annurev-lawsocsci-110316-113318
+
+Suggested further reading
+
+The following sources can help extend the paper's theoretical and empirical foundations:
+
+Freyd, J. J., and subsequent collaborators' work on DARVO, betrayal trauma, and institutional accountability.
+Research on police legitimacy, procedural justice, and public cooperation with law enforcement.
+Scholarship on expert influence, evidence-informed policymaking, and the symbolic use of expert advice.
+Research on organizational misconduct, institutional retaliation, whistleblower protection, and independent oversight.
+Methodological literature on process tracing, document analysis, and citation-network analysis.
+Author's methodological note
+
+This paper is a theoretical synthesis and proposed research agenda, not a report of original empirical findings. The integrated model and the construct of manufactured expert endorsement are proposed for further testing. The literature review is selective rather than a systematic review, and the paper does not establish the prevalence of the proposed mechanisms in law enforcement. Before journal submission, the bibliography should be checked against the publishers' records, and the paper should be strengthened through a documented database search, explicit inclusion criteria, and a reproducible review protocol.
