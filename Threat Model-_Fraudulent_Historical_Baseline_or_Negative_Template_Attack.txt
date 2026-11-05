@@ -1,0 +1,378 @@
+Threat Model: Fraudulent Historical Baseline / Negative Template Attack
+Executive Summary
+
+This attack seeks to corrupt the perceived history of a system so that future humans or automated devices make decisions based on fabricated precedent rather than reality. The attacker's objective is not merely to create a single false record, but to establish a false normal operating baseline that influences future actions.
+
+This differs from ordinary fraud because the primary target is often the decision-making process itself, not a specific transaction.
+
+Threat Actor Profile
+Potential Adversaries
+Criminal Organizations
+
+Objectives:
+
+Financial fraud
+Insurance fraud
+Reputation manipulation
+Theft concealment
+Evidence fabrication
+State Actors
+
+Objectives:
+
+Information warfare
+Intelligence deception
+Strategic misattribution
+Historical narrative manipulation
+Insider Threats
+
+Examples:
+
+System administrators
+Database operators
+Security personnel
+Data scientists
+Contractors
+
+Objectives:
+
+Conceal misconduct
+Influence investigations
+Manipulate audits
+AI-Assisted Attackers
+
+Objectives:
+
+Generate convincing synthetic history at scale
+Poison training datasets
+Influence automated decision systems
+Assets Under Attack
+Historical Records
+
+Examples:
+
+Surveillance video
+Audio recordings
+System logs
+Financial records
+Medical records
+Sensor recordings
+Security Impact
+Loss of integrity
+Loss of evidentiary value
+Machine Learning Datasets
+
+Examples:
+
+Training corpora
+Behavioral profiles
+Risk models
+Predictive analytics
+Security Impact
+Model poisoning
+Long-term prediction errors
+Operational Baselines
+
+Examples:
+
+Normal network traffic
+User behavior profiles
+Equipment performance trends
+Fraud detection thresholds
+Security Impact
+Attack activity becomes normalized
+Genuine anomalies become hidden
+Attack Chain
+Phase 1: Reconnaissance
+
+Attacker identifies:
+
+Data sources
+Logging mechanisms
+Surveillance systems
+AI training pipelines
+Operational decision systems
+
+Questions sought:
+
+What records define "normal"?
+Who trusts those records?
+How are they verified?
+Phase 2: False History Generation
+
+Attacker creates synthetic evidence.
+
+Examples:
+
+Synthetic Media
+Deepfake videos
+Generated audio
+Altered images
+Synthetic Events
+Fake transactions
+Fake network activity
+Fake user actions
+Synthetic Sensor Data
+GPS spoofing
+Telemetry manipulation
+Industrial control falsification
+Phase 3: Historical Insertion
+
+Methods:
+
+Direct Compromise
+Database modification
+Log modification
+Record replacement
+Supply Chain Insertion
+Compromised vendors
+Tampered archives
+Training Data Poisoning
+Public data contribution
+Crowdsourced dataset pollution
+Phase 4: Baseline Establishment
+
+The fabricated history becomes accepted.
+
+Mechanisms:
+
+Repetition
+Consensus illusion
+Automated ingestion
+Institutional reliance
+
+At this stage:
+
+False Record
+      ↓
+Accepted History
+      ↓
+Baseline
+      ↓
+Decision Logic
+
+Phase 5: Exploitation
+
+Systems begin using the false baseline.
+
+Examples:
+
+Fraud Detection
+
+Fraudulent activity appears normal.
+
+Predictive Systems
+
+Incorrect forecasts emerge.
+
+Law Enforcement
+
+Resources directed toward false patterns.
+
+Corporate Risk Systems
+
+Artificial risks become accepted as genuine.
+
+Trust Boundaries
+
+Critical trust boundaries include:
+
+Boundary	RiskSensor → Storage	Spoofing
+Storage → Analytics	Record manipulation
+Analytics → AI Models	Training contamination
+AI Models → Decisions	Automated propagation
+Decisions → New Records	Feedback amplification
+Attack Goals
+Goal A: Hide Future Activity
+
+Example:
+
+Inject fake incidents repeatedly.
+
+Outcome:
+
+Actual future incidents blend into the pattern.
+
+Goal B: Trigger False Actions
+
+Example:
+
+Create fabricated threat indicators.
+
+Outcome:
+
+Automated defenses respond incorrectly.
+
+Goal C: Manufacture Consensus
+
+Example:
+
+Generate corroborating fake records.
+
+Outcome:
+
+Humans perceive independent confirmation where none exists.
+
+Goal D: Rewrite Institutional Memory
+
+Example:
+
+Replace or overwhelm genuine records.
+
+Outcome:
+
+Future investigators inherit a corrupted historical picture.
+
+Threat Consequences
+Operational Consequences
+False alarms
+Missed detections
+Resource misallocation
+Financial Consequences
+Fraud losses
+Insurance errors
+Incorrect lending decisions
+Legal Consequences
+Wrongful investigations
+Invalid evidence
+Judicial errors
+Strategic Consequences
+Loss of institutional trust
+Distorted organizational learning
+Persistent misinformation
+High-Risk Systems
+
+Particularly vulnerable systems include:
+
+SIEM Platforms
+
+Examples:
+
+Microsoft Sentinel
+Splunk
+Elastic Security
+AI Operations Platforms
+
+Examples:
+
+Datadog
+Dynatrace
+New Relic
+Video Analytics Systems
+
+Examples:
+
+Genetec
+Milestone
+Avigilon
+Fraud Detection Systems
+
+Examples:
+
+FICO Falcon
+SAS Fraud Management
+Featurespace
+Autonomous Systems
+
+Examples:
+
+Industrial control systems
+Smart infrastructure
+Autonomous vehicles
+Indicators of Compromise
+
+Potential warning signs include:
+
+Statistical Drift
+
+Observed behavior suddenly shifts without a corresponding real-world cause.
+
+Excessive Historical Consistency
+
+Data appears unrealistically clean or uniform.
+
+Provenance Gaps
+
+Missing chain-of-custody information.
+
+Correlation Anomalies
+
+Independent sources suddenly become unusually similar.
+
+Synthetic Artifacts
+
+Indicators of generated media, including:
+
+Compression inconsistencies
+Timing artifacts
+Metadata conflicts
+Defensive Controls
+Prevention
+Record Provenance
+
+Use:
+
+PKI signatures
+Trusted Platform Modules (TPMs)
+Hardware Security Modules (HSMs)
+Immutable Logging
+
+Examples:
+
+WORM storage
+AWS S3 Object Lock
+Azure Immutable Blob Storage
+Secure Time Sources
+
+Examples:
+
+NIST time services
+Authenticated NTP
+Detection
+Baseline Integrity Monitoring
+
+Monitor:
+
+Distribution changes
+Unexpected trend shifts
+Sudden normality changes
+Multi-Source Verification
+
+Correlate:
+
+Video
+Audio
+Sensor logs
+Independent witnesses
+External telemetry
+Dataset Auditing
+
+Approaches:
+
+Data lineage analysis
+Provenance graphs
+Statistical outlier analysis
+Recovery
+Historical Rollback
+
+Maintain signed archives enabling reconstruction of trusted history.
+
+Retraining
+
+When AI systems have been poisoned:
+
+Identify contamination window.
+Remove affected records.
+Rebuild training dataset.
+Retrain models.
+Revalidate operational thresholds.
+STRIDE Mapping
+STRIDE Category	RelevanceSpoofing	Fake sources and identities
+Tampering	Altered historical records
+Repudiation	Denial of genuine actions
+Information Disclosure	Exposure of trusted reference data
+Denial of Service	Corruption of decision quality
+Elevation of Privilege	Manipulated systems grant inappropriate trust
+Core Risk Statement
+
+The central risk is that an attacker successfully causes a fabricated historical narrative to become the authoritative source from which future decisions are derived. Once a false baseline is accepted and embedded into automation, analytics, policies, or institutional memory, the resulting decisions can remain distorted long after the original fraudulent records were created.
